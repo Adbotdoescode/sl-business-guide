@@ -13,13 +13,15 @@
    - [Unit 1.2: Types of Business Entities (Q7–Q13)](#unit-12-types-of-business-entities)
    - [Unit 1.3: Business Objectives (Q14–Q20)](#unit-13-business-objectives)
    - [Unit 1.4: Stakeholders (Q31–Q36)](#unit-14-stakeholders)
+   - [Unit 1.5: Economies and Diseconomies of Scale (Q37–Q42)](#unit-15-economies-and-diseconomies-of-scale)
    - [Chapter 44: SWOT Analysis Toolkit (Q21–Q25)](#chapter-44-swot-analysis-toolkit)
    - [Chapter 45: Ansoff Matrix Toolkit (Q26–Q30)](#chapter-45-ansoff-matrix-toolkit)
 2. [Section 2: 2-Mark Questions (AO1 Knowledge & Definition)](#section-2-2-mark-questions-ao1-knowledge--definition)
    - [Unit 1.1 Definitions & Knowledge Checks](#unit-11-definitions--knowledge-checks)
    - [Unit 1.2 Definitions & Business Entities](#unit-12-definitions--business-entities)
    - [Unit 1.3 Definitions & Objectives](#unit-13-definitions--objectives)
-   - [Unit 1.4 Stakeholders & Mendelow Matrix Knowledge Checks](#unit-14-stakeholders--mendelow-matrix-knowledge-checks)
+   - [Unit 1.4 Stakeholders & Stakeholder Mapping Knowledge Checks](#unit-14-stakeholders--stakeholder-mapping-knowledge-checks)
+   - [Unit 1.5 Economies & Diseconomies of Scale Knowledge Checks](#unit-15-economies--diseconomies-of-scale-knowledge-checks)
    - [Chapter 44 SWOT Analysis Knowledge Checks & Factor Classification](#chapter-44-swot-analysis-knowledge-checks--factor-classification)
    - [Chapter 45 Ansoff Matrix Knowledge Checks](#chapter-45-ansoff-matrix-knowledge-checks)
 3. [Section 3: 4-Mark Questions (AO2 Application & Explanation)](#section-3-4-mark-questions-ao2-application--explanation)
@@ -308,14 +310,14 @@ A small London bakery faces rising wholesale flour prices due to poor global whe
 ---
 
 #### Question 23
-When pairing SWOT quadrants to formulate corporate strategy, what does an **SO (Maxi-Maxi) strategy** entail?
+When pairing SWOT quadrants to formulate corporate strategy, what does an **SO (offensive) strategy** entail?
 * A. Using external opportunities to rectify internal company weaknesses.
 * B. Utilizing internal strengths to exploit external market opportunities.
 * C. Minimizing internal weaknesses to defend against external environmental threats.
 * D. Leveraging internal strengths to neutralize external market threats.
 
 > **Answer:** **B**  
-> **Explanation:** An SO (Strengths-Opportunities or Maxi-Maxi) strategy seeks to deploy the firm's core internal competencies and distinctive advantages to seize attractive emerging opportunities in the external marketplace (e.g., using strong brand equity and cash reserves to expand into a rapidly growing geographic market).
+> **Explanation:** An SO (Strengths-Opportunities, or offensive) strategy seeks to deploy the firm's core internal competencies and distinctive advantages to seize attractive emerging opportunities in the external marketplace (e.g., using strong brand equity and cash reserves to expand into a rapidly growing geographic market).
 
 ---
 
@@ -456,26 +458,100 @@ How does the management philosophy of **mutual benefits synergy** (advocated by 
 ---
 
 #### Question 35
-In Mendelow's Stakeholder Mapping Matrix, how should executive management engage with stakeholders positioned in **Quadrant D** (High Power, High Interest)?
+In the stakeholder mapping matrix (Hoang Figure 4.3), how should executive management engage with stakeholders positioned in **Quadrant D** (High Power, High Interest)?
 * A. Devote minimum effort and monitor passively via general public press releases.
 * B. Keep them informed via one-way newsletters to prevent minor grievances.
-* C. Treat them as Key Players by involving them directly in strategic decision-making and continuous consultation.
+* C. Treat them as key stakeholders by involving them directly in strategic decision-making and continuous consultation.
 * D. Keep them satisfied through statutory compliance only, avoiding proactive relationship building.
 
 > **Answer:** **C**  
-> **Explanation:** Stakeholders possessing both high influence/power and high interest (such as major institutional shareholders, vital sole-source suppliers, or key trade unions) reside in Quadrant D. They represent **Key Players** who command maximum effort and direct executive partnership to avoid catastrophic disruption.
+> **Explanation:** Stakeholders possessing both high influence/power and high interest (such as major institutional shareholders, vital sole-source suppliers, or key trade unions) reside in Quadrant D. They represent **key stakeholders** who command maximum effort and direct executive partnership to avoid catastrophic disruption.
 
 ---
 
 #### Question 36
-Under Mendelow's Matrix, which quadrant and engagement strategy corresponds to a national taxation authority (e.g., HMRC / IRS) that possesses statutory legal power to freeze accounts but remains passive as long as tax returns are filed correctly and on time?
+Under stakeholder mapping (Hoang Figure 4.3), which quadrant and engagement strategy corresponds to a national taxation authority (e.g., HMRC / IRS) that possesses statutory legal power to freeze accounts but remains passive as long as tax returns are filed correctly and on time?
 * A. Quadrant A: Low Power, Low Interest $\rightarrow$ Minimum Effort
 * B. Quadrant B: Low Power, High Interest $\rightarrow$ Keep Informed
 * C. Quadrant C: High Power, Low Interest $\rightarrow$ Keep Satisfied
-* D. Quadrant D: High Power, High Interest $\rightarrow$ Key Players
+* D. Quadrant D: High Power, High Interest $\rightarrow$ Maximum Effort
 
 > **Answer:** **C**  
 > **Explanation:** Regulatory and statutory bodies like tax authorities wield immense statutory power (High Power) to shut down businesses or levy punitive fines, but their day-to-day interest in ordinary operations is low (Low Interest) provided the firm satisfies all statutory tax compliance deadlines. Thus, they belong to Quadrant C: **Keep Satisfied**.
+
+---
+
+### Unit 1.5: Economies and Diseconomies of Scale
+
+#### Question 37
+What is the fundamental microeconomic mechanism that defines economies of scale?
+* A. A reduction in total production expenditure as business operations contract.
+* B. A decrease in average total cost (cost per unit) as the firm's output and scale of operations expand.
+* C. An increase in retail selling price driven by growing consumer market dominance.
+* D. The statutory elimination of all fixed costs in the short run.
+
+> **Answer:** **B**  
+> **Explanation:** Economies of scale strictly refers to falling average total cost per unit ($ATC = TC / Q$) as output scale expands in the long run. Total costs still rise in aggregate, but fixed overhead is spread over more volume alongside specialized efficiencies.
+
+---
+
+#### Question 38
+A commercial bakery invests in an automated continuous-tunnel oven that bakes 10,000 loaves per hour, cutting labour cost per loaf by 60%. Which specific type of internal economy of scale is being achieved?
+* A. Purchasing (bulk buying) economies
+* B. Financial economies
+* C. Technical economies
+* D. Risk-bearing economies
+
+> **Answer:** **C**  
+> **Explanation:** Technical economies arise when large firms use sophisticated capital and machinery to mass produce, spreading high fixed costs over a huge scale of output (Hoang p.66). Small businesses do not find such technology feasible or cost-efficient.
+
+---
+
+#### Question 39
+How does a diversified conglomerate corporation achieve **risk-bearing economies of scale**?
+* A. By negotiating lower commercial loan interest rates from institutional banks.
+* B. By operating across multiple distinct product markets and geographical territories, ensuring that a slump in one sector is offset by stability in another.
+* C. By purchasing massive quantities of raw materials at bulk trade discounts.
+* D. By employing functional specialist managers across every division.
+
+> **Answer:** **B**  
+> **Explanation:** Risk-bearing economies of scale occur when large enterprises diversify their operational portfolios across different product categories and global geographic markets, mitigating the vulnerability of relying on a single revenue stream.
+
+---
+
+#### Question 40
+Which of the following is an example of an **external economy of scale**?
+* A. A multinational retailer securing 25% discounts on bulk inventory orders.
+* B. A tech startup in Silicon Valley benefiting from an abundant regional pool of specialized software engineers and shared tech infrastructure.
+* C. An airline deploying wide-body twin-deck passenger aircraft to reduce fuel burn per seat-kilometer.
+* D. A manufacturing conglomerate issuing commercial paper at benchmark 2% interest rates.
+
+> **Answer:** **B**  
+> **Explanation:** External economies of scale arise outside the individual firm from the growth of the overall industry or geographical cluster, benefiting all competing firms in that region (such as access to a specialized labour pool, local university research, and shared transport links).
+
+---
+
+#### Question 41
+Why does a business experience **internal diseconomies of scale** when expanding beyond its optimal productive capacity?
+* A. Rapidly falling consumer market demand forces price discounting below variable cost.
+* B. Managerial friction, communication delays in tall hierarchical structures, and worker alienation increase average unit costs.
+* C. Suppliers form regional cartels and increase raw material prices industry-wide.
+* D. Government authorities impose punitive corporate tax surcharges on large revenues.
+
+> **Answer:** **B**  
+> **Explanation:** Internal diseconomies of scale are driven by organizational and managerial inefficiencies inside the firm—primarily communication breakdown across tall hierarchies, coordination friction across sprawling departments, and worker alienation on impersonal factory floors.
+
+---
+
+#### Question 42
+On an average cost curve (Hoang Figure 5.1), what does the **optimal level of output** represent?
+* A. The initial output level where total revenue exactly equals total costs.
+* B. The level of output where average costs are minimised, after economies of scale and before diseconomies of scale set in.
+* C. The point beyond which total revenue begins to decline.
+* D. The physical factory capacity limit where output can no longer increase.
+
+> **Answer:** **B**  
+> **Explanation:** The optimal level of output is the most efficient scale of operation, where the average cost of production is minimised (Hoang pp.66 and 87). Up to this point a growing firm enjoys economies of scale; beyond it, diseconomies of scale raise average costs. (The textbook does not use the terms LRAC or minimum efficient scale.)
 
 ---
 
@@ -693,7 +769,7 @@ Under Mendelow's Matrix, which quadrant and engagement strategy corresponds to a
 
 ---
 
-### Unit 1.4 Stakeholders & Mendelow Matrix Knowledge Checks
+### Unit 1.4 Stakeholders & Stakeholder Mapping Knowledge Checks
 
 #### Question 1.4.1: Define the term stakeholder. [2 marks]
 * **Mark Scheme:**  
@@ -740,12 +816,68 @@ Under Mendelow's Matrix, which quadrant and engagement strategy corresponds to a
 
 ---
 
-#### Question 1.4.6: Explain how management should engage with stakeholders in Quadrant D of Mendelow's matrix. [2 marks]
+#### Question 1.4.6: Explain how management should engage with stakeholders in Quadrant D of the stakeholder mapping matrix. [2 marks]
 * **Mark Scheme:**  
-  - Award [1 mark] for identifying Key Players or high power/high interest.  
+  - Award [1 mark] for identifying key stakeholders or high power/high interest.  
   - Award [2 marks] for explaining that management must prioritize them through continuous active consultation and strategic partnership (maximum effort) because they have both the power to disrupt and high interest in outcomes.
 * **Model Answer:**  
-  Stakeholders in **Quadrant D** possess both **High Power and High Interest** and are designated as **Key Players**. Management must devote **maximum effort** by actively consulting them prior to making major strategic decisions and forming close collaborative partnerships to align interests and prevent catastrophic disruption.
+  Stakeholders in **Quadrant D** possess both **High Power and High Interest** and are designated as **key stakeholders**. Management must devote **maximum effort** by actively consulting them prior to making major strategic decisions and forming close collaborative partnerships to align interests and prevent catastrophic disruption.
+
+---
+
+### Unit 1.5 Economies & Diseconomies of Scale Knowledge Checks
+
+#### Question 1.5.1: Define the term economies of scale. [2 marks]
+* **Mark Scheme:**  
+  - Award [1 mark] for recognizing that costs decrease as a business grows.  
+  - Award [2 marks] for stating that it refers to the reduction in average total cost (cost per unit) of production as a business increases its scale of operations and output volume in the long run.
+* **Model Answer:**  
+  **Economies of scale** refers to the reduction in average costs of production (cost per unit) that an enterprise achieves as it increases its scale of operations and expands total output volume in the long run.
+
+---
+
+#### Question 1.5.2: Define the term diseconomies of scale. [2 marks]
+* **Mark Scheme:**  
+  - Award [1 mark] for stating that costs rise when a business gets too big.  
+  - Award [2 marks] for stating that it refers to the escalation in average cost per unit of output resulting from operational inefficiencies, coordination friction, or managerial problems as an organization expands beyond its optimal scale.
+* **Model Answer:**  
+  **Diseconomies of scale** refers to the increase in average costs of production (cost per unit) that occurs when a business expands beyond its optimal operational capacity, leading to inefficiencies in management, coordination, communication, and control.
+
+---
+
+#### Question 1.5.3: Distinguish between internal and external economies of scale. [2 marks]
+* **Mark Scheme:**  
+  - Award [1 mark] for a partial distinction or simply providing examples.  
+  - Award [2 marks] for stating that internal economies arise inside an individual firm from its own operational expansion under managerial control, whereas external economies benefit all firms in an industry as the overall sector or geographical cluster grows.
+* **Model Answer:**  
+  **Internal economies of scale** are unit cost reductions generated from within an individual business due to its own growth and operational decisions (e.g., technical automation, bulk purchasing). In contrast, **external economies of scale** are industry-wide cost advantages shared by all firms in a specific sector or region as the entire industry expands (e.g., access to a specialized local labour pool and improved infrastructure).
+
+---
+
+#### Question 1.5.4: Define the term optimal level of output. [2 marks]
+* **Mark Scheme:**  
+  - Award [1 mark] for stating the best output or lowest cost point.  
+  - Award [2 marks] for defining it as the most efficient scale of operation, where the average cost of production is minimised.
+* **Model Answer:**  
+  The **optimal level of output** is the most efficient scale of operation for a business. It occurs at the level of output where the average cost of production is minimised (Hoang p.87): economies of scale are experienced up to this point, and diseconomies of scale beyond it.
+
+---
+
+#### Question 1.5.5: State two reasons why a firm might experience internal diseconomies of scale. [2 marks]
+* **Mark Scheme:**  
+  - Award [1 mark] for each valid, distinct reason stated (up to 2 marks).
+* **Model Answer:**  
+  1. **Communication breakdown:** In tall organizational hierarchies with multiple managerial layers, messages become distorted, slow to transmit, and detached from operational realities.  
+  2. **Worker alienation and low morale:** On massive, impersonal factory floors or in vast corporate bureaucracies, staff feel undervalued and disconnected from leadership, causing demotivation, absenteeism, and lower productivity.
+
+---
+
+#### Question 1.5.6: State two types of internal economies of scale. [2 marks]
+* **Mark Scheme:**  
+  - Award [1 mark] for each valid, distinct type identified (up to 2 marks).
+* **Model Answer:**  
+  1. **Purchasing economies (commercial bulk buying):** Securing volume discounts from suppliers due to high bargaining leverage, lowering the unit cost of raw materials.  
+  2. **Technical economies:** Using sophisticated, large-scale machinery and mass production, so that high fixed costs are spread over a huge output and average cost falls.
 
 ---
 
@@ -1304,7 +1436,7 @@ The most critical barrier is not merely marketing visibility, but **internal pro
 ##### Perspective 1: Usefulness in Strategic Planning (Simplicity, Holistic Scope, and Strategy Generation)
 SWOT analysis provides significant diagnostic utility for executive decision-makers:
 * **Structured, Holistic Synthesis:** SWOT forces managers to look both internally at operational competencies (**Strengths** like patents, brand equity, skilled labor) and deficiencies (**Weaknesses** like liquidity shortages, obsolete machinery), while simultaneously scanning the external macro-environment for **Opportunities** and **Threats**.
-* **Cross-Functional Strategy Formulation:** By cross-referencing quadrants (e.g., using the Maxi-Maxi SO strategy), managers can systematically design offensive strategies that deploy internal strengths to capture emerging external market segments. It provides a shared visual framework that encourages collaborative strategic dialogue among marketing, finance, and operations directors without requiring complex data modeling.
+* **Cross-Functional Strategy Formulation:** By cross-referencing quadrants (e.g., using the SO offensive strategy), managers can systematically design offensive strategies that deploy internal strengths to capture emerging external market segments. It provides a shared visual framework that encourages collaborative strategic dialogue among marketing, finance, and operations directors without requiring complex data modeling.
 
 ##### Perspective 2: Methodological Limitations (Subjectivity, Static Nature, and Lack of Weighting)
 Despite its widespread adoption, SWOT analysis possesses inherent structural flaws:

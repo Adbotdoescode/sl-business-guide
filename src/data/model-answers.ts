@@ -229,7 +229,7 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
       point2: {
         title: 'Benchmarking Marketing ROI & Accountability',
         point: 'Explicit objectives provide measurable performance benchmarks that allow management to monitor, assess, and justify major financial marketing expenditures.',
-        evidence: 'Lenovo committed massive financial capital to high-profile sports marketing (McLaren F1, NBA, Beijing Olympics, and NFL in America) to achieve its stated goal of "gaining market share around the world."',
+        evidence: 'Lenovo committed massive financial capital to high-profile sports marketing (McLaren F1, NBA, Beijing Olympics, and NFL in America) and the case states that this strategy helped the company to gain market share.',
         explanation: 'Clear objectives enable marketing directors to evaluate return on investment (ROI): managers can track whether brand awareness metrics and global PC market share increased in regions where NFL and F1 sponsorships aired.',
         link: 'This measurement function ensures financial accountability and justifies ongoing multi-million-dollar marketing outlays to company shareholders.'
       }
@@ -279,8 +279,8 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
       point2: {
         title: 'Philanthropic Responsibility toward Community Stakeholders',
         point: 'Ethical behavior also entails active corporate social responsibility (CSR) where commercial enterprises dedicate resources to improve the welfare of wider societal stakeholders.',
-        evidence: 'McDonald\'s established and supports Ronald McDonald House Charities (RMHC), operating in 64 countries to "directly improve the health and well-being of children" by accommodating families of seriously ill children.',
-        explanation: 'Rather than focusing solely on commercial fast-food sales, McDonald\'s directs financial and organizational resources into philanthropic housing infrastructure for families during medical crises.',
+        evidence: 'McDonald\'s established and supports Ronald McDonald House Charities (RMHC), operating in 64 countries and regions to "directly improve the health and well-being of children", and has made a difference to millions of seriously ill children and their families.',
+        explanation: 'Rather than focusing solely on commercial fast-food sales, McDonald\'s directs resources, through a separate non-profit charity, into supporting seriously ill children and their families.',
         link: 'Upholding such philanthropic commitments builds public trust, elevates corporate reputation, and fulfills moral obligations to society.'
       }
     },
@@ -302,7 +302,7 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
       },
       {
         id: 'q4m-06-c4',
-        criterion: 'Applied to McDonald\'s RMHC providing housing for families of seriously ill children in 64 countries',
+        criterion: 'Applied to McDonald\'s RMHC supporting seriously ill children and their families in 64 countries and regions',
         mark: 1
       }
     ]
@@ -425,11 +425,11 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
         link: 'Creating the separate Lexus marque allowed Toyota to penetrate executive automotive segments previously unserved by the firm.'
       },
       point2: {
-        title: 'High Risk Profile & Capital Commitment',
-        point: 'Diversification represents the highest-risk quadrant in the Ansoff Matrix due to dual unfamiliarity.',
+        title: 'Risk Profile: Related Diversification',
+        point: 'Diversification is the riskiest of the four Ansoff growth options, but the textbook classes Lexus as related diversification, which is less risky because it builds on existing product and market knowledge (p.613).',
         evidence: 'Toyota had to compete directly against entrenched European luxury incumbents such as Mercedes-Benz and BMW, building dedicated premium dealerships and bespoke customer service standards.',
-        explanation: 'Developing luxury vehicle engineering from scratch while establishing trust among affluent buyers who had never purchased from Toyota created immense capital exposure and brand execution risks.',
-        link: 'While highly risky, successful execution enabled Toyota to capture high gross margins and insulate the parent corporation from mass-market price wars.'
+        explanation: 'Toyota stayed within the broader confines of the car industry, so it could draw on its existing engineering and manufacturing know-how; the new risks lay in winning wealthier buyers who did not associate the Toyota name with luxury.',
+        link: 'So the strategy carried more risk than market penetration, but less than unrelated diversification into an industry Toyota did not know.'
       }
     },
     rubricChecklist: [
@@ -450,7 +450,7 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
       },
       {
         id: 'q4m-09-c4',
-        criterion: 'Analyzes high risk profile (competing against established European luxury rivals with dual unfamiliarity)',
+        criterion: 'Analyzes the risk profile (diversification is the riskiest option, but related diversification builds on existing industry knowledge)',
         mark: 1
       }
     ]
@@ -576,7 +576,7 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
         title: 'Disadvantage: High Fulfillment Capital & Return Logistics',
         point: 'A significant disadvantage is the substantial capital expenditure, logistics complexity, and customer return costs associated with digital direct fulfillment.',
         evidence: 'Doubling e-commerce sales to €9bn necessitates massive capital investments in automated warehouse distribution centers, digital cybersecurity, and reverse-logistics infrastructure.',
-        explanation: 'Unlike bulk shipping to retail outlets, e-commerce requires picking, packaging, and shipping individual shoeboxes to residential addresses, leading to elevated shipping costs and high product return rates (often exceeding 30% in footwear and apparel).',
+        explanation: 'Unlike bulk shipping to retail outlets, e-commerce requires picking, packaging, and shipping individual shoeboxes to residential addresses, leading to elevated shipping costs and the cost of handling customer returns.',
         link: 'These elevated fulfillment and customer return expenses can squeeze operating margins and expose Adidas to supply chain bottlenecks.'
       }
     },
@@ -606,9 +606,9 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
 {
   "id": "q4m-13",
   "subunit": "bmt-steeple-analysis",
-  "questionNumber": "Question 46.3",
+  "questionNumber": "Adapted from Question 46.3 (original 4-mark question)",
   "question": "Explain how demographic and technological shifts in the external macro-environment contributed to the commercial success of the Nintendo Wii.",
-  "caseStimulus": "The Nintendo Wii was a massive commercial hit. Launched in 2006, Nintendo's games console appealed to entirely new customer segments, including women and elderly demographics who had never previously played video games. Demand was exceptionally high in Asia, Europe, and North America, helping Nintendo sell over 100 million consoles. Its flagship bundled title, Wii Sports, sold over 83 million copies worldwide.",
+  "caseStimulus": "The Nintendo Wii was a massive commercial hit. Launched in 2006, Nintendo's games console appealed to entirely new customer segments, including women and the elderly. Demand was particularly high in Asia, Europe and the USA, helping Nintendo sell its 100 millionth console by the end of 2013. Its most popular game, Wii Sports, sold over 83 million copies worldwide by 2021.",
   "contextTitle": "Nintendo Wii: Demographic & Technological Exploitation",
   "marks": 4,
   "commandTerm": "Explain",
@@ -617,15 +617,15 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
     "point1": {
       "title": "Social Demographic Broadening",
       "point": "Nintendo successfully identified and exploited an external Social demographic opportunity by expanding its target audience beyond traditional hardcore teenage male gamers.",
-      "evidence": "In the case stimulus, the Wii explicitly attracted elderly users in care homes, women, and non-traditional gaming families, driving total sales beyond 100 million consoles globally.",
-      "explanation": "By addressing sedentary lifestyles and social isolation with interactive, family-friendly social entertainment, Nintendo avoided direct price competition with rival consoles and unlocked massive unserved market demand.",
-      "link": "Capitalizing on social demographic shifts enabled Nintendo to achieve unprecedented market penetration without engaging in destructive price discounting."
+      "evidence": "In the case stimulus, the Wii appealed to new market segments including women and the elderly, helping Nintendo sell its 100 millionth console by the end of 2013.",
+      "explanation": "By designing family-friendly entertainment for groups that did not traditionally play video games, Nintendo opened up demand that was not being served by rival consoles.",
+      "link": "Responding to social and demographic opportunities in the external environment widened Nintendo's customer base and raised sales."
     },
     "point2": {
       "title": "Technological Motion-Sensing Innovation",
       "point": "Technologically, Nintendo innovated by introducing intuitive, low-barrier motion-sensing controllers (the Wii Remote) rather than competing on ultra-high graphics processing power.",
       "evidence": "This accessible technological interface allowed games like Wii Sports (over 83 million copies sold) to be played instantly by grandparents and children without complex button memorization.",
-      "explanation": "This differentiated technological approach lowered manufacturing hardware costs while maximizing user accessibility, generating superior unit profit margins compared to rival hardware.",
+      "explanation": "This differentiated technological approach made the console easy to use for first-time players, turning a technological opportunity into a source of competitive advantage.",
       "link": "Aligning technological interface design with user ergonomics transformed the console into a universal household staple."
     }
   },
@@ -655,9 +655,9 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
 {
   "id": "q4m-14",
   "subunit": "bmt-steeple-analysis",
-  "questionNumber": "Question 46.5",
+  "questionNumber": "Adapted from Question 46.5c",
   "question": "Explain how exchange rate fluctuations impact the purchase costs and profitability of an importing retail business.",
-  "caseStimulus": "Gijs Van Oosten Jeans operates retail outlets in the Netherlands. The company imports an average of 15,000 pairs of jeans per month from its specialized manufacturing supplier in the United States at a fixed contracted cost of $25 per pair. Gijs Van Oosten Jeans then retails these jeans to European consumers at a retail price of \u20ac35 each.",
+  "caseStimulus": "Gijs Van Oosten Jeans sells jeans to customers in the Netherlands. The company buys an average of 15,000 pairs of jeans per month from a supplier in the USA at a cost of $25 each, and sells them at \u20ac35 each.",
   "contextTitle": "Gijs Van Oosten Jeans: Currency Volatility & Retail Profit Margins",
   "marks": 4,
   "commandTerm": "Explain",
@@ -665,15 +665,15 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
   "peelModelAnswer": {
     "point1": {
       "title": "Impact of a Stronger Domestic Currency (Euro Appreciation)",
-      "point": "When the domestic currency (the Euro) strengthens against the foreign currency (the US Dollar), the purchasing cost of imported stock declines significantly under the SPICED economic rule.",
-      "evidence": "For Gijs Van Oosten Jeans, if \u20ac1 rises from $1.10 to $1.35, the Euro cost to purchase $25 jeans drops from approximately \u20ac22.73 to \u20ac18.52 per pair, saving \u20ac4.21 per unit across 15,000 monthly units.",
+      "point": "When the domestic currency (the Euro) strengthens against the foreign currency (the US Dollar), the euro cost of imported stock falls.",
+      "evidence": "For Gijs Van Oosten Jeans, if \u20ac1 rises from $1.30 to $1.45, the euro cost of a $25 pair of jeans falls from about \u20ac19.23 to \u20ac17.24, saving about \u20ac1.99 per pair, or roughly \u20ac29,840 a month on 15,000 pairs.",
       "explanation": "Because the retail selling price remains constant at \u20ac35, the lower procurement cost widens the firm's gross profit margin and expands monthly operating liquidity.",
       "link": "A stronger domestic exchange rate directly enhances retail operating profitability for merchandise importers."
     },
     "point2": {
       "title": "Impact of a Weaker Domestic Currency (Euro Depreciation)",
       "point": "Conversely, a depreciation of the Euro against the US Dollar severely inflates import costs, squeezing operating profit margins unless prices are raised.",
-      "evidence": "If the Euro drops to parity (\u20ac1 = $1.00), the import cost jumps to \u20ac25.00 per unit, reducing gross profit from \u20ac12.27 to just \u20ac10.00 per pair.",
+      "evidence": "If the euro weakens from \u20ac1 = $1.45 to \u20ac1 = $1.30, the cost per pair rises from about \u20ac17.24 to \u20ac19.23, cutting profit per pair from about \u20ac17.76 to \u20ac15.77.",
       "explanation": "If Gijs attempts to pass these cost increases onto consumers by raising prices above \u20ac35, price-sensitive consumers may switch to domestic apparel competitors, causing sales volume to contract.",
       "link": "Unhedged currency depreciation exposes retailers to serious cost inflation and margin compression."
     }
@@ -681,7 +681,7 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
   "rubricChecklist": [
     {
       "id": "q4m-14-c1",
-      "criterion": "Explains economic impact of currency appreciation on import purchasing costs (SPICED rule: imports cheaper)",
+      "criterion": "Explains economic impact of currency appreciation on import purchasing costs (imports become cheaper in euros)",
       "mark": 1
     },
     {
@@ -852,7 +852,7 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
 {
   id: 'q4m-18',
   subunit: '1.4-stakeholders',
-  questionNumber: 'Question 4.4c',
+  questionNumber: 'Adapted from Question 4.4c (textbook: Outline, 2 marks)',
   question: "Explain one source of conflict that arose between Skoda Auto's employees and senior directors during its European operations and international expansion.",
   caseStimulus:
     "Founded in 1895, Skoda Auto is one of the oldest automobile manufacturers in the world. In early 2007, the Czech company, which became part of the Volkswagen Group in 2000, entered China as part of its growth strategy. However, in the same year, its workforce in Europe went on strike over concerns regarding the remuneration of employees.\n\nIt was reported that industrial action cost Skoda Auto, the country's largest exporter, 60 million crowns ($2.9m) per day in lost output. Nevertheless, China became Skoda's main market; by 2013, the company had produced its 1 millionth car in China. Today, one in four Skoda cars is sold in China.",
@@ -862,24 +862,24 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
   assessmentObjective: 'AO2',
   peelModelAnswer: {
     point1: {
-      title: 'Core Conflict: Employee Remuneration vs. Corporate Capital Expansion',
-      point: 'A major source of stakeholder conflict arose over remuneration: employees demanded higher wages and bonuses reflecting their productivity, whereas senior directors prioritized capital allocation toward overseas expansion.',
-      evidence: 'In 2007, while Skoda was directing substantial capital to enter the Chinese market as part of its global growth strategy, its European assembly workers staged prolonged strike action over wage remuneration.',
-      explanation: 'Because corporate financial resources are finite, directing millions into establishing Chinese supply chains restricted the funds available to satisfy European workers\' wage demands, creating acute tension.',
-      link: 'This direct competition for retained earnings triggered industrial friction that cost the company 60 million crowns ($2.9m) per day in lost output.'
+      title: 'Core Conflict: Employee Remuneration vs. Growth Objectives',
+      point: 'A major source of stakeholder conflict arose over remuneration: employees wanted better pay and benefits, whereas senior directors were pursuing a growth strategy and the profits wanted by the owners (the Volkswagen Group).',
+      evidence: 'In early 2007 Skoda entered China as part of its growth strategy; in the same year its workforce in Europe went on strike over remuneration.',
+      explanation: 'The firm\'s finances are limited, so money spent on higher pay is not available for growth or for the owners\' profits; the textbook notes that one group\'s demands (such as a greater share of profits) can mean cuts to staff benefits (p.58).',
+      link: 'This clash of objectives led to industrial action that cost the company 60 million crowns ($2.9m) per day in lost output.'
     },
     point2: {
       title: 'Short-Term Operational Disruption vs. Long-Term Growth Objectives',
-      point: "This conflict pitted employees' immediate objective of cost-of-living pay parity against management's strategic objective of international market development.",
+      point: "This conflict pitted employees' immediate objective of higher pay against management's strategic objective of international market development.",
       evidence: 'Workers exercised their collective bargaining leverage by halting assembly lines, threatening Skoda\'s status as the Czech Republic\'s largest exporter.',
       explanation: 'Senior executives were forced to recognize that ignoring workforce remuneration directly endangered output and delivery schedules, creating counterproductive operational losses.',
-      link: 'Management was ultimately forced to negotiate improved wage terms to restore factory output and enable its subsequent milestone of producing 1 million cars in China.'
+      link: 'The case does not say how the strike was settled, but China still became Skoda\'s main market, with its 1 millionth car produced there by 2013.'
     }
   },
   rubricChecklist: [
     {
       id: 'q4m-18-c1',
-      criterion: 'Clearly identifies valid source of conflict (remuneration / wage demands vs capital expansion)',
+      criterion: 'Clearly identifies valid source of conflict (remuneration / pay demands vs growth and profit objectives)',
       mark: 1
     },
     {
@@ -898,7 +898,569 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
       mark: 1
     }
   ]
-}
+},
+{
+  id: 'q4m-19',
+  subunit: '1.5-growth-and-evolution',
+  questionNumber: 'Question 5.1b',
+  question: 'Describe two methods of internal growth that British discount retailer Poundland might use.',
+  caseStimulus:
+    "British discount retailer Poundland has built a reputation for internal growth. Founded in 1990, Poundland opened its 500th store in 2014 and had more than 800 stores at the start of 2022. Poundland, which sells most of its products for £1 ($1.40) or less, serves 7 million customers each week and has reported annual increases in profits by as much as 29%. Its growth strategy is to focus on expansion in Ireland, the Netherlands and the UK in order to gain greater market share.",
+  contextTitle: 'Poundland: Methods of Internal Growth',
+  marks: 4,
+  commandTerm: 'Describe',
+  assessmentObjective: 'AO2',
+  peelModelAnswer: {
+    point1: {
+      title: 'Capital Expenditure on New Locations',
+      point: 'Poundland can grow internally through increased capital expenditure (investment spending) on new stores in Ireland, the Netherlands and the UK, financed from retained profits or borrowing.',
+      evidence: 'Poundland, founded in 1990, opened its 500th store in 2014 and had more than 800 stores at the start of 2022, serving 7 million customers each week.',
+      explanation: 'Each new store is an expansion to a new location that reaches more customers, raising sales revenue without relying on outside organizations.',
+      link: 'This supports Poundland\'s stated aim of gaining greater market share, although investment risks might not pay off.'
+    },
+    point2: {
+      title: 'Price and Value for Money',
+      point: 'A second internal growth method is using price and overall value for money to win more sales from existing and new customers.',
+      evidence: 'Poundland sells most of its products for £1 ($1.40) or less and has reported annual increases in profits of as much as 29%.',
+      explanation: 'In a highly competitive market, demand is price elastic, so low prices can generate proportionately more sales revenue; customers also judge value for money on quality and brand image, not price alone.',
+      link: 'Offering strong value for money helps Poundland keep attracting its 7 million weekly customers and grow its sales revenue organically.'
+    }
+  },
+  rubricChecklist: [
+    {
+      id: 'q4m-19-c1',
+      criterion: 'Accurately describes first internal growth method (capital expenditure on new stores / locations)',
+      mark: 1
+    },
+    {
+      id: 'q4m-19-c2',
+      criterion: 'Applies store expansion method directly to Poundland context (500th store in 2014, 800+ stores in 2022, expansion in Ireland, the Netherlands and the UK)',
+      mark: 1
+    },
+    {
+      id: 'q4m-19-c3',
+      criterion: 'Accurately describes a second, distinct internal growth method (e.g. price / value for money, promotion, products, training)',
+      mark: 1
+    },
+    {
+      id: 'q4m-19-c4',
+      criterion: 'Applies the second method to Poundland context (£1 price point, 7m weekly customers, profit growth of up to 29%)',
+      mark: 1
+    }
+  ]
+},
+{
+  id: 'q4m-20',
+  subunit: '1.5-growth-and-evolution',
+  questionNumber: 'Case study box, p.66 (Airbus A380)',
+  question: 'Using the Airbus A380 program, explain one economy of scale and one potential diseconomy of scale for a large commercial aircraft manufacturer.',
+  caseStimulus:
+    "The Airbus A380, the world's largest passenger plane, has 49% more seating capacity than its rival Boeing 787 Dreamliner, yet burns 17% less fuel per seat. Hence, the average cost of fuel for Airbus is lower. This is particularly important for airline carriers operating in a highly competitive industry where fuel accounts for a large proportion of operating costs, and aircraft are hugely expensive ($418m per A380 vs $257m for Boeing 787). However, low demand from airline carriers (especially following the COVID-19 pandemic) meant that Airbus ceased to produce the A380 at the end of 2021.",
+  contextTitle: 'Airbus A380: Mega-Scale Technical Economies vs. Coordination Diseconomies',
+  marks: 4,
+  commandTerm: 'Explain',
+  assessmentObjective: 'AO2',
+  peelModelAnswer: {
+    point1: {
+      title: 'Technical Economy of Scale: Fuel Efficiency per Passenger Seat',
+      point: 'Airbus exploited technical economies of scale through engineering a super-jumbo double-decker airframe that maximizes aerodynamic and engine efficiency per unit of capacity.',
+      evidence: 'The A380 offers 49% more seating capacity than the Boeing 787 while burning 17% less fuel per passenger seat.',
+      explanation: 'Because the aircraft\'s fuel and other operating costs are spread across more passenger seats, the average fuel cost per seat is lower.',
+      link: 'This technical economy lowers average operating costs for long-haul routes connecting high-density hub airports.'
+    },
+    point2: {
+      title: 'Potential Internal Diseconomy of Scale: Lack of Control and Coordination',
+      point: 'Conversely, a manufacturer operating on the scale of Airbus risks internal diseconomies of scale, such as a lack of control and coordination when operations are spread across different locations (p.68).',
+      evidence: 'The case itself gives low demand from airline carriers, not diseconomies of scale, as the reason Airbus ceased A380 production at the end of 2021, so this point applies the general theory rather than a reported fact.',
+      explanation: 'As a firm grows, the span of control widens, communication slows and coordinating operations in different locations becomes harder, which raises average costs.',
+      link: 'Beyond the optimal level of output, such problems mean that being larger no longer lowers unit costs.'
+    }
+  },
+  rubricChecklist: [
+    {
+      id: 'q4m-20-c1',
+      criterion: 'Accurately defines and explains technical economy of scale with engine/seating efficiency mechanism',
+      mark: 1
+    },
+    {
+      id: 'q4m-20-c2',
+      criterion: 'Applies technical economy to Airbus A380 data (49% greater capacity, 17% fuel burn reduction per seat, $418m cost)',
+      mark: 1
+    },
+    {
+      id: 'q4m-20-c3',
+      criterion: 'Accurately defines and explains diseconomy of scale (coordination difficulties across multinational production sites)',
+      mark: 1
+    },
+    {
+      id: 'q4m-20-c4',
+      criterion: 'Applies the diseconomy to a large aircraft manufacturer such as Airbus (coordination across locations) without misstating why A380 production ended (low demand)',
+      mark: 1
+    }
+  ]
+},
+{
+    id: 'q4m-A1-01',
+    subunit: '1.2-types-of-business-entities',
+    questionNumber: 'Textbook p.28 (A1)',
+    question: 'Explain why a limited liability company must produce a Memorandum of Association and obtain a Certificate of Incorporation before it can begin trading.',
+    contextTitle: 'Registering a Limited Company',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Memorandum of Association: core registration details',
+        point: 'The Memorandum of Association is a relatively brief document that must be produced and submitted before a limited company can begin trading.',
+        evidence: 'It sets out the company\'s trading name, main purpose, registered business address and the amount of share capital invested.',
+        explanation: 'These details define the company\'s identity and scope, which the authorities review before the company is allowed to trade.',
+        link: 'Because the Certificate of Incorporation is issued only after these documents are accepted, the registration process is the route to trading as a limited company.'
+      },
+      point2: {
+        title: 'Certificate of Incorporation: legal recognition',
+        point: 'The Certificate of Incorporation is issued once the authorities are satisfied with the submitted documents and an application fee has been paid.',
+        evidence: 'It recognises the business as a separate legal entity from its owners (shareholders) and allows it to start trading as a limited company.',
+        explanation: 'Separate legal status means the company, not its shareholders, owns assets, signs contracts and is liable for its debts, so shareholders\' personal assets are protected.',
+        link: 'Without the certificate the business cannot begin trading as a limited company, so the Memorandum and certificate together secure the owners\' limited liability.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'q4m-A1-01-c1', criterion: 'Explains the Memorandum of Association as a brief document containing core registration details', mark: 1 },
+      { id: 'q4m-A1-01-c2', criterion: 'Applies the Memorandum contents to the requirement: trading name, purpose, registered address, share capital', mark: 1 },
+      { id: 'q4m-A1-01-c3', criterion: 'Explains the Certificate of Incorporation is issued after authorities are satisfied and a fee is paid', mark: 1 },
+      { id: 'q4m-A1-01-c4', criterion: 'Explains the certificate recognises the company as a separate legal entity, allowing it to trade and protecting shareholders', mark: 1 }
+    ]
+  },
+  {
+    id: 'q4m-A1-02',
+    subunit: '1.1-what-is-a-business',
+    questionNumber: 'Textbook p.16 (A1)',
+    question: 'Explain how identifying a niche in the market can help a new business overcome marketing problems.',
+    caseStimulus: 'New businesses often struggle to attract customers away from well-established competitors, and small businesses may lack the expertise to supply the right products to the right customers at the right price.',
+    contextTitle: 'Marketing Problems for New Businesses',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'A niche avoids head-on competition',
+        point: 'Identifying a niche (or gap) in the market allows a new business to serve customers whose needs are not being fully met by established competitors.',
+        evidence: 'The textbook cites easyJet and Ryanair, which identified the niche market for no-frills (budget) air travel early on.',
+        explanation: 'Competing in an under-served segment reduces the need to attract customers away from entrenched rivals, which is a major start-up marketing challenge.',
+        link: 'This helps the business avoid the poor sales and lack of profitability that marketing problems cause.'
+      },
+      point2: {
+        title: 'Serving a gap builds loyalty over time',
+        point: 'A business that meets a specific need well can gradually build the customer base it lacks at start-up.',
+        evidence: 'The textbook notes that customer loyalty is built over a period of time, and that Amazon identified huge opportunities in using the Internet as a channel of distribution for books and other products in the 1990s.',
+        explanation: 'Repeat purchases from loyal customers generate the sales and profitability a new business needs to survive.',
+        link: 'Spotting an opportunity that others have missed is therefore the first step to solving a new business\'s marketing problems.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'q4m-A1-02-c1', criterion: 'Defines a niche (or gap) as an under-served part of the market that a business can identify and fill', mark: 1 },
+      { id: 'q4m-A1-02-c2', criterion: 'Applies the niche idea to the start-up problem of attracting customers from established competitors', mark: 1 },
+      { id: 'q4m-A1-02-c3', criterion: 'Explains that a niche supports loyalty and repeat sales over time', mark: 1 },
+      { id: 'q4m-A1-02-c4', criterion: 'Links the niche to sales and profitability, the outcomes of marketing problems', mark: 1 }
+    ]
+  },
+{
+    id: 'q4m-A2-01',
+    subunit: '1.2-types-of-business-entities',
+    questionNumber: 'A2-4m-01',
+    question: 'Explain how the Grameen Bank meets the economic and social aims of the triple bottom line.',
+    caseStimulus: 'In 1983, social entrepreneur Muhammad Yunus established the Grameen Bank in Dhaka, Bangladesh, to provide small loans (microfinance) to people living in poverty. Unlike commercial banks, the Grameen Bank does not require any collateral (financial security) from its borrowers. According to its website, over 97 percent of borrowers are women. The bank has assets in excess of $2.8bn and employs more than 20,000 workers.',
+    contextTitle: 'Grameen Bank and the Triple Bottom Line',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Economic Aim: Surplus Reinvested in the Business',
+        point: 'The economic aim of a social enterprise is to earn a surplus and reinvest it back into the business for societal benefit.',
+        evidence: 'The Grameen Bank has assets in excess of $2.8bn, which shows that it has grown into a substantial, sustainable organization.',
+        explanation: 'A social enterprise cannot deliver its social good if it does not manage its financial health, so the surplus must be sufficient to keep the bank operating and lending.',
+        link: 'Economic sustainability allows the Grameen Bank to keep providing loans to people in poverty over the long term.'
+      },
+      point2: {
+        title: 'Social Aim: Benefits to People in Society',
+        point: 'The social aim is to provide benefits to people in society, such as job opportunities and support for less-advantaged members of society.',
+        evidence: 'The bank lends to people living in poverty without collateral, over 97 percent of its borrowers are women, and it employs more than 20,000 workers.',
+        explanation: 'Lending without collateral reaches people who could not borrow from commercial banks, and the bank creates employment in the local economy.',
+        link: 'The bank therefore meets its social aim by reducing poverty and creating jobs, which is the social benefit the triple bottom line requires.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'q4m-A2-01-c1', criterion: 'Defines the economic aim as earning a surplus and reinvesting it in the business', mark: 1 },
+      { id: 'q4m-A2-01-c2', criterion: 'Applies the economic aim to the Grameen Bank with evidence (assets over $2.8bn or the need for financial health)', mark: 1 },
+      { id: 'q4m-A2-01-c3', criterion: 'Defines the social aim as benefits to people in society (jobs, support for the less advantaged)', mark: 1 },
+      { id: 'q4m-A2-01-c4', criterion: 'Applies the social aim to the Grameen Bank with evidence (lending to the poor without collateral, 97% women borrowers, 20,000+ workers)', mark: 1 }
+    ]
+  },
+  {
+    id: 'q4m-A2-02',
+    subunit: '1.3-business-objectives',
+    questionNumber: 'A2-4m-02',
+    question: 'Explain how an ethical code of practice could help a business avoid the kind of unethical treatment of staff seen in Case 3.1.',
+    caseStimulus: 'In 2006, Indian Airlines (now merged with Air India) was heavily criticised by the mass media for grounding female flight attendants for being too overweight to travel. In 2010, female workers at Hooters, an American fast-food chain, filed lawsuits against the company after at least one worker was placed on weight probation. Many businesses adopt an ethical code of practice and publish it in their annual reports.',
+    contextTitle: 'Weight Discrimination Cases and Ethical Codes of Practice',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Clear Written Standards',
+        point: 'An ethical code of practice documents the beliefs and philosophies of a business and states what is acceptable and unacceptable behaviour.',
+        evidence: 'Indian Airlines was criticised in 2006 for grounding female flight attendants judged too overweight to travel, and Hooters faced lawsuits in 2010 after a worker was placed on weight probation.',
+        explanation: 'A written code gives managers and employees clear guidance on expected behaviour, so decisions about staff are less likely to be made on unacceptable grounds.',
+        link: 'Clear standards reduce the risk of the kind of discrimination that led to media criticism and lawsuits.'
+      },
+      point2: {
+        title: 'Consistency Across the Workplace',
+        point: 'A code of ethics provides a framework for consistency and uniformity in the workplace, because people hold different values.',
+        evidence: 'The code is published in the business\'s annual reports, so both staff and external stakeholders can see the standard the business has set.',
+        explanation: 'When the same ethical standards apply to every manager and employee, treatment of staff does not depend on individual values or judgement.',
+        link: 'Published, consistent standards support the business\'s reputation and help protect the corporate image.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'q4m-A2-02-c1', criterion: 'Defines an ethical code of practice as documented beliefs stating acceptable and unacceptable behaviour', mark: 1 },
+      { id: 'q4m-A2-02-c2', criterion: 'Applies clear standards to the weight discrimination examples in the case', mark: 1 },
+      { id: 'q4m-A2-02-c3', criterion: 'Explains consistency and uniformity across the workplace', mark: 1 },
+      { id: 'q4m-A2-02-c4', criterion: 'Links the code to publication in annual reports and the corporate image', mark: 1 }
+    ]
+  },
+{
+  id: 'q4m-A3-01',
+  subunit: '1.4-stakeholders',
+  questionNumber: 'Box 4.1 / Case study 4.1',
+  question: 'Explain how pressure groups can use lobbying and public relations to influence business behaviour.',
+  caseStimulus:
+    "Pressure groups consist of individuals with a common interest who seek to place demands on organizations to act in a particular way. Lobbying means using the power of pressure groups to influence key issues with employers, legal representatives and the government, such as petitioning the government to legislate against socially undesirable business activities. Public relations involves getting positive publicity about a specific opinion or cause. Pressure group campaigns such as anti-smoking or anti-littering have led to support from the general public, mass media and governments in many countries. For example, cigarette advertising is banned in Australia whilst littering carries a heavy financial and imprisonment penalty in Singapore. Animal protection groups, such as the World Wildlife Fund, use ethical marketing techniques to gain positive press coverage.",
+  contextTitle: 'Pressure Groups in Practice: Anti-Smoking and Animal Welfare Campaigns',
+  marks: 4,
+  commandTerm: 'Explain',
+  assessmentObjective: 'AO2',
+  peelModelAnswer: {
+    point1: {
+      title: 'Lobbying: Pressuring Government to Legislate',
+      point: 'Pressure groups use lobbying to influence employers, legal representatives and government on key issues, such as petitioning for legislation against socially undesirable business activities.',
+      evidence: 'Anti-smoking campaigns have gained support from governments in many countries, and cigarette advertising is banned in Australia.',
+      explanation: 'Once legislation is passed, businesses must change their behaviour whatever their own preferences.',
+      link: 'Lobbying can therefore force a business to change its activities or objectives to comply with the law.'
+    },
+    point2: {
+      title: 'Public Relations: Building Public Support',
+      point: 'Pressure groups use public relations to gain positive publicity for their cause and to raise public awareness and support.',
+      evidence: 'Animal protection groups such as the World Wildlife Fund use ethical marketing techniques to gain positive press coverage.',
+      explanation: 'Positive coverage increases public concern about the issue, so customers, the media and governments put more pressure on businesses.',
+      link: 'A business that ignores this pressure risks adverse publicity and damage to its corporate image.'
+    }
+  },
+  rubricChecklist: [
+    { id: 'q4m-A3-01-c1', criterion: 'Defines lobbying as using pressure group power to influence employers, legal representatives and government', mark: 1 },
+    { id: 'q4m-A3-01-c2', criterion: 'Applies lobbying to anti-smoking campaigns and the Australian cigarette advertising ban', mark: 1 },
+    { id: 'q4m-A3-01-c3', criterion: 'Defines public relations as getting positive publicity for a cause', mark: 1 },
+    { id: 'q4m-A3-01-c4', criterion: 'Applies public relations to WWF ethical marketing and links it to pressure on businesses', mark: 1 }
+  ]
+},
+{
+  id: 'q4m-A3-02',
+  subunit: '1.3-business-objectives',
+  questionNumber: 'Question 3.4 (adapted)',
+  question: 'Explain one internal factor and one external factor that could lead Walmart to change its business objectives.',
+  caseStimulus:
+    "Walmart is the world's largest retailer and largest private sector employer in America. The company has, on numerous occasions, been fined millions of dollars by the US government for violating air and water pollution legislation. Labour unions have criticised Walmart's unethical business practices, which have caused labour turnover rates of around 70% in some stores. Walmart has also been taken to court for alleged cases of not paying some employees for overtime, forcing them to work without proper rest breaks and discriminating against female workers for pay and promotion.",
+  contextTitle: 'Walmart: Internal Crisis and External Pressure',
+  marks: 4,
+  commandTerm: 'Explain',
+  assessmentObjective: 'AO2',
+  peelModelAnswer: {
+    point1: {
+      title: 'Internal Factor: Crisis of Labour Turnover',
+      point: 'An internal crisis, such as unexpectedly high labour turnover, can force a business to change its objectives.',
+      evidence: 'Labour unions have criticised Walmart, and its labour turnover rates have reached around 70% in some stores.',
+      explanation: 'A staffing crisis of this size disrupts operations and motivation, so management may need to revise objectives towards retaining staff and improving working conditions.',
+      link: 'The internal crisis shifts the business\'s priorities away from expansion towards workforce stability.'
+    },
+    point2: {
+      title: 'External Factor: Government Constraints',
+      point: 'External factors such as government constraints change business objectives by requiring firms to meet legal standards.',
+      evidence: 'Walmart has been fined millions of dollars by the US government for violating air and water pollution legislation.',
+      explanation: 'Fines and legislation raise compliance costs and damage the firm\'s image, so environmental compliance becomes a priority objective.',
+      link: 'Walmart\'s objectives may shift towards environmental protection to avoid further penalties.'
+    }
+  },
+  rubricChecklist: [
+    { id: 'q4m-A3-02-c1', criterion: 'Identifies an internal crisis (labour turnover) as an internal factor that changes objectives', mark: 1 },
+    { id: 'q4m-A3-02-c2', criterion: 'Applies the 70% labour turnover case evidence to the internal factor', mark: 1 },
+    { id: 'q4m-A3-02-c3', criterion: 'Identifies government constraints as an external factor that changes objectives', mark: 1 },
+    { id: 'q4m-A3-02-c4', criterion: 'Applies the pollution fines to the external factor and explains the effect on objectives', mark: 1 }
+  ]
+},
+{
+    id: 'q4m-A4-01',
+    subunit: '1.5-growth-and-evolution',
+    questionNumber: '1.5-A4-Tiffany',
+    question: 'Explain two advantages to Swatch of forming a joint venture with Tiffany & Co. rather than acquiring it.',
+    caseStimulus: 'In 2007, Swatch struck a joint venture deal with jewellery chain Tiffany & Co. to make watches together under the brand Tiffany Watch Co. The contract was to last 20 years, giving Swatch the rights to sell watches in Tiffany\'s retail outlets and other high-end outlets. Disputes began in 2011 and the collaboration was cancelled. Swatch had accused Tiffany of blocking the development of their business, having already invested millions of dollars to develop the watches.',
+    contextTitle: 'Swatch and Tiffany & Co. Joint Venture',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Lower cost and risk of market entry',
+        point: 'A joint venture allowed Swatch to reach Tiffany\'s high-end retail outlets without buying control of Tiffany.',
+        evidence: 'The 20-year contract gave Swatch the rights to sell its watches in Tiffany\'s retail outlets and other high-end outlets.',
+        explanation: 'A joint venture typically splits costs, responsibilities and profits between the partners, so the financial burden and risk are shared. An acquisition would require Swatch to buy a controlling interest, and external growth methods are generally more expensive than internal ones.',
+        link: 'Swatch gained a premium retail channel while keeping its capital at lower risk.'
+      },
+      point2: {
+        title: 'Keeping individual corporate identities',
+        point: 'A joint venture lets both firms keep their corporate identities, unlike an acquisition in which one firm takes control of the other.',
+        evidence: 'Swatch is the world\'s largest watchmaker, and it could continue to develop its own business while working with Tiffany on the joint brand.',
+        explanation: 'Joint ventures allow organizations to enjoy the benefits of M&As without losing their individual corporate identities. This avoids the loss of control and culture clash that an acquisition could bring.',
+        link: 'Swatch kept its own brand and management, which reduced the integration risk that an acquisition would have created.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'r1', criterion: 'Identifies a valid advantage of a JV over an acquisition (lower cost/risk or keeping corporate identity)', mark: 1 },
+      { id: 'r2', criterion: 'Explains the economic mechanism (shared costs and risks; control, identity and integration risk avoided)', mark: 1 },
+      { id: 'r3', criterion: 'Applies the advantage to Swatch and Tiffany, using the case evidence (20-year contract, retail outlets, watchmaker)', mark: 1 },
+      { id: 'r4', criterion: 'Gives a second, distinct advantage with explanation and link to Swatch', mark: 1 }
+    ]
+  },
+  {
+    id: 'q4m-A4-02',
+    subunit: '1.5-growth-and-evolution',
+    questionNumber: '1.5-A4-Star',
+    question: 'Explain how a strategic alliance such as Star Alliance can allow airlines to gain economies of scale without forming a new legal entity.',
+    caseStimulus: 'Star Alliance was set up in 1997 by five founding airlines to share the costs and benefits of airline operations. It has grown to 26 members and includes 40 non-voting affiliated carriers, which enables the alliance to serve almost every country. Members of a strategic alliance remain independent organizations and do not form a new legal entity.',
+    contextTitle: 'Star Alliance: Strategic Alliance in the Airline Industry',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Sharing operating costs',
+        point: 'Member airlines can share operations so that their combined resources are used more efficiently.',
+        evidence: 'Two airlines could collaborate by using a single full aeroplane, cutting the costs of airline crew and fuel, and splitting the profits.',
+        explanation: 'Sharing a single aircraft spreads crew and fuel costs over more passengers, so the cost per passenger falls as the alliance operates on a larger scale.',
+        link: 'Lower average costs allow the alliance members to compete on price or earn higher margins, without any merger.'
+      },
+      point2: {
+        title: 'Operating on a larger scale and offering a wider network',
+        point: 'A larger combined network gives members access to more customers and a wider range of value-added services.',
+        evidence: 'Star Alliance has 26 members and 40 affiliated carriers, and before the pandemic carried 762.27 million passengers.',
+        explanation: 'As the network becomes larger, more customers can be served through shared channels of distribution, and the alliance\'s fixed costs are spread over a larger number of passengers.',
+        link: 'The larger scale of the alliance lowers unit costs and attracts customers, while members remain independent businesses.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'r1', criterion: 'Identifies a valid source of economies of scale in a strategic alliance (shared operating costs or a larger network)', mark: 1 },
+      { id: 'r2', criterion: 'Explains the mechanism: shared costs spread over more passengers or flights reduce average cost', mark: 1 },
+      { id: 'r3', criterion: 'Applies the point to Star Alliance using case evidence (26 members, 40 affiliates, shared aircraft)', mark: 1 },
+      { id: 'r4', criterion: 'Explains why this works without a new legal entity (members remain independent)', mark: 1 }
+    ]
+  },
+{
+    id: 'q4m-A5-01',
+    subunit: '1.6-multinational-companies',
+    questionNumber: 'Original question (Coca-Cola stimulus adapted from Question 6.1)',
+    question: 'Explain two reasons why businesses may strive to become multinational companies.',
+    caseStimulus: 'The Coca-Cola Company is the largest beverages company in the world, with annual sales revenue of over $37.3bn. It sells its drinks in more than 200 economies. Its brand awareness and brand loyalty have been secured by sponsorship of prominent sporting events such as the Olympic Games and the FIFA World Cup. The company has a long-established market presence in many countries, but operates in a mature market.',
+    contextTitle: 'The Coca-Cola Company: Going Global',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Increased customer base',
+        point: 'Expanding internationally gives a business access to a larger customer base, which raises its sales revenue.',
+        evidence: 'Coca-Cola sells its drinks in more than 200 economies, and it operates in a mature market, so customers in other countries are a source of growth.',
+        explanation: 'More countries means more potential customers, so the total volume and value of sales can increase without the company having to grow its share in a saturated market.',
+        link: 'A larger customer base strengthens the company\'s ability to earn sales revenue and to fund further expansion.'
+      },
+      point2: {
+        title: 'Brand development and brand value',
+        point: 'Operating on an international scale can enhance brand development and brand value.',
+        evidence: 'Coca-Cola has secured brand awareness and brand loyalty through the sponsorship of the Olympic Games, the FIFA World Cup and other global events.',
+        explanation: 'Global marketing strategies enhance brand recognition and brand loyalty, which strengthens the company\'s competitive advantage in overseas markets.',
+        link: 'A globally recognized brand is a strong basis for entering new overseas markets.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'q4m-A5-01-c1', criterion: 'Identifies the first reason (larger customer base or higher sales revenue)', mark: 1 },
+      { id: 'q4m-A5-01-c2', criterion: 'Supports the first reason with evidence from the case (more than 200 economies)', mark: 1 },
+      { id: 'q4m-A5-01-c3', criterion: 'Identifies a second, distinct reason (brand development and brand value)', mark: 1 },
+      { id: 'q4m-A5-01-c4', criterion: 'Explains the second reason with evidence and a link to overseas success', mark: 1 }
+    ]
+  },
+  {
+    id: 'q4m-A5-02',
+    subunit: '1.6-multinational-companies',
+    questionNumber: 'Original question (stimulus from pp.90-91)',
+    question: 'Explain two negative impacts of multinational companies on host countries.',
+    caseStimulus: 'Walmart\'s sales revenues exceed the GDP of Nigeria and Pakistan, two of the world\'s most populous countries. In 2012, the French retailing giant Carrefour pulled out of Turkey, Poland, Romania, Malaysia, Indonesia and Singapore.',
+    contextTitle: 'Market Power and Footloose MNCs',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Market power and social responsibility',
+        point: 'Large MNCs can have market power that host nations are unable to control, and their social responsibility is a concern for anti-globalization groups.',
+        evidence: 'Walmart\'s sales revenues exceed the GDP of Nigeria and Pakistan.',
+        explanation: 'Because of this sheer market power, host nations are often unable to control the actions of large MNCs. This market power can be challenged, especially if an MNC does little to support the local communities in which it operates.',
+        link: 'The host country loses control over an MNC that is larger than its economy, which weakens its ability to protect local communities.'
+      },
+      point2: {
+        title: 'Vulnerability: footloose MNCs',
+        point: 'MNCs are not bound to a specific location and can leave a host country at very short notice when cost advantages change.',
+        evidence: 'In 2012, Carrefour pulled out of Turkey, Poland, Romania, Malaysia, Indonesia and Singapore.',
+        explanation: 'A sudden withdrawal reverses the benefits the MNC brought, such as investment and job creation, and leaves the host country without them.',
+        link: 'Footloose MNCs make long-term planning for jobs, investment and tax revenue more difficult for host governments.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'q4m-A5-02-c1', criterion: 'Identifies the first negative impact (market power or social responsibility)', mark: 1 },
+      { id: 'q4m-A5-02-c2', criterion: 'Supports the first impact with the Walmart evidence (revenues exceed GDP of Nigeria and Pakistan)', mark: 1 },
+      { id: 'q4m-A5-02-c3', criterion: 'Identifies a second, distinct negative impact (vulnerability or footloose behaviour)', mark: 1 },
+      { id: 'q4m-A5-02-c4', criterion: 'Explains the second impact with the Carrefour evidence and a link to host-country planning', mark: 1 }
+    ]
+  },
+  {
+    id: 'q4m-A5-03',
+    subunit: '1.5-growth-and-evolution',
+    questionNumber: 'Question 5.8b',
+    question: 'Explain two reasons for Pizza Hut\'s decision to use franchising as its main method of growth.',
+    caseStimulus: 'Founded in 1958, Pizza Hut is the world\'s largest chain of pizza restaurants. Within a year of opening, the company launched its first franchise. Today, its operations span the globe with over 18,700 restaurants in over 95 countries. The company has a dedicated website with everything potential franchisees need to know about becoming a Pizza Hut franchisee.',
+    contextTitle: 'Pizza Hut: Franchising as a Growth Strategy',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Rapid growth without the high costs of internal growth',
+        point: 'Franchising allows a business to grow nationally or internationally without the higher costs of internal growth or M&As, because the franchisee helps to finance the expansion.',
+        evidence: 'Pizza Hut operates over 18,700 restaurants in over 95 countries, and it has a dedicated website to recruit potential franchisees.',
+        explanation: 'Because franchisees pay the start-up costs of their own outlets, Pizza Hut does not have to fund each new restaurant from its own capital.',
+        link: 'Pizza Hut can expand its presence quickly while keeping its own capital free for other uses.'
+      },
+      point2: {
+        title: 'Avoiding running costs and earning royalty income',
+        point: 'As franchisor, Pizza Hut does not have to worry about the running costs of each outlet, and it receives royalty payments from its franchisees.',
+        evidence: 'Franchisors receive royalty payments, usually a percentage of sales revenues, and do not have to pay for recruitment, training, staff salaries or stock for each franchised outlet.',
+        explanation: 'This means Pizza Hut earns income from each franchised restaurant without carrying the full cost of running it.',
+        link: 'Regular royalty income supports the company\'s continued growth into new locations and countries.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'q4m-A5-03-c1', criterion: 'Identifies the first reason (growth without high internal costs or M&As)', mark: 1 },
+      { id: 'q4m-A5-03-c2', criterion: 'Supports the first reason with Pizza Hut evidence (18,700 restaurants, 95 countries, franchisee website)', mark: 1 },
+      { id: 'q4m-A5-03-c3', criterion: 'Identifies a second, distinct reason (avoiding running costs or royalty income)', mark: 1 },
+      { id: 'q4m-A5-03-c4', criterion: 'Explains the second reason with a link to Pizza Hut\'s growth', mark: 1 }
+    ]
+  },
+{
+    id: 'q4m-bmt-steeple-A6-01',
+    subunit: 'bmt-steeple-analysis',
+    questionNumber: '46.A6-4m-1',
+    question: 'Explain how a business could cope with a recession.',
+    contextTitle: 'Coping with a recession (Box 46.2)',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Cost reductions protect cash flow',
+        point: 'A business can reduce its costs to protect its cash flow during a recession.',
+        evidence: 'Box 46.2 suggests cutting energy bills, finding alternative suppliers that offer better prices, relocating to cheaper premises, or making some staff redundant.',
+        explanation: 'Sales fall in a recession, so lower costs keep money coming in to pay the business\'s bills. Poor cash flow is a common reason for closure in a trough.',
+        link: 'This helps the business survive the downturn until recovery begins.'
+      },
+      point2: {
+        title: 'Price cuts or branding sustain sales',
+        point: 'A business can cut prices or rely on brand loyalty to keep customers buying.',
+        evidence: 'People become more price sensitive during a recession, and customers stay loyal to a brand irrespective of changes in their incomes.',
+        explanation: 'Lower prices appeal to price-sensitive customers, while brand loyalty keeps sales volume steady when incomes fall.',
+        link: 'The business can protect its revenue and market share through the recession.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'rc-1', criterion: 'Identifies a relevant recession strategy as a point (e.g., cost reduction)', mark: 1 },
+      { id: 'rc-2', criterion: 'Explains how the strategy protects cash flow or sales during the downturn', mark: 1 },
+      { id: 'rc-3', criterion: 'Develops a second, distinct strategy (e.g., price cuts, branding, outsourcing)', mark: 1 },
+      { id: 'rc-4', criterion: 'Links each strategy to the business\'s survival or revenue', mark: 1 }
+    ]
+  },
+{
+    id: 'q4m-A7-01',
+    subunit: 'bmt-business-plan',
+    questionNumber: '48.A7.4',
+    question: 'Explain how a business plan could help an entrepreneur obtain external finance.',
+    caseStimulus: 'Denis Sagide is a recent Business Management graduate who plans to open a bakery in Nairobi, Kenya, as a sole trader. He has produced a detailed business plan to secure external finance to start the business (adapted from Question 48.1).',
+    contextTitle: 'DS Bakery',
+    marks: 4,
+    commandTerm: 'Explain',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Reassuring the lender',
+        point: 'A business plan reassures lenders that the entrepreneur has researched the business idea and has reasons to support the proposal.',
+        evidence: 'Denis has produced a detailed business plan for DS Bakery to secure external finance, and he has considered the risks and benefits of the venture.',
+        explanation: 'Banks and business angels want to judge the chances of success and the ability to repay, so a well-researched plan lowers their uncertainty about lending.',
+        link: 'This makes it more likely that DS Bakery obtains the external finance it needs to start.'
+      },
+      point2: {
+        title: 'Showing how the loan will be managed',
+        point: 'The finance section of the plan sets out proposed sources of finance, a break-even analysis and cash flow forecasts.',
+        evidence: 'Table 48.1 lists these as contents of the finance component, and poor cash flow management is one of the main causes of business failure.',
+        explanation: 'A lender needs to see how the business will be funded, when it will break even and how cash shortfalls will be covered before lending.',
+        link: 'These forecasts reduce the perceived risk of default, which strengthens DS Bakery\'s case for funding.'
+      }
+    },
+    rubricChecklist: [
+      { id: 'rub-A7-01-a', criterion: 'Explains that a business plan reassures lenders or investors about the business idea.', mark: 1 },
+      { id: 'rub-A7-01-b', criterion: 'Applies the point to DS Bakery using the case stimulus.', mark: 1 },
+      { id: 'rub-A7-01-c', criterion: 'Explains the mechanism: lenders can judge the chances of success and the ability to repay.', mark: 1 },
+      { id: 'rub-A7-01-d', criterion: 'Uses finance-section content (sources of finance, break-even, cash flow forecasts) as a second point.', mark: 1 }
+    ]
+  },
+  {
+    id: 'q4m-A7-02',
+    subunit: 'bmt-descriptive-statistics',
+    questionNumber: '50.A7.4',
+    question: 'Examine how descriptive statistics might be of use to Esswood Campers.',
+    caseStimulus: 'Nicola Esswood runs a camping site in New Plymouth, New Zealand. Sales are strong in summer and weak in winter. Her sales forecasts for the next twelve months are: Mar $3,500; Apr $3,000; May $3,000; Jun $2,500; Jul $2,800; Aug $2,600; Sep $2,900; Oct $3,000; Nov $3,600; Dec $4,500; Jan $4,200; Feb $4,000 (adapted from Question 50.2).',
+    contextTitle: 'Esswood Campers',
+    marks: 4,
+    commandTerm: 'Examine',
+    assessmentObjective: 'AO2',
+    peelModelAnswer: {
+      point1: {
+        title: 'Averages as a planning benchmark',
+        point: 'The mean and median summarise the twelve monthly forecasts into a single figure that Nicola can use as a benchmark for budgeting.',
+        evidence: 'The forecasts total $39,600, so the mean is $3,300 a month (derived), and the median is $3,000 (derived).',
+        explanation: 'A benchmark helps her compare each month with a typical level of sales and set a realistic budget.',
+        link: 'However, the average hides the summer peak and the winter trough, so it must be read alongside other measures.'
+      },
+      point2: {
+        title: 'Range to show seasonal spread',
+        point: 'The range shows how widely monthly sales vary across the year.',
+        evidence: 'Sales range from $2,500 in June to $4,500 in December, a range of $2,000 (derived).',
+        explanation: 'A large range signals strong seasonality, so Nicola needs to plan cash flow and staffing for the winter months.',
+        link: 'Descriptive statistics therefore support better decisions than an average alone, because the textbook notes that using the mode as the average monthly sales figure might not reveal large seasonal fluctuations (p.660).'
+      }
+    },
+    rubricChecklist: [
+      { id: 'rub-A7-02-a', criterion: 'Explains how an average (mean or median) summarises the forecast data.', mark: 1 },
+      { id: 'rub-A7-02-b', criterion: 'Applies the point to Esswood Campers with a figure from the case.', mark: 1 },
+      { id: 'rub-A7-02-c', criterion: 'Explains how the range or quartiles show the spread of sales across seasons.', mark: 1 },
+      { id: 'rub-A7-02-d', criterion: 'Recognises the limitation that an average may hide seasonal fluctuations.', mark: 1 }
+    ]
+  }
 ];
 
 // ============================================================================
@@ -1280,7 +1842,7 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
       points: [
         {
           subPoint: 'Cross-Cultural Friction & Governance Differences',
-          elaboration: 'Acquiring IBM\'s PC division required fusing two radically different corporate cultures—a state-rooted, hierarchical Chinese technology firm and an individualistic legacy American multinational. Despite championing "teamwork across cultures," friction in leadership styles, decision protocols, and communication channels can slow product innovation and operational responsiveness.'
+          elaboration: 'Acquiring IBM\'s PC division required fusing two different corporate cultures—a Chinese technology firm and a long-established American multinational. Despite championing "teamwork across cultures," friction in leadership styles, decision protocols, and communication channels can slow product innovation and operational responsiveness.'
         },
         {
           subPoint: 'Heavy Fixed Sponsorship Commitments vs. ROI',
@@ -1339,7 +1901,7 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
   {
     id: 'q6m-06',
     subunit: 'bmt-swot-analysis',
-    questionNumber: 'Question 44.1',
+    questionNumber: 'Original question (based on pp.609-610; textbook Question 44.1 is the Kidzplay S/W/O/T exercise)',
     question: 'Examine the usefulness and limitations of SWOT analysis as a strategic planning tool for a growing business.',
     caseStimulus:
       'SWOT analysis is widely used by commercial businesses for strategic planning due to its visual simplicity. However, business theorists and critics argue that it is overly simplistic, static, and prone to subjective managerial bias.',
@@ -1369,8 +1931,8 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
           elaboration: 'SWOT analysis provides significant diagnostic utility by forcing managers to look simultaneously inward at operational competencies (Strengths like proprietary patents, strong brand equity, liquid reserves) and deficiencies (Weaknesses like liquidity shortages, outdated machinery), while scanning the external macro-environment for Opportunities and Threats.'
         },
         {
-          subPoint: 'Cross-Functional Strategy Formulation (Maxi-Maxi Pairs)',
-          elaboration: 'By cross-referencing quadrants (such as pairing internal Strengths with external Opportunities to craft Maxi-Maxi SO offensive strategies), managers systematically design growth moves that exploit core capabilities. Its 2x2 visual clarity encourages collaborative strategic dialogue across marketing, finance, and operations directors without requiring complex statistical modeling.'
+          subPoint: 'Cross-Functional Strategy Formulation (Offensive, Defensive, Reorientation, Survival)',
+          elaboration: 'By cross-referencing quadrants (such as pairing internal Strengths with external Opportunities to craft offensive strategies, Figure 44.2), managers systematically design growth moves that exploit core capabilities. Its 2x2 visual clarity encourages collaborative strategic dialogue across marketing, finance, and operations directors without requiring complex statistical modeling.'
         }
       ]
     },
@@ -1388,7 +1950,7 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
       ]
     },
     synthesisAndEvaluation:
-      'In conclusion, SWOT analysis is an exceptional diagnostic starting framework for initial brainstorming and environmental scanning, but it is deeply insufficient if relied upon in isolation. To make rigorous, capital-intensive investment decisions, executive leaders must pair SWOT with macro-scanning frameworks like STEEPLE analysis (to substantiate external opportunities and threats), alongside quantitative tools like Decision Trees and the Ansoff Matrix to objectively calculate strategic risks and financial returns.',
+      'In conclusion, SWOT analysis is an exceptional diagnostic starting framework for initial brainstorming and environmental scanning, but it is deeply insufficient if relied upon in isolation. To make rigorous, capital-intensive investment decisions, executive leaders must pair SWOT with macro-scanning frameworks like STEEPLE analysis (to substantiate external opportunities and threats), alongside tools that do what SWOT cannot: decision trees and force field analysis add quantitative assessment and help to prioritise issues (p.610), while the Ansoff matrix frames the growth options (although it does not quantify their risks either).',
     rubricChecklist: [
       {
         id: 'q6m-06-c1',
@@ -1425,7 +1987,7 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
   {
     id: 'q6m-07',
     subunit: 'bmt-ansoff-matrix',
-    questionNumber: 'Question 45.3',
+    questionNumber: 'Original question (based on pp.611-614; Chapter 45 has only Questions 45.1 and 45.2)',
     question: 'Examine the strategic risks and rewards of an Ansoff diversification strategy compared to market penetration.',
     caseStimulus:
       'The Ansoff Matrix categorizes corporate growth pathways across products and markets. Market penetration represents the lowest-risk quadrant, focusing on existing markets and existing products. In contrast, diversification represents the highest-risk quadrant, requiring completely new products targeted at completely new markets.',
@@ -1511,7 +2073,7 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
 {
   "id": "q6m-08",
   "subunit": "bmt-steeple-analysis",
-  "questionNumber": "Question 46.8",
+  "questionNumber": "Original question (based on pp.617-633; Chapter 46 has Questions 46.1-46.7)",
   "question": "Examine the usefulness and limitations of STEEPLE analysis as a strategic planning tool for a multinational business expanding into a foreign market.",
   "caseStimulus": "A European electric vehicle (EV) manufacturer is evaluating plans to establish manufacturing facilities and retail networks in an emerging Southeast Asian market. The target nation offers high GDP growth and low labor costs, but exhibits political regime volatility, frequent revisions to foreign direct investment (FDI) tax codes, and an underdeveloped national electrical charging grid.",
   "contextTitle": "EV Manufacturer: Foreign Expansion & STEEPLE Evaluation",
@@ -1554,11 +2116,11 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
       },
       {
         "subPoint": "Absence of Quantitative Financial Payoffs",
-        "elaboration": "Crucially, STEEPLE provides zero quantitative risk modeling\u2014it cannot calculate net present value (NPV), payback periods, or the exact probability of political expropriation. It tells executives what environmental factors exist, but cannot prescribe whether the multi-million-dollar investment will yield an acceptable return on capital."
+        "elaboration": "Crucially, although each opportunity and threat can be weighted (p.619), STEEPLE does not calculate financial payoffs\u2014it cannot produce net present value (NPV), payback periods, or the exact probability of political expropriation, and it does not suggest a strategy (p.633). It tells executives what environmental factors exist, but cannot prescribe whether the multi-million-dollar investment will yield an acceptable return on capital."
       }
     ]
   },
-  "synthesisAndEvaluation": "In conclusion, STEEPLE analysis is an indispensable diagnostic framework for initial environmental scanning, but it is fundamentally insufficient if relied upon in isolation. To make a prudent capital commitment, executive management must synthesize qualitative STEEPLE findings with quantitative tools like Decision Trees (to calculate probability-weighted financial payoffs under political risk) and the Ansoff Matrix (to balance market development vs diversification). Ultimately, the usefulness of STEEPLE depends on whether the company updates its environmental scanning continuously and pairs it with dynamic contingency planning rather than treating it as a static one-off report.",
+  "synthesisAndEvaluation": "In conclusion, STEEPLE analysis is an indispensable diagnostic framework for initial environmental scanning, but it is fundamentally insufficient if relied upon in isolation. To make a prudent capital commitment, executive management must synthesize qualitative STEEPLE findings with a quantitative tool such as Decision Trees (to calculate probability-weighted financial payoffs under political risk) and with the Ansoff Matrix (to frame the choice between market development and diversification, although Ansoff does not quantify risks either). Ultimately, the usefulness of STEEPLE depends on whether the company updates its environmental scanning continuously and pairs it with dynamic contingency planning rather than treating it as a static one-off report.",
   "rubricChecklist": [
     {
       "id": "q6m-08-c1",
@@ -1719,15 +2281,15 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
     points: [
       {
         subPoint: 'Acute Job Insecurity and Cultural Marginalization for 32,000 Staff',
-        elaboration: "In stark contrast, the 32,000 employees transferred to Microsoft Mobile faced intense disruption. Cross-border acquisitions frequently create organizational culture clashes, loss of employee autonomy, and severe corporate restructuring. Transferring into a foreign American tech giant created immediate anxiety over plant closures and subsequent mass redundancies as Microsoft consolidated hardware teams."
+        elaboration: "In stark contrast, the 32,000 employees transferred to Microsoft Mobile faced intense disruption. Cross-border acquisitions frequently create organizational culture clashes, loss of employee autonomy, and severe corporate restructuring. Transferring into a foreign American tech giant was likely to create anxiety over plant closures and possible redundancies as Microsoft consolidated its hardware teams."
       },
       {
         subPoint: 'National Economic and Technological Trauma for Finland',
-        elaboration: 'For the Finnish government and local community, Nokia had been the nation\'s premier industrial champion and largest corporate taxpayer. The loss of national ownership threatened local engineering employment clusters in towns like Salo and Espoo, diminishing domestic tax revenues and national prestige.'
+        elaboration: 'For the Finnish government and local community, Nokia had been one of the country\'s best-known companies. The loss of Finnish ownership of the phones business could threaten local engineering jobs, tax revenues and national prestige.'
       }
     ]
   },
-  synthesisAndEvaluation: "In conclusion, Microsoft's takeover of Nokia demonstrates how extreme business distress polarizes stakeholder interests. For Nokia's 3,900 equity shareholders, the deal was a pragmatic, highly welcome financial rescue (reflected in the 99.5% affirmative vote) that halted equity destruction and unlocked immediate cash liquidity. However, this financial rescue came at a heavy human cost for internal labor and the external community: 32,000 transferred employees absorbed the full burden of corporate uncertainty, cultural upheaval, and subsequent downsizing, while Finland suffered the loss of its premier corporate taxpayer. This case illustrates the fundamental IB principle that in public limited companies facing insolvency, shareholder capital preservation almost invariably takes precedence over employee job tenure and community welfare.",
+  synthesisAndEvaluation: "In conclusion, Microsoft's takeover of Nokia demonstrates how extreme business distress polarizes stakeholder interests. For Nokia's 3,900 equity shareholders, the deal was a pragmatic, highly welcome financial rescue (reflected in the 99.5% affirmative vote) that halted equity destruction and unlocked immediate cash liquidity. However, this financial rescue came at a heavy human cost for internal labor and the external community: 32,000 transferred employees bore the burden of corporate uncertainty, cultural upheaval and possible downsizing, while Finland risked losing jobs and tax revenue. This reflects the textbook point that a limited liability company is accountable to its shareholders (owners) and so tends to give them priority when stakeholder needs conflict (p.58).",
   rubricChecklist: [
     {
       id: 'q6m-10-c1',
@@ -1760,5 +2322,418 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
       marks: 1
     }
   ]
-}
+},
+{
+  id: 'q6m-11',
+  subunit: '1.5-growth-and-evolution',
+  questionNumber: 'Original scenario (not a textbook question)',
+  question: 'Examine the arguments for and against an independent craft food producer scaling up its operations to exploit economies of scale.',
+  caseStimulus:
+    "Artisan Harvest is a thriving independent regional producer of organic preserves and condiments founded by two food scientists. Currently operating from a single commercial kitchen, it commands premium retail pricing ($8.50 per jar) and high brand loyalty for its small-batch quality and local farm sourcing. However, a major national supermarket chain has offered a nationwide distribution contract requiring Artisan Harvest to increase monthly production tenfold from 10,000 jars to 100,000 jars. Scaling up will require investing $1.2m in automated industrial bottling equipment and a centralized factory lease.",
+  contextTitle: 'Artisan Harvest: Mass-Production Scale vs. Craft Niche Stability',
+  marks: 6,
+  commandTerm: 'Examine',
+  assessmentObjective: 'AO2/AO3',
+  levelBreakdown: [
+    {
+      range: '1-2',
+      descriptor: 'Limited descriptive identification of economies or diseconomies of scale without application to Artisan Harvest context.'
+    },
+    {
+      range: '3-4',
+      descriptor: 'One-sided analysis or unbalanced explanation of scale economies without weighing operational risks, loss of craft identity, or diseconomies.'
+    },
+    {
+      range: '5-6',
+      descriptor: 'Balanced, two-sided examination analyzing technical/purchasing scale economies against capital risk, dilution of brand premium, and potential diseconomies, supported by a reasoned evaluative conclusion.'
+    }
+  ],
+  perspective1: {
+    title: 'Arguments For Scaling Up: Significant Unit Cost Reductions & Commercial Leverage',
+    points: [
+      {
+        subPoint: 'Technical and Purchasing Economies of Scale',
+        elaboration:
+          'Expanding output tenfold from 10,000 to 100,000 jars enables Artisan Harvest to replace manual kitchen labor with automated high-speed bottling lines. Furthermore, purchasing organic fruit, glass jars, and pectin in massive bulk volumes secures substantial wholesale discounts, dramatically lowering Average Total Cost (ATC) per jar.'
+      },
+      {
+        subPoint: 'National Market Presence and Revenue Transformation',
+        elaboration:
+          'Supplying a nationwide supermarket chain transforms total sales revenue and brand visibility, locking in steady contracted volume that spreads fixed management salaries, equipment leases, and marketing overheads over a vast output base.'
+      }
+    ]
+  },
+  perspective2: {
+    title: 'Arguments Against Scaling Up: High Capital Exposure, Diseconomies, and Brand Dilution',
+    points: [
+      {
+        subPoint: 'Heavy Financial Exposure and High Break-Even Burden',
+        elaboration:
+          'Borrowing $1.2m for automated equipment and factory leases introduces massive fixed interest and depreciation costs. If supermarket consumer demand softens or the retailer delists the product, Artisan Harvest faces catastrophic cash flow deficits.'
+      },
+      {
+        subPoint: 'Loss of Craft Premium Pricing & Risk of Managerial Diseconomies',
+        elaboration:
+          'Mass-market supermarket distribution may erode the brand\'s perceived "artisanal, small-batch" exclusivity, forcing price discounting. Furthermore, managing a factory workforce and national supply chain can trigger coordination friction, communication silos, and worker alienation.'
+      }
+    ]
+  },
+  synthesisAndEvaluation:
+    'In conclusion, whether Artisan Harvest should scale up depends on contract guarantees and operational risk appetite. While tenfold expansion unlocks undeniable technical and purchasing economies of scale, it radically alters the business model from an agile high-margin artisanal producer to a capital-intensive volume manufacturer. To mitigate these risks, the founders should negotiate guaranteed minimum purchase orders and price protections with the supermarket chain, or pursue a phased expansion (such as contract manufacturing or regional pilot distribution) before committing to irreversible $1.2m capital debt, thereby avoiding outsized diseconomies of scale.',
+  rubricChecklist: [
+    {
+      id: 'q6m-11-c1',
+      criterion: 'Accurately analyzes technical and purchasing economies of scale (automated bottling lines, bulk raw material discounts, lower ATC)',
+      marks: 1
+    },
+    {
+      id: 'q6m-11-c2',
+      criterion: 'Accurately analyzes revenue transformation and national market share benefits from supermarket contract',
+      marks: 1
+    },
+    {
+      id: 'q6m-11-c3',
+      criterion: 'Detailed analysis of financial and capital risks ($1.2m debt, fixed depreciation overheads, high break-even output)',
+      marks: 1
+    },
+    {
+      id: 'q6m-11-c4',
+      criterion: 'Detailed analysis of brand dilution risks and internal diseconomies (loss of artisanal premium, coordination friction, alienating workforce)',
+      marks: 1
+    },
+    {
+      id: 'q6m-11-c5',
+      criterion: 'Case context thoroughly applied throughout both perspectives (Artisan Harvest, 10k to 100k jars, $8.50 price, $1.2m capital outlay)',
+      marks: 1
+    },
+    {
+      id: 'q6m-11-c6',
+      criterion: 'Balanced evaluative judgment providing a nuanced strategic synthesis with risk mitigation recommendations (phased pilot rollout, contract guarantees)',
+      marks: 1
+    }
+  ]
+},
+{
+    id: 'q6m-A2-01',
+    subunit: '1.2-types-of-business-entities',
+    questionNumber: 'Adapted from Question 2.5b (textbook: 10 marks)',
+    question: 'Discuss the decision of the Hong Kong Special Administrative Region government to expand Hong Kong Disneyland (HKDL) as a public sector company.',
+    caseStimulus: 'Hong Kong Disneyland (HKDL) is a theme park with three on-site hotels. The theme park is jointly owned by the Hong Kong Special Administrative Region of the People\'s Republic of China (the majority shareholder) and the Walt Disney Company. HKDL opened on 12 September 2005, having created 36,000 jobs. It is the smallest of all Disneyland theme parks in the world. HKDL did not earn a profit until 2012, declaring a net profit of HK$109m ($13.97m). Analysts estimated that the theme park would generate HK$148bn ($19bn) in net benefits to the economy over a 40-year period as the public sector company continues to expand its operations in Hong Kong.',
+    contextTitle: 'HKDL: Public Sector Expansion, Benefits and Financial Risk',
+    marks: 6,
+    commandTerm: 'Discuss',
+    assessmentObjective: 'AO2/AO3',
+    levelBreakdown: [
+      {
+        range: '1-2',
+        descriptor: 'Describes the public sector company or HKDL ownership without linking the expansion decision to benefits or risks.'
+      },
+      {
+        range: '3-4',
+        descriptor: 'Explains either the economic and employment benefits or the financial risk of expansion, with some application to HKDL.'
+      },
+      {
+        range: '5-6',
+        descriptor: 'Discusses both the benefits and the financial risks of the expansion using HKDL evidence, and reaches a justified judgement on the decision.'
+      }
+    ],
+    perspective1: {
+      title: 'Economic and Social Case for Expansion',
+      points: [
+        {
+          subPoint: 'Government Revenue and Economic Benefit',
+          elaboration: 'A public sector company helps to raise much-needed government revenues while providing services. Analysts estimated that HKDL would generate HK$148bn ($19bn) in net benefits to the economy over 40 years, which is the wider public purpose behind government ownership.'
+        },
+        {
+          subPoint: 'Employment and Public Welfare',
+          elaboration: 'HKDL has already created 36,000 jobs. Government ownership allows the expansion to pursue employment and economic aims alongside financial returns, which a purely commercial shareholder might weigh differently.'
+        }
+      ]
+    },
+    perspective2: {
+      title: 'Financial Risk and Commercial Pressure',
+      points: [
+        {
+          subPoint: 'Years Without Profit',
+          elaboration: 'HKDL did not earn a profit until 2012, so an expansion carries financial risk for the government as majority shareholder. The case for expansion depends on whether the park can sustain returns once it has grown.'
+        },
+        {
+          subPoint: 'Shared Ownership and Control',
+          elaboration: 'Because the Walt Disney Company is a joint owner, the expansion decision is shared rather than controlled by the government alone. The government must balance its public aims with the commercial interests of the partner.'
+        }
+      ]
+    },
+    synthesisAndEvaluation: 'A justified judgement weighs the economic and employment benefits (HK$148bn estimated net benefit over 40 years; 36,000 jobs) against the financial risk of a park that did not make a profit until 2012. The decision is more defensible if the expansion is expected to generate sustained returns and wider economic benefit for Hong Kong. The evaluation depends on analysts\' estimates, which the case presents as forecasts rather than certain outcomes.',
+    rubricChecklist: [
+      { id: 'q6m-A2-01-c1', criterion: 'Explains HKDL as a public sector company with government as majority shareholder', marks: 1 },
+      { id: 'q6m-A2-01-c2', criterion: 'Explains economic and employment benefits of expansion with HKDL evidence', marks: 2 },
+      { id: 'q6m-A2-01-c3', criterion: 'Explains financial risk, such as the years without profit and shared ownership', marks: 1 },
+      { id: 'q6m-A2-01-c4', criterion: 'Reaches a justified judgement that weighs benefits against risk', marks: 2 }
+    ]
+  },
+{
+  id: 'q6m-A3-01',
+  subunit: '1.4-stakeholders',
+  questionNumber: 'Question 4.5b (adapted to 6 marks)',
+  question: 'Examine the extent to which a global company such as Shell should allow environmental and human rights groups to influence its decision-making.',
+  caseStimulus:
+    "Royal Dutch Shell (or Shell for short) is Europe's largest energy and oil company. It was formed in 1907 by the merger of Royal Dutch from The Netherlands and Shell from the UK. In 2020, the Anglo-Dutch company earned net income of $21.5 billion (that's $2.45m per hour). This staggering figure obviously drew the attention of Shell's internal stakeholders. However, being a global energy and oil company also means that Shell's activities are carefully scrutinised by pressure groups, such as Greenpeace. In 2020, Shell's sales revenue exceeded $180.5 billion (about a fifth of the GDP of the Netherlands).",
+  contextTitle: 'Royal Dutch Shell: Pressure Groups and Corporate Decision-Making',
+  marks: 6,
+  commandTerm: 'Examine',
+  assessmentObjective: 'AO2/AO3',
+  levelBreakdown: [
+    {
+      range: '1-2',
+      descriptor: 'Describes pressure groups or Shell\'s stakeholders with little application to the case and no judgement on the extent of influence.'
+    },
+    {
+      range: '3-4',
+      descriptor: 'Explains how environmental and human rights groups could influence Shell, or how other stakeholders would be affected, with case application but limited balance.'
+    },
+    {
+      range: '5-6',
+      descriptor: 'Examines both the benefits of pressure group influence and the limits set by shareholder accountability and the need for a best-fit compromise, applies the Shell figures and reaches a justified judgement on the extent of influence.'
+    }
+  ],
+  perspective1: {
+    title: 'For Greater Influence: Pressure Groups Represent Wider Concerns',
+    points: [
+      {
+        subPoint: 'Close scrutiny of a global company',
+        elaboration: 'Because Shell is a global energy and oil company, its activities are carefully scrutinised by pressure groups such as Greenpeace. Digital social media has increased the influence of these groups, so environmental and human rights concerns are harder for Shell to ignore.'
+      },
+      {
+        subPoint: 'Protecting reputation and society',
+        elaboration: 'Pressure groups use boycotts, lobbying, public relations and direct action. Shell\'s scale (sales revenue over $180.5 billion) means that its environmental and human rights impacts reach a large share of society, so ignoring pressure groups risks adverse publicity and damage to its corporate image.'
+      }
+    ]
+  },
+  perspective2: {
+    title: 'Limits on Influence: Shareholder Accountability and Balanced Stakeholders',
+    points: [
+      {
+        subPoint: 'Accountability to shareholders',
+        elaboration: 'A limited liability company is accountable to its shareholders (owners), so it will have to give them priority. Shell earned net income of $21.5 billion, and its owners expect a return on that capital, so management cannot simply hand control to pressure groups.'
+      },
+      {
+        subPoint: 'Pressure groups represent special interests',
+        elaboration: 'Pressure groups are organized around one common concern, such as environmental protection. Giving one group full control would breach the principle that it is unrealistic or undesirable to maximize the needs of just one stakeholder group. Employees, customers and suppliers also have legitimate interests.'
+      }
+    ]
+  },
+  synthesisAndEvaluation: 'In conclusion, Shell should allow environmental and human rights groups to influence its decisions to a meaningful but limited extent. Their scrutiny is valuable: digital social media has increased the attention given to ethical behaviour, and the scale of Shell\'s operations means its impacts matter to society. However, as a limited liability company accountable to its shareholders, Shell must balance these demands against the interests of its owners, employees, customers and suppliers. The most defensible approach is a best-fit compromise, in which pressure groups are consulted and their concerns are weighed, while management keeps responsibility for decisions that serve all stakeholders.',
+  rubricChecklist: [
+    { id: 'q6m-A3-01-c1', criterion: 'Accurate definition of pressure groups and their tactics (boycotting, lobbying, PR, direct action)', marks: 1 },
+    { id: 'q6m-A3-01-c2', criterion: 'Case application of Shell\'s scrutiny by pressure groups and its $21.5bn net income and $180.5bn revenue', marks: 1 },
+    { id: 'q6m-A3-01-c3', criterion: 'Analysis of the case for greater pressure group influence (wider concerns, reputation, scale)', marks: 1 },
+    { id: 'q6m-A3-01-c4', criterion: 'Analysis of shareholder accountability as a limit on influence', marks: 1 },
+    { id: 'q6m-A3-01-c5', criterion: 'Analysis of the need to balance the interests of all stakeholder groups', marks: 1 },
+    { id: 'q6m-A3-01-c6', criterion: 'Justified judgement on the extent of influence, reaching a best-fit compromise', marks: 1 }
+  ]
+},
+{
+    id: 'q6m-A4-01',
+    subunit: '1.5-growth-and-evolution',
+    questionNumber: '1.5-A4-IKEA',
+    question: 'Examine whether IKEA should pursue external rather than internal growth.',
+    caseStimulus: 'IKEA was founded in 1943. It opened its first overseas stores in neighbouring Norway in 1963 and in Denmark in 1969. It has since grown to over 445 stores in 50 countries and employs more than 225,000 people. IKEA is a privately held company: its founding family wants the business to remain under its control rather than under external owners and directors.',
+    contextTitle: 'IKEA: Internal or External Growth?',
+    marks: 6,
+    commandTerm: 'Examine',
+    assessmentObjective: 'AO2/AO3',
+    levelBreakdown: [
+      { range: '1-2', descriptor: 'Describes internal or external growth with little reference to IKEA or to the trade-offs of control, risk and speed.' },
+      { range: '3-4', descriptor: 'Analyses at least one advantage and one disadvantage of external growth for IKEA, using case evidence, with a partly developed link.' },
+      { range: '5-6', descriptor: 'Examines both sides of the choice for IKEA, weighs control, risk, culture and speed against the firm\'s aims, and reaches a justified judgment.' }
+    ],
+    perspective1: {
+      title: 'Arguments for external growth',
+      points: [
+        { subPoint: 'Faster growth and entry to new markets', elaboration: 'External methods such as M&As and joint ventures use external resources and finance to grow more quickly than opening new stores with retained profits, and they can provide entry to foreign markets where local partners have knowledge.' },
+        { subPoint: 'Synergies and economies of scale', elaboration: 'Combining with another business brings synergy (the whole is greater than the sum of the parts) and can lower unit costs through a larger operation.' }
+      ]
+    },
+    perspective2: {
+      title: 'Arguments for internal growth',
+      points: [
+        { subPoint: 'Control and private ownership', elaboration: 'IKEA is privately held because its founders want to keep control. External growth through M&As or takeovers can dilute ownership and control, which runs against this aim.' },
+        { subPoint: 'Culture and risk', elaboration: 'Internal growth maintains corporate culture and is less risky. Merging with another firm can cause culture clashes, conflict and greater risks from unfamiliar markets.' },
+        { subPoint: 'Cost and diseconomies', elaboration: 'Internal growth is relatively inexpensive, funded mainly by retained profits. Acquisitions are more expensive and can bring diseconomies of scale from added bureaucracy.' }
+      ]
+    },
+    synthesisAndEvaluation: 'The answer depends on IKEA\'s aims. If the founding family values control and culture above speed, internal growth, such as new stores and products funded by retained profits, is the better choice. External growth may still be justified to enter a foreign market quickly, but a joint venture, which keeps each firm\'s corporate identity, is a stronger option than a full acquisition. IKEA\'s scale and global brand suggest that it can afford controlled internal expansion, so a mix of methods is likely to be the most appropriate.',
+    rubricChecklist: [
+      { id: 'r1', criterion: 'Defines or describes internal and external growth accurately', marks: 1 },
+      { id: 'r2', criterion: 'Analyses at least one advantage of external growth for IKEA with a clear mechanism', marks: 1 },
+      { id: 'r3', criterion: 'Analyses at least one disadvantage of external growth for IKEA, linked to control or culture', marks: 1 },
+      { id: 'r4', criterion: 'Uses the IKEA case evidence (private ownership, 445 stores, 50 countries) to support the analysis', marks: 1 },
+      { id: 'r5', criterion: 'Examines both perspectives and considers the trade-off between control and speed', marks: 1 },
+      { id: 'r6', criterion: 'Reaches a justified judgment linked to the firm\'s aims and the wider context', marks: 1 }
+    ]
+  },
+{
+    id: 'q6m-A5-01',
+    subunit: '1.6-multinational-companies',
+    questionNumber: 'Question 6.2c',
+    question: 'Examine the benefits to multinational companies operating in foreign countries such as the UAE.',
+    caseStimulus: 'Multinational companies are attracted to the United Arab Emirates (UAE) because of the low taxes, political stability and high gross domestic product (GDP) per capita. Microsoft, Marriott Group, DHL and Ericsson all have operations in the UAE. The influx of engineering, law and accountancy firms brings managers from many countries and creates a demand for goods and services. The UAE does not have any federal income tax, and there is also a 0% corporate tax rate. Dubai, one of the seven Emirates that make up the UAE, has gained a reputation as a destination for shopping, attracting many tourists from around the world.',
+    contextTitle: 'MNCs Operating in the UAE',
+    marks: 6,
+    commandTerm: 'Examine',
+    assessmentObjective: 'AO2/AO3',
+    levelBreakdown: [
+      { range: '1-2', descriptor: 'Identifies one or two benefits to MNCs in the UAE with limited or no reference to the case; little or no explanation.' },
+      { range: '3-4', descriptor: 'Explains benefits (for example tax, market demand, stability) with reference to the case, but with limited development of how each benefit helps the MNC.' },
+      { range: '5-6', descriptor: 'Examines a range of benefits, applying the case evidence, and reaches a supported judgement on their significance for an MNC in a foreign country.' }
+    ],
+    perspective1: {
+      title: 'Financial and market benefits in the UAE',
+      points: [
+        { subPoint: 'Lower tax costs', elaboration: 'The UAE has no federal income tax and a 0% corporate tax rate, so an MNC operating there retains more of its profit than it would if it paid corporate tax.' },
+        { subPoint: 'A wealthy, stable market', elaboration: 'High GDP per capita and political stability give an MNC a market with purchasing power and lower political risk. The influx of engineering, law and accountancy firms creates demand for goods and services.' }
+      ]
+    },
+    perspective2: {
+      title: 'Strategic and brand benefits',
+      points: [
+        { subPoint: 'Reduced risk and a broader presence', elaboration: 'A politically stable base supports a long-term presence in the region. Operating in more than one country also spreads risk, so problems in one region do not necessarily damage the overall business.' },
+        { subPoint: 'Access to customers and brand value', elaboration: 'Dubai attracts many tourists and shoppers from around the world, so an MNC based there can reach a wide customer base and enhance its brand recognition through its presence.' }
+      ]
+    },
+    synthesisAndEvaluation: 'The benefits are strongest where a low-tax environment, political stability and high GDP per capita combine with demand from international managers. Their significance, however, depends on the MNC\'s sector and its reasons for entering the market. An MNC must also adjust to foreign customs and cultures and to local laws, so the benefits should be weighed against the cultural and ethical adjustments the business must make.',
+    rubricChecklist: [
+      { id: 'q6m-A5-01-c1', criterion: 'Identifies and explains the tax benefit with reference to the 0% corporate tax rate', marks: 1 },
+      { id: 'q6m-A5-01-c2', criterion: 'Explains the market benefit (GDP per capita, demand from international firms and managers)', marks: 1 },
+      { id: 'q6m-A5-01-c3', criterion: 'Explains the risk and stability benefit (political stability, spreading risk)', marks: 1 },
+      { id: 'q6m-A5-01-c4', criterion: 'Explains the customer and brand benefit (tourists, shoppers, brand recognition)', marks: 1 },
+      { id: 'q6m-A5-01-c5', criterion: 'Evaluates the benefits, reaching a supported judgement on their significance for the MNC', marks: 2 }
+    ]
+  },
+  {
+    id: 'q6m-A5-02',
+    subunit: '1.5-growth-and-evolution',
+    questionNumber: 'Question 5.8c',
+    question: 'Examine the potential problems of Pizza Hut\'s growth strategy.',
+    caseStimulus: 'Founded in 1958, Pizza Hut is the world\'s largest chain of pizza restaurants. Within a year of opening, the company launched its first franchise. Today, its operations span the globe with over 18,700 restaurants in over 95 countries. The company plans to continue opening more stores in existing and new locations. The company has a dedicated website with everything potential franchisees need to know about becoming a Pizza Hut franchisee.',
+    contextTitle: 'Pizza Hut: Problems of Franchising',
+    marks: 6,
+    commandTerm: 'Examine',
+    assessmentObjective: 'AO2/AO3',
+    levelBreakdown: [
+      { range: '1-2', descriptor: 'Identifies one or two problems of franchising with limited or no reference to Pizza Hut.' },
+      { range: '3-4', descriptor: 'Explains problems for the franchisor and/or franchisee with reference to the case, but with limited development of consequences for Pizza Hut\'s growth.' },
+      { range: '5-6', descriptor: 'Examines problems for both the franchisor and the franchisees, applies them to Pizza Hut\'s global growth, and reaches a supported judgement on the strategy.' }
+    ],
+    perspective1: {
+      title: 'Problems for the franchisor (Pizza Hut)',
+      points: [
+        { subPoint: 'Reputational risk', elaboration: 'Allowing other parties to use the franchisor\'s name is a huge risk: unsuccessful franchisees can damage the reputation of the entire franchise business.' },
+        { subPoint: 'Difficult quality control', elaboration: 'It can be difficult to control the daily operations of all franchisees and to make them meet the quality standards that the franchisor sets, which matters across 18,700 restaurants in over 95 countries.' },
+        { subPoint: 'Slower than M&As', elaboration: 'Franchising is faster than internal growth, but it is not as quick as other external methods such as M&As.' }
+      ]
+    },
+    perspective2: {
+      title: 'Problems for franchisees, and so for growth',
+      points: [
+        { subPoint: 'Limited autonomy', elaboration: 'Franchisees cannot simply use their own initiative to try out new ideas, because they must follow the franchisor and the formal agreement. This can hinder entrepreneurial talent.' },
+        { subPoint: 'High cost with no guarantee of return', elaboration: 'Buying a franchise can be very expensive, yet there is no guarantee that the investment will ever be recouped. This can affect the willingness of would-be franchisees to join.' },
+        { subPoint: 'Payments to the franchisor', elaboration: 'Franchisees have to pay a significant percentage of their sales revenues to the franchisor, which reduces the profit they keep.' }
+      ]
+    },
+    synthesisAndEvaluation: 'The problems can be weighed against the benefits of franchising: rapid growth without heavy capital and royalty income for Pizza Hut. Their importance depends on whether Pizza Hut can keep brand standards high and franchisees profitable. A single failed franchisee can harm the brand across the whole network, so Pizza Hut must balance short-term expansion against long-term control.',
+    rubricChecklist: [
+      { id: 'q6m-A5-02-c1', criterion: 'Explains a franchisor problem (reputational risk or quality control)', marks: 1 },
+      { id: 'q6m-A5-02-c2', criterion: 'Explains a second franchisor problem (slower than M&As or difficult control)', marks: 1 },
+      { id: 'q6m-A5-02-c3', criterion: 'Explains a franchisee problem (limited autonomy, cost or payments)', marks: 1 },
+      { id: 'q6m-A5-02-c4', criterion: 'Applies the problems to Pizza Hut\'s growth using the case evidence', marks: 1 },
+      { id: 'q6m-A5-02-c5', criterion: 'Evaluates the strategy and reaches a supported judgement', marks: 2 }
+    ]
+  },
+{
+    id: 'q6m-bmt-steeple-A6-01',
+    subunit: 'bmt-steeple-analysis',
+    questionNumber: '46.A6-6m-1',
+    question: 'Examine the opportunities and threats that technology, such as self-checkout tills, presents to Tesco.',
+    caseStimulus: 'In June 2010, Tesco opened the UK\'s first supermarket without checkout staff. One person was hired to supervise five checkouts, mainly to help customers who had not used self-service before. Tesco, the UK\'s largest retailer with over 28% of the grocery market, employs over 423,000 people. Critics argued that such technology would cause mass job losses. Self-checkout tills are now commonplace in retailing.',
+    contextTitle: 'Tesco and self-checkout technology',
+    marks: 6,
+    commandTerm: 'Examine',
+    assessmentObjective: 'AO2/AO3',
+    levelBreakdown: [
+      { range: '1-2', descriptor: 'Identifies a technological opportunity or threat with little or no development, and with little or no reference to Tesco.' },
+      { range: '3-4', descriptor: 'Explains at least one opportunity or threat for Tesco, using case evidence, but the answer is one-sided.' },
+      { range: '5-6', descriptor: 'Examines both opportunities and threats for Tesco using case evidence and reaches a justified judgement on which outweighs the other.' }
+    ],
+    perspective1: {
+      title: 'Opportunities of technology for Tesco',
+      points: [
+        {
+          subPoint: 'Lower labour cost per transaction',
+          elaboration: 'One supervisor can oversee five checkouts, so fewer staff are needed at the tills, which reduces labour costs.'
+        },
+        {
+          subPoint: 'Productivity and efficiency',
+          elaboration: 'Automated systems can be faster and more consistent than people, and can keep trading for long periods without breaks.'
+        }
+      ]
+    },
+    perspective2: {
+      title: 'Threats of technology for Tesco',
+      points: [
+        {
+          subPoint: 'Job losses and staff relations',
+          elaboration: 'Critics argue self-checkout would cause mass job losses across a workforce of over 423,000. Tesco must manage redundancies carefully, and resistance to change can reduce morale.'
+        },
+        {
+          subPoint: 'Costs and reliability',
+          elaboration: 'Technology carries purchase, installation, maintenance, depreciation and replacement costs, and systems can fail or be hacked. Equipment also becomes obsolete more quickly.'
+        }
+      ]
+    },
+    synthesisAndEvaluation: 'The balance depends on how Tesco manages the change. The case shows that customers new to self-service still needed help, so a gradual roll-out with staff redeployed to customer support can reduce the job-loss threat while keeping the cost saving. Tesco\'s scale (over 28% market share) allows it to absorb the costs of investment, while smaller retailers may find it harder to keep up with shorter product life cycles.',
+    rubricChecklist: [
+      { id: 'rc-1', criterion: 'Identifies at least one technological opportunity for Tesco', marks: 1 },
+      { id: 'rc-2', criterion: 'Identifies at least one technological threat for Tesco', marks: 1 },
+      { id: 'rc-3', criterion: 'Uses case evidence (e.g., one supervisor for five checkouts; 423,000 employees; critics\' job-loss claim)', marks: 2 },
+      { id: 'rc-4', criterion: 'Reaches a justified judgement on the balance of opportunities and threats', marks: 2 }
+    ]
+  },
+{
+    id: 'q6m-A7-01',
+    subunit: 'bmt-business-plan',
+    questionNumber: '48.A7.6',
+    question: 'Examine the usefulness of a business plan for DS Bakery as it seeks external finance and plans to start trading.',
+    caseStimulus: 'Denis Sagide is a recent Business Management graduate who plans to open a bakery in Nairobi, Kenya, as a sole trader. He is aware of the risks and potential benefits of the business, has found suitable premises and feels confident about recruiting staff. He has produced a detailed business plan to secure external finance (adapted from Question 48.1).',
+    contextTitle: 'DS Bakery: Business Plan',
+    marks: 6,
+    commandTerm: 'Examine',
+    assessmentObjective: 'AO2/AO3',
+    levelBreakdown: [
+      { range: '1-2', descriptor: 'Describes the business plan or its contents with little or no link to DS Bakery. Little or no evaluation.' },
+      { range: '3-4', descriptor: 'Explains how the plan helps DS Bakery obtain finance or plan operations, with some application to the case. Limited evaluation.' },
+      { range: '5-6', descriptor: 'Examines the usefulness for DS Bakery from two perspectives, applies the case in depth and reaches a justified judgement about how far the plan is useful, considering its limitations.' }
+    ],
+    perspective1: {
+      title: 'Securing external finance',
+      points: [
+        { subPoint: 'Lender reassurance', elaboration: 'The plan shows that Denis has researched the idea and has reasons to support it, which helps banks and business angels judge the chances of success and the ability to repay.' },
+        { subPoint: 'Finance section', elaboration: 'Proposed sources of finance, break-even analysis, collateral and cash flow forecasts show how the loan will be used and how shortfalls will be covered, which reduces the perceived risk for lenders.' }
+      ]
+    },
+    perspective2: {
+      title: 'Managing the start-up and planning for change',
+      points: [
+        { subPoint: 'Strategic focus', elaboration: 'The plan sets out the business objectives and the operations, personnel and marketing plans, giving Denis a framework to keep the bakery focused on its goals.' },
+        { subPoint: 'Contingency planning', elaboration: 'Contingency plans and a SWOT analysis show what he will do if things do not go as planned, which matters because he is aware of the risks.' }
+      ]
+    },
+    synthesisAndEvaluation: 'The plan is most useful at the start-up stage because it helps DS Bakery secure finance and sets a planning framework. Its usefulness depends on how accurate the sales and cost forecasts are, and on whether the strategies are implemented effectively in a changing business environment. A plan cannot eliminate risk, so it should be reviewed regularly against key performance indicators, such as sales growth and market share. On balance, the plan is very useful for an entrepreneur with the research to support it, but it is not a guarantee of success.',
+    rubricChecklist: [
+      { id: 'rub-A7-6m-01', criterion: 'Defines or describes the business plan and its main contents.', marks: 1 },
+      { id: 'rub-A7-6m-02', criterion: 'Explains the usefulness for securing finance, with application to DS Bakery.', marks: 2 },
+      { id: 'rub-A7-6m-03', criterion: 'Explains the usefulness for planning and managing the start-up, with application.', marks: 2 },
+      { id: 'rub-A7-6m-04', criterion: 'Evaluates by weighing the usefulness against limitations (forecast accuracy, implementation, risk).', marks: 1 }
+    ]
+  }
 ];

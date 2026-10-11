@@ -89,14 +89,18 @@ export default function UntimedMcqPage() {
             className="text-xs bg-white border border-border rounded-lg px-2.5 py-1 text-text-primary focus:ring-2 focus:ring-blue-500"
           >
             <option value="all">All {MCQ_QUESTIONS.length} MCQs</option>
-            <option value="1.1-what-is-a-business">1.1 What is a Business? (6 Qs)</option>
-            <option value="1.2-types-of-business-entities">1.2 Types of Entities (7 Qs)</option>
-            <option value="1.3-business-objectives">1.3 Business Objectives (7 Qs)</option>
-            <option value="1.4-stakeholders">1.4 Stakeholders (6 Qs)</option>
-            <option value="bmt-swot-analysis">SWOT Analysis (5 Qs)</option>
-            <option value="bmt-ansoff-matrix">Ansoff Matrix (5 Qs)</option>
-            <option value="bmt-steeple-analysis">STEEPLE Analysis (6 Qs)</option>
-            <option value="bmt-toolkit">BMT Toolkit Core (6 Qs)</option>
+            <option value="1.1-what-is-a-business">1.1 What is a Business? ({MCQ_QUESTIONS.filter(q => q.subunit === '1.1-what-is-a-business').length} Qs)</option>
+            <option value="1.2-types-of-business-entities">1.2 Types of Entities ({MCQ_QUESTIONS.filter(q => q.subunit === '1.2-types-of-business-entities').length} Qs)</option>
+            <option value="1.3-business-objectives">1.3 Business Objectives ({MCQ_QUESTIONS.filter(q => q.subunit === '1.3-business-objectives').length} Qs)</option>
+            <option value="1.4-stakeholders">1.4 Stakeholders ({MCQ_QUESTIONS.filter(q => q.subunit === '1.4-stakeholders').length} Qs)</option>
+            <option value="1.5-growth-and-evolution">1.5 Economies of Scale ({MCQ_QUESTIONS.filter(q => q.subunit === '1.5-growth-and-evolution').length} Qs)</option>
+            <option value="1.6-multinational-companies">1.6 Multinational Companies ({MCQ_QUESTIONS.filter(q => q.subunit === '1.6-multinational-companies').length} Qs)</option>
+            <option value="bmt-swot-analysis">SWOT Analysis ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-swot-analysis').length} Qs)</option>
+            <option value="bmt-ansoff-matrix">Ansoff Matrix ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-ansoff-matrix').length} Qs)</option>
+            <option value="bmt-steeple-analysis">STEEPLE Analysis ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-steeple-analysis').length} Qs)</option>
+            <option value="bmt-toolkit">BMT Toolkit Core ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-toolkit').length} Qs)</option>
+            <option value="bmt-business-plan">Business Plan ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-business-plan').length} Qs)</option>
+            <option value="bmt-descriptive-statistics">Descriptive Statistics ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-descriptive-statistics').length} Qs)</option>
           </select>
         </div>
 

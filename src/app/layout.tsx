@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'IB SL Business Management Study Suite | Units 1.1-1.3, SWOT & Ansoff',
+  title: 'IB SL Business Management Study Suite | Units 1.1-1.6 & BM Toolkit',
   description: 'Production-grade study suite featuring Matrix Master, Rapid Blitz MCQ Sprint, Entity Showdown, Split-Screen PEEL Exam Practice, and High-Yield Cram Mode.',
 };
 
@@ -36,7 +36,7 @@ export default function RootLayout({
           </main>
           <footer className="border-t border-border bg-white py-6 mt-12 text-center text-xs text-text-muted">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
-              <span>IB SL Business Management Exam Preparation Suite &bull; Units 1.1, 1.2, 1.3, SWOT, Ansoff</span>
+              <span>IB SL Business Management Exam Preparation Suite &bull; Units 1.1–1.6, SWOT, Ansoff, STEEPLE, BMT</span>
               <span>Pure Light Mode &bull; Built with Next.js 15 & React 19</span>
             </div>
           </footer>

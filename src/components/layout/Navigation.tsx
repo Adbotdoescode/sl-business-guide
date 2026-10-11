@@ -53,7 +53,7 @@ export function Navigation() {
                   IB SL Business
                 </span>
                 <span className="text-[10px] uppercase font-bold text-text-muted tracking-wider block -mt-1">
-                  1.1 • 1.2 • 1.3 • SWOT • Ansoff • STEEPLE • BMT
+                  1.1–1.6 • SWOT • Ansoff • STEEPLE • BMT
                 </span>
               </div>
             </Link>

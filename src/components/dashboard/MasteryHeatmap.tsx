@@ -37,10 +37,14 @@ export function MasteryHeatmap() {
     { id: '1.2-types-of-business-entities', code: 'Unit 1.2', title: 'Types of Business Entities' },
     { id: '1.3-business-objectives', code: 'Unit 1.3', title: 'Business Objectives' },
     { id: '1.4-stakeholders', code: 'Unit 1.4', title: 'Stakeholders' },
+    { id: '1.5-growth-and-evolution', code: 'Unit 1.5', title: 'Growth & Scale' },
+    { id: '1.6-multinational-companies', code: 'Unit 1.6', title: 'Multinational Companies' },
     { id: 'bmt-swot-analysis', code: 'BMT SWOT', title: 'SWOT Analysis' },
     { id: 'bmt-ansoff-matrix', code: 'BMT Ansoff', title: 'Ansoff Growth Matrix' },
     { id: 'bmt-steeple-analysis', code: 'BMT STEEPLE', title: 'STEEPLE Analysis' },
     { id: 'bmt-toolkit', code: 'BMT Master', title: 'BM Toolkit' },
+    { id: 'bmt-business-plan', code: 'BMT Business Plan', title: 'Business Plan' },
+    { id: 'bmt-descriptive-statistics', code: 'BMT Descriptive Stats', title: 'Descriptive Statistics' },
   ];
 
   // Calculate stats for each subunit
@@ -140,9 +144,9 @@ export function MasteryHeatmap() {
           <thead>
             <tr className="border-b border-border text-[11px] font-bold text-text-muted uppercase tracking-wider">
               <th className="py-2.5 px-3">Syllabus Topic</th>
-              <th className="py-2.5 px-3 text-center">MCQ (30 Qs)</th>
-              <th className="py-2.5 px-3 text-center">2-Mark AO1 (32 Qs)</th>
-              <th className="py-2.5 px-3 text-center">4/6-Mark PEEL (19 Qs)</th>
+              <th className="py-2.5 px-3 text-center">MCQ (124 Qs)</th>
+              <th className="py-2.5 px-3 text-center">2-Mark AO1 (98 Qs)</th>
+              <th className="py-2.5 px-3 text-center">4/6-Mark PEEL (52 Qs)</th>
               <th className="py-2.5 px-3 text-center">Leitner Retention</th>
               <th className="py-2.5 px-3 text-right">Overall Unit Score</th>
             </tr>

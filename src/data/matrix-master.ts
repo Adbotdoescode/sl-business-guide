@@ -1,4 +1,4 @@
-import { AnsoffCard, SWOTCard, SWOTStrategyPair, STEEPLECard, BCGCard, StakeholderCard } from '@/types/curriculum';
+import { AnsoffCard, SWOTCard, SWOTStrategyPair, STEEPLECard, BCGCard, StakeholderCard, ScaleCard } from '@/types/curriculum';
 
 export const ANSOFF_CARDS: AnsoffCard[] = [
   {
@@ -104,7 +104,7 @@ export const ANSOFF_CARDS: AnsoffCard[] = [
   {
     id: 'ans-11',
     company: 'Nokia',
-    scenario: 'Redirects large volumes of durable, basic mobile handsets to rapidly growing emerging markets in Nigeria.',
+    scenario: 'Sells surplus smartphones in lower income countries such as Sri Lanka, Indonesia and Nigeria (textbook p.612).',
     quadrant: 'market-development',
     productType: 'existing',
     marketType: 'new',
@@ -125,7 +125,7 @@ export const ANSOFF_CARDS: AnsoffCard[] = [
   {
     id: 'ans-13',
     company: "McDonald's",
-    scenario: 'Introduces formal "McWedding" banquet hosting and event planning packages in Hong Kong.',
+    scenario: 'Introduces wedding services under the "McWedding" brand (textbook Question 45.1d; no answer is printed).',
     quadrant: 'diversification',
     productType: 'new',
     marketType: 'new',
@@ -143,6 +143,38 @@ export const ANSOFF_CARDS: AnsoffCard[] = [
     riskLevel: 'highest',
     subType: 'unrelated',
     rationale: 'Unrelated Diversification: Entering aerospace tourism with completely novel rocket technologies.'
+  },
+  {
+    id: 'ans-A6-01',
+    company: 'Carrefour',
+    scenario: 'French retail giant Carrefour pulls out of Thailand, Malaysia and Singapore in late 2010, an example the textbook gives of failed market development (p.612).',
+    quadrant: 'market-development',
+    productType: 'existing',
+    marketType: 'new',
+    riskLevel: 'moderate',
+    rationale: 'Market Development: an established retailer took existing products into new Southeast Asian markets; its withdrawal shows why selling overseas is risky when local conditions are unfamiliar.'
+  },
+  {
+    id: 'ans-A6-02',
+    company: 'Honda',
+    scenario: 'Honda, which makes more than just cars, also produces lawnmowers and airplanes.',
+    quadrant: 'diversification',
+    productType: 'new',
+    marketType: 'new',
+    riskLevel: 'highest',
+    subType: 'unrelated',
+    rationale: 'Unrelated Diversification: completely new products in untapped markets with no shared industry link.'
+  },
+  {
+    id: 'ans-A6-03',
+    company: 'Harley-Davidson',
+    scenario: 'Motorcycle maker Harley-Davidson, renowned for its motorcycles, diversifies into the fragrance industry in the 1990s.',
+    quadrant: 'diversification',
+    productType: 'new',
+    marketType: 'new',
+    riskLevel: 'highest',
+    subType: 'unrelated',
+    rationale: 'Unrelated Diversification: fragrance has no link to motorcycles, and the move caused offence to the loyal customer base.'
   }
 ];
 
@@ -159,7 +191,7 @@ export const SWOT_CARDS: SWOTCard[] = [
   {
     id: 'swot-02',
     entityName: 'Apple Inc.',
-    scenario: 'Holds over $60 billion in liquid cash reserves and retained corporate earnings.',
+    scenario: 'Holds very large liquid cash reserves and retained corporate earnings.',
     quadrant: 'strength',
     origin: 'internal',
     nature: 'favourable',
@@ -168,7 +200,7 @@ export const SWOT_CARDS: SWOTCard[] = [
   {
     id: 'swot-03',
     entityName: 'EXP Takeaway',
-    scenario: 'Operates at 100% capacity with 12 workers and cannot fulfill additional local delivery orders.',
+    scenario: 'Runs near full capacity with a workforce of 12, so it has stopped distributing take-away menus (textbook Question 2.3).',
     quadrant: 'weakness',
     origin: 'internal',
     nature: 'unfavourable',
@@ -268,8 +300,8 @@ export const SWOT_STRATEGY_PAIRS: SWOTStrategyPair[] = [
   {
     id: 'pair-so',
     strategyType: 'S-O Offensive',
-    posture: 'Maxi-Maxi',
-    internalFactor: "Apple's massive cash reserves ($60B+) and high customer brand loyalty.",
+    posture: 'Ideal situation',
+    internalFactor: "Apple's very large cash reserves and high customer brand loyalty.",
     externalFactor: 'Booming middle-class demand for personal wellness technology in India & Southeast Asia.',
     actionableStrategy: 'Deploy capital aggressively to build flagship retail stores in Mumbai and launch localized Apple Health subscription services to capture high-margin market share.',
     realWorldExample: 'Apple retail flagship expansion in India.'
@@ -277,7 +309,7 @@ export const SWOT_STRATEGY_PAIRS: SWOTStrategyPair[] = [
   {
     id: 'pair-wo',
     strategyType: 'W-O Reorientation',
-    posture: 'Mini-Maxi',
+    posture: 'Adjust policies',
     internalFactor: 'Traditional brick-and-mortar supermarket chain has an obsolete online ordering system.',
     externalFactor: 'Explosive consumer shift toward home-delivery groceries and quick commerce.',
     actionableStrategy: 'Form a joint venture or hire a specialized cloud logistics software vendor to overhaul web infrastructure, eliminating technical weakness to seize surging online demand.',
@@ -286,7 +318,7 @@ export const SWOT_STRATEGY_PAIRS: SWOTStrategyPair[] = [
   {
     id: 'pair-st',
     strategyType: 'S-T Defensive',
-    posture: 'Maxi-Mini',
+    posture: 'Defend position',
     internalFactor: 'Legacy automotive corporation has an established nationwide dealership and service network.',
     externalFactor: 'Low-cost overseas electric vehicle manufacturers entering the domestic market.',
     actionableStrategy: 'Leverage the certified dealer service network and offer extended 10-year warranties and zero-percent financing to insulate customer retention and deflect rival inroads.',
@@ -295,7 +327,7 @@ export const SWOT_STRATEGY_PAIRS: SWOTStrategyPair[] = [
   {
     id: 'pair-wt',
     strategyType: 'W-T Survival',
-    posture: 'Mini-Mini',
+    posture: 'Most undesirable',
     internalFactor: 'Highly indebted regional retail chain with high fixed rental costs on 100 suburban outlets.',
     externalFactor: 'Severe macroeconomic stagflation and aggressive competition from e-commerce discounters.',
     actionableStrategy: 'Immediate retrenchment: shut down 40 unprofitable store leases, lay off non-essential regional staff, and renegotiate terms with debt creditors to avoid bankruptcy.',
@@ -342,11 +374,11 @@ export const STEEPLE_CARDS: STEEPLECard[] = [
   },
   {
     "id": "st-05",
-    "businessName": "Gijs Denim Importers",
-    "scenario": "The domestic Euro currency appreciates strongly against the US Dollar (from \u20ac1 = $1.05 to \u20ac1 = $1.35), making US-imported denim fabrics significantly cheaper.",
+    "businessName": "Gijs Van Oosten Jeans (Netherlands)",
+    "scenario": "The euro appreciates against the US dollar (from \u20ac1 = $1.30 to \u20ac1 = $1.45), so jeans bought from a US supplier at $25 a pair cost less in euros (about \u20ac19.23 falling to about \u20ac17.24). Based on textbook Question 46.5.",
     "category": "economic",
     "impactType": "opportunity",
-    "rationale": "Under the SPICED rule, a stronger domestic currency lowers the cost of imported raw materials and stock.",
+    "rationale": "A stronger domestic currency makes imports cheaper (the SPICED revision mnemonic), lowering the cost of imported stock.",
     "strategicResponse": "Leverage favorable exchange rates to purchase bulk inventory at lower costs and expand gross profit margins."
   },
   {
@@ -429,6 +461,42 @@ export const STEEPLE_CARDS: STEEPLECard[] = [
     "impactType": "threat",
     "rationale": "Severe ethical supply-chain breaches destroy brand equity, trigger influencer boycotts, and prompt institutional ESG divestment.",
     "strategicResponse": "Immediately terminate subcontractor contracts, establish independent third-party factory audits, and compensate affected families."
+  },
+  {
+    "id": "st-A6-01",
+    "businessName": "Nintendo",
+    "scenario": "The Wii (launched 2006) appeals to new market segments, including women and the elderly. The Wii U replaces it in November 2012, and the Switch replaces the Wii U in 2017 and becomes the world's best-selling games console.",
+    "category": "technological",
+    "impactType": "opportunity",
+    "rationale": "Rapid hardware replacement cycles create repeated chances to reach new customer segments and renew demand.",
+    "strategicResponse": "Time each new console launch to reach new customer groups and keep the product line ahead of obsolescence."
+  },
+  {
+    "id": "st-A6-02",
+    "businessName": "Zimbabwean retailers",
+    "scenario": "Annual inflation reaches 231,000,000% in July 2008, with prices of goods and services more than doubling each week. The Zimbabwean dollar is eventually abandoned in favour of the US dollar.",
+    "category": "economic",
+    "impactType": "threat",
+    "rationale": "Uncontrolled inflation makes raw material, catalogue and menu prices and wage claims unstable, and it reduces international competitiveness.",
+    "strategicResponse": "Reprice frequently, and consider pricing and contracts in a more stable currency."
+  },
+  {
+    "id": "st-A6-03",
+    "businessName": "Tesco",
+    "scenario": "Tesco opens the UK's first supermarket without checkout staff in June 2010, with one employee supervising five self-service checkouts.",
+    "category": "technological",
+    "impactType": "opportunity",
+    "rationale": "Automated checkouts reduce the labour needed per transaction, but critics argue they will cause mass job losses.",
+    "strategicResponse": "Manage staff redundancies carefully and redeploy employees to help customers who are new to self-service."
+  },
+  {
+    "id": "st-A6-04",
+    "businessName": "Facebook",
+    "scenario": "A 2018 data scandal involves allegations that personal data was misused to influence the 2016 US presidential election and the Brexit vote.",
+    "category": "technological",
+    "impactType": "threat",
+    "rationale": "Technology that collects personal data becomes a source of reputational and legal risk when that data is misused.",
+    "strategicResponse": "Strengthen data protection and be transparent about how customer data is used."
   }
 ];
 
@@ -662,7 +730,7 @@ export const STAKEHOLDER_CARDS: StakeholderCard[] = [
     powerLevel: 'high',
     interestLevel: 'high',
     quadrant: 'quadrant-d',
-    engagementStrategy: 'Key players (Maximum effort)',
+    engagementStrategy: 'Key stakeholders (Maximum effort)',
     rationale: 'Controls two executive board seats and voting power to appoint or remove the CEO, with intense daily focus on profitability and IPO valuation.',
     conflictScenario: 'Any conflict over strategic acquisitions or executive remuneration can result in leadership dismissal or corporate proxy battles.'
   },
@@ -674,7 +742,7 @@ export const STAKEHOLDER_CARDS: StakeholderCard[] = [
     powerLevel: 'high',
     interestLevel: 'high',
     quadrant: 'quadrant-d',
-    engagementStrategy: 'Key players (Maximum effort)',
+    engagementStrategy: 'Key stakeholders (Maximum effort)',
     rationale: 'Represents 90% of specialized flight crew whose industrial strike action instantly grounds flights, costing hundreds of millions (e.g. British Airways 2019).',
     conflictScenario: 'Management must conduct continuous collective bargaining over pensions, rest periods, and remuneration to avoid catastrophic strike disruption.'
   },
@@ -686,8 +754,210 @@ export const STAKEHOLDER_CARDS: StakeholderCard[] = [
     powerLevel: 'high',
     interestLevel: 'high',
     quadrant: 'quadrant-d',
-    engagementStrategy: 'Key players (Maximum effort)',
+    engagementStrategy: 'Key stakeholders (Maximum effort)',
     rationale: 'The sole global foundry capable of etching 3nm processors; holds immense pricing power, allocation control, and strategic supply leverage.',
     conflictScenario: 'Losing fabrication allocation halts the entire global smartphone launch; executive leadership must treat the supplier as a core strategic partner.'
+  }
+];
+
+// ============================================================================
+// ECONOMIES & DISECONOMIES OF SCALE SCENARIO CARDS (20 Cards)
+// ============================================================================
+export const SCALE_CARDS: ScaleCard[] = [
+  // --------------------------------------------------------------------------
+  // Internal Economies of Scale (4 Cards)
+  // --------------------------------------------------------------------------
+  {
+    id: 'scl-01',
+    companyOrContext: 'Airbus Commercial Aircraft (A380 Program)',
+    scenario: 'Airbus engineers a double-decker widebody airliner with 49% greater passenger seating capacity, reducing jet fuel consumption per seat by 17% and spreading heavy aerodynamic tooling costs across global airline deliveries.',
+    category: 'internal-economies',
+    specificType: 'Technical Economies',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Technical economies: Large-scale capital equipment and advanced aerospace engineering reduce average fuel and production costs per seat-kilometer.'
+  },
+  {
+    id: 'scl-02',
+    companyOrContext: 'Poundland & European Discount Retailers',
+    scenario: 'Operating over 800 retail stores, Poundland buys fast-moving consumer goods in very large volumes and negotiates bulk-purchase discounts from manufacturers.',
+    category: 'internal-economies',
+    specificType: 'Purchasing Economies',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Purchasing / commercial economies: Vast order volumes provide tremendous monopsonistic buyer leverage over suppliers, lowering the cost per bought-in unit.'
+  },
+  {
+    id: 'scl-03',
+    companyOrContext: 'Global Supermarket Conglomerate',
+    scenario: 'An established international retail chain issues corporate bonds at an ultra-low 2.5% interest rate because institutional creditors view it as exceptionally low default risk, whereas local independent grocers are charged 9.2% on credit.',
+    category: 'internal-economies',
+    specificType: 'Financial Economies',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Financial economies: Large, reputable firms with strong balance sheets secure lower borrowing rates and preferential loan terms from competing financial lenders.'
+  },
+  {
+    id: 'scl-04',
+    companyOrContext: 'Reliance Industries (Multinational Conglomerate)',
+    scenario: 'A giant conglomerate operates strategic business units spanning oil refining, telecommunications, retail, and digital media, allowing sudden downturns in energy refining margins to be fully counterbalanced by expanding telecom revenues.',
+    category: 'internal-economies',
+    specificType: 'Risk-Bearing Economies',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Risk-bearing economies: Diversification across multiple unrelated product lines and markets insulates the enterprise against cyclical shocks in any single market.'
+  },
+
+  // --------------------------------------------------------------------------
+  // External Economies of Scale (4 Cards)
+  // --------------------------------------------------------------------------
+  {
+    id: 'scl-05',
+    companyOrContext: 'Murano Glassmakers (Venice, Italy)',
+    scenario: 'Dozens of independent artisanal glass blowing workshops clustered on the island of Murano share specialized furnace repair technicians, specialized raw chemical suppliers, and an esteemed centuries-old international tourism reputation.',
+    category: 'external-economies',
+    specificType: 'Regional Specialization',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Regional specialisation: a location with a highly regarded, trustworthy reputation for a product (the textbook example is Murano glass, p.68) benefits all firms there; the reputation also lets Murano firms charge premium prices.'
+  },
+  {
+    id: 'scl-06',
+    companyOrContext: 'Silicon Valley Technology Cluster',
+    scenario: 'Software and AI startups in the San Francisco Bay Area recruit pre-trained engineers and data scientists emerging from nearby Stanford and UC Berkeley, cutting initial onboarding and specialized training expenditures.',
+    category: 'external-economies',
+    specificType: 'Skilled Labour Pool',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Skilled labour pool: An abundance of qualified, educated local talent reduces recruitment lead times and training costs for all businesses in the regional industry.'
+  },
+  {
+    id: 'scl-07',
+    companyOrContext: 'Regional Manufacturing Export Corridor',
+    scenario: 'The national government finishes constructing a high-capacity deepwater container terminal and automated freight rail network connecting industrial parks directly to the seaport, accelerating cargo turnaround by 48 hours.',
+    category: 'external-economies',
+    specificType: 'Improved Transport Networks',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Improved transport networks: Public logistical infrastructure enhancements lower freight shipping fees and transit delays for all exporting businesses in the region.'
+  },
+  {
+    id: 'scl-08',
+    companyOrContext: 'E-Commerce Independent Merchants',
+    scenario: 'Thousands of small independent online sellers benefit from shared global cloud server platforms, open-source payment APIs, and national parcel fulfillment networks, drastically lowering the cost to host and process transactions.',
+    category: 'external-economies',
+    specificType: 'Technological Progress',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Technological progress: Industry-wide technological advances and shared digital infrastructure reduce unit operating expenses for all competing firms.'
+  },
+
+  // --------------------------------------------------------------------------
+  // Internal Diseconomies of Scale (4 Cards)
+  // --------------------------------------------------------------------------
+  {
+    id: 'scl-09',
+    companyOrContext: 'Tall Bureaucratic Multinational Corporation',
+    scenario: 'A rapidly expanding retail firm expands to 12 managerial tiers; a routine store request to replace broken air conditioning units now requires 5 months, 18 signatures, and 3 administrative approvals, paralyzing local operations.',
+    category: 'internal-diseconomies',
+    specificType: 'Bureaucracy & Red Tape',
+    impactOnUnitCost: 'Increases unit cost (ATC)',
+    rationale: 'Bureaucracy & red tape: Excessive administrative procedures, redundant paperwork, and lengthy approval chains increase overhead costs without increasing output.'
+  },
+  {
+    id: 'scl-10',
+    companyOrContext: 'Automotive Mass-Production Assembly Plant',
+    scenario: 'Factory technicians on a continuous vehicle chassis line perform the exact same 15-second bolt-tightening motion 1,800 times a day, resulting in severe worker boredom, industrial fatigue, soaring absenteeism, and costly defect rates.',
+    category: 'internal-diseconomies',
+    specificType: 'Lower Productive Efficiency',
+    impactOnUnitCost: 'Increases unit cost (ATC)',
+    rationale: 'Lower productive efficiency (textbook p.68): the disadvantages of specialization and division of labour mean workers get bored with repetitive tasks and there is scope for slack, so productivity falls and average costs rise.'
+  },
+  {
+    id: 'scl-11',
+    companyOrContext: 'Global Retailer Operating in 35 Countries',
+    scenario: 'Senior executives at corporate headquarters clash with overseas regional division heads over localized seasonal promotions, resulting in duplicate warehouse stock orders and misaligned regional supply chains.',
+    category: 'internal-diseconomies',
+    specificType: 'Lack of Control & Coordination',
+    impactOnUnitCost: 'Increases unit cost (ATC)',
+    rationale: 'Lack of control and coordination (textbook p.68): coordination problems occur with operations in different locations, and a wider span of control slows decision-making, raising average costs.'
+  },
+  {
+    id: 'scl-12',
+    companyOrContext: 'Oversized Corporate Financial Conglomerate',
+    scenario: 'Crucial market risk intelligence gathered by branch loan officers gets repeatedly filtered, delayed, and distorted as it travels upwards through multiple management strata before reaching the executive board.',
+    category: 'internal-diseconomies',
+    specificType: 'Lack of Control & Coordination',
+    impactOnUnitCost: 'Increases unit cost (ATC)',
+    rationale: 'Communication problems (part of lack of control and coordination, textbook p.68): a wider span of control and longer chains of communication cause message distortion and slower decision-making.'
+  },
+
+  // --------------------------------------------------------------------------
+  // External Diseconomies of Scale (4 Cards)
+  // --------------------------------------------------------------------------
+  {
+    id: 'scl-13',
+    companyOrContext: 'Central Business District (Manhattan / City of London)',
+    scenario: 'A high concentration of global financial institutions in a small area makes land scarce and drives commercial office rents ever higher, inflating fixed overhead costs for all firms situated in the district.',
+    category: 'external-diseconomies',
+    specificType: 'Land Scarcity & Higher Rents',
+    impactOnUnitCost: 'Increases unit cost (ATC)',
+    rationale: 'Land scarcity & rising rents: Fierce competition among firms to locate in prime commercial hubs bids up rental and property valuations for all businesses in that vicinity.'
+  },
+  {
+    id: 'scl-14',
+    companyOrContext: 'Metropolitan Logistics & Distribution Hub',
+    scenario: 'Dense clustering of e-commerce delivery depots along a major metropolitan highway causes persistent traffic gridlock, resulting in delivery vans idling for hours, inflated fuel consumption, and costly driver overtime pay.',
+    category: 'external-diseconomies',
+    specificType: 'Traffic Congestion',
+    impactOnUnitCost: 'Increases unit cost (ATC)',
+    rationale: 'Traffic congestion: Overcrowded regional transport networks delay raw material deliveries and outgoing shipments, increasing transport and operating costs across the industry.'
+  },
+  {
+    id: 'scl-15',
+    companyOrContext: 'Cambridge Biotechnology Cluster',
+    scenario: 'So many pharmaceutical labs cluster in a single science park that the local supply of clinical research scientists is exhausted, triggering fierce talent poaching wars and bidding up entry salaries by 25% across the entire cluster.',
+    category: 'external-diseconomies',
+    specificType: 'Higher Pay & Financial Rewards',
+    impactOnUnitCost: 'Increases unit cost (ATC)',
+    rationale: 'Labour shortages & wage inflation: Overexpansion of an industry in one region forces employers to compete aggressively for scarce talent, driving wage bills higher without productivity gains.'
+  },
+  {
+    id: 'scl-16',
+    companyOrContext: 'Semi-Arid Tech Corridor (Data Centers & Chip Fabs)',
+    scenario: 'So many data centers and semiconductor foundries locate in the same corridor that suitable industrial land becomes scarce, pushing up land rental values for every firm in the area.',
+    category: 'external-diseconomies',
+    specificType: 'Land Scarcity & Higher Rents',
+    impactOnUnitCost: 'Increases unit cost (ATC)',
+    rationale: 'Higher rents: too many businesses locating in one area makes land scarcer, raising rents and fixed costs for all firms in the industry there (textbook p.69).'
+  },
+  // Textbook Internal Economies of Scale: managerial, specialization, marketing and technical (4 Cards)
+  {
+    id: 'scl-A4-01',
+    scenario: 'A Shenzhen factory operating at huge scale uses automated production to assemble complete audio systems within a few seconds. Its high equipment and machinery costs are spread over an enormous output.',
+    companyOrContext: 'Philips Audio Factory (Shenzhen, China)',
+    category: 'internal-economies',
+    specificType: 'Technical Economies',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Technical economies: high fixed costs of equipment are spread over a huge output, reducing average cost per unit. Small businesses cannot find such technology cost-efficient.'
+  },
+  {
+    id: 'scl-A4-02',
+    scenario: 'A global beverage brand runs one advertising campaign across the world, and sells 1,000 cans to a supermarket in one transaction rather than to hundreds of small outlets.',
+    companyOrContext: 'Global Beverage Brand (Coca-Cola example, textbook p.67)',
+    category: 'internal-economies',
+    specificType: 'Marketing Economies',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Marketing economies: advertising is a fixed cost, so spreading one global campaign over high sales volume lowers the cost per unit. Bulk sales to one customer also save time and transaction costs.'
+  },
+  {
+    id: 'scl-A4-03',
+    scenario: 'A motor vehicle manufacturer using mass-production techniques employs specialist designers, engineers, production staff and marketers, each responsible for one part of the process.',
+    companyOrContext: 'Mass-Production Motor Vehicle Manufacturer',
+    category: 'internal-economies',
+    specificType: 'Specialization Economies',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Specialization economies: division of labour raises productivity, so the average cost of output falls. This is similar to managerial economies but applies to the workforce rather than management.'
+  },
+  {
+    id: 'scl-A4-04',
+    scenario: 'A sole trader must act as marketer, accountant and production manager. As the firm grows, it employs specialist managers for each function, so each manager focuses on one role.',
+    companyOrContext: 'Growing Firm Replacing a Sole Trader\'s Generalist Roles with Specialist Managers',
+    category: 'internal-economies',
+    specificType: 'Managerial Economies',
+    impactOnUnitCost: 'Decreases unit cost (ATC)',
+    rationale: 'Managerial economies: specialisation leads to higher productivity, and avoids duplication of effort in planning, communication, marketing and distribution. Higher productivity lowers average costs.'
   }
 ];

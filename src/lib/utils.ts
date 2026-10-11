@@ -22,6 +22,11 @@ export function getSubunitLabel(subunit: SyllabusSubunit): string {
       return '1.3 Business Objectives';
     case '1.4-stakeholders':
       return '1.4 Stakeholders';
+    case '1.5-growth-and-evolution':
+    case '1.5-economies-of-scale':
+      return '1.5 Economies of Scale';
+    case '1.6-multinational-companies':
+      return '1.6 Multinational Companies';
     case 'bmt-swot-analysis':
       return 'BMT: SWOT Analysis';
     case 'bmt-ansoff-matrix':
@@ -30,6 +35,10 @@ export function getSubunitLabel(subunit: SyllabusSubunit): string {
       return 'BMT: STEEPLE Analysis';
     case 'bmt-toolkit':
       return 'BMT: Toolkit Hub';
+    case 'bmt-business-plan':
+      return 'BMT: Business Plan';
+    case 'bmt-descriptive-statistics':
+      return 'BMT: Descriptive Statistics';
     default:
       return subunit;
   }
@@ -45,6 +54,11 @@ export function getSubunitShortBadge(subunit: SyllabusSubunit): string {
       return 'Unit 1.3';
     case '1.4-stakeholders':
       return 'Unit 1.4';
+    case '1.5-growth-and-evolution':
+    case '1.5-economies-of-scale':
+      return 'Unit 1.5';
+    case '1.6-multinational-companies':
+      return 'Unit 1.6';
     case 'bmt-swot-analysis':
       return 'SWOT';
     case 'bmt-ansoff-matrix':
@@ -53,6 +67,10 @@ export function getSubunitShortBadge(subunit: SyllabusSubunit): string {
       return 'STEEPLE';
     case 'bmt-toolkit':
       return 'BMT';
+    case 'bmt-business-plan':
+      return 'Business Plan';
+    case 'bmt-descriptive-statistics':
+      return 'Descriptive Stats';
     default:
       return subunit;
   }

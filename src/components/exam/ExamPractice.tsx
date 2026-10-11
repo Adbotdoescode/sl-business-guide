@@ -177,10 +177,14 @@ export function ExamPractice() {
               <option value="1.2-types-of-business-entities">1.2 Types of Business Entities</option>
               <option value="1.3-business-objectives">1.3 Business Objectives</option>
               <option value="1.4-stakeholders">1.4 Stakeholders</option>
+              <option value="1.5-growth-and-evolution">1.5 Economies of Scale</option>
+              <option value="1.6-multinational-companies">1.6 Multinational Companies (MNCs)</option>
               <option value="bmt-swot-analysis">BMT: SWOT Analysis</option>
               <option value="bmt-ansoff-matrix">BMT: Ansoff Matrix</option>
               <option value="bmt-steeple-analysis">BMT: STEEPLE Analysis</option>
               <option value="bmt-toolkit">BMT: Toolkit Master</option>
+              <option value="bmt-business-plan">BMT: Business Plan</option>
+              <option value="bmt-descriptive-statistics">BMT: Descriptive Statistics</option>
             </select>
           </div>
 

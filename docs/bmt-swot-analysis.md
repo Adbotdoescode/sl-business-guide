@@ -145,7 +145,7 @@ flowchart LR
 
 ## 4. Comprehensive SWOT Analysis Template
 
-Below is the definitive illustrative template (adapted from the IB syllabus and Paul Hoang's curriculum standards) synthesizing internal and external factors:
+Below is an illustrative template synthesizing internal and external factors (adapted and expanded from the textbook's SWOT template, Table 1.3.d; the textbook's own lists are shorter):
 
 | Factor Type | Positive / Favourable Attributes | Negative / Unfavourable Attributes |
 | :--- | :--- | :--- |
@@ -159,7 +159,7 @@ Below is the definitive illustrative template (adapted from the IB syllabus and 
 
 ## 5. The 2x2 Strategic Matrix Formulation
 
-Merely listing strengths, weaknesses, opportunities, and threats provides minimal value to senior managers. A SWOT analysis becomes truly powerful when the four quadrants are systematically combined to generate **actionable strategic choices**.
+Merely listing strengths, weaknesses, opportunities, and threats "is of minimal value" (Hoang p.609). From a SWOT analysis, **four basic strategies** can be identified (Figure 44.2, SWOT analysis and business strategies). Some other sources call this a TOWS matrix with "Maxi-Mini" labels; those names are not used in the Hoang textbook.
 
 ```mermaid
 flowchart TD
@@ -181,26 +181,26 @@ flowchart TD
 ### The Four Strategic Quadrants
 
 #### 1. Offensive Strategies (Strengths + Opportunities)
-* **Strategic Posture:** **Maxi-Maxi (Aggressive Growth)**.
-* **Context:** The ideal strategic scenario where a company possesses formidable internal strengths that directly align with expanding external opportunities.
+* **Strategic Posture:** **Aggressive Growth**.
+* **Context:** The ideal situation, when a strength meets an opportunity; the business makes the most of the favourable external situation.
 * **Action:** Deploy capital aggressively to capture dominant market share, enter high-growth sectors, and maximize commercial advantage.
 * **Exam Application Example:** An athletic footwear giant with strong global brand equity and billions in cash reserves (Strengths) uses those resources to launch a premium direct-to-consumer digital fitness app in rapidly growing Asian markets (Opportunities).
 
 #### 2. Defensive Strategies (Strengths + Threats)
-* **Strategic Posture:** **Maxi-Mini (Protection & Resilience)**.
-* **Context:** The business faces severe external environmental threats, but possesses robust internal strengths that can be leveraged to shield the company from disruption.
+* **Strategic Posture:** **Protection & Resilience**.
+* **Context:** A strength meets an external threat, so the business must defend itself, typically by paying close attention to the competition so it does not lose market share or market dominance.
 * **Action:** Utilize financial muscle, brand loyalty, or proprietary technology to neutralize rival maneuvers, erect barriers to entry, and protect existing market standing.
 * **Exam Application Example:** A legacy automotive manufacturer with a global dealership network and massive supply chain clout (Strengths) leverages those assets to absorb temporary tariff increases and outlast budget competitors entering the domestic territory (Threats).
 
 #### 3. Reorientation Strategies (Weaknesses + Opportunities)
-* **Strategic Posture:** **Mini-Maxi (Turnaround & Capability Building)**.
-* **Context:** An attractive external opportunity exists, but the enterprise is currently incapable of capitalizing on it due to an acute internal weakness or bottleneck.
+* **Strategic Posture:** **Turnaround & Capability Building**.
+* **Context:** A favourable external situation correlates to an internal weakness, so the business adjusts or reorients its policies and practices (e.g. cutting costs to improve liquidity) to remain competitive and gain market share.
 * **Action:** Reorient internal operational policies, retrain personnel, recapitalize, or form strategic alliances to eliminate the weakness so the opportunity can be seized.
 * **Exam Application Example:** A traditional brick-and-mortar grocery chain with an outdated inventory IT system (Weakness) partners with a specialized logistics software company or raises equity to overhaul its supply chain, allowing it to serve the booming home-delivery grocery sector (Opportunity).
 
 #### 4. Survival Strategies (Weaknesses + Threats)
-* **Strategic Posture:** **Mini-Mini (Damage Limitation & Retrenchment)**.
-* **Context:** The most perilous, high-risk situation imaginable. Internal vulnerabilities directly expose the firm to external threats, threatening commercial insolvency.
+* **Strategic Posture:** **Damage Limitation & Retrenchment**.
+* **Context:** The most undesirable situation, when a weakness meets an external threat; survival policies aim to minimise the adverse effects and avoid a disastrous outcome.
 * **Action:** Immediate damage control, cost rationalization, debt restructuring, divesting non-core subsidiaries, and retrenching headcount to prevent business failure.
 * **Exam Application Example:** An indebted regional department store chain with high rental overhead and falling footfall (Weakness) faces a severe macroeconomic recession and aggressive online discount rivalry (Threats). It closes 40 unprofitable outlets, lays off administrative personnel, and renegotiates debt terms with creditors simply to avoid bankruptcy.
 
@@ -240,8 +240,8 @@ flowchart LR
    * A SWOT analysis captures conditions at a single point in time. In fast-paced industries (e.g., artificial intelligence, consumer electronics), technological disruption or regulatory shifts can render a SWOT obsolete within months.
 3. **Absence of Quantitative Weighting:**
    * Standard SWOT diagrams do not assign numerical weights, probabilities, or financial values to items. It does not measure the dollar cost of fixing an internal weakness against the projected revenue return from pursuing an opportunity.
-4. **Does Not Independently Prioritize Strategic Decisions:**
-   * While it generates strategic options (Offensive, Defensive, Reorientation, Survival), it provides no internal algorithmic criteria to determine which specific project should be financed first.
+4. **Does Not Prioritise Issues or Suggest a Strategy:**
+   * Unlike decision trees and force field analysis, SWOT does not prioritise issues. It only assesses the current situation and does not suggest any actual strategy, so it typically cannot be used in isolation (Hoang p.610).
 5. **Risk of Oversimplification:**
    * Compressing intricate market complexities into single bullet points risks stripping out vital contextual nuances, potentially misleading strategic leaders into overly simplistic decisions.
 
@@ -252,6 +252,7 @@ flowchart LR
 
 ## 7. IB Exam Tips & Application Technique
 
-* **Avoid the Tabular Trap:** In IB examinations, do not merely present a SWOT analysis as a 2x2 grid containing isolated two-word bullet points. Examiners demand full, written analytical justifications showing the precise operational mechanisms and commercial consequences of each factor.
+* **Do Not Present SWOT in Tabular Form:** The textbook advises against a table in the exam, because the format encourages squeezing answers into boxes and examiners prefer written explanations and justifications. Bullet points under each SWOT heading are acceptable, as long as the examiner can follow your reasoning.
+* **Derive O and T from STEEPLE:** Strengths and weaknesses refer to the current, internal position; opportunities and threats should stem from a STEEPLE analysis of the external environment.
 * **Explicitly Link External Factors to STEEPLE:** When explaining Opportunities and Threats, explicitly credit the macro-environmental STEEPLE dimension (e.g., *"This demographic shift represents a Social opportunity under STEEPLE..."*).
 * **Ground in Case Study Context:** Never write generic answers. In Paper 1 and Paper 2 exams, ensure every single strength, weakness, opportunity, and threat is directly cited from the provided case study stimulus text.

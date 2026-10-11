@@ -405,6 +405,7 @@ export function GetCashVault() {
             <div className="flex items-center gap-2 pb-2 border-b border-border">
               <Target className="w-5 h-5 text-blue-600" />
               <h2 className="text-lg font-bold text-text-primary">SMART Objectives Framework</h2>
+              <span className="text-[11px] text-text-muted">Standard IB teaching; not covered in the Hoang textbook</span>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-3">

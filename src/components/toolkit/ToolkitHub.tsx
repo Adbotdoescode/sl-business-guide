@@ -30,7 +30,8 @@ interface BMTToolSummary {
   toolNumber: number;
   name: string;
   chapter: string;
-  classification: 'Situational' | 'Decision-Making' | 'Planning';
+  // Categories follow the Hoang p.605 table, which ticks some tools in more than one category
+  classification: ('Situational' | 'Decision-Making' | 'Planning')[];
   icon: React.ElementType;
   color: string;
   purpose: string;
@@ -46,12 +47,12 @@ const BMT_TOOLS: BMTToolSummary[] = [
     toolNumber: 1,
     name: 'SWOT Analysis',
     chapter: 'Chapter 44',
-    classification: 'Situational',
+    classification: ['Situational'],
     icon: Grid,
     color: 'bg-emerald-50 text-emerald-700 border-emerald-200',
     purpose: 'Audits internal tangible/intangible strengths and weaknesses alongside external opportunities and threats.',
     whenToUse: 'Use during initial strategic planning to establish situational awareness before committing capital.',
-    keyOutputs: ['2x2 SWOT Matrix', 'TOWS Strategic Pairs (Maxi-Maxi, Mini-Mini)'],
+    keyOutputs: ['2x2 SWOT Matrix', 'Strategy Pairs (Offensive, Defensive, Reorientation, Survival)'],
     drillLink: '/matrix-master',
     studyLink: '/study/bmt-swot-analysis',
   },
@@ -60,7 +61,7 @@ const BMT_TOOLS: BMTToolSummary[] = [
     toolNumber: 2,
     name: "Ansoff's Growth Matrix",
     chapter: 'Chapter 45',
-    classification: 'Decision-Making',
+    classification: ['Decision-Making'],
     icon: Compass,
     color: 'bg-blue-50 text-blue-700 border-blue-200',
     purpose: 'Categorizes corporate growth strategies into Market Penetration, Product Development, Market Development, and Diversification.',
@@ -74,7 +75,7 @@ const BMT_TOOLS: BMTToolSummary[] = [
     toolNumber: 3,
     name: 'STEEPLE Analysis',
     chapter: 'Chapter 46',
-    classification: 'Situational',
+    classification: ['Situational'],
     icon: Globe2,
     color: 'bg-purple-50 text-purple-700 border-purple-200',
     purpose: 'Comprehensive audit of external macro-environmental forces across Social, Technological, Economic, Environmental, Political, Legal, and Ethical dimensions.',
@@ -88,7 +89,7 @@ const BMT_TOOLS: BMTToolSummary[] = [
     toolNumber: 4,
     name: 'Boston Consulting Group (BCG) Matrix',
     chapter: 'Chapter 47',
-    classification: 'Decision-Making',
+    classification: ['Situational', 'Decision-Making'],
     icon: PieChart,
     color: 'bg-amber-50 text-amber-700 border-amber-200',
     purpose: 'Analyzes a firm\'s multi-product portfolio based on market growth rate and relative market share to optimize cash flow.',
@@ -102,20 +103,20 @@ const BMT_TOOLS: BMTToolSummary[] = [
     toolNumber: 5,
     name: 'Business Plan',
     chapter: 'Chapter 48',
-    classification: 'Planning',
+    classification: ['Planning'],
     icon: FileText,
     color: 'bg-stone-50 text-stone-700 border-stone-200',
-    purpose: 'Official guiding document detailing strategic mission, marketing plan, financial forecasts, and operational roadmap.',
+    purpose: 'Official guiding document setting out the organization\'s strategic goals and how it intends to achieve them, covering human resources, finance, marketing and operations.',
     whenToUse: 'Use when launching a new business startup or applying for commercial bank loans and equity funding.',
-    keyOutputs: ['Executive Summary', 'Cash Flow Forecasts', 'HR & Operational Roadmap'],
-    studyLink: '/study/bmt-toolkit',
+    keyOutputs: ['Executive Summary (for longer plans)', 'Cash Flow Forecasts', 'HR & Operational Roadmap'],
+    studyLink: '/study/bmt-business-plan',
   },
   {
     id: 'decision-trees',
     toolNumber: 6,
     name: 'Decision Trees',
     chapter: 'Chapter 49',
-    classification: 'Decision-Making',
+    classification: ['Planning', 'Decision-Making'],
     icon: GitFork,
     color: 'bg-indigo-50 text-indigo-700 border-indigo-200',
     purpose: 'Quantitative diagrammatic model calculating Expected Monetary Value (EMV) and Net Payoff under conditions of risk.',
@@ -128,20 +129,20 @@ const BMT_TOOLS: BMTToolSummary[] = [
     toolNumber: 7,
     name: 'Descriptive Statistics',
     chapter: 'Chapter 50',
-    classification: 'Situational',
+    classification: ['Situational', 'Decision-Making'],
     icon: BarChart3,
     color: 'bg-teal-50 text-teal-700 border-teal-200',
     purpose: 'Quantitative analysis summarizing raw business datasets using central tendency (mean, median, mode) and dispersion.',
     whenToUse: 'Use when interpreting market research survey findings, quality control defects, or employee salary structures.',
     keyOutputs: ['Mean, Median, Mode', 'Interquartile Range & Standard Deviation'],
-    studyLink: '/study/bmt-toolkit',
+    studyLink: '/study/bmt-descriptive-statistics',
   },
   {
     id: 'circular-models',
     toolNumber: 8,
     name: 'Circular Business Models (CBMs)',
     chapter: 'Chapter 51',
-    classification: 'Decision-Making',
+    classification: ['Decision-Making'],
     icon: Recycle,
     color: 'bg-emerald-50 text-emerald-800 border-emerald-300',
     purpose: 'Restorative commercial frameworks replacing linear \'take-make-waste\' production with closed resource loops.',
@@ -171,7 +172,7 @@ const DIAGNOSTIC_CASES: DiagnosticCase[] = [
     id: 'diag-02',
     scenario: 'A European retailer is facing a 20% national minimum wage hike, new GDPR privacy compliance laws, and demographic population aging. Which tool systematically audits these external shifts?',
     correctTool: 'STEEPLE Analysis',
-    reason: 'STEEPLE scans the 7 external macro-environmental dimensions (Legal minimum wage, Technological privacy, Social demographics) that lie beyond direct corporate control.',
+    reason: 'STEEPLE scans the 7 external macro-environmental dimensions (Legal: minimum wage and privacy laws; Social: demographic ageing) that lie beyond the control of any individual organization.',
     options: ['STEEPLE Analysis', 'Circular Business Models', 'SWOT Analysis', 'Business Plan']
   },
   {
@@ -198,7 +199,7 @@ export function ToolkitHub() {
 
   const filteredTools = filter === 'all' 
     ? BMT_TOOLS 
-    : BMT_TOOLS.filter((t) => t.classification === filter);
+    : BMT_TOOLS.filter((t) => t.classification.includes(filter));
 
   const currentCase = DIAGNOSTIC_CASES[selectedCaseIdx];
 
@@ -389,9 +390,13 @@ export function ToolkitHub() {
                         </h3>
                       </div>
                     </div>
-                    <Badge variant={tool.classification === 'Situational' ? 'ao1' : tool.classification === 'Decision-Making' ? 'ao3' : 'neutral'}>
-                      {tool.classification}
-                    </Badge>
+                    <div className="flex flex-wrap justify-end gap-1">
+                      {tool.classification.map((c) => (
+                        <Badge key={c} variant={c === 'Situational' ? 'ao1' : c === 'Decision-Making' ? 'ao3' : 'neutral'}>
+                          {c}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
 
                   <p className="text-xs text-text-secondary leading-relaxed mb-3">

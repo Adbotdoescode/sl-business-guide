@@ -12,7 +12,7 @@ export const ENTITY_COMPARISONS: EntityDimensionComparison[] = [
   {
     dimension: 'Liability',
     soleTrader: 'Unlimited Liability: Personal wealth, home, and savings at risk for debts.',
-    partnership: 'Joint & Several Unlimited: All partners personally liable for firm debts.',
+    partnership: 'Unlimited Liability: At least one partner (typically all) personally liable for firm debts, "wholly or severally".',
     ltd: 'Limited Liability: Loss strictly capped at value of shares purchased.',
     plc: "Limited Liability: Shareholders' personal assets legally ring-fenced from debts.",
     socialEnterprise: "Typically Limited: Co-op members' liability capped at member share value."
@@ -28,7 +28,7 @@ export const ENTITY_COMPARISONS: EntityDimensionComparison[] = [
   {
     dimension: 'Ownership & Governance',
     soleTrader: '1 individual owner with total unilateral control.',
-    partnership: '2 to 20 partners governed by legally binding Deed of Partnership.',
+    partnership: '2 to 20 partners, usually governed by a Deed of Partnership (not a legal requirement; without one, profits and losses are shared equally).',
     ltd: 'Owned by private shareholders; governed by elected Board of Directors (BOD).',
     plc: 'Owned by thousands of public/institutional shareholders; formal public AGMs.',
     socialEnterprise: 'Co-op: Owned by members (1 member, 1 vote). NGO: Governed by board of trustees.'
@@ -45,8 +45,8 @@ export const ENTITY_COMPARISONS: EntityDimensionComparison[] = [
     dimension: 'Regulation & Disclosure',
     soleTrader: 'Minimal compliance; accounts remain 100% confidential and private.',
     partnership: 'Minimal compliance; accounts confidential; Deed of Partnership filed privately.',
-    ltd: 'Annual accounts filed with Registrar; partial privacy preserved from public.',
-    plc: 'Severe statutory disclosure: must publish full audited P&L, Balance Sheet, and CEO pay.',
+    ltd: 'Financial data disclosed to all shareholders; auditors hired and Annual Reports published, so privacy no longer exists (Table 2.3).',
+    plc: 'Full disclosure as for all limited companies, plus higher compliance costs from stock exchange rules.',
     socialEnterprise: 'Co-op: Audited accounts to members. NGO: Strict public reporting to Charity Commission.'
   },
   {
@@ -77,7 +77,7 @@ export const MATCHMAKER_SCENARIOS: EntityMatchmakerScenario[] = [
     rationale: 'Incorporation grants limited liability protecting personal assets, while private equity sales prevent hostile public stock takeovers and require board consent.',
     distractorExplanations: {
       'sole-trader': 'Cannot have three co-founders and carries unlimited liability with severe capital ceilings.',
-      'partnership': 'Leaves founders exposed to joint and several unlimited liability, risking personal homes if sued for diagnostic errors.',
+      'partnership': 'Leaves founders exposed to unlimited liability, risking personal homes if sued for diagnostic errors.',
       'public-limited-company': 'Exposes the company to hostile takeovers on open stock exchanges and incurs high IPO underwriting fees.',
       'social-enterprise': 'Designed for societal mission or mutual member rebates, not commercial private venture capital returns.'
     }
@@ -133,7 +133,7 @@ export const MATCHMAKER_SCENARIOS: EntityMatchmakerScenario[] = [
     rationale: 'Operates under democratic member control ("one member, one vote"), pools equipment to achieve economies of scale, and returns trading surplus as rebates to member farmers.',
     distractorExplanations: {
       'sole-trader': 'Cannot unify 200 independent farming families.',
-      'partnership': 'Partnership laws typically cap partners at 20 and expose each member to joint unlimited liability.',
+      'partnership': 'Ordinary partnerships are typically capped at 20 partners and partners usually have unlimited liability.',
       'private-limited-company': 'In an Ltd, voting power is proportional to share capital, which would allow wealthy large landowners to dominate smallholders.',
       'public-limited-company': 'Public investors seek dividend yields rather than fair crop purchase prices for local rural farmers.'
     }

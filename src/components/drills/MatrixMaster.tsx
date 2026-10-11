@@ -7,11 +7,13 @@ import {
   STEEPLECard,
   BCGCard,
   StakeholderCard,
+  ScaleCard,
   AnsoffQuadrant, 
-  SWOTQuadrant,
+  SWOTQuadrant, 
   STEEPLECategory,
   BCGQuadrant,
-  StakeholderQuadrant
+  StakeholderQuadrant,
+  ScaleCategory
 } from '@/types/curriculum';
 import { 
   ANSOFF_CARDS, 
@@ -19,8 +21,10 @@ import {
   SWOT_STRATEGY_PAIRS,
   STEEPLE_CARDS,
   BCG_CARDS,
-  STAKEHOLDER_CARDS 
+  STAKEHOLDER_CARDS,
+  SCALE_CARDS
 } from '@/data/matrix-master';
+import { LracCostSimulator } from './LracCostSimulator';
 import { triggerConfetti } from '@/lib/confetti';
 import { useStudyProgress } from '@/context/StudyProgressContext';
 import { Button } from '@/components/ui/Button';
@@ -39,12 +43,14 @@ import {
   Compass,
   Globe2,
   PieChart,
-  Users
+  Users,
+  Scale,
+  Sliders
 } from 'lucide-react';
 
-export type MatrixType = 'ansoff' | 'swot' | 'steeple' | 'bcg' | 'stakeholders';
+export type MatrixType = 'ansoff' | 'swot' | 'steeple' | 'bcg' | 'stakeholders' | 'scale';
 
-function getCardText(card: AnsoffCard | SWOTCard | STEEPLECard | BCGCard | StakeholderCard): string {
+function getCardText(card: AnsoffCard | SWOTCard | STEEPLECard | BCGCard | StakeholderCard | ScaleCard): string {
   if ('scenario' in card) return card.scenario;
   if ('productName' in card) return card.productName + ' (' + card.company + '): ' + card.rationale;
   if ('organizationContext' in card) return '**' + card.organizationContext + '**: ' + card.rationale;
@@ -54,7 +60,7 @@ function getCardText(card: AnsoffCard | SWOTCard | STEEPLECard | BCGCard | Stake
 export function MatrixMaster() {
   const { state, setMatrixMasterCompleted } = useStudyProgress();
   const [matrixType, setMatrixType] = useState<MatrixType>('ansoff');
-  const [activeTab, setActiveTab] = useState<'grid' | 'strategies'>('grid');
+  const [activeTab, setActiveTab] = useState<'grid' | 'strategies' | 'simulator'>('grid');
 
   // Placement state: maps card ID to quadrant or category
   const [ansoffPlacements, setAnsoffPlacements] = useState<Record<string, AnsoffQuadrant>>({});
@@ -62,6 +68,7 @@ export function MatrixMaster() {
   const [steeplePlacements, setSteeplePlacements] = useState<Record<string, STEEPLECategory>>({});
   const [bcgPlacements, setBcgPlacements] = useState<Record<string, BCGQuadrant>>({});
   const [stakeholderPlacements, setStakeholderPlacements] = useState<Record<string, StakeholderQuadrant>>({});
+  const [scalePlacements, setScalePlacements] = useState<Record<string, ScaleCategory>>({});
   
   // Selection state for mobile tap-to-place
   const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
@@ -70,15 +77,16 @@ export function MatrixMaster() {
   const [isChecked, setIsChecked] = useState(false);
 
   // Shuffled cards state to prevent grouping by answer in the tray
-  const [shuffledCards, setShuffledCards] = useState<(AnsoffCard | SWOTCard | STEEPLECard | BCGCard | StakeholderCard)[]>([]);
+  const [shuffledCards, setShuffledCards] = useState<(AnsoffCard | SWOTCard | STEEPLECard | BCGCard | StakeholderCard | ScaleCard)[]>([]);
 
   const shufflePool = (type: MatrixType) => {
-    let raw: (AnsoffCard | SWOTCard | STEEPLECard | BCGCard | StakeholderCard)[] = [];
+    let raw: (AnsoffCard | SWOTCard | STEEPLECard | BCGCard | StakeholderCard | ScaleCard)[] = [];
     if (type === 'ansoff') raw = [...ANSOFF_CARDS];
     else if (type === 'swot') raw = [...SWOT_CARDS];
     else if (type === 'steeple') raw = [...STEEPLE_CARDS];
     else if (type === 'bcg') raw = [...BCG_CARDS];
-    else raw = [...STAKEHOLDER_CARDS];
+    else if (type === 'stakeholders') raw = [...STAKEHOLDER_CARDS];
+    else raw = [...SCALE_CARDS];
 
     for (let i = raw.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -97,14 +105,17 @@ export function MatrixMaster() {
         ? STEEPLE_CARDS 
         : matrixType === 'bcg'
         ? BCG_CARDS
-        : STAKEHOLDER_CARDS);
+        : matrixType === 'stakeholders'
+        ? STAKEHOLDER_CARDS
+        : SCALE_CARDS);
 
   const getPlacement = (id: string): string | undefined => {
     if (matrixType === 'ansoff') return ansoffPlacements[id];
     if (matrixType === 'swot') return swotPlacements[id];
     if (matrixType === 'steeple') return steeplePlacements[id];
     if (matrixType === 'bcg') return bcgPlacements[id];
-    return stakeholderPlacements[id];
+    if (matrixType === 'stakeholders') return stakeholderPlacements[id];
+    return scalePlacements[id];
   };
 
   const unassignedCards = currentCards.filter((c) => !getPlacement(c.id));
@@ -153,10 +164,15 @@ export function MatrixMaster() {
         ...prev,
         [cardId]: targetId as BCGQuadrant,
       }));
-    } else {
+    } else if (matrixType === 'stakeholders') {
       setStakeholderPlacements((prev) => ({
         ...prev,
         [cardId]: targetId as StakeholderQuadrant,
+      }));
+    } else {
+      setScalePlacements((prev) => ({
+        ...prev,
+        [cardId]: targetId as ScaleCategory,
       }));
     }
     setSelectedCardId(null);
@@ -189,8 +205,14 @@ export function MatrixMaster() {
         delete next[cardId];
         return next;
       });
-    } else {
+    } else if (matrixType === 'stakeholders') {
       setStakeholderPlacements((prev) => {
+        const next = { ...prev };
+        delete next[cardId];
+        return next;
+      });
+    } else {
+      setScalePlacements((prev) => {
         const next = { ...prev };
         delete next[cardId];
         return next;
@@ -205,7 +227,8 @@ export function MatrixMaster() {
     else if (matrixType === 'swot') setSwotPlacements({});
     else if (matrixType === 'steeple') setSteeplePlacements({});
     else if (matrixType === 'bcg') setBcgPlacements({});
-    else setStakeholderPlacements({});
+    else if (matrixType === 'stakeholders') setStakeholderPlacements({});
+    else setScalePlacements({});
     setSelectedCardId(null);
     setIsChecked(false);
     shufflePool(matrixType);
@@ -229,9 +252,12 @@ export function MatrixMaster() {
     } else if (matrixType === 'bcg') {
       total = BCG_CARDS.length;
       correct = BCG_CARDS.filter((c) => bcgPlacements[c.id] === c.quadrant).length;
-    } else {
+    } else if (matrixType === 'stakeholders') {
       total = STAKEHOLDER_CARDS.length;
       correct = STAKEHOLDER_CARDS.filter((c) => stakeholderPlacements[c.id] === c.quadrant).length;
+    } else {
+      total = SCALE_CARDS.length;
+      correct = SCALE_CARDS.filter((c) => scalePlacements[c.id] === c.category).length;
     }
 
     if (correct === total && total > 0) {
@@ -248,7 +274,9 @@ export function MatrixMaster() {
     ? STEEPLE_CARDS.length 
     : matrixType === 'bcg'
     ? BCG_CARDS.length
-    : STAKEHOLDER_CARDS.length;
+    : matrixType === 'stakeholders'
+    ? STAKEHOLDER_CARDS.length
+    : SCALE_CARDS.length;
 
   const placedCount = matrixType === 'ansoff'
     ? Object.keys(ansoffPlacements).length
@@ -258,7 +286,9 @@ export function MatrixMaster() {
     ? Object.keys(steeplePlacements).length
     : matrixType === 'bcg'
     ? Object.keys(bcgPlacements).length
-    : Object.keys(stakeholderPlacements).length;
+    : matrixType === 'stakeholders'
+    ? Object.keys(stakeholderPlacements).length
+    : Object.keys(scalePlacements).length;
 
   const correctCount = matrixType === 'ansoff'
     ? ANSOFF_CARDS.filter((c) => ansoffPlacements[c.id] === c.quadrant).length
@@ -268,7 +298,9 @@ export function MatrixMaster() {
     ? STEEPLE_CARDS.filter((c) => steeplePlacements[c.id] === c.category).length
     : matrixType === 'bcg'
     ? BCG_CARDS.filter((c) => bcgPlacements[c.id] === c.quadrant).length
-    : STAKEHOLDER_CARDS.filter((c) => stakeholderPlacements[c.id] === c.quadrant).length;
+    : matrixType === 'stakeholders'
+    ? STAKEHOLDER_CARDS.filter((c) => stakeholderPlacements[c.id] === c.quadrant).length
+    : SCALE_CARDS.filter((c) => scalePlacements[c.id] === c.category).length;
 
   return (
     <div className="space-y-6">
@@ -284,7 +316,7 @@ export function MatrixMaster() {
             </h1>
           </div>
           <p className="text-xs sm:text-sm text-text-secondary">
-            Drag and drop or tap to classify scenarios into Ansoff, SWOT, STEEPLE, and BCG matrix quadrants.
+            Drag and drop or tap to classify scenarios into Ansoff, SWOT, STEEPLE, BCG, Stakeholders, and Economies of Scale.
           </p>
         </div>
 
@@ -392,8 +424,56 @@ export function MatrixMaster() {
               <span className="w-2 h-2 rounded-full bg-emerald-500" title="Completed" />
             )}
           </button>
+
+          <button
+            onClick={() => {
+              setMatrixType('scale');
+              setActiveTab('grid');
+              setSelectedCardId(null);
+              setIsChecked(false);
+              shufflePool('scale');
+            }}
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition flex items-center gap-1.5 cursor-pointer ${
+              matrixType === 'scale'
+                ? 'bg-white text-blue-700 shadow-subtle'
+                : 'text-text-muted hover:text-text-primary'
+            }`}
+          >
+            <Scale className="w-3.5 h-3.5" />
+            <span>Economies of Scale (16)</span>
+            {state.matrixMasterCompleted.scale && (
+              <span className="w-2 h-2 rounded-full bg-emerald-500" title="Completed" />
+            )}
+          </button>
         </div>
       </div>
+
+      {/* Economies of Scale Secondary Tab (if Scale selected) */}
+      {matrixType === 'scale' && (
+        <div className="flex gap-2 border-b border-border pb-2">
+          <button
+            onClick={() => setActiveTab('grid')}
+            className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition cursor-pointer ${
+              activeTab === 'grid'
+                ? 'bg-stone-900 text-white'
+                : 'bg-white text-text-secondary hover:text-text-primary border border-border'
+            }`}
+          >
+            Quadrant Sorter ({SCALE_CARDS.length} Scenarios)
+          </button>
+          <button
+            onClick={() => setActiveTab('simulator')}
+            className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition flex items-center gap-1.5 cursor-pointer ${
+              activeTab === 'simulator'
+                ? 'bg-stone-900 text-white'
+                : 'bg-white text-text-secondary hover:text-text-primary border border-border'
+            }`}
+          >
+            <Sliders className="w-3.5 h-3.5" />
+            <span>Average Cost Curve Simulator</span>
+          </button>
+        </div>
+      )}
 
       {/* SWOT Strategy Pairs Secondary Tab (if SWOT selected) */}
       {matrixType === 'swot' && (
@@ -417,7 +497,7 @@ export function MatrixMaster() {
             }`}
           >
             <Layers className="w-3.5 h-3.5" />
-            <span>TOWS Strategic Combinations</span>
+            <span>SWOT Strategy Combinations</span>
           </button>
         </div>
       )}
@@ -507,6 +587,20 @@ export function MatrixMaster() {
               />
             )}
 
+            {matrixType === 'scale' && (
+              <ScaleGrid
+                placements={scalePlacements}
+                onDrop={handleDrop}
+                onDragOver={handleDragOver}
+                onRemoveCard={removeCard}
+                isChecked={isChecked}
+                selectedCardId={selectedCardId}
+                onCategoryClick={(category) => {
+                  if (selectedCardId) placeCard(selectedCardId, category);
+                }}
+              />
+            )}
+
             {/* Verification Bar & Action Controls */}
             <div className="flex flex-wrap items-center justify-between gap-3 bg-white p-4 rounded-xl border border-border shadow-subtle">
               <div className="flex items-center gap-3">
@@ -570,6 +664,8 @@ export function MatrixMaster() {
                     ? card.businessName 
                     : 'stakeholderName' in card 
                     ? card.stakeholderName 
+                    : 'companyOrContext' in card
+                    ? (card as ScaleCard).companyOrContext
                     : 'entityName' in card 
                     ? (card as { entityName: string }).entityName 
                     : (card as { id: string }).id;
@@ -614,6 +710,20 @@ export function MatrixMaster() {
                             {card.category.toUpperCase()}
                           </span>
                         )}
+                        {'specificType' in card && (
+                          <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">
+                            {(card as ScaleCard).specificType}
+                          </span>
+                        )}
+                        {'impactOnUnitCost' in card && (
+                          <span className={`text-[9px] font-mono font-bold px-1.5 py-0.5 rounded ${
+                            (card as ScaleCard).impactOnUnitCost.includes('Decreases')
+                              ? 'bg-emerald-50 text-emerald-700'
+                              : 'bg-rose-50 text-rose-700'
+                          }`}>
+                            {(card as ScaleCard).impactOnUnitCost.includes('Decreases') ? '↓ ATC' : '↑ ATC'}
+                          </span>
+                        )}
                       </div>
                       <p className="text-xs text-text-secondary leading-relaxed">
                         <MarkdownRenderer content={getCardText(card)} inline />
@@ -631,13 +741,15 @@ export function MatrixMaster() {
             </div>
           </div>
         </div>
+      ) : activeTab === 'simulator' ? (
+        <LracCostSimulator />
       ) : (
         /* SWOT Strategic Combinations Tab */
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {SWOT_STRATEGY_PAIRS.map((pair) => (
             <Card key={pair.id} className="p-5">
               <div className="flex items-center justify-between mb-3">
-                <Badge variant={pair.posture === 'Maxi-Maxi' ? 'success' : pair.posture === 'Mini-Mini' ? 'danger' : 'neutral'}>
+                <Badge variant={pair.posture === 'Ideal situation' ? 'success' : pair.posture === 'Most undesirable' ? 'danger' : 'neutral'}>
                   {pair.posture}
                 </Badge>
                 <span className="text-xs font-bold text-text-secondary font-mono">{pair.strategyType}</span>
@@ -1000,7 +1112,7 @@ function SteepleGrid({
       id: 'economic',
       letter: 'E',
       title: 'Economic',
-      subtitle: 'Inflation, exchange rates (SPICED), interest rates',
+      subtitle: 'Inflation, exchange rates, interest rates',
       color: 'border-emerald-300 bg-emerald-50/20',
     },
     {
@@ -1285,7 +1397,7 @@ function BcgGrid({
 }
 
 // ----------------------------------------------------
-// 5. Mendelow's Stakeholder Matrix Component
+// 5. Stakeholder Mapping Matrix Component (Hoang Figure 4.3)
 // ----------------------------------------------------
 interface StakeholderGridProps {
   placements: Record<string, StakeholderQuadrant>;
@@ -1346,7 +1458,7 @@ function StakeholderGrid({
     },
     {
       id: 'quadrant-d',
-      title: 'Quadrant D: Key Players',
+      title: 'Quadrant D: Key Stakeholders',
       subtitle: 'High Power / High Interest',
       powerInterest: 'Power: HIGH | Interest: HIGH',
       strategy: 'Strategy: Maximum Effort — continuous partnership, board consultation, direct synergy',
@@ -1447,6 +1559,181 @@ function StakeholderGrid({
             {assignedCards.length === 0 && (
               <div className="text-center py-8 text-xs text-text-muted border border-dashed border-border/80 rounded-xl">
                 Drop stakeholders belonging to {q.subtitle}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ----------------------------------------------------
+// 6. Economies & Diseconomies of Scale 2x2 Grid Component
+// ----------------------------------------------------
+interface ScaleGridProps {
+  placements: Record<string, ScaleCategory>;
+  onDrop: (e: React.DragEvent, category: string) => void;
+  onDragOver: (e: React.DragEvent) => void;
+  onRemoveCard: (id: string) => void;
+  isChecked: boolean;
+  selectedCardId: string | null;
+  onCategoryClick: (category: string) => void;
+}
+
+function ScaleGrid({
+  placements,
+  onDrop,
+  onDragOver,
+  onRemoveCard,
+  isChecked,
+  selectedCardId,
+  onCategoryClick,
+}: ScaleGridProps) {
+  const quadrants: { 
+    id: ScaleCategory; 
+    title: string; 
+    subtitle: string; 
+    types: string;
+    impact: string;
+    badge: string; 
+    color: string 
+  }[] = [
+    {
+      id: 'internal-economies',
+      title: 'Internal Economies of Scale',
+      subtitle: 'Firm-level cost reductions from expansion under direct managerial control',
+      types: 'Technical • Financial • Managerial • Specialization • Marketing • Purchasing • Risk-Bearing',
+      impact: 'Lowers average costs (↓ Unit Cost)',
+      badge: 'bg-emerald-50 text-emerald-800 border-emerald-200',
+      color: 'border-emerald-300 bg-emerald-50/20',
+    },
+    {
+      id: 'external-economies',
+      title: 'External Economies of Scale',
+      subtitle: 'Cost advantages shared across all firms as the whole industry or cluster grows',
+      types: 'Technological Progress • Improved Transport Networks • Skilled Labour • Regional Specialization',
+      impact: 'Lowers average costs for all firms in the industry',
+      badge: 'bg-blue-50 text-blue-800 border-blue-200',
+      color: 'border-blue-300 bg-blue-50/20',
+    },
+    {
+      id: 'internal-diseconomies',
+      title: 'Internal Diseconomies of Scale',
+      subtitle: 'Unit cost inflation caused by managerial coordination friction and bureaucracy',
+      types: 'Lack of Control & Coordination • Poorer Working Relationships • Lower Productive Efficiency • Bureaucracy • Complacency',
+      impact: 'Raises average costs (↑ Unit Cost)',
+      badge: 'bg-amber-50 text-amber-800 border-amber-200',
+      color: 'border-amber-300 bg-amber-50/20',
+    },
+    {
+      id: 'external-diseconomies',
+      title: 'External Diseconomies of Scale',
+      subtitle: 'Industry-wide cost inflation from regional congestion and resource competition',
+      types: 'Higher Rents • Higher Pay & Financial Rewards • Traffic Congestion',
+      impact: 'Raises average costs for all firms in the industry',
+      badge: 'bg-rose-50 text-rose-800 border-rose-200',
+      color: 'border-rose-300 bg-rose-50/20',
+    },
+  ];
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {quadrants.map((q) => {
+        const assignedCards = SCALE_CARDS.filter((c) => placements[c.id] === q.id);
+        const isTarget = !!selectedCardId;
+
+        return (
+          <div
+            key={q.id}
+            onDrop={(e) => onDrop(e, q.id)}
+            onDragOver={onDragOver}
+            onClick={() => onCategoryClick(q.id)}
+            className={`min-h-[240px] p-4 rounded-2xl border-2 transition-all flex flex-col justify-between ${q.color} ${
+              isTarget ? 'border-dashed border-blue-400 bg-blue-50/30 cursor-pointer' : 'border-border'
+            }`}
+          >
+            <div>
+              <div className="flex items-center justify-between mb-1">
+                <h3 className="text-sm font-bold text-text-primary tracking-tight">{q.title}</h3>
+                <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${q.badge}`}>
+                  {assignedCards.length}
+                </span>
+              </div>
+              <p className="text-[11px] text-text-muted font-medium mb-1">{q.subtitle}</p>
+              <div className="flex flex-wrap items-center justify-between gap-1 mb-3 pb-2 border-b border-border/50">
+                <span className="text-[10px] font-semibold text-text-secondary">{q.types}</span>
+                <span className="text-[9px] font-mono font-bold text-text-muted">{q.impact}</span>
+              </div>
+
+              <div className="space-y-2">
+                {assignedCards.map((card) => {
+                  const isCorrect = isChecked && card.category === q.id;
+                  const isWrong = isChecked && card.category !== q.id;
+
+                  return (
+                    <div
+                      key={card.id}
+                      className={`p-2.5 rounded-xl border text-xs bg-white shadow-subtle flex flex-col gap-1.5 ${
+                        isCorrect
+                          ? 'border-emerald-500 bg-emerald-50/30'
+                          : isWrong
+                          ? 'border-red-500 bg-red-50/30'
+                          : 'border-border'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between">
+                        <span className="font-bold text-text-primary">{card.companyOrContext}</span>
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">
+                            {card.specificType}
+                          </span>
+                          <span className={`text-[9px] font-mono font-bold px-1 py-0.5 rounded ${
+                            card.impactOnUnitCost.includes('Decreases')
+                              ? 'bg-emerald-50 text-emerald-700'
+                              : 'bg-rose-50 text-rose-700'
+                          }`}>
+                            {card.impactOnUnitCost.includes('Decreases') ? '↓ ATC' : '↑ ATC'}
+                          </span>
+                          {isChecked && (
+                            isCorrect ? (
+                              <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                            ) : (
+                              <XCircle className="w-4 h-4 text-red-600 flex-shrink-0" />
+                            )
+                          )}
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onRemoveCard(card.id);
+                            }}
+                            className="text-text-muted hover:text-red-600 text-xs px-1 cursor-pointer"
+                            title="Remove card"
+                          >
+                            &times;
+                          </button>
+                        </div>
+                      </div>
+                      <p className="text-[11px] text-text-secondary leading-snug">
+                        {card.scenario}
+                      </p>
+                      <p className="text-[10px] text-text-muted italic bg-surface-subtle p-1.5 rounded">
+                        Mechanism: {card.rationale}
+                      </p>
+                      {isChecked && isWrong && (
+                        <p className="text-[10px] text-red-700 font-medium pt-1 border-t border-red-200">
+                          Should be: <strong>{card.category.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</strong> ({card.specificType})
+                        </p>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {assignedCards.length === 0 && (
+              <div className="text-center py-8 text-xs text-text-muted border border-dashed border-border/80 rounded-xl">
+                Drop scenarios belonging to {q.title}
               </div>
             )}
           </div>

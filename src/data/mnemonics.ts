@@ -116,7 +116,7 @@ export const PEEL_FRAMEWORK: PeelFrameworkElement[] = [
     description: 'Direct quotation, financial figure, or factual context cited from the stimulus case study.',
     sentenceStarters: [
       'In the case of Lenovo, acquiring IBM\'s PC division...',
-      'As demonstrated by EXP employing 12 workers at full capacity...',
+      'As demonstrated by EXP employing 12 workers and running near full capacity...',
       'Evidence from the case highlights that...'
     ]
   },

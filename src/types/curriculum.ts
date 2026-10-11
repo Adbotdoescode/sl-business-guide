@@ -3,10 +3,15 @@ export type SyllabusSubunit =
   | '1.2-types-of-business-entities'
   | '1.3-business-objectives'
   | '1.4-stakeholders'
+  | '1.5-growth-and-evolution'
+  | '1.5-economies-of-scale'
+  | '1.6-multinational-companies'
   | 'bmt-swot-analysis'
   | 'bmt-ansoff-matrix'
   | 'bmt-steeple-analysis'
-  | 'bmt-toolkit';
+  | 'bmt-toolkit'
+  | 'bmt-business-plan'
+  | 'bmt-descriptive-statistics';
 
 export type CommandTerm = 
   | 'Define'
@@ -194,7 +199,7 @@ export interface SWOTCard {
 export interface SWOTStrategyPair {
   id: string;
   strategyType: 'S-O Offensive' | 'W-O Reorientation' | 'S-T Defensive' | 'W-T Survival';
-  posture: 'Maxi-Maxi' | 'Mini-Maxi' | 'Maxi-Mini' | 'Mini-Mini';
+  posture: 'Ideal situation' | 'Adjust policies' | 'Defend position' | 'Most undesirable';
   internalFactor: string;
   externalFactor: string;
   actionableStrategy: string;
@@ -242,7 +247,7 @@ export interface BCGCard {
 }
 
 // ----------------------------------------------------
-// 5d. Stakeholder Mapping (Mendelow's Matrix)
+// 5d. Stakeholder Mapping (power-interest grid, Hoang Figure 4.3)
 // ----------------------------------------------------
 export type StakeholderQuadrant = 'quadrant-a' | 'quadrant-b' | 'quadrant-c' | 'quadrant-d';
 
@@ -254,13 +259,53 @@ export interface StakeholderCard {
   powerLevel: 'high' | 'low';
   interestLevel: 'high' | 'low';
   quadrant: StakeholderQuadrant; // A: Low P / Low I, B: Low P / High I, C: High P / Low I, D: High P / High I
-  engagementStrategy: 'Minimum effort' | 'Keep informed' | 'Keep satisfied' | 'Key players (Maximum effort)';
+  engagementStrategy: 'Minimum effort' | 'Keep informed' | 'Keep satisfied' | 'Key stakeholders (Maximum effort)';
   rationale: string;
   conflictScenario: string;
 }
 
 // ----------------------------------------------------
-// 5e. Business Management Toolkit (BMT) Core Types
+// 5e. Economies & Diseconomies of Scale Matrix
+// ----------------------------------------------------
+export type ScaleCategory = 
+  | 'internal-economies'
+  | 'external-economies'
+  | 'internal-diseconomies'
+  | 'external-diseconomies';
+
+export type ScaleSpecificType =
+  | 'Technical Economies'
+  | 'Financial Economies'
+  | 'Managerial Economies'
+  | 'Specialization Economies'
+  | 'Marketing Economies'
+  | 'Purchasing Economies'
+  | 'Risk-Bearing Economies'
+  | 'Technological Progress'
+  | 'Improved Transport Networks'
+  | 'Skilled Labour Pool'
+  | 'Regional Specialization'
+  | 'Lack of Control & Coordination'
+  | 'Poorer Working Relationships'
+  | 'Lower Productive Efficiency'
+  | 'Bureaucracy & Red Tape'
+  | 'Complacency'
+  | 'Traffic Congestion'
+  | 'Land Scarcity & Higher Rents'
+  | 'Higher Pay & Financial Rewards';
+
+export interface ScaleCard {
+  id: string;
+  scenario: string;
+  companyOrContext: string;
+  category: ScaleCategory;
+  specificType: ScaleSpecificType;
+  impactOnUnitCost: 'Decreases unit cost (ATC)' | 'Increases unit cost (ATC)';
+  rationale: string;
+}
+
+// ----------------------------------------------------
+// 5f. Business Management Toolkit (BMT) Core Types
 // ----------------------------------------------------
 export type BMTToolType = 
   | 'swot'
@@ -348,7 +393,7 @@ export interface DistinctionItem {
 export interface GoldenMatrixRule {
   id: string;
   ruleTitle: string;
-  category: 'SWOT' | 'Ansoff' | 'STEEPLE' | 'BCG' | 'BMT' | 'Stakeholders';
+  category: 'SWOT' | 'Ansoff' | 'STEEPLE' | 'BCG' | 'BMT' | 'Stakeholders' | 'Scale';
   corePrinciple: string;
   actionProtocol: string;
   examApplicationTip: string;

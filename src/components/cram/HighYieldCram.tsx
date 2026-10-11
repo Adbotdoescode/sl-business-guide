@@ -125,7 +125,7 @@ export function HighYieldCram() {
           {visibleDefs.length === 0 ? (
             <div className="col-span-2 p-12 text-center bg-white rounded-xl border border-border">
               <Sparkles className="w-8 h-8 text-amber-500 mx-auto mb-2" />
-              <p className="text-sm font-semibold text-text-primary">All 20 definitions mastered!</p>
+              <p className="text-sm font-semibold text-text-primary">All {CRAM_DEFINITIONS.length} definitions mastered!</p>
               <p className="text-xs text-text-muted mt-1">
                 Click &ldquo;Show All&rdquo; or &ldquo;Reset Mastery Filters&rdquo; to review again.
               </p>

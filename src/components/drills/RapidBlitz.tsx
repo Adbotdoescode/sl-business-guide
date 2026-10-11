@@ -278,10 +278,14 @@ export function RapidBlitz() {
             <option value="1.2-types-of-business-entities">1.2 Types of Entities</option>
             <option value="1.3-business-objectives">1.3 Objectives</option>
             <option value="1.4-stakeholders">1.4 Stakeholders</option>
+            <option value="1.5-growth-and-evolution">1.5 Economies of Scale</option>
+            <option value="1.6-multinational-companies">1.6 Multinational Companies (MNCs)</option>
             <option value="bmt-swot-analysis">SWOT Analysis</option>
             <option value="bmt-ansoff-matrix">Ansoff Matrix</option>
             <option value="bmt-steeple-analysis">STEEPLE Analysis</option>
             <option value="bmt-toolkit">BMT Toolkit Core</option>
+            <option value="bmt-business-plan">Business Plan</option>
+            <option value="bmt-descriptive-statistics">Descriptive Statistics</option>
           </select>
 
           <Button
@@ -677,7 +681,7 @@ export function RapidBlitz() {
                 </span>
               </div>
               <span className="block text-xs text-text-secondary mt-0.5">
-                No countdown pressure. Thoroughly study all 30 syllabus questions with 3 heart lives.
+                No countdown pressure. Thoroughly study all {MCQ_QUESTIONS.length} syllabus questions with 3 heart lives.
               </span>
             </div>
           </button>

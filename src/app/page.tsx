@@ -23,39 +23,55 @@ const SYLLABUS_MODULES = [
     code: 'Unit 1.1',
     title: 'What is a Business?',
     summary: 'Inputs, transformation process, goods vs services, economic sectors, chain of production, and GET CASH startup motives.',
-    mcqs: 6,
-    shortAnswer: 7,
+    mcqs: 11,
+    shortAnswer: 9,
   },
   {
     id: '1.2-types-of-business-entities',
     code: 'Unit 1.2',
     title: 'Types of Business Entities',
     summary: 'Sole traders, ordinary partnerships, Ltd, PLC, cooperatives, NGOs, limited liability, and entity choice factors.',
-    mcqs: 7,
-    shortAnswer: 8,
+    mcqs: 16,
+    shortAnswer: 16,
   },
   {
     id: '1.3-business-objectives',
     code: 'Unit 1.3',
     title: 'Business Objectives',
-    summary: 'Vision and mission statements, SMART objectives hierarchy, ethical code of practice, CSR, and stakeholder conflicts.',
-    mcqs: 7,
-    shortAnswer: 7,
+    summary: 'Vision and mission statements, common business objectives, strategic and tactical objectives, ethics, and CSR.',
+    mcqs: 13,
+    shortAnswer: 13,
   },
   {
     id: '1.4-stakeholders',
     code: 'Unit 1.4',
     title: 'Stakeholders',
-    summary: 'Internal vs external stakeholders, stakeholder conflict, mutual benefits synergy, and Mendelow power-interest matrix.',
-    mcqs: 6,
-    shortAnswer: 6,
+    summary: 'Internal vs external stakeholders, stakeholder conflict, mutual benefits synergy, and stakeholder mapping (power-interest grid).',
+    mcqs: 10,
+    shortAnswer: 13,
+  },
+  {
+    id: '1.5-growth-and-evolution',
+    code: 'Unit 1.5',
+    title: 'Growth & Economies of Scale',
+    summary: 'Internal and external economies and diseconomies of scale, internal vs external growth, reasons to grow or stay small, and external growth methods.',
+    mcqs: 17,
+    shortAnswer: 14,
+  },
+  {
+    id: '1.6-multinational-companies',
+    code: 'Unit 1.6',
+    title: 'Multinational Companies',
+    summary: 'MNC and transnational definitions, reasons to go multinational, protectionist policies, and positive vs negative impacts on host countries.',
+    mcqs: 9,
+    shortAnswer: 4,
   },
   {
     id: 'bmt-swot-analysis',
     code: 'BMT: SWOT',
     title: 'SWOT Analysis',
     summary: 'Internal strengths and weaknesses, external opportunities and threats, STEEPLE scan, and SO/WO/ST/WT strategy pairing.',
-    mcqs: 5,
+    mcqs: 8,
     shortAnswer: 6,
   },
   {
@@ -63,24 +79,40 @@ const SYLLABUS_MODULES = [
     code: 'BMT: Ansoff',
     title: 'Ansoff Growth Matrix',
     summary: 'Market Penetration, Product Development, Market Development, Diversification (related vs unrelated), and risk gradients.',
-    mcqs: 5,
-    shortAnswer: 4,
+    mcqs: 7,
+    shortAnswer: 5,
   },
   {
     id: 'bmt-steeple-analysis',
     code: 'BMT: STEEPLE',
     title: 'STEEPLE Analysis',
     summary: 'External macro-environmental audit across Social, Technological, Economic, Environmental, Political, Legal, and Ethical dimensions.',
-    mcqs: 6,
-    shortAnswer: 6,
+    mcqs: 13,
+    shortAnswer: 8,
   },
   {
     id: 'bmt-toolkit',
     code: 'BMT: Master',
     title: 'BM Toolkit Master Guide',
     summary: 'Master the 8 SL tools: BCG Matrix portfolio cash balancing, Circular Business Models, and quantitative Decision Trees.',
-    mcqs: 6,
+    mcqs: 8,
     shortAnswer: 4,
+  },
+  {
+    id: 'bmt-business-plan',
+    code: 'BMT: Business Plan',
+    title: 'Business Plan',
+    summary: 'What a business plan is, the six components of a typical plan, how it reassures lenders and investors, and its limitations as a planning tool.',
+    mcqs: 6,
+    shortAnswer: 3,
+  },
+  {
+    id: 'bmt-descriptive-statistics',
+    code: 'BMT: Descriptive Stats',
+    title: 'Descriptive Statistics',
+    summary: 'Mean, median, and mode, quartiles and the five-point summary, box plots, interquartile range, outliers, and standard deviation.',
+    mcqs: 6,
+    shortAnswer: 3,
   },
 ];
 
@@ -96,22 +128,22 @@ export default function DashboardPage() {
           </div>
 
           <h1 className="text-2xl sm:text-4xl font-extrabold text-text-primary tracking-tight leading-tight">
-            Master Units 1.1–1.4, SWOT, Ansoff & the Full BM Toolkit for 100% Exam Readiness.
+            Master Units 1.1–1.6, SWOT, Ansoff & the Full BM Toolkit for 100% Exam Readiness.
           </h1>
 
           <p className="text-sm sm:text-base text-text-secondary mt-3 leading-relaxed">
-            Engineered around the Paul Hoang 5th Edition curriculum and visual student notes. Features rapid timed drills, 5-way matrix sorters, split-screen PEEL writing rubrics, and the 8-tool Business Management Toolkit hub.
+            Engineered around the Paul Hoang 5th Edition curriculum and visual student notes. Features rapid timed drills, 6-way matrix sorters, an average cost curve simulator, split-screen PEEL writing rubrics, and the 8-tool Business Management Toolkit hub.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 mt-6 pt-6 border-t border-border/80 text-xs text-text-muted">
             <span className="flex items-center gap-1.5 font-medium text-text-primary">
-              <CheckCircle className="w-4 h-4 text-emerald-600" /> 48 Multiple Choice Questions
+              <CheckCircle className="w-4 h-4 text-emerald-600" /> 124 Multiple Choice Questions
             </span>
             <span className="flex items-center gap-1.5 font-medium text-text-primary">
-              <FileCheck className="w-4 h-4 text-blue-600" /> 48 2-Mark Knowledge Questions
+              <FileCheck className="w-4 h-4 text-blue-600" /> 98 2-Mark Knowledge Questions
             </span>
             <span className="flex items-center gap-1.5 font-medium text-text-primary">
-              <Target className="w-4 h-4 text-amber-600" /> 28 Applied 4- & 6-Mark PEEL Rubrics
+              <Target className="w-4 h-4 text-amber-600" /> 52 Applied 4- & 6-Mark PEEL Rubrics
             </span>
           </div>
         </div>
