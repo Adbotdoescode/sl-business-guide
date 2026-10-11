@@ -1,7 +1,7 @@
 import { GetCashVault } from '@/components/cram/GetCashVault';
 
 export const metadata = {
-  title: 'GET CASH Mnemonic Vault | IB Business SL',
+  title: 'GET CASH Mnemonic Vault | SL Business Guide',
   description: 'Flippable flashcards, 30s Speed Matcher mini-game, SMART and PEEL frameworks.',
 };
 

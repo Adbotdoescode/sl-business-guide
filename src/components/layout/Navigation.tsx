@@ -50,7 +50,7 @@ export function Navigation() {
               </div>
               <div>
                 <span className="font-semibold text-text-primary text-sm sm:text-base tracking-tight block">
-                  IB Business SL
+                  SL Business Guide
                 </span>
                 <span className="text-[10px] uppercase font-bold text-text-muted tracking-wider block -mt-1">
                   1.1–1.6 • SWOT • Ansoff • STEEPLE • BMT

@@ -1,6 +1,6 @@
-# IB Business SL (ib-business-sl)
+# SL Business Guide (sl-business-guide)
 
-A production-grade, editorial light-mode Next.js study application and revision suite for IB Business SL, covering Units 1.1, 1.2, 1.3, 1.4, 1.5 (Economies of Scale), 1.6 (Multinational Companies), SWOT Analysis, Ansoff Matrix, STEEPLE Analysis, BCG Matrix, the BMT Business Plan, BMT Descriptive Statistics, and the Business Management Toolkit (BMT). Built with Next.js 15 (App Router), React 19, and Tailwind CSS.
+A production-grade, editorial light-mode Next.js study application and revision suite for SL Business Guide, covering Units 1.1, 1.2, 1.3, 1.4, 1.5 (Economies of Scale), 1.6 (Multinational Companies), SWOT Analysis, Ansoff Matrix, STEEPLE Analysis, BCG Matrix, the BMT Business Plan, BMT Descriptive Statistics, and the Business Management Toolkit (BMT). Built with Next.js 15 (App Router), React 19, and Tailwind CSS.
 
 ---
 

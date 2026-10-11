@@ -1,7 +1,7 @@
 import { EntityShowdown } from '@/components/drills/EntityShowdown';
 
 export const metadata = {
-  title: 'Entity Showdown & Matchmaker | IB Business SL',
+  title: 'Entity Showdown & Matchmaker | SL Business Guide',
   description: 'Comparative 8-dimension table for 5 business entities and interactive case challenges.',
 };
 

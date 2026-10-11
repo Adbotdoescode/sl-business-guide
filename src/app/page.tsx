@@ -124,7 +124,7 @@ export default function DashboardPage() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold border border-blue-200 mb-4">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>IB Business SL Exam Suite</span>
+            <span>SL Business Guide Exam Suite</span>
           </div>
 
           <h1 className="text-2xl sm:text-4xl font-extrabold text-text-primary tracking-tight leading-tight">

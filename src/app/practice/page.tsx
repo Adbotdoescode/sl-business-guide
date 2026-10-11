@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Exam Practice & Written Rubrics | IB Business SL',
+  title: 'Exam Practice & Written Rubrics | SL Business Guide',
   description: 'Practice 2-mark definitions, 4-mark applied PEEL questions, and 6-mark analytical essays.',
 };
 
