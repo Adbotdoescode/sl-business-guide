@@ -36,11 +36,11 @@ export async function generateMetadata({ params }: StudyUnitPageProps) {
   const unit = getStudyUnitById(unitId);
   if (!unit) {
     return {
-      title: 'Study Guide | IB SL Business Management',
+      title: 'Study Guide | IB Business SL',
     };
   }
   return {
-    title: `${unit.unitCode}: ${unit.title} | IB SL Business Management`,
+    title: `${unit.unitCode}: ${unit.title} | IB Business SL`,
     description: unit.description,
   };
 }

@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { RapidBlitz } from '@/components/drills/RapidBlitz';
 
 export const metadata = {
-  title: 'Rapid Blitz MCQ Sprint | IB SL Business Management',
+  title: 'Rapid Blitz MCQ Sprint | IB Business SL',
   description: 'High-velocity timed MCQ drills with instant rationale and streak bonuses.',
 };
 

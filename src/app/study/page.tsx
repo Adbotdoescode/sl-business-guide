@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Syllabus Study Guides | IB SL Business Management',
+  title: 'Syllabus Study Guides | IB Business SL',
   description: 'Complete academic study guides based on Paul Hoang 5th Edition and student visual notes.',
 };
 

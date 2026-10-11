@@ -1,7 +1,7 @@
 import { MatrixMaster } from '@/components/drills/MatrixMaster';
 
 export const metadata = {
-  title: 'Matrix Master | IB SL Business Management',
+  title: 'Matrix Master | IB Business SL',
   description: 'Interactive quadrant sorter for SWOT Analysis and Ansoff Matrix.',
 };
 
