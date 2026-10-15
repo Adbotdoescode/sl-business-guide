@@ -10,7 +10,9 @@ import {
   Key, 
   BookOpen, 
   ArrowUpRight,
-  HelpCircle
+  HelpCircle,
+  CheckSquare,
+  ArrowRight
 } from 'lucide-react';
 
 const ACTIONS = [
@@ -90,6 +92,35 @@ export function QuickActions() {
           Select a mode to begin testing and reinforcing key IB syllabus concepts.
         </p>
       </div>
+
+      {/* Featured: Custom Content Test Builder */}
+      <Link href="/practice/custom" className="block group">
+        <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 text-white shadow-subtle hover:shadow-elevated transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5">
+            <div className="w-12 h-12 rounded-xl bg-white/15 backdrop-blur-sm flex items-center justify-center text-white flex-shrink-0">
+              <CheckSquare className="w-6 h-6" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white/20 text-white uppercase tracking-wider">
+                  New Feature
+                </span>
+                <span className="text-xs text-blue-100 font-medium">Multi-Topic Testing</span>
+              </div>
+              <h3 className="text-base sm:text-lg font-bold text-white mt-1 group-hover:text-blue-100 transition">
+                Custom Content Test Builder
+              </h3>
+              <p className="text-xs text-blue-100/90 leading-relaxed max-w-2xl mt-0.5">
+                Test yourself with questions from any chosen group of content — select Unit 1 foundations, economies of scale, BM toolkit tools, or custom topic combinations.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 text-xs font-bold bg-white text-blue-700 px-4 py-2 rounded-xl shadow-sm group-hover:bg-blue-50 transition flex-shrink-0 self-start sm:self-auto">
+            <span>Build Custom Test</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          </div>
+        </div>
+      </Link>
 
       {/* Primary Action Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

@@ -18,11 +18,13 @@ import {
   Menu,
   X,
   HelpCircle,
-  Compass
+  Compass,
+  CheckSquare
 } from 'lucide-react';
 
 const NAV_LINKS = [
   { href: '/', label: 'Overview', icon: GraduationCap },
+  { href: '/practice/custom', label: 'Custom Test', icon: CheckSquare },
   { href: '/blitz', label: 'MCQ Blitz', icon: Zap },
   { href: '/toolkit', label: 'BM Toolkit', icon: Compass },
   { href: '/matrix-master', label: 'Matrix Master', icon: Grid },
@@ -60,10 +62,12 @@ export function Navigation() {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">
             {NAV_LINKS.map((link) => {
               const Icon = link.icon;
-              const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+              const isActive = link.href === '/practice'
+                ? pathname === '/practice' || pathname === '/practice/written' || pathname === '/practice/mcq'
+                : pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
               return (
                 <Link
                   key={link.href}

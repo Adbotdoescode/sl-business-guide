@@ -21,7 +21,27 @@ export default function PracticeHubPage() {
   return (
     <div className="space-y-6">
       {/* Practice Modality Hub Selector */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <Link
+          href="/practice/custom"
+          className="p-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white flex items-center justify-between transition hover:shadow-elevated hover:scale-[1.01] group shadow-subtle"
+        >
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-lg bg-white/20 text-white flex items-center justify-center flex-shrink-0 backdrop-blur-sm">
+              <CheckSquare className="w-4 h-4" />
+            </div>
+            <div>
+              <div className="text-xs font-bold text-white group-hover:text-blue-100 transition">
+                Custom Test Builder
+              </div>
+              <div className="text-[11px] text-blue-100/90">Test Any Group of Content</div>
+            </div>
+          </div>
+          <span className="text-[10px] font-bold px-2 py-0.5 bg-white text-blue-700 rounded-full shadow-sm">
+            New
+          </span>
+        </Link>
+
         <Link
           href="/practice/written"
           className="p-3.5 rounded-xl bg-blue-50/70 border border-blue-200/90 flex items-center justify-between transition hover:border-blue-400 group"

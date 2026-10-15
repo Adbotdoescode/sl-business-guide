@@ -20,14 +20,23 @@ import {
   Zap
 } from 'lucide-react';
 
+import { GroupTopicSelector } from '@/components/common/GroupTopicSelector';
+import { ALL_CONTENT_TOPICS, PRESET_CONTENT_GROUPS } from '@/data/content-groups';
+import { SyllabusSubunit } from '@/types/curriculum';
+
 export default function UntimedMcqPage() {
   const { state, recordMcqAttempt, resetMcqAttempt } = useStudyProgress();
-  const [selectedSubunit, setSelectedSubunit] = useState<string>('all');
+  const [selectedSubunits, setSelectedSubunits] = useState<SyllabusSubunit[]>(
+    ALL_CONTENT_TOPICS.map((t) => t.id)
+  );
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const filteredQuestions = selectedSubunit === 'all'
-    ? MCQ_QUESTIONS
-    : MCQ_QUESTIONS.filter((q) => q.subunit === selectedSubunit);
+  const subunitSet = new Set(selectedSubunits);
+  if (subunitSet.has('1.5-growth-and-evolution')) {
+    subunitSet.add('1.5-economies-of-scale');
+  }
+
+  const filteredQuestions = MCQ_QUESTIONS.filter((q) => subunitSet.has(q.subunit));
 
   const currentQ = filteredQuestions[currentIndex] || filteredQuestions[0];
   const attempt = currentQ ? state.mcqAttempts[currentQ.id] : undefined;
@@ -60,48 +69,46 @@ export default function UntimedMcqPage() {
               <HelpCircle className="w-5 h-5" strokeWidth={1.75} />
             </span>
             <h1 className="text-xl sm:text-2xl font-bold text-text-primary tracking-tight">
-              Self-Paced MCQ Question Bank ({MCQ_QUESTIONS.length} Questions)
+              Self-Paced MCQ Question Bank
             </h1>
           </div>
           <p className="text-xs sm:text-sm text-text-secondary mt-1">
-            Untimed study mode with complete distractor analyses and syllabus rationales.
+            Test yourself on any chosen group of content or individual topics with complete distractor analyses.
           </p>
         </div>
 
-        <Link href="/blitz">
-          <Button variant="outline" size="sm" icon={<Zap className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />}>
-            Switch to Timed Blitz Sprint
-          </Button>
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link href="/practice/custom">
+            <Button variant="primary" size="sm" icon={<Sparkles className="w-3.5 h-3.5" />}>
+              Custom Test Builder
+            </Button>
+          </Link>
+          <Link href="/blitz">
+            <Button variant="outline" size="sm" icon={<Zap className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />}>
+              Timed Blitz
+            </Button>
+          </Link>
+        </div>
       </div>
 
-      {/* Filter and Navigation Controls */}
+      {/* Multi-Topic Group Selector */}
+      <GroupTopicSelector
+        selectedSubunits={selectedSubunits}
+        onChange={(subunits) => {
+          setSelectedSubunits(subunits);
+          setCurrentIndex(0);
+        }}
+        filterQuestionType="mcq"
+        compact={true}
+      />
+
+      {/* Question Counter and Pagination Navigation Bar */}
       <div className="flex flex-wrap items-center justify-between gap-3 bg-white p-3.5 rounded-xl border border-border shadow-subtle">
-        <div className="flex items-center gap-2">
-          <Filter className="w-4 h-4 text-text-muted" />
-          <span className="text-xs font-medium text-text-muted">Filter:</span>
-          <select
-            value={selectedSubunit}
-            onChange={(e) => {
-              setSelectedSubunit(e.target.value);
-              setCurrentIndex(0);
-            }}
-            className="text-xs bg-white border border-border rounded-lg px-2.5 py-1 text-text-primary focus:ring-2 focus:ring-blue-500"
-          >
-            <option value="all">All {MCQ_QUESTIONS.length} MCQs</option>
-            <option value="1.1-what-is-a-business">1.1 What is a Business? ({MCQ_QUESTIONS.filter(q => q.subunit === '1.1-what-is-a-business').length} Qs)</option>
-            <option value="1.2-types-of-business-entities">1.2 Types of Entities ({MCQ_QUESTIONS.filter(q => q.subunit === '1.2-types-of-business-entities').length} Qs)</option>
-            <option value="1.3-business-objectives">1.3 Business Objectives ({MCQ_QUESTIONS.filter(q => q.subunit === '1.3-business-objectives').length} Qs)</option>
-            <option value="1.4-stakeholders">1.4 Stakeholders ({MCQ_QUESTIONS.filter(q => q.subunit === '1.4-stakeholders').length} Qs)</option>
-            <option value="1.5-growth-and-evolution">1.5 Economies of Scale ({MCQ_QUESTIONS.filter(q => q.subunit === '1.5-growth-and-evolution').length} Qs)</option>
-            <option value="1.6-multinational-companies">1.6 Multinational Companies ({MCQ_QUESTIONS.filter(q => q.subunit === '1.6-multinational-companies').length} Qs)</option>
-            <option value="bmt-swot-analysis">SWOT Analysis ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-swot-analysis').length} Qs)</option>
-            <option value="bmt-ansoff-matrix">Ansoff Matrix ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-ansoff-matrix').length} Qs)</option>
-            <option value="bmt-steeple-analysis">STEEPLE Analysis ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-steeple-analysis').length} Qs)</option>
-            <option value="bmt-toolkit">BMT Toolkit Core ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-toolkit').length} Qs)</option>
-            <option value="bmt-business-plan">Business Plan ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-business-plan').length} Qs)</option>
-            <option value="bmt-descriptive-statistics">Descriptive Statistics ({MCQ_QUESTIONS.filter(q => q.subunit === 'bmt-descriptive-statistics').length} Qs)</option>
-          </select>
+        <div className="flex items-center gap-2 text-xs text-text-muted">
+          <span>Active Group:</span>
+          <strong className="text-text-primary">
+            {filteredQuestions.length} MCQs matching {selectedSubunits.length} chosen topic{selectedSubunits.length === 1 ? '' : 's'}
+          </strong>
         </div>
 
         <div className="flex items-center gap-2">

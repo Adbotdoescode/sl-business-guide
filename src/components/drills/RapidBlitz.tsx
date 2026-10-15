@@ -22,8 +22,12 @@ import {
   Trophy, 
   Play, 
   ChevronRight,
-  Sparkles
+  Sparkles,
+  Layers,
+  SlidersHorizontal
 } from 'lucide-react';
+import { ALL_CONTENT_TOPICS, PRESET_CONTENT_GROUPS } from '@/data/content-groups';
+import { GroupTopicSelector } from '@/components/common/GroupTopicSelector';
 
 export type BlitzMode = '120' | '60' | 'endless';
 
@@ -33,7 +37,10 @@ export function RapidBlitz() {
 
   // Mode and topic configuration
   const [mode, setMode] = useState<BlitzMode>('120');
-  const [selectedSubunit, setSelectedSubunit] = useState<string>('all');
+  const [selectedSubunits, setSelectedSubunits] = useState<SyllabusSubunit[]>(
+    ALL_CONTENT_TOPICS.map((t) => t.id)
+  );
+  const [showGroupModal, setShowGroupModal] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isGameOver, setIsGameOver] = useState(false);
   const [showModeModal, setShowModeModal] = useState(true);
@@ -62,23 +69,25 @@ export function RapidBlitz() {
   useEffect(() => {
     const targetSubunit = searchParams.get('subunit');
     if (targetSubunit) {
-      setSelectedSubunit(targetSubunit);
+      setSelectedSubunits([targetSubunit as SyllabusSubunit]);
     }
   }, [searchParams]);
 
-  // Initialize questions according to topic filter
+  // Initialize questions according to chosen topic group
   const setupQuestions = useCallback(() => {
-    let pool = [...MCQ_QUESTIONS];
-    if (selectedSubunit !== 'all') {
-      pool = pool.filter((q) => q.subunit === selectedSubunit);
+    const subunitSet = new Set<string>(selectedSubunits);
+    if (subunitSet.has('1.5-growth-and-evolution')) {
+      subunitSet.add('1.5-economies-of-scale');
     }
+
+    let pool = MCQ_QUESTIONS.filter((q) => subunitSet.has(q.subunit));
     // Shuffle pool using Fisher-Yates
     for (let i = pool.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [pool[i], pool[j]] = [pool[j], pool[i]];
     }
     return pool;
-  }, [selectedSubunit]);
+  }, [selectedSubunits]);
 
   // End game logic
   const endGame = useCallback(() => {
@@ -267,26 +276,18 @@ export function RapidBlitz() {
 
         {/* Mode & Topic Selectors */}
         <div className="flex flex-wrap items-center gap-2">
-          <select
-            value={selectedSubunit}
-            onChange={(e) => setSelectedSubunit(e.target.value)}
+          <button
+            type="button"
+            onClick={() => setShowGroupModal(true)}
             disabled={isPlaying}
-            className="text-xs bg-white border border-border rounded-lg px-2.5 py-1.5 font-medium text-text-primary focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex items-center gap-1.5 text-xs bg-white border border-border rounded-lg px-2.5 py-1.5 font-medium text-text-primary hover:border-stone-400 transition cursor-pointer"
           >
-            <option value="all">All Topics (Mixed)</option>
-            <option value="1.1-what-is-a-business">1.1 What is a Business?</option>
-            <option value="1.2-types-of-business-entities">1.2 Types of Entities</option>
-            <option value="1.3-business-objectives">1.3 Objectives</option>
-            <option value="1.4-stakeholders">1.4 Stakeholders</option>
-            <option value="1.5-growth-and-evolution">1.5 Economies of Scale</option>
-            <option value="1.6-multinational-companies">1.6 Multinational Companies (MNCs)</option>
-            <option value="bmt-swot-analysis">SWOT Analysis</option>
-            <option value="bmt-ansoff-matrix">Ansoff Matrix</option>
-            <option value="bmt-steeple-analysis">STEEPLE Analysis</option>
-            <option value="bmt-toolkit">BMT Toolkit Core</option>
-            <option value="bmt-business-plan">Business Plan</option>
-            <option value="bmt-descriptive-statistics">Descriptive Statistics</option>
-          </select>
+            <Layers className="w-3.5 h-3.5 text-blue-600" />
+            <span>
+              Group: {selectedSubunits.length === ALL_CONTENT_TOPICS.length ? 'All 12 Topics' : `${selectedSubunits.length} Topics Selected`}
+            </span>
+            <SlidersHorizontal className="w-3 h-3 text-text-muted" />
+          </button>
 
           <Button
             variant="outline"
@@ -685,6 +686,27 @@ export function RapidBlitz() {
               </span>
             </div>
           </button>
+        </div>
+      </Modal>
+
+      {/* Content Group Selection Modal */}
+      <Modal
+        isOpen={showGroupModal}
+        onClose={() => setShowGroupModal(false)}
+        title="Select Blitz Content Group"
+        description="Choose a preset group or select any combination of topics to drill on."
+      >
+        <div className="space-y-4 pt-1">
+          <GroupTopicSelector
+            selectedSubunits={selectedSubunits}
+            onChange={(subunits) => setSelectedSubunits(subunits)}
+            filterQuestionType="mcq"
+          />
+          <div className="flex justify-end pt-2">
+            <Button variant="primary" size="sm" onClick={() => setShowGroupModal(false)}>
+              Apply Group ({selectedSubunits.length} Topics)
+            </Button>
+          </div>
         </div>
       </Modal>
     </div>

@@ -47,9 +47,26 @@ export function ExamPractice() {
   // Available command terms for active tier
   const availableCommandTerms = Array.from(new Set(questions.map((q) => q.commandTerm))).sort();
 
+  const PRESET_GROUPS_MAP: Record<string, string[]> = {
+    'group:unit1-foundations': ['1.1-what-is-a-business', '1.2-types-of-business-entities', '1.3-business-objectives'],
+    'group:unit1-scale': ['1.4-stakeholders', '1.5-growth-and-evolution', '1.6-multinational-companies'],
+    'group:unit1-all': ['1.1-what-is-a-business', '1.2-types-of-business-entities', '1.3-business-objectives', '1.4-stakeholders', '1.5-growth-and-evolution', '1.6-multinational-companies'],
+    'group:bmt-matrices': ['bmt-swot-analysis', 'bmt-ansoff-matrix', 'bmt-steeple-analysis'],
+    'group:bmt-all': ['bmt-swot-analysis', 'bmt-ansoff-matrix', 'bmt-steeple-analysis', 'bmt-toolkit', 'bmt-business-plan', 'bmt-descriptive-statistics'],
+  };
+
   // Filtered by subunit and command term
   const filteredQuestions = questions.filter((q) => {
-    const matchesSubunit = selectedSubunit === 'all' || q.subunit === selectedSubunit;
+    let matchesSubunit = false;
+    if (selectedSubunit === 'all') {
+      matchesSubunit = true;
+    } else if (PRESET_GROUPS_MAP[selectedSubunit]) {
+      const groupSubunits = PRESET_GROUPS_MAP[selectedSubunit];
+      matchesSubunit = groupSubunits.includes(q.subunit) || (groupSubunits.includes('1.5-growth-and-evolution') && q.subunit === '1.5-economies-of-scale');
+    } else {
+      matchesSubunit = q.subunit === selectedSubunit || (selectedSubunit === '1.5-growth-and-evolution' && q.subunit === '1.5-economies-of-scale');
+    }
+
     const matchesCommandTerm = selectedCommandTerm === 'all' || q.commandTerm === selectedCommandTerm;
     return matchesSubunit && matchesCommandTerm;
   });
@@ -172,19 +189,28 @@ export function ExamPractice() {
               }}
               className="text-xs bg-white border border-border rounded-lg px-2.5 py-1 text-text-primary focus:ring-2 focus:ring-blue-500 cursor-pointer"
             >
-              <option value="all">All Units ({questions.length})</option>
-              <option value="1.1-what-is-a-business">1.1 What is a Business?</option>
-              <option value="1.2-types-of-business-entities">1.2 Types of Business Entities</option>
-              <option value="1.3-business-objectives">1.3 Business Objectives</option>
-              <option value="1.4-stakeholders">1.4 Stakeholders</option>
-              <option value="1.5-growth-and-evolution">1.5 Economies of Scale</option>
-              <option value="1.6-multinational-companies">1.6 Multinational Companies (MNCs)</option>
-              <option value="bmt-swot-analysis">BMT: SWOT Analysis</option>
-              <option value="bmt-ansoff-matrix">BMT: Ansoff Matrix</option>
-              <option value="bmt-steeple-analysis">BMT: STEEPLE Analysis</option>
-              <option value="bmt-toolkit">BMT: Toolkit Master</option>
-              <option value="bmt-business-plan">BMT: Business Plan</option>
-              <option value="bmt-descriptive-statistics">BMT: Descriptive Statistics</option>
+              <optgroup label="Preset Content Groups">
+                <option value="all">All Units ({questions.length})</option>
+                <option value="group:unit1-foundations">Group: Unit 1 Foundations (1.1–1.3)</option>
+                <option value="group:unit1-scale">Group: Scale & Global (1.4–1.6)</option>
+                <option value="group:unit1-all">Group: Complete Unit 1 (1.1–1.6)</option>
+                <option value="group:bmt-matrices">Group: Strategic Matrices (SWOT, Ansoff, STEEPLE)</option>
+                <option value="group:bmt-all">Group: Full BM Toolkit (All 6 Tools)</option>
+              </optgroup>
+              <optgroup label="Individual Syllabus Modules">
+                <option value="1.1-what-is-a-business">1.1 What is a Business?</option>
+                <option value="1.2-types-of-business-entities">1.2 Types of Business Entities</option>
+                <option value="1.3-business-objectives">1.3 Business Objectives</option>
+                <option value="1.4-stakeholders">1.4 Stakeholders</option>
+                <option value="1.5-growth-and-evolution">1.5 Economies of Scale</option>
+                <option value="1.6-multinational-companies">1.6 Multinational Companies (MNCs)</option>
+                <option value="bmt-swot-analysis">BMT: SWOT Analysis</option>
+                <option value="bmt-ansoff-matrix">BMT: Ansoff Matrix</option>
+                <option value="bmt-steeple-analysis">BMT: STEEPLE Analysis</option>
+                <option value="bmt-toolkit">BMT: Toolkit Master</option>
+                <option value="bmt-business-plan">BMT: Business Plan</option>
+                <option value="bmt-descriptive-statistics">BMT: Descriptive Statistics</option>
+              </optgroup>
             </select>
           </div>
 

@@ -38,20 +38,28 @@ A production-grade, editorial light-mode Next.js study application and revision 
    - **6-Mark Analytical Questions:** 18 analytical questions with level markbands (Levels 1–3) and criterion rubrics.
    - **Production Markdown Rendering:** Universal `MarkdownRenderer` built on `react-markdown`, `remark-gfm`, and `rehype-raw` supporting GFM tables, ASCII box-drawing diagrams, dual inline/block modes, and editorial styling.
 
-5. **10-Minute High-Yield Cram Mode:**
+5. **Custom Content Test Builder (Multi-Topic Group Testing):**
+   - Test yourself with questions from a **chosen group of content** rather than only all or just a single topic.
+   - **Predefined Content Groups:** Unit 1 Foundations (1.1–1.3), Scale & Global Operations (1.4–1.6), Complete Unit 1 (1.1–1.6), Strategic Matrices (SWOT, Ansoff, STEEPLE), and Full BM Toolkit (all 6 tools).
+   - **Custom Topic Matrix:** Checkbox selector allowing any combination of the 12 syllabus modules.
+   - **Flexible Formats & Modes:** Multiple choice (MCQ), 2-Mark definitions (AO1), or Mixed formats; choose 5, 10, 15, 20, or all matching questions.
+   - **Practice vs. Exam Mode:** Immediate distractor rationale reveal vs. timed exam simulation with submission grading.
+   - **Topic-by-Topic Performance Scorecard:** Visual mastery breakdown showing accuracy per subunit within the chosen group, question jump palette, flagged question bookmarks, and one-click "Retest Missed Questions".
+
+6. **10-Minute High-Yield Cram Mode:**
    - One-click filterable review of **117 Definitions**, **42 High-Stakes Exam Distinctions**, and **15 Golden Matrix Decision Rules**.
    - "Got it / Hide" toggles to isolate remaining uncertainties.
 
-6. **GET CASH Mnemonic Vault:**
+7. **GET CASH Mnemonic Vault:**
    - Flippable flashcards for startup motives (Growth, Earnings, Transference, Challenge, Autonomy, Security, Hobbies).
    - 30-Second Speed Matcher mini-game matching entrepreneur quotes to motives.
    - Sibling tabs for SMART Objectives (standard IB teaching, not in the Hoang textbook) and the PEEL Framework.
 
-7. **Confidence & Mastery Heatmap:**
+8. **Confidence & Mastery Heatmap:**
    - Color-coded mastery grid across all subunits and assessment tiers.
    - One-click "Weakness Workout" targeting lowest-scoring topics.
 
-8. **Comprehensive Academic Study Guides:**
+9. **Comprehensive Academic Study Guides:**
    - Complete syllabus readers covering Units 1.1, 1.2, 1.3, 1.4, 1.5, and 1.6, plus the BMT Business Plan and BMT Descriptive Statistics guides, with collapsible sections, key takeaways, and examiner tip callouts.
 
 ---
