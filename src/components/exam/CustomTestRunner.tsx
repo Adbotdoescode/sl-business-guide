@@ -18,6 +18,7 @@ import { Button } from '@/components/ui/Button';
 import { Badge, AoBadge } from '@/components/ui/Badge';
 import { Modal } from '@/components/ui/Modal';
 import { MarkdownRenderer } from '@/components/ui/MarkdownRenderer';
+import { FormattingToolbar } from '@/components/ui/FormattingToolbar';
 import { formatTime } from '@/lib/utils';
 import { 
   Sparkles, 
@@ -90,6 +91,12 @@ export function CustomTestRunner() {
   const [testItems, setTestItems] = useState<TestItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [responses, setResponses] = useState<Record<number, UserResponse>>({});
+  const customTestTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const [isCustomTestPreview, setIsCustomTestPreview] = useState(false);
+
+  useEffect(() => {
+    setIsCustomTestPreview(false);
+  }, [currentIndex]);
   
   // Timer state
   const [secondsRemaining, setSecondsRemaining] = useState<number>(0);
@@ -837,6 +844,15 @@ export function CustomTestRunner() {
                   {/* 2-Mark Review */}
                   {item.type === 'twoMark' && (
                     <div className="space-y-3 pt-2">
+                      {resp?.writtenAnswer && (
+                        <div className="p-3.5 rounded-lg bg-surface-subtle/70 border border-border text-xs space-y-1">
+                          <span className="font-bold text-text-primary block">Your Submitted Response:</span>
+                          <div className="text-text-secondary leading-relaxed">
+                            <MarkdownRenderer content={resp.writtenAnswer} />
+                          </div>
+                        </div>
+                      )}
+
                       <div className="p-3.5 rounded-lg bg-surface-subtle border border-border text-xs space-y-2">
                         <span className="font-bold text-text-primary block">Official Model Answer (2 Marks):</span>
                         <p className="text-text-secondary leading-relaxed">
@@ -1057,13 +1073,18 @@ export function CustomTestRunner() {
           {currentItem.type === 'twoMark' && (
             <div className="space-y-4 pt-2">
               <div className="space-y-1.5">
-                <label className="text-xs font-semibold text-text-secondary block">
-                  Draft Your 2-Mark Response:
+                <label className="text-xs font-semibold text-text-secondary flex items-center justify-between">
+                  <span>Draft Your 2-Mark Response:</span>
+                  <span className="text-[11px] font-mono text-text-muted">
+                    {(currentResp.writtenAnswer || '').length} characters
+                  </span>
                 </label>
-                <textarea
+
+                {/* Formatting Toolbar with Bold, Italic, Underline, Highlight buttons */}
+                <FormattingToolbar
+                  textareaRef={customTestTextareaRef}
                   value={currentResp.writtenAnswer || ''}
-                  onChange={(e) => {
-                    const val = e.target.value;
+                  onChange={(val) => {
                     setResponses((prev) => ({
                       ...prev,
                       [currentIndex]: {
@@ -1072,10 +1093,36 @@ export function CustomTestRunner() {
                       },
                     }));
                   }}
-                  placeholder="State the textbook definition or two distinct characteristics..."
-                  rows={3}
-                  className="w-full text-sm p-3 rounded-xl border border-border focus:ring-2 focus:ring-blue-500 bg-surface-subtle/50 text-text-primary"
+                  isPreview={isCustomTestPreview}
+                  onTogglePreview={() => setIsCustomTestPreview((prev) => !prev)}
+                  label="Format:"
                 />
+
+                {isCustomTestPreview ? (
+                  <div className="min-h-[80px] p-3 rounded-b-xl border border-border bg-surface-subtle/50 text-sm text-text-primary leading-relaxed">
+                    <MarkdownRenderer
+                      content={currentResp.writtenAnswer || '*No response written yet. Switch to Write mode to format.*'}
+                    />
+                  </div>
+                ) : (
+                  <textarea
+                    ref={customTestTextareaRef}
+                    value={currentResp.writtenAnswer || ''}
+                    onChange={(e) => {
+                      const val = e.target.value;
+                      setResponses((prev) => ({
+                        ...prev,
+                        [currentIndex]: {
+                          ...prev[currentIndex],
+                          writtenAnswer: val,
+                        },
+                      }));
+                    }}
+                    placeholder="State the textbook definition or two distinct characteristics... Use the buttons above to format bold, italic, underline, or highlight."
+                    rows={3}
+                    className="w-full text-sm p-3 rounded-b-xl rounded-t-none border border-border focus:ring-2 focus:ring-blue-500 bg-surface-subtle/50 text-text-primary resize-y min-h-[80px]"
+                  />
+                )}
               </div>
 
               {/* Reveal & Self-Evaluation */}

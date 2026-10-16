@@ -6,6 +6,7 @@ import { useStudyProgress } from '@/context/StudyProgressContext';
 import { PeelRubric } from '@/components/exam/PeelRubric';
 import { ExemplarHighlighter } from '@/components/exam/ExemplarHighlighter';
 import { MarkdownRenderer } from '@/components/ui/MarkdownRenderer';
+import { FormattingToolbar } from '@/components/ui/FormattingToolbar';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { 
@@ -27,8 +28,8 @@ export function SplitScreenExam({ question }: SplitScreenExamProps) {
   const [viewMode, setViewMode] = useState<'write' | 'exemplar'>('write');
   const [responseMode, setResponseMode] = useState<'write' | 'preview'>('write');
 
-  // Debounced local state for smooth typing without synchronous localStorage overhead
   const [localDraft, setLocalDraft] = useState(state.writtenDrafts[question.id] || '');
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const draftRef = useRef(localDraft);
   draftRef.current = localDraft;
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -51,8 +52,7 @@ export function SplitScreenExam({ question }: SplitScreenExamProps) {
 
   const wordCount = localDraft.trim() ? localDraft.trim().split(/\s+/).length : 0;
 
-  const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const val = e.target.value;
+  const updateDraftValue = (val: string) => {
     setLocalDraft(val);
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
@@ -60,6 +60,10 @@ export function SplitScreenExam({ question }: SplitScreenExamProps) {
     timeoutRef.current = setTimeout(() => {
       saveWrittenDraft(question.id, val);
     }, 400);
+  };
+
+  const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    updateDraftValue(e.target.value);
   };
 
   const handleClearDraft = () => {
@@ -166,53 +170,39 @@ export function SplitScreenExam({ question }: SplitScreenExamProps) {
           {/* Right Pane: Student Text Editor with Auto-Save */}
           <div className="space-y-4">
             <Card className="p-5 flex flex-col min-h-[500px]">
-              <div className="flex items-center justify-between pb-2 mb-3 border-b border-border">
-                <div className="flex items-center gap-3">
-                  <span className="text-xs font-bold text-text-primary uppercase tracking-wide flex items-center gap-1.5">
-                    <FileEdit className="w-3.5 h-3.5 text-blue-600" />
-                    Your Response Workspace
-                  </span>
-                  <div className="inline-flex items-center p-0.5 rounded-lg bg-surface-subtle border border-border text-xs font-medium">
-                    <button
-                      type="button"
-                      onClick={() => setResponseMode('write')}
-                      className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
-                        responseMode === 'write'
-                          ? 'bg-white text-text-primary shadow-subtle font-semibold'
-                          : 'text-text-muted hover:text-text-primary'
-                      }`}
-                    >
-                      Write
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setResponseMode('preview')}
-                      className={`px-2.5 py-1 rounded-md transition-colors cursor-pointer ${
-                        responseMode === 'preview'
-                          ? 'bg-white text-text-primary shadow-subtle font-semibold'
-                          : 'text-text-muted hover:text-text-primary'
-                      }`}
-                    >
-                      Preview
-                    </button>
-                  </div>
-                </div>
+              <div className="flex items-center justify-between pb-2 mb-2 border-b border-border">
+                <span className="text-xs font-bold text-text-primary uppercase tracking-wide flex items-center gap-1.5">
+                  <FileEdit className="w-3.5 h-3.5 text-blue-600" />
+                  Your Response Workspace
+                </span>
                 <span className="text-[11px] text-emerald-700 font-medium flex items-center gap-1">
                   <CheckCircle className="w-3 h-3" /> Auto-saved
                 </span>
               </div>
 
+              {/* Formatting Toolbar with Bold, Italic, Underline, Highlight buttons */}
+              <FormattingToolbar
+                textareaRef={textareaRef}
+                value={localDraft}
+                onChange={updateDraftValue}
+                isPreview={responseMode === 'preview'}
+                onTogglePreview={() => setResponseMode((prev) => (prev === 'write' ? 'preview' : 'write'))}
+                label="Format:"
+              />
+
               {responseMode === 'preview' ? (
-                <MarkdownRenderer
-                  content={localDraft || '*No response written yet. Type in Write mode to preview.*'}
-                  className="min-h-[360px] p-3.5 bg-surface-subtle/50 rounded-lg border border-border text-xs sm:text-sm text-text-secondary"
-                />
+                <div className="min-h-[360px] p-3.5 bg-surface-subtle/50 rounded-b-lg border border-border text-xs sm:text-sm text-text-secondary leading-relaxed">
+                  <MarkdownRenderer
+                    content={localDraft || '*No response written yet. Switch to Write mode to format.*'}
+                  />
+                </div>
               ) : (
                 <textarea
+                  ref={textareaRef}
                   value={localDraft}
                   onChange={handleTextChange}
-                  placeholder="Type your exam response here... Use the PEEL structure (Point, Explanation, Evidence, Link) to maximize mark criteria."
-                  className="w-full flex-1 p-3.5 rounded-lg border border-border text-sm text-text-primary leading-relaxed resize-y focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent min-h-[360px]"
+                  placeholder="Type your exam response here... Use the buttons above to format bold, italic, underline, or highlight. Use the PEEL structure (Point, Explanation, Evidence, Link) to maximize mark criteria."
+                  className="w-full flex-1 p-3.5 rounded-b-lg rounded-t-none border border-border text-sm text-text-primary leading-relaxed resize-y focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent min-h-[360px]"
                 />
               )}
 
