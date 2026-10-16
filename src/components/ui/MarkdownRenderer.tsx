@@ -24,24 +24,93 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
     if (!content) return '';
     let result = content;
 
+    // Helper to clean LaTeX math expressions into readable text
+    const cleanMathExpression = (expr: string): string => {
+      let f = expr;
+      // Strip \text{...} iteratively
+      while (/\\text\{([^{}]*)\}/.test(f)) {
+        f = f.replace(/\\text\{([^{}]*)\}/g, '$1');
+      }
+      // Unpack \frac{num}{den} iteratively with whitespace tolerance
+      while (/\\frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/.test(f)) {
+        f = f.replace(/\\frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, '($1) / ($2)');
+      }
+      // Clean up redundant parens around single tokens: (A) / (B) -> A / B
+      f = f.replace(/\(([A-Za-z0-9_]+)\)\s*\/\s*\(([A-Za-z0-9_]+)\)/g, '$1 / $2');
+      f = f.replace(/\(([A-Za-z0-9_]+)\)\s*\/\s*([A-Za-z0-9_]+)/g, '$1 / $2');
+      f = f.replace(/([A-Za-z0-9_]+)\s*\/\s*\(([A-Za-z0-9_]+)\)/g, '$1 / $2');
+
+      // Arrows with labels: \xrightarrow{label} or \xrightarrow[sub]{label}
+      f = f.replace(/\\xrightarrow\[(.*?)\]\{(.*?)\}/g, ' —[$2 ($1)]→ ');
+      f = f.replace(/\\xrightarrow\{(.*?)\}/g, ' —[$1]→ ');
+      f = f.replace(/\\xleftarrow\[(.*?)\]\{(.*?)\}/g, ' ←[$2 ($1)]— ');
+      f = f.replace(/\\xleftarrow\{(.*?)\}/g, ' ←[$1]— ');
+
+      // Common LaTeX symbols & math commands
+      f = f
+        .replace(/\\longrightarrow/gi, ' → ')
+        .replace(/\\rightarrow/gi, ' → ')
+        .replace(/\\longleftarrow/gi, ' ← ')
+        .replace(/\\leftarrow/gi, ' ← ')
+        .replace(/\\leftrightarrow/gi, ' ↔ ')
+        .replace(/\\uparrow/gi, ' ↑ ')
+        .replace(/\\downarrow/gi, ' ↓ ')
+        .replace(/\\times/gi, ' × ')
+        .replace(/\\cdot/gi, ' · ')
+        .replace(/\\sum\b/gi, '∑ ')
+        .replace(/\\square\b/gi, '□')
+        .replace(/\\bigcirc\b/gi, '○')
+        .replace(/\\mathbf\{([^}]+)\}/gi, '$1')
+        .replace(/\\le\b/gi, '≤')
+        .replace(/\\ge\b/gi, '≥')
+        .replace(/\\neq\b/gi, '≠')
+        .replace(/\\approx\b/gi, '≈')
+        .replace(/\\pm\b/gi, '±')
+        .replace(/\\left\(/g, '(')
+        .replace(/\\right\)/g, ')')
+        .replace(/\\left\[/g, '[')
+        .replace(/\\right\]/g, ']')
+        .replace(/\\left\\\{/g, '{')
+        .replace(/\\right\\\}/g, '}')
+        .replace(/\\,/g, ' ')
+        .replace(/\\;/g, ' ')
+        .replace(/\\quad/g, '   ')
+        .replace(/\\qquad/g, '      ')
+        .replace(/\\%/g, '%')
+        .replace(/\\_/g, '_')
+        .replace(/\\\$/g, '$')
+        .replace(/\\&/g, '&');
+
+      return f;
+    };
+
     // 1. Convert display formula blocks ($$...$$) into clean editorial callouts
-    result = result.replace(/\$\$([\s\S]*?)\$\$/g, (_, formula) => {
-      const cleaned = formula
-        .replace(/\\text\{([^}]+)\}/g, '$1')
-        .replace(/\\longrightarrow/g, ' → ')
-        .replace(/\\rightarrow/g, ' → ')
-        .replace(/\\leftarrow/g, ' ← ')
-        .replace(/\\longleftarrow/g, ' ← ')
-        .replace(/\\uparrow/g, ' ↑ ')
-        .replace(/\\downarrow/g, ' ↓ ')
-        .replace(/\\times/g, ' × ')
-        .replace(/\\&/g, '&')
-        .trim();
-      return `\n\n> **Formula / Sequence:** \`${cleaned}\`\n\n`;
+    // If consecutive display blocks exist, group them neatly under a single callout
+    result = result.replace(/(?:\$\$([\s\S]*?)\$\$\s*)+/g, (match) => {
+      const formulas = Array.from(match.matchAll(/\$\$([\s\S]*?)\$\$/g))
+        .map((m) => cleanMathExpression(m[1]).replace(/\s+/g, ' ').trim())
+        .filter(Boolean);
+      if (formulas.length === 0) return '';
+      if (formulas.length === 1) {
+        return `\n\n> **Formula:** \`${formulas[0]}\`\n\n`;
+      }
+      return `\n\n> **Key Formulas:**\n${formulas.map((formula) => `> • \`${formula}\``).join('\n')}\n\n`;
     });
 
-    // 2. Convert inline LaTeX math symbols ($...$) into clean unicode/plain text
+    // 2. Protect inline code & code blocks so formulas/currency inside backticks are never mutilated
+    const codeTokens: string[] = [];
+    result = result.replace(/(`+)([\s\S]*?)\1/g, (match) => {
+      codeTokens.push(match);
+      return `__CODE_TOKEN_${codeTokens.length - 1}__`;
+    });
+
+    // 3. Normalize escaped currency like \$460,000 -> $460,000
+    result = result.replace(/\\\$([0-9])/g, '$$$1');
+
+    // 4. Clean inline LaTeX math symbols ($...$)
     result = result
+      .replace(/\$\s*\\square\s*\$/gi, '□')
+      .replace(/\$\s*\\bigcirc\s*\$/gi, '○')
       .replace(/\$\s*\\rightarrow\s*\$/gi, '→')
       .replace(/\$\s*\\longrightarrow\s*\$/gi, '→')
       .replace(/\$\s*\\leftarrow\s*\$/gi, '←')
@@ -53,16 +122,29 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
       .replace(/\$\s*\\neq\s*\$/gi, '≠')
       .replace(/\$\s*\\approx\s*\$/gi, '≈');
 
-    // 3. Catch raw LaTeX commands even if written without dollar signs or escaped in text
-    result = result
-      .replace(/\\rightarrow/gi, '→')
-      .replace(/\\longrightarrow/gi, '→')
-      .replace(/\\leftarrow/gi, '←')
-      .replace(/\\longleftarrow/gi, '←')
-      .replace(/\\leftrightarrow/gi, '↔')
-      .replace(/\\times/gi, '×')
-      .replace(/\\text\{([^}]+)\}/gi, '$1')
-      .replace(/\\&/g, '&');
+    // 5. Clean remaining inline math $...$ that contain formulas or variables
+    // Crucial: $ cannot be immediately followed by a digit (which is currency)
+    result = result.replace(/\$(?!\d)([^\$\n]+?)(?<!\s)\$/g, (match, inner) => {
+      const trimmed = inner.trim();
+      // Keep pure currencies like "$120,000" or "$25" or "$3bn" intact
+      if (/^[\d,.]+(\s*(?:m|bn|k|million|billion|trillion))?$/i.test(trimmed)) {
+        return match;
+      }
+      // If it contains LaTeX commands, comparisons, math symbols, or economics/math variable names
+      if (/\\|[\=<>\+\^\/×÷±≤≥≠≈∑□○·]|\b(?:Q|ATC|AFC|AVC|TC|TFC|TVC|EMV|EV|p)\b/i.test(trimmed)) {
+        const cleaned = cleanMathExpression(trimmed)
+          .replace(/Q\*/g, 'Q\\*')
+          .replace(/ATC\*/g, 'ATC\\*');
+        return `*${cleaned}*`;
+      }
+      return match;
+    });
+
+    // 6. Catch any lingering LaTeX commands in body text
+    result = cleanMathExpression(result);
+
+    // 7. Restore protected code spans and blocks
+    result = result.replace(/__CODE_TOKEN_(\d+)__/g, (_, idx) => codeTokens[Number(idx)]);
 
     return result;
   }, [content]);

@@ -1327,7 +1327,7 @@ export const CRAM_GOLDEN_RULES: GoldenMatrixRule[] = [
   "ruleTitle": "The Average Cost Tipping Point: Optimal Level of Output",
   "category": "Scale",
   "corePrinciple": "Expansion lowers average cost only up to the optimal level of output (where average costs are minimised); expanding beyond it brings diseconomies of scale and higher unit costs.",
-  "actionProtocol": "Phase 1 (Q < Q*): Economies of scale dominate as AFC falls continuously and internal efficiencies spread -> Phase 2 (Q = Q*): Optimal level of output, where average cost is minimized -> Phase 3 (Q > Q*): Diseconomies of scale take over as lack of control and coordination, bureaucracy, and worker alienation raise unit costs.",
+  "actionProtocol": "Phase 1 (Q < Q\\*): Economies of scale dominate as AFC falls continuously and internal efficiencies spread -> Phase 2 (Q = Q\\*): Optimal level of output, where average cost is minimized -> Phase 3 (Q > Q\\*): Diseconomies of scale take over as lack of control and coordination, bureaucracy, and worker alienation raise unit costs.",
   "examApplicationTip": "When sketching the U-shaped average cost curve (Figure 5.1: Costs ($) on the y-axis, Output on the x-axis), label the lowest point 'Optimal level of output'. (LRAC and MES are economics terms not used in the Hoang textbook.)"
 },
 {

@@ -292,7 +292,7 @@ export function ToolkitHub() {
 
         <div className="space-y-4">
           <p className="text-sm font-semibold text-text-primary leading-relaxed bg-surface-subtle p-4 rounded-xl border border-border">
-            {currentCase.scenario}
+            <MarkdownRenderer content={currentCase.scenario} inline />
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -328,7 +328,7 @@ export function ToolkitHub() {
                 <span>Examiner Rationale: {currentCase.correctTool}</span>
               </div>
               <p className="text-blue-950 leading-relaxed">
-                {currentCase.reason}
+                <MarkdownRenderer content={currentCase.reason} inline />
               </p>
               <div className="pt-2 flex justify-end">
                 <Button variant="primary" size="sm" onClick={handleNextCase} icon={<ChevronRight className="w-3.5 h-3.5" />}>

@@ -849,7 +849,7 @@ export function CustomTestRunner() {
                           <span className="font-bold block">Assessment Mark Breakdown:</span>
                           <ul className="list-disc list-inside space-y-1 text-[11px]">
                             {item.markBreakdown.map((mb, mIdx) => (
-                              <li key={mIdx}>[1 Mark] {mb.criterion}</li>
+                              <li key={mIdx}>[1 Mark] <MarkdownRenderer content={mb.criterion} inline /></li>
                             ))}
                           </ul>
                         </div>
@@ -1107,7 +1107,7 @@ export function CustomTestRunner() {
                   <div className="text-[11px] text-text-muted space-y-1">
                     <span className="font-semibold block text-text-primary">Checklist:</span>
                     {currentItem.markBreakdown.map((mb, mIdx) => (
-                      <div key={mIdx}>&bull; [1 Mark] {mb.criterion}</div>
+                      <div key={mIdx}>&bull; [1 Mark] <MarkdownRenderer content={mb.criterion} inline /></div>
                     ))}
                   </div>
                 )}

@@ -230,7 +230,7 @@ What does the term **market share** measure?
 
 > **Answer:** **B**  
 > **Explanation:** Market share measures a firm's sales revenue (or volume of units sold) expressed as a percentage of the total sales revenue (or volume) of the entire industry market:  
-> $\text{Market Share} = \left(\frac{\text{Firm's Sales}}{\text{Total Industry Sales}}\right) \times 100\%$.
+> `Market Share = (Firm's Sales / Total Industry Sales) × 100%`.
 
 ---
 
@@ -267,7 +267,7 @@ What is the formula and definition of **labour turnover**?
 
 > **Answer:** **B**  
 > **Explanation:** Labour turnover measures the rate at which employees leave a firm over a given timeframe (typically annually):  
-> $\text{Labour Turnover Rate} = \left(\frac{\text{Number of staff leaving during year}}{\text{Average total number of staff employed}}\right) \times 100\%$. High turnover indicates poor morale, inadequate compensation, or poor managerial culture.
+> `Labour Turnover Rate = (Number of staff leaving during year / Average total number of staff employed) × 100%`. High turnover indicates poor morale, inadequate compensation, or poor managerial culture.
 
 ---
 
@@ -606,7 +606,7 @@ On an average cost curve (Hoang Figure 5.1), what does the **optimal level of ou
   - Award [1 mark] for stating that a business sells a product for more than the cost of its materials.  
   - Award [2 marks] for defining adding value as the process of increasing the worth of inputs so that the selling price of the finished output exceeds the cost of bought-in raw materials and components used in production.
 * **Model Answer:**  
-  **Adding value** is the operational and marketing process of transforming inputs so that the selling price of the final output is greater than the cost of the raw materials and intermediate components consumed during production ($\text{Value Added} = \text{Selling Price} - \text{Cost of Bought-in Inputs}$).
+  **Adding value** is the operational and marketing process of transforming inputs so that the selling price of the final output is greater than the cost of the raw materials and intermediate components consumed during production (*Value Added = Selling Price - Cost of Bought-in Inputs*).
 
 ---
 
@@ -728,7 +728,7 @@ On an average cost curve (Hoang Figure 5.1), what does the **optimal level of ou
   - Award [2 marks] for defining it as the percentage of total industry sales revenue (or sales volume) captured by a specific business over a given time period.
 * **Model Answer:**  
   **Market share** is the proportion of total sales value (or volume) in a specific industry or market accounted for by a single business entity, expressed mathematically as:  
-  $$\text{Market Share} = \left(\frac{\text{Firm's Total Sales Revenue}}{\text{Total Industry Sales Revenue}}\right) \times 100\%$$
+  > **Market Share Formula:** `Market Share = (Firm's Total Sales Revenue / Total Industry Sales Revenue) × 100%`
 
 ---
 
@@ -747,7 +747,7 @@ On an average cost curve (Hoang Figure 5.1), what does the **optimal level of ou
   - Award [2 marks] for defining it as the percentage of a firm's total workforce that voluntarily or involuntarily leaves the organization during a specified period (usually one year).
 * **Model Answer:**  
   **Labour turnover** is a human resource metric measuring the proportion of an organization's employees who leave the business over a specific time period (typically one year), expressed as:  
-  $$\text{Labour Turnover} = \left(\frac{\text{Number of Leavers in Year}}{\text{Average Total Number of Staff}}\right) \times 100\%$$
+  > **Labour Turnover Formula:** `Labour Turnover = (Number of Leavers in Year / Average Total Number of Staff) × 100%`
 
 ---
 
@@ -976,7 +976,7 @@ On an average cost curve (Hoang Figure 5.1), what does the **optimal level of ou
 * **Point 2 (Costs Definition & Contrast with School Context):**  
   * **Point:** In contrast, **costs** represent the financial expenditures and resource outflows that an organization must disburse to deliver its services.  
   * **Evidence:** For the school, costs encompass fixed and variable operating expenditures, specifically teaching and administrative staff salaries, classroom utility bills, building maintenance, and facility overheads.  
-  * **Explanation:** Unlike revenue, which increases financial balances, costs deplete financial reserves. Profitability (or budget surplus in non-profit schools) only occurs when total revenues exceed these cumulative operating costs ($\text{Surplus} = \text{Total Revenue} - \text{Total Costs}$).  
+  * **Explanation:** Unlike revenue, which increases financial balances, costs deplete financial reserves. Profitability (or budget surplus in non-profit schools) only occurs when total revenues exceed these cumulative operating costs (*Surplus = Total Revenue - Total Costs*).  
   * **Link:** Effective cost containment on utilities and maintenance enables the school to protect its financial solvency.
 
 ---

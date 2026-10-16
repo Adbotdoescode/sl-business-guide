@@ -16,10 +16,10 @@ A production-grade, editorial light-mode Next.js study application and revision 
      - **Stakeholder Mapping** (12 cards across Quadrants A, B, C, D, following Hoang Figure 4.3)
      - **Economies of Scale Quadrant Sorter** (20 real-world cards across Internal/External Economies & Diseconomies)
    - **Interactive Average Cost Curve Simulator:**
-     - Dynamic output slider ($Q = 1,000$ to $20,000$ units)
-     - Real-time mathematical calculation of $TC, AFC, AVC, ATC$
+     - Dynamic output slider (*Q* = 1,000 to 20,000 units)
+     - Real-time mathematical calculation of *TC*, *AFC*, *AVC*, *ATC*
      - Visual SVG U-shaped average cost curve (Hoang Figure 5.1) with dynamic output coordinate marker
-     - Phase indicator (Economies of Scale $\rightarrow$ Optimal Level of Output $\rightarrow$ Diseconomies of Scale)
+     - Phase indicator (Economies of Scale → Optimal Level of Output → Diseconomies of Scale)
      - 4 knowledge deep-dive tabs (7 Internal Economies, 4 External Economies, 5 Internal Diseconomies, 3 External Diseconomies)
 
 2. **Rapid Blitz MCQ Sprint:**

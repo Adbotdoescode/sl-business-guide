@@ -904,7 +904,7 @@ function AnsoffGrid({
                       </p>
                       {isChecked && isWrong && (
                         <p className="text-[10px] text-red-700 font-medium pt-1 border-t border-red-200">
-                          Should be: <strong>{card.quadrant.replace('-', ' ')}</strong>. {card.rationale}
+                          Should be: <strong>{card.quadrant.replace('-', ' ')}</strong>. <MarkdownRenderer content={card.rationale} inline />
                         </p>
                       )}
                     </div>
@@ -1048,7 +1048,7 @@ function SwotGrid({
                       </p>
                       {isChecked && isWrong && (
                         <p className="text-[10px] text-red-700 font-medium pt-1 border-t border-red-200">
-                          Should be: <strong>{card.quadrant.toUpperCase()}</strong> ({card.origin}/{card.nature}). {card.rationale}
+                          Should be: <strong>{card.quadrant.toUpperCase()}</strong> ({card.origin}/{card.nature}). <MarkdownRenderer content={card.rationale} inline />
                         </p>
                       )}
                     </div>
@@ -1222,7 +1222,7 @@ function SteepleGrid({
                       </p>
                       {isChecked && isWrong && (
                         <p className="text-[9px] text-red-700 font-medium pt-1 border-t border-red-200">
-                          Should be: <strong>{card.category.toUpperCase()}</strong>. {card.rationale}
+                          Should be: <strong>{card.category.toUpperCase()}</strong>. <MarkdownRenderer content={card.rationale} inline />
                         </p>
                       )}
                     </div>
@@ -1368,7 +1368,7 @@ function BcgGrid({
                       </div>
                       <span className="text-[10px] text-text-muted font-mono">{card.company}</span>
                       <p className="text-[11px] text-text-secondary leading-snug">
-                        {card.rationale}
+                        <MarkdownRenderer content={card.rationale} inline />
                       </p>
                       <p className="text-[10px] text-blue-900 bg-blue-50/50 p-1 rounded font-medium">
                         Cash: {card.cashFlowDynamics}
@@ -1540,7 +1540,7 @@ function StakeholderGrid({
                       </div>
                       <span className="text-[10px] text-text-muted font-medium">{card.organizationContext}</span>
                       <p className="text-[11px] text-text-secondary leading-snug">
-                        {card.rationale}
+                        <MarkdownRenderer content={card.rationale} inline />
                       </p>
                       <p className="text-[10px] text-purple-900 bg-purple-50/60 p-1 rounded font-medium">
                         Conflict risk: {card.conflictScenario}
@@ -1715,10 +1715,10 @@ function ScaleGrid({
                         </div>
                       </div>
                       <p className="text-[11px] text-text-secondary leading-snug">
-                        {card.scenario}
+                        <MarkdownRenderer content={card.scenario} inline />
                       </p>
                       <p className="text-[10px] text-text-muted italic bg-surface-subtle p-1.5 rounded">
-                        Mechanism: {card.rationale}
+                        Mechanism: <MarkdownRenderer content={card.rationale} inline />
                       </p>
                       {isChecked && isWrong && (
                         <p className="text-[10px] text-red-700 font-medium pt-1 border-t border-red-200">
