@@ -5,21 +5,21 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
     id: 'def-01',
     term: 'Business',
     subunit: '1.1-what-is-a-business',
-    definition: 'A decision-making entity that combines inputs (factors of production: land, labor, capital, enterprise) through a transformation process to produce finished goods or provide services that satisfy customer needs and wants.',
+    definition: 'A ==decision-making entity== that combines inputs (factors of production: *land, labor, capital, enterprise*) through a **transformation process** to produce finished goods or provide services that <u>satisfy customer needs and wants</u>.',
     keyExamTokens: ['decision-making entity', 'factors of production', 'transformation process', 'satisfy needs and wants']
   },
   {
     id: 'def-02',
     term: 'Factors of Production',
     subunit: '1.1-what-is-a-business',
-    definition: 'The four fundamental economic resources required for business activity: Land (natural resources), Labor (human physical/mental effort), Capital (man-made physical assets & finance), and Enterprise (entrepreneurial risk-taking & coordination).',
+    definition: 'The four fundamental **economic resources** required for business activity: *Land* (==natural resources==), *Labor* (==human physical/mental effort==), *Capital* (==man-made physical assets & finance==), and *Enterprise* (<u>entrepreneurial risk-taking & coordination</u>).',
     keyExamTokens: ['Land', 'Labor', 'Capital', 'Enterprise', 'risk-taking coordination']
   },
   {
     id: 'def-03',
     term: 'Adding Value',
     subunit: '1.1-what-is-a-business',
-    definition: 'The practice of producing a good or service that is worth more than the cost of the resources used in the production process. Added value occurs when there is a positive difference between the selling price of a product and the cost of producing it.',
+    definition: 'The practice of producing a good or service that is ==worth more than the cost of resources used== in the production process. **Added value** occurs when there is a <u>positive difference between the selling price</u> of a product and the *cost of producing it*.',
     keyExamTokens: ['worth more than the cost of resources used', 'selling price minus cost of production', 'products appealing to customers'],
     formulaOrExample: 'Added value = selling price - cost of producing the good or service (positive difference)'
   },
@@ -27,126 +27,126 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
     id: 'def-04',
     term: 'Consumer Goods',
     subunit: '1.1-what-is-a-business',
-    definition: 'Physical products purchased and consumed by private households for direct personal gratification, sub-classified into Consumer Durables (long-lasting items like cars and furniture) and Non-Durables (fast-consuming items like food and beverages).',
+    definition: '**Physical products** purchased and consumed by *private households* for ==direct personal gratification==, sub-classified into <u>Consumer Durables</u> (*long-lasting items*) and <u>Non-Durables</u> (*fast-consuming items*).',
     keyExamTokens: ['sold to households', 'personal consumption', 'consumer durables vs non-durables']
   },
   {
     id: 'def-05',
     term: 'Capital Goods (Producer Goods)',
     subunit: '1.1-what-is-a-business',
-    definition: 'Tangible, man-made physical equipment, machinery, commercial vehicles, and factories purchased by businesses to produce other goods or provide services rather than for household consumption.',
+    definition: '==Tangible, man-made physical assets==, machinery, commercial vehicles, and factories **purchased by businesses** to <u>produce other goods or provide services</u> rather than for *household consumption*.',
     keyExamTokens: ['producer goods', 'purchased by businesses', 'used to produce other goods/services']
   },
   {
     id: 'def-06',
     term: 'Chain of Production',
     subunit: '1.1-what-is-a-business',
-    definition: 'The sequential, interrelated stages of economic activity through which raw materials pass across economic sectors (primary extraction, secondary manufacturing, and tertiary/quaternary distribution) to reach the final end-consumer.',
+    definition: 'The ==sequential, interrelated stages of economic activity== through which *raw materials* pass across **economic sectors** (primary extraction → secondary manufacturing → tertiary distribution) to <u>reach the final end-consumer</u>.',
     keyExamTokens: ['sequential stages', 'primary, secondary, tertiary', 'raw material to consumer']
   },
   {
     id: 'def-07',
     term: 'Entrepreneur',
     subunit: '1.1-what-is-a-business',
-    definition: 'An innovative individual who conceives a business idea, invests personal capital, coordinates factors of production, and bears full commercial risk in pursuit of operational profit or social impact.',
+    definition: 'An ==innovative individual== who conceives a business idea, invests *personal capital*, **coordinates factors of production**, and <u>bears full commercial risk</u> in pursuit of operational *profit* or *social impact*.',
     keyExamTokens: ['innovative individual', 'coordinates factors of production', 'bears commercial risk', 'profit motive']
   },
   {
     id: 'def-08',
     term: 'Sole Trader',
     subunit: '1.2-types-of-business-entities',
-    definition: 'An unincorporated commercial business owned, managed, and financed by a single individual who retains 100% of all net profits after tax and carries personal unlimited liability for all business debts and contractual obligations.',
+    definition: 'An **unincorporated commercial business** <u>owned, managed, and financed by a single individual</u> who ==retains 100% of all net profits== after tax and carries *personal* ==unlimited liability== for all business debts.',
     keyExamTokens: ['unincorporated', 'single individual owner', '100% profit retention', 'unlimited liability']
   },
   {
     id: 'def-09',
     term: 'Partnership',
     subunit: '1.2-types-of-business-entities',
-    definition: 'An unincorporated commercial business owned by two or more individuals (typically 2 to 20) who pool capital, share administrative responsibilities, and distribute net profits. At least one partner (typically all) has unlimited liability, with debts repaid "wholly or severally"; most partnerships draw up a Deed of Partnership.',
+    definition: 'An **unincorporated commercial business** owned by *two or more individuals* (typically 2 to 20) who pool capital and share responsibilities. Partners carry ==unlimited liability== (debts repaid *"wholly or severally"*), formalized via a <u>Deed of Partnership</u>.',
     keyExamTokens: ['unincorporated', '2 to 20 partners', 'pooled capital', 'unlimited liability (wholly or severally)', 'Deed of Partnership']
   },
   {
     id: 'def-10',
     term: 'Limited Liability',
     subunit: '1.2-types-of-business-entities',
-    definition: 'A legal restriction that caps a shareholder’s potential financial loss at the amount they invested in the company, shielding their private personal wealth and homes from corporate creditors upon liquidation.',
+    definition: 'A **legal restriction** that ==caps a shareholder’s potential financial loss== at the <u>amount they invested in the company</u>, shielding their *private personal wealth and homes* from corporate creditors upon liquidation.',
     keyExamTokens: ['loss capped at invested capital', 'shields personal assets', 'incorporated companies']
   },
   {
     id: 'def-11',
     term: 'Privately Held Company (Ltd)',
     subunit: '1.2-types-of-business-entities',
-    definition: 'An incorporated business entity with limited liability whose shares are sold privately (typically to family members and friends) and cannot be raised from the general public via a stock exchange; shares cannot be bought or sold without the prior agreement of the Board of Directors.',
+    definition: 'An **incorporated business entity** with ==limited liability== whose shares are <u>sold privately</u> (to family and friends) and *cannot be raised from the general public* via a stock exchange without board consent.',
     keyExamTokens: ['incorporated', 'limited liability', 'private share ownership', 'no public stock exchange trading']
   },
   {
     id: 'def-12',
     term: 'Publicly Held Company (PLC)',
     subunit: '1.2-types-of-business-entities',
-    definition: 'An incorporated commercial enterprise with limited liability that has floated its shares onto an open stock exchange via an Initial Public Offering (IPO), allowing shares to be freely traded by the general retail public and institutional funds.',
+    definition: 'An **incorporated commercial enterprise** with ==limited liability== that has <u>floated its shares onto an open stock exchange</u> via an *Initial Public Offering (IPO)*, allowing shares to be ==freely traded by the general public==.',
     keyExamTokens: ['incorporated', 'floated on stock exchange', 'IPO', 'freely traded public shares', 'statutory disclosure']
   },
   {
     id: 'def-13',
     term: 'Cooperative',
     subunit: '1.2-types-of-business-entities',
-    definition: 'A member-owned, for-profit social enterprise established to serve the shared economic and social interests of its members, democratically governed under the principle of "one member, one vote," with surplus distributed as dividends or rebates.',
+    definition: 'A **member-owned social enterprise** established to serve the shared interests of its members, <u>democratically governed</u> under the principle of =="one member, one vote"==, with surplus distributed as *dividends or patronage rebates*.',
     keyExamTokens: ['member-owned social enterprise', 'one member, one vote', 'democratic governance', 'surplus distribution']
   },
   {
     id: 'def-14',
     term: 'Non-Governmental Organization (NGO)',
     subunit: '1.2-types-of-business-entities',
-    definition: 'A private sector, not-for-profit social enterprise operating independently of government for the benefit of others rather than primarily to earn a profit (e.g. relieving suffering, protecting the environment, community development); any surplus is retained in the organization rather than distributed to owners.',
+    definition: 'A **private sector, non-profit social enterprise** operating <u>independently of government</u> for the ==benefit of others==; any surplus is *retained in the organization* rather than distributed to owners.',
     keyExamTokens: ['private sector non-profit', 'independent of government', 'benefit of others', 'surplus retained, not distributed']
   },
   {
     id: 'def-15',
     term: 'Mission Statement',
     subunit: '1.3-business-objectives',
-    definition: 'A concise formal declaration articulating an organization’s core operational purpose, customer focus, and daily actionable values, defining what the business does and whom it serves in the present.',
+    definition: 'A **concise formal declaration** articulating an organization’s ==core operational purpose== and daily values, defining <u>what the business does and whom it serves in the present</u>.',
     keyExamTokens: ['core operational purpose', 'present identity', 'what we do and whom we serve']
   },
   {
     id: 'def-16',
     term: 'Vision Statement',
     subunit: '1.3-business-objectives',
-    definition: 'A long-term, aspirational declaration outlining an organization’s ultimate future goals and desired legacy, serving as an inspirational guide for where the company strives to be in the distant future.',
+    definition: 'A **long-term aspirational declaration** outlining an organization’s ==ultimate future goals and desired legacy==, serving as an <u>inspirational guide for where it strives to be</u>.',
     keyExamTokens: ['long-term aspirational future', 'where it wants to be', 'inspirational legacy']
   },
   {
     id: 'def-17',
     term: 'Strategic Objectives',
     subunit: '1.3-business-objectives',
-    definition: 'The longer-term goals of a business, such as profit maximization, growth, market standing and increased market share. They are pursued through strategies: the medium- to long-term plans of action of the organization as a whole.',
+    definition: 'The **longer-term overarching goals** of a business (*profit maximization, growth, market standing*), pursued through ==strategies==: the <u>medium- to long-term plans of action</u> of the organization as a whole.',
     keyExamTokens: ['longer-term goals', 'profit maximization, growth', 'market standing, market share', 'achieved through strategies']
   },
   {
     id: 'def-18',
     term: 'Tactical Objectives',
     subunit: '1.3-business-objectives',
-    definition: 'Short-term goals that affect a section (unit) of the organization: specific goals that guide the daily functioning of certain departments or operations, usually covering the next 12 months or sooner (e.g. survival, sales revenue maximization, "keep staff turnover below 10%").',
+    definition: '**Short-term tactical goals** that guide the <u>daily functioning of specific departments</u>, usually covering the ==next 12 months or sooner== (*e.g. survival, sales revenue targets*).',
     keyExamTokens: ['short-term goals', 'section of the organization', 'daily functioning of departments', '12 months or sooner']
   },
   {
     id: 'def-19',
     term: 'Corporate Social Responsibility (CSR)',
     subunit: '1.3-business-objectives',
-    definition: 'The conscientious consideration of ethical and environmental practice related to business activity. A business that adopts CSR acts morally towards all of its various stakeholder groups and the well-being of society as a whole.',
+    definition: 'The **conscientious consideration** of ==ethical and environmental practices== in business activity, acting *morally* towards <u>all stakeholder groups and the well-being of society as a whole</u>.',
     keyExamTokens: ['conscientious consideration', 'ethical and environmental practice', 'all stakeholder groups', 'well-being of society']
   },
   {
     id: 'def-20',
     term: 'Ansoff Matrix',
     subunit: 'bmt-ansoff-matrix',
-    definition: 'A strategic analytical 2x2 framework categorizing corporate growth pathways across Products (Existing vs New) and Markets (Existing vs New) into Market Penetration, Product Development, Market Development, and Diversification.',
+    definition: 'A **strategic analytical 2x2 framework** mapping corporate growth across *Products* and *Markets* into ==Market Penetration, Product Development, Market Development, and Diversification== along an <u>escalating risk continuum</u>.',
     keyExamTokens: ['2x2 growth matrix', 'Products vs Markets', '4 growth strategies', 'risk escalation continuum']
   },
 {
   "id": "def-21",
   "term": "STEEPLE Analysis",
   "subunit": "bmt-steeple-analysis",
-  "definition": "An analytical situational management framework auditing external macro-environmental opportunities and threats across Social, Technological, Economic, Environmental, Political, Legal, and Ethical dimensions beyond direct corporate control.",
+  "definition": "An **analytical management framework** auditing ==external macro-environmental opportunities and threats== across *Social, Technological, Economic, Environmental, Political, Legal, and Ethical* factors <u>beyond direct corporate control</u>.",
   "keyExamTokens": [
     "external macro-environment",
     "opportunities and threats",
@@ -158,7 +158,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-22",
   "term": "SPICED Rule",
   "subunit": "bmt-steeple-analysis",
-  "definition": "An economic mnemonic (not used in the Hoang textbook, but consistent with its p.626 exchange-rate rules) stating that a Strong Pound (or domestic currency) makes Imports Cheaper and Exports Dearer, lowering costs for raw material importers while reducing price-competitiveness for domestic exporters.",
+  "definition": "An **economic exchange-rate axiom** stating that a ==Strong Pound (or domestic currency) makes Imports Cheaper and Exports Dearer==, <u>lowering costs for raw material importers</u> while *reducing price-competitiveness for domestic exporters*.",
   "keyExamTokens": [
     "Strong Pound",
     "Imports Cheaper",
@@ -170,7 +170,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-23",
   "term": "BCG Matrix",
   "subunit": "bmt-toolkit",
-  "definition": "A 2x2 portfolio planning framework categorizing corporate products by Market Growth Rate and Relative Market Share into Stars, Cash Cows, Question Marks, and Dogs to optimize corporate cash flow allocation.",
+  "definition": "A **portfolio planning matrix** categorizing corporate products across *Market Growth Rate* and *Relative Market Share* into ==Stars, Cash Cows, Question Marks, and Dogs== to <u>optimize corporate cash flow allocation</u>.",
   "keyExamTokens": [
     "portfolio planning",
     "Market Growth Rate",
@@ -182,7 +182,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-24",
   "term": "Cash Cow",
   "subunit": "bmt-toolkit",
-  "definition": "A mature, highly profitable product holding high relative market share in a slow-growing market, requiring minimal reinvestment and generating substantial surplus cash to fund growth products elsewhere.",
+  "definition": "A **mature, highly profitable product** with ==high market share== in a *low-growth market*, requiring minimal reinvestment and <u>generating substantial surplus cash</u> to fund growth elsewhere.",
   "keyExamTokens": [
     "high market share",
     "low market growth",
@@ -194,7 +194,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-25",
   "term": "Expected Monetary Value (EMV)",
   "subunit": "bmt-toolkit",
-  "definition": "The probability-weighted average financial outcome of an uncertain decision option, calculated as the sum of each outcome's financial payoff multiplied by its probability of occurrence.",
+  "definition": "The ==probability-weighted average financial outcome== of a chance node, calculated as the **sum of (Probability × Payoff)**; Net EMV <u>always deducts initial capital expenditure</u>.",
   "keyExamTokens": [
     "probability-weighted average",
     "Sum(Probability x Payoff)",
@@ -206,7 +206,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-26",
   "term": "Circular Business Model (PSS)",
   "subunit": "bmt-toolkit",
-  "definition": "A regenerative commercial model where businesses retain ownership of hardware and sell the service or functional utility (Product-Service System) on a leasing basis, decoupling profit from resource waste.",
+  "definition": "A **regenerative commercial model** where businesses <u>retain asset ownership</u> and sell the *service or functional utility* (Product-Service System), ==decoupling economic profit from resource consumption and waste==.",
   "keyExamTokens": [
     "Product-Service System",
     "retain asset ownership",
@@ -218,7 +218,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-27",
   "term": "Stakeholder",
   "subunit": "1.4-stakeholders",
-  "definition": "Any individual, group, or organization with a direct interest or involvement (a 'stake') in the operations, decisions, and performance of a business, impacted by or influencing its activities.",
+  "definition": "Any **individual or group** with a ==direct interest or involvement== in a business, who is <u>impacted by organizational decisions</u> or *exerts influence over corporate conduct*.",
   "keyExamTokens": [
     "direct interest or involvement",
     "impacted by organizational decisions",
@@ -230,7 +230,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-28",
   "term": "Internal Stakeholders",
   "subunit": "1.4-stakeholders",
-  "definition": "Members of the business organization who operate from within the enterprise, namely employees (staff), managers, directors, and internal equity shareholders.",
+  "definition": "**Members of the business organization** who <u>operate from within the enterprise</u> (*employees, managers, directors*), motivated by ==wages, career progression, working conditions, and executive bonuses==.",
   "keyExamTokens": [
     "operate from within",
     "employees, managers, directors",
@@ -242,7 +242,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-29",
   "term": "External Stakeholders",
   "subunit": "1.4-stakeholders",
-  "definition": "Individuals and outside organizations not part of the business but having a direct interest in or impact from its conduct, including customers, suppliers, financiers, pressure groups, competitors, and government.",
+  "definition": "**Individuals and outside organizations** not part of the firm but having a <u>direct interest in its operations or conduct</u> (*customers, suppliers, financiers, pressure groups, government*), seeking ==competitive pricing, prompt payment, and regulatory compliance==.",
   "keyExamTokens": [
     "outside the business",
     "customers, suppliers, financiers",
@@ -254,7 +254,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-30",
   "term": "Stakeholder Conflict",
   "subunit": "1.4-stakeholders",
-  "definition": "Differences in the varying needs and priorities of the various stakeholder groups of a business. These conflicting interests mean that it is not possible for a business to meet all of its stakeholder objectives simultaneously.",
+  "definition": "Differences in the **varying needs and priorities** of different stakeholder groups, meaning it is <u>not possible to satisfy all stakeholder objectives simultaneously</u> (e.g. *higher employee wages* vs ==higher shareholder dividend payouts==).",
   "keyExamTokens": [
     "incompatible priorities",
     "competing stakeholder objectives",
@@ -266,7 +266,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-31",
   "term": "Stakeholder Mapping",
   "subunit": "1.4-stakeholders",
-  "definition": "A model that assesses the relative interest of stakeholders and their relative influence (or power) on an organization (textbook Figure 4.3). A = low power, low interest (minimum effort); B = low power, high interest (keep informed); C = high power, low interest (keep satisfied); D = high power, high interest (maximum effort: key stakeholders).",
+  "definition": "A **strategic analytical model** assessing stakeholders by *Power* and *Interest* into four quadrants: **A** (*low power, low interest* -> <u>minimum effort</u>), **B** (*low power, high interest* -> <u>keep informed</u>), **C** (*high power, low interest* -> <u>keep satisfied</u>), and **D** (==high power, high interest -> maximum effort for key stakeholders==).",
   "keyExamTokens": [
     "power-interest grid",
     "Power vs Interest axes",
@@ -278,7 +278,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-32",
   "term": "Economies of Scale",
   "subunit": "1.5-growth-and-evolution",
-  "definition": "Lower average costs of production as a firm operates on a larger scale, due to an improvement in its productive efficiency (average cost AC = TC / Q).",
+  "definition": "==Lower average costs of production== (*ATC* or unit cost) as a firm operates on a **larger scale**, due to an <u>improvement in its productive efficiency</u> (*spreading fixed costs* as *AFC* falls).",
   "keyExamTokens": [
     "reduction in average cost (AC)",
     "expansion in operational scale/output",
@@ -290,7 +290,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-33",
   "term": "Diseconomies of Scale",
   "subunit": "1.5-growth-and-evolution",
-  "definition": "The cost disadvantages of growth experienced by a business when it expands beyond its optimal level of output, resulting in rising average costs of production due to a lack of control, coordination and communication.",
+  "definition": "The **cost disadvantages of growth** when expanding <u>beyond the optimal level of output</u>, resulting in ==rising average costs of production== (*ATC* increases) due to *lack of control, coordination and communication*.",
   "keyExamTokens": [
     "rising average costs",
     "beyond the optimal level of output",
@@ -303,7 +303,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-34",
   "term": "Optimal Level of Output",
   "subunit": "1.5-growth-and-evolution",
-  "definition": "The most efficient scale of operation for a business: the level of output where the average cost of production is minimized, at the lowest point of the U-shaped average cost curve (Figure 5.1). Beyond it, diseconomies of scale set in. (Economics terms such as LRAC and MES are not used in the Hoang textbook.)",
+  "definition": "The <u>most efficient scale of operation</u> for a business: the level of output where ==average cost of production is minimized== (*ATC*\*), located at the **lowest point of the U-shaped average cost curve**.",
   "keyExamTokens": [
     "lowest average cost",
     "most efficient scale of operation",
@@ -315,7 +315,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-35",
   "term": "Internal Economies of Scale",
   "subunit": "1.5-growth-and-evolution",
-  "definition": "Cost-reducing benefits that originate inside the organization and are directly within its managerial control as the individual firm expands (technical, financial, managerial, specialization, marketing, purchasing, and risk-bearing economies).",
+  "definition": "==Cost-reducing benefits== that originate **inside the organization** and remain <u>directly within managerial control</u> (*technical, financial, managerial, specialization, marketing, purchasing, and risk-bearing*).",
   "keyExamTokens": [
     "within firm's internal control",
     "unique to expanding organization",
@@ -327,7 +327,7 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
   "id": "def-36",
   "term": "External Economies of Scale",
   "subunit": "1.5-growth-and-evolution",
-  "definition": "Cost savings that arise outside the individual organization due to its favourable location or the general growth of the industry (technological progress, improved transportation networks, skilled labour in the local area, and regional specialisation).",
+  "definition": "==Cost savings== that arise **outside the individual organization** due to *location or industry growth*, <u>enjoyed by all competing firms in that region or industry</u>.",
   "keyExamTokens": [
     "outside the individual firm",
     "shared by all industry firms",
@@ -916,96 +916,96 @@ export const CRAM_DISTINCTIONS: DistinctionItem[] = [
     conceptA: 'Sole Trader',
     conceptB: 'Partnership',
     comparisonCriteria: 'Ownership, Governance & Liability Exposure',
-    contrastStatement: 'A sole trader has exactly one owner with complete unilateral decision autonomy and 100% profit capture; a partnership pools capital from 2 to 20 partners, usually under a Deed of Partnership, but partners are typically liable for its debts "wholly or severally" (unlimited liability), and one partner’s mistake can reduce every partner’s profits.',
-    examTrapWarning: 'Never state that ordinary partnerships have limited liability! At least one partner must have unlimited liability, and typically all do; limited liability partners are the rare exception.'
+    contrastStatement: 'A **sole trader** has <u>exactly one owner</u> with complete *decision autonomy* and ==100% profit capture==; a **partnership** pools capital from *2 to 20 partners* (formalized via a <u>Deed of Partnership</u>), where partners carry ==unlimited liability wholly or severally==.',
+    examTrapWarning: '==Never state that ordinary partnerships have limited liability!== <u>At least one partner must carry unlimited liability</u>, and *typically all partners do*.'
   },
   {
     id: 'dist-02',
     conceptA: 'Private Limited Company (Ltd)',
     conceptB: 'Public Limited Company (PLC)',
     comparisonCriteria: 'Share Flotation, Capital Scale & Financial Secrecy',
-    contrastStatement: 'An Ltd sells shares privately (to family members and friends) with board approval and cannot raise share capital from the general public via a stock exchange, so the directors keep control; a PLC floats shares publicly via an IPO on a stock exchange, raising large amounts of capital but facing higher compliance costs and the threat of takeover. Both must disclose financial information to shareholders.',
-    examTrapWarning: 'Both entities are incorporated and possess limited liability! PLCs are NOT government-owned; they belong to private/institutional retail shareholders.'
+    contrastStatement: 'An **Ltd (Private Limited Company)** sells shares <u>privately to family and friends</u> with *board approval* and ==cannot float on an open stock exchange==; a **PLC (Public Limited Company)** <u>floats shares publicly via an IPO</u> on an *exchange*, ==raising large-scale equity capital== but facing *regulatory disclosure* and *takeover risk*.',
+    examTrapWarning: '==Both entities are incorporated and possess limited liability!== <u>PLCs are NOT government-owned</u>; they belong to *private and institutional equity shareholders*.'
   },
   {
     id: 'dist-03',
     conceptA: 'Mission Statement',
     conceptB: 'Vision Statement',
     comparisonCriteria: 'Temporal Horizon, Tone & Operational Role',
-    contrastStatement: 'A mission statement is anchored in present reality ("what we do and whom we serve today") with an action-oriented operational tone; a vision statement is anchored in an aspirational future ("where we strive to go tomorrow") with an inspirational, motivational tone.',
-    examTrapWarning: 'Do not confuse mission with tactical targets; mission declares core institutional purpose, not numerical sales numbers.'
+    contrastStatement: 'A **mission statement** is anchored in <u>present operational reality</u> (*"what we do and whom we serve today"*) with an ==action-oriented focus==; a **vision statement** is anchored in an <u>aspirational future</u> (*"where we strive to go tomorrow"*) with an ==inspirational, long-term legacy purpose==.',
+    examTrapWarning: '<u>Do not confuse mission with tactical numerical targets:</u> a **mission statement** declares ==core organizational purpose==, not *short-term sales milestones*.'
   },
   {
     id: 'dist-04',
     conceptA: 'Strategic Objectives',
     conceptB: 'Tactical Objectives',
     comparisonCriteria: 'Time Horizon, Seniority Level & Operational Flexibility',
-    contrastStatement: 'Strategic objectives are the longer-term goals of the business as a whole, such as profit maximization, growth, market standing and market share; tactical objectives are short-term goals (usually the next 12 months or sooner) that affect a section of the organization and guide the daily functioning of certain departments, such as survival or sales revenue maximization.',
-    examTrapWarning: 'The textbook (p.45) classes survival during a recession or crisis (e.g. COVID-19) as a TACTICAL objective. Note that p.46 says survival can become a key strategic objective if a firm faces a hostile takeover.'
+    contrastStatement: '**Strategic objectives** are the <u>longer-term overarching goals</u> of the business as a whole (*profit maximization, corporate growth, market standing*); **tactical objectives** are ==short-term actionable goals== (usually the <u>next 12 months or sooner</u>) guiding the *daily functioning of specific departmental units*.',
+    examTrapWarning: 'The textbook (p.45) classifies ==survival during an acute recession or crisis== as a <u>TACTICAL objective</u>, though it can become **strategic** if resisting an *unsolicited hostile takeover*.'
   },
   {
     id: 'dist-05',
     conceptA: 'Market Development',
     conceptB: 'Product Development',
     comparisonCriteria: 'Product Novelty vs Market Novelty in Ansoff Matrix',
-    contrastStatement: 'Market Development takes an existing, proven product into entirely new markets (such as international geographical expansion or new demographic segments); Product Development innovates completely new products to sell to the firm’s existing, established customer base.',
-    examTrapWarning: 'If a brand sells its existing footwear through an overseas e-commerce store, that is Market Development (new channel/geography), NOT Product Development!'
+    contrastStatement: '**Market Development** takes an <u>existing, proven product</u> into ==entirely new markets or customer segments== (*international geographical expansion, new demographic niches*); **Product Development** innovates <u>completely new products</u> to sell to the firm’s ==existing, established customer base==.',
+    examTrapWarning: 'If a brand sells its existing footwear through an overseas e-commerce platform, that is ==Market Development== (*new geography/channel*), <u>NOT Product Development</u>!'
   },
 {
   "id": "dist-06",
   "conceptA": "Political Factors",
   "conceptB": "Legal Factors",
   "comparisonCriteria": "Enforceability, Legislative State, and Sanction Nature",
-  "contrastStatement": "Political factors encompass government political stability, foreign trade agreements, and ideological policy debates; Legal factors are formally enacted, binding statutes (such as statutory minimum wage laws and consumer protection acts) that carry enforceable civil or criminal penalties.",
-  "examTrapWarning": "Never argue that a passed minimum wage statute is 'Political' because politicians debated it; once enacted into law, it is strictly a LEGAL compliance factor!"
+  "contrastStatement": "**Political factors** encompass <u>government stability, ideological policy priorities, and foreign trade negotiations</u> (*macro-political climate*); **Legal factors** are ==formally enacted, legally binding statutes== (e.g. *statutory minimum wage, health & safety laws*) that carry <u>enforceable civil or criminal penalties</u>.",
+  "examTrapWarning": "==Never classify an enacted minimum wage statute as 'Political' merely because politicians debated it;== once passed into statutory legislation, it is strictly a <u>LEGAL compliance mandate</u>!"
 },
 {
   "id": "dist-07",
   "conceptA": "Social Factors",
   "conceptB": "Ethical Factors",
   "comparisonCriteria": "Demographic & Cultural Trends vs Moral Corporate Values",
-  "contrastStatement": "Social factors are external population demographics, aging trends, and shifting consumer lifestyle habits; Ethical factors are the moral values and judgements (of what is right) that society believes businesses need to adhere to, such as fair trade and corporate social responsibility (CSR).",
-  "examTrapWarning": "Consumer demand for healthy food is a SOCIAL trend; the company's decision to voluntarily eliminate artificial chemicals and audit supplier welfare is an ETHICAL strategy."
+  "contrastStatement": "**Social factors** reflect <u>external population demographics, cultural shifts, and changing consumer lifestyles</u> (*aging populations, health trends*); **Ethical factors** represent the ==moral values and principles== (of *what is right and wrong*) that society expects businesses to follow, such as <u>fair trade and corporate social responsibility (CSR)</u>.",
+  "examTrapWarning": "Consumer preference for organic food is an external ==SOCIAL demographic trend==; a firm voluntarily paying living wages and auditing supply chains is an <u>ETHICAL moral commitment</u>."
 },
 {
   "id": "dist-08",
   "conceptA": "BCG Stars",
   "conceptB": "BCG Cash Cows",
   "comparisonCriteria": "Industry Growth Rate & Capital Reinvestment Dynamics",
-  "contrastStatement": "Both Stars and Cash Cows hold high market share; however, Stars operate in high-growth industries requiring heavy continuous capital investment to defend dominance, whereas Cash Cows operate in mature, low-growth markets and generate net surplus liquidity.",
-  "examTrapWarning": "Do not confuse Cash Cows with Stars; Cash Cows fund the rest of the company, while Stars absorb significant portions of their own revenue to fight off rivals."
+  "contrastStatement": "Both **Stars** and **Cash Cows** hold ==high relative market share==; however, **Stars** operate in <u>rapidly growing industries</u> requiring *heavy ongoing capital reinvestment* to defend market share, whereas **Cash Cows** operate in <u>mature, low-growth markets</u> and ==generate surplus liquidity== to fund corporate growth elsewhere.",
+  "examTrapWarning": "<u>Do not confuse Cash Cows with Stars:</u> **Cash Cows** ==fund the rest of the business== with surplus cash, while **Stars** *absorb substantial investment capital* to <u>maintain market leadership against aggressive rivals</u>."
 },
 {
   "id": "dist-09",
   "conceptA": "Stakeholders",
   "conceptB": "Shareholders",
   "comparisonCriteria": "Legal Ownership, Governance Rights & Financial Returns",
-  "contrastStatement": "Stakeholders encompass any party with an interest in or affected by business operations (employees, customers, suppliers, community, government, owners); shareholders are exclusively the legal equity owners of a limited company who hold AGM voting rights and earn dividends and capital gains.",
-  "examTrapWarning": "All shareholders are stakeholders, but NOT all stakeholders are shareholders! Never use these two terms interchangeably in IB exams."
+  "contrastStatement": "**Stakeholders** encompass ==any party with an interest in or affected by business operations== (*employees, customers, suppliers, community, regulators*); **shareholders** are <u>exclusively the legal equity owners</u> of an incorporated company who hold ==AGM voting rights== and earn *dividends and capital gains*.",
+  "examTrapWarning": "==All shareholders are stakeholders, but NOT all stakeholders are shareholders!== <u>Never use these two terms interchangeably in IB exams</u>."
 },
 {
   "id": "dist-10",
   "conceptA": "Internal Stakeholders",
   "conceptB": "External Stakeholders",
   "comparisonCriteria": "Organizational Boundary, Operational Role & Driving Objectives",
-  "contrastStatement": "Internal stakeholders operate directly within the firm (employees, managers, directors) striving for wages, career progression, and executive bonuses; external stakeholders reside outside the firm (customers, suppliers, government, pressure groups) seeking competitive pricing, prompt payment, legal compliance, and environmental protection.",
-  "examTrapWarning": "Shareholders can be internal (founder-directors or employees holding shares) or external (passive retail/institutional stock market investors)."
+  "contrastStatement": "**Internal stakeholders** operate <u>directly within the firm</u> (*employees, managers, directors*) striving for ==wages, career progression, and executive bonuses==; **external stakeholders** reside <u>outside the enterprise</u> (*customers, suppliers, regulators, pressure groups*) seeking ==competitive pricing, prompt invoice payment, and environmental compliance==.",
+  "examTrapWarning": "<u>Shareholders can occupy dual roles:</u> *internal* (founder-directors or employees holding equity) or *external* (passive retail or institutional market investors)."
 },
 {
   "id": "dist-11",
   "conceptA": "Internal Economies of Scale",
   "conceptB": "External Economies of Scale",
   "comparisonCriteria": "Locus of Control, Operational Origin & Competitive Impact",
-  "contrastStatement": "Internal economies arise strictly within the individual expanding organization and remain under direct executive control (e.g. technical economies from mass-production machinery, financial economies from cheaper borrowing, managerial economies from specialist managers), giving that specific firm a cost advantage over rivals; external economies arise outside the firm from its favourable location or the growth of the industry (technological progress, improved transport networks, skilled local labour, regional specialisation), so other firms in the industry also benefit.",
-  "examTrapWarning": "Never credit an individual company for building city transit or local universities! Regional infrastructure improvements are EXTERNAL economies experienced by all regional competitors."
+  "contrastStatement": "**Internal economies** arise strictly <u>within the individual expanding organization</u> and remain under direct executive control (*technical machinery, cheaper borrowing, specialist managers*), giving that specific firm a ==direct cost advantage over rivals==; **external economies** arise <u>outside the firm</u> from *favourable location or industry expansion*, so ==all competing firms in that region/industry benefit==.",
+  "examTrapWarning": "<u>Never credit an individual company for building city transit or regional universities!</u> Infrastructure improvements are ==EXTERNAL economies== experienced by *all regional competitors*."
 },
 {
   "id": "dist-12",
   "conceptA": "Economies of Scale",
   "conceptB": "Bulk Buying (Purchasing Discounts)",
   "comparisonCriteria": "Conceptual Scope, Cost Drivers & Operational Variety",
-  "contrastStatement": "Economies of scale is the broad economic phenomenon where average cost per unit falls across all operating facets as scale expands; bulk buying (purchasing economies) is only one single sub-type among seven internal economies. Technical automation, managerial division of labor, and financial borrowing power frequently generate far greater unit cost reductions than bulk discounts alone.",
-  "examTrapWarning": "The textbook's Common mistake box (p.67) warns against defining economies of scale as 'the benefits of bulk buying', because even small businesses can buy in bulk. Always define it as lower average costs as a firm operates on a larger scale!"
+  "contrastStatement": "==Economies of scale== is the broad economic phenomenon where *average cost per unit* falls across all operating facets as scale expands; **bulk buying** (*purchasing economies*) is <u>only one single sub-type</u> among seven internal economies. **Technical automation**, **managerial division of labor**, and **financial borrowing power** frequently generate far greater unit cost reductions than bulk discounts alone.",
+  "examTrapWarning": "The textbook's Common mistake box (p.67) warns against defining economies of scale as 'the benefits of bulk buying', because even small businesses can buy in bulk. <u>Always define it as</u> ==lower average costs as a firm operates on a larger scale==!"
 },
   {
     id: 'dist-A1-01',
@@ -1254,89 +1254,89 @@ export const CRAM_GOLDEN_RULES: GoldenMatrixRule[] = [
     id: 'rule-01',
     ruleTitle: 'SWOT Rule 1: Offensive Strategy (S + O)',
     category: 'SWOT',
-    corePrinciple: 'Leverage internal core strengths directly to exploit high-growth external market opportunities.',
-    actionProtocol: 'Aggressive capital allocation, rapid capacity expansion, and offensive marketing campaigns into unserved market niches.',
-    examApplicationTip: 'Look for cases where high cash reserves or strong brand equity coincide with booming demographic trends or fiscal subsidies.'
+    corePrinciple: '**Offensive Strategy (S-O):** Leverage *internal core strengths* directly to exploit ==high-growth external market opportunities== (the <u>ideal strategic posture</u>).',
+    actionProtocol: '**Aggressive capital allocation**, rapid capacity expansion, and offensive marketing campaigns to <u>capture unserved market niches</u> and maximize *market share gains*.',
+    examApplicationTip: '==Look for cases== where high cash reserves or strong brand equity coincide with <u>booming demographic trends or fiscal subsidies</u>; advise *offensive expansion*.'
   },
   {
     id: 'rule-02',
     ruleTitle: 'SWOT Rule 2: Defensive Strategy (S + T)',
     category: 'SWOT',
-    corePrinciple: 'Deploy robust internal competencies to neutralize or shield the business against hostile external environmental threats.',
-    actionProtocol: 'Leverage proprietary patents, certified dealership networks, and customer loyalty schemes to withstand price wars and macro headwinds.',
-    examApplicationTip: 'Use when established incumbents face low-cost foreign entrants; emphasize non-price competition and warranty moats.'
+    corePrinciple: '**Defensive Strategy (S-T):** Deploy *robust internal competencies* to <u>neutralize or shield the business</u> against ==hostile external environmental threats==.',
+    actionProtocol: 'Leverage **proprietary patents**, certified dealership networks, and customer loyalty schemes to <u>withstand price wars and macro headwinds</u> via *non-price differentiation*.',
+    examApplicationTip: '==Use when established incumbents face low-cost foreign entrants==; emphasize *non-price competition* and <u>warranty moats</u>.'
   },
   {
     id: 'rule-03',
     ruleTitle: 'SWOT Rule 3: Reorientation Strategy (W + O)',
     category: 'SWOT',
-    corePrinciple: 'Address and eliminate an acute internal operational weakness to seize an emerging external market opportunity.',
-    actionProtocol: 'Adjust or reorient policies to fix the weakness, e.g. cutting costs to improve liquidity (the textbook example, p.609); other options include joint ventures or technology upgrades before entering the market.',
-    examApplicationTip: 'Classic scenario: A traditional retailer with obsolete IT entering online home delivery by partnering with a specialized software vendor.'
+    corePrinciple: '**Reorientation Strategy (W-O):** Address and eliminate an *acute internal operational weakness* to <u>seize an emerging external market opportunity</u> (turnaround posture).',
+    actionProtocol: '==Adjust or reorient corporate policies== to fix the weakness: <u>cut costs to improve liquidity</u>, form *joint ventures*, or upgrade digital technology before entering the market.',
+    examApplicationTip: '==Classic exam scenario:== A traditional retailer with *obsolete IT* entering online delivery by <u>partnering with a specialized software vendor</u>.'
   },
   {
     id: 'rule-04',
     ruleTitle: 'SWOT Rule 4: Survival Strategy (W + T)',
     category: 'SWOT',
-    corePrinciple: 'Emergency defensive maneuvers in crisis when severe internal vulnerabilities collide with hostile external threats.',
-    actionProtocol: 'Immediate retrenchment: shut loss-making store locations, freeze hiring, renegotiate creditor debt covenants, and shed non-core assets.',
-    examApplicationTip: 'Apply in cases where high corporate indebtedness meets stagflation or aggressive competitor disruption.'
+    corePrinciple: '**Survival Strategy (W-T):** Emergency defensive maneuvers in crisis when <u>severe internal vulnerabilities collide with hostile external threats</u> (worst-case quadrant).',
+    actionProtocol: '==Immediate retrenchment:== **shut loss-making store locations**, freeze executive hiring, <u>renegotiate creditor debt covenants</u>, and shed *non-core assets* to preserve liquidity.',
+    examApplicationTip: '==Apply in crisis cases== where *high corporate indebtedness* meets <u>stagflation or aggressive competitor disruption</u>.'
   },
   {
     id: 'rule-05',
     ruleTitle: 'Ansoff Gradient Rule: Risk Escalates with Unfamiliarity',
     category: 'Ansoff',
-    corePrinciple: 'Strategic risk in Ansoff correlates directly with the degree of operational unfamiliarity in products and markets.',
-    actionProtocol: 'Market Penetration (lowest risk: existing product + existing market) -> Product/Market Dev (moderate risk: 1 unknown variable) -> Diversification (highest risk: dual unfamiliarity).',
-    examApplicationTip: 'Always justify Diversification as highest risk because the firm lacks both engineering expertise and customer distribution familiarity.'
+    corePrinciple: '**Ansoff Gradient Rule:** Strategic risk in Ansoff correlates directly with the <u>degree of operational unfamiliarity</u> in *products and markets*.',
+    actionProtocol: '**Market Penetration** (==lowest risk: existing product + existing market==) -> **Product/Market Dev** (*moderate risk: 1 unknown variable*) -> **Diversification** (==highest risk: dual unfamiliarity==).',
+    examApplicationTip: '<u>Always justify Diversification as highest risk</u> because the firm lacks both *engineering expertise* and ==customer distribution familiarity==.'
   },
 {
   "id": "rule-06",
   "ruleTitle": "STEEPLE Rule 1: The SPICED Currency Axiom",
   "category": "STEEPLE",
-  "corePrinciple": "Exchange rate fluctuations reverse commercial advantages between importers and exporters (SPICED is a revision mnemonic, not the textbook's; the effects match p.626).",
-  "actionProtocol": "Strong domestic currency -> Imports Cheaper (raw material importers win) / Exports Dearer (foreign export sales contract). Weak domestic currency -> Imports Dearer / Exports Cheaper.",
-  "examApplicationTip": "Always evaluate whether the case study business is an importer of foreign components or an exporter of finished goods before assessing currency fluctuations."
+  "corePrinciple": "**The SPICED Currency Axiom:** Exchange rate fluctuations <u>reverse commercial advantages</u> between *importers* and *exporters*.",
+  "actionProtocol": "**Strong domestic currency** -> ==Imports Cheaper== (*raw material importers win*) / ==Exports Dearer== (*foreign export sales contract*). **Weak currency** -> <u>Imports Dearer / Exports Cheaper</u>.",
+  "examApplicationTip": "<u>Always evaluate</u> whether the case study business is an ==importer of foreign components== or an ==exporter of finished goods== before assessing *currency fluctuations*."
 },
 {
   "id": "rule-07",
   "ruleTitle": "BCG Rule: Cash Cow Reinvestment Cycle",
   "category": "BCG",
-  "corePrinciple": "A healthy multi-product enterprise must systematically circulate liquidity across product lifecycles.",
-  "actionProtocol": "Harvest Cash Cows -> Reinvest surplus profits to 'Build' Question Marks into Stars -> Transition mature Stars into future Cash Cows -> Divest unviable Dogs.",
-  "examApplicationTip": "In portfolio evaluation essays, criticize firms that have zero Cash Cows (severe liquidity strain) or zero Question Marks/Stars (future commercial obsolescence)."
+  "corePrinciple": "**BCG Reinvestment Cycle:** A healthy multi-product enterprise must <u>systematically circulate liquidity</u> across *product lifecycles*.",
+  "actionProtocol": "**Harvest Cash Cows** -> ==Reinvest surplus profits== to 'Build' *Question Marks into Stars* -> <u>Transition mature Stars into future Cash Cows</u> -> **Divest unviable Dogs**.",
+  "examApplicationTip": "In portfolio evaluation essays, <u>criticize firms that have zero Cash Cows</u> (==severe liquidity strain==) or zero Question Marks/Stars (*future commercial obsolescence*)."
 },
 {
   "id": "rule-08",
   "ruleTitle": "Decision Tree Rule: Net EMV Deduction",
   "category": "BMT",
-  "corePrinciple": "Gross Expected Value is not profit; initial capital expenditure must always be deducted.",
-  "actionProtocol": "Calculate Gross EV at chance node = Sum(Probability x Payoff). Calculate Net EMV = Gross EV - Initial Project Cost. Choose option with highest positive Net EMV.",
-  "examApplicationTip": "Do not stop at gross expected value: comparing options without subtracting the initial cost gives the wrong answer. Always show the subtraction of initial capital expenditure."
+  "corePrinciple": "**Decision Tree Deduction Rule:** Gross Expected Value is *not profit*; <u>initial capital expenditure must always be deducted</u> to determine the ==Net Expected Monetary Value (Net EMV)==.",
+  "actionProtocol": "Calculate Gross EV at chance node = **Sum(Probability × Payoff)** -> Calculate ==Net EMV = Gross EV - Initial Capital Cost== -> Choose option with <u>highest positive Net EMV</u> (*prune rejected branches*).",
+  "examApplicationTip": "<u>Do not stop at gross expected value</u>: comparing options without subtracting the initial cost gives the wrong answer. ==Always show the subtraction of initial capital expenditure==."
 },
 {
   "id": "rule-09",
   "ruleTitle": "Stakeholder Rule: Stakeholder Mapping (Power-Interest Grid)",
   "category": "Stakeholders",
-  "corePrinciple": "Managers can use stakeholder mapping (textbook Figure 4.3) to prioritize their actions according to each group's relative power (influence) and interest.",
-  "actionProtocol": "Quadrant A (Low P / Low I) -> Minimum Effort (unlikely to receive much attention); Quadrant B (Low P / High I) -> Keep Informed; Quadrant C (High P / Low I) -> Keep Satisfied (perhaps by consulting them on strategic decisions); Quadrant D (High P / High I) -> Maximum Effort (the key stakeholders, who receive the most attention). Note: the textbook's figure puts LOW power on the top row.",
-  "examApplicationTip": "In 6-mark stakeholder essays, explicitly identify which quadrant a stakeholder occupies to justify why management cannot and should not treat all groups equally."
+  "corePrinciple": "**Stakeholder Prioritization Axiom:** Managers use *stakeholder mapping* (Figure 4.3) to <u>prioritize strategic actions and communications</u> based on each group's ==relative power (influence) and interest==.",
+  "actionProtocol": "**Quadrant A** (*Low P / Low I*) -> <u>Minimum Effort</u>; **Quadrant B** (*Low P / High I*) -> <u>Keep Informed</u>; **Quadrant C** (*High P / Low I*) -> <u>Keep Satisfied</u>; **Quadrant D** (==High P / High I==) -> ==Maximum Effort (key strategic stakeholders)==.",
+  "examApplicationTip": "In 6-mark stakeholder essays, <u>explicitly classify the stakeholder into its quadrant</u> to **justify why management cannot treat all groups equally** and *must resolve trade-offs strategically*."
 },
 {
   "id": "rule-10",
   "ruleTitle": "The Average Cost Tipping Point: Optimal Level of Output",
   "category": "Scale",
-  "corePrinciple": "Expansion lowers average cost only up to the optimal level of output (where average costs are minimised); expanding beyond it brings diseconomies of scale and higher unit costs.",
-  "actionProtocol": "Phase 1 (Q < Q\\*): Economies of scale dominate as AFC falls continuously and internal efficiencies spread -> Phase 2 (Q = Q\\*): Optimal level of output, where average cost is minimized -> Phase 3 (Q > Q\\*): Diseconomies of scale take over as lack of control and coordination, bureaucracy, and worker alienation raise unit costs.",
-  "examApplicationTip": "When sketching the U-shaped average cost curve (Figure 5.1: Costs ($) on the y-axis, Output on the x-axis), label the lowest point 'Optimal level of output'. (LRAC and MES are economics terms not used in the Hoang textbook.)"
+  "corePrinciple": "**The Average Cost Tipping Point:** Operational scale reduces unit costs *only* up to the ==optimal level of output==; expanding beyond it triggers **diseconomies of scale** and <u>surging unit overheads</u>.",
+  "actionProtocol": "**Phase 1** (*Q* < *Q*\\*): ==Economies of scale dominate== as *AFC* falls continuously -> **Phase 2** (*Q* = *Q*\\*): ==Optimal level of output==, where *average cost is minimized* -> **Phase 3** (*Q* > *Q*\\*): ==Diseconomies of scale take over== due to <u>bureaucracy, communication failure, and worker alienation</u>.",
+  "examApplicationTip": "When sketching the U-shaped average cost curve (Figure 5.1), <u>label the lowest point 'Optimal level of output'</u>. (*LRAC* and *MES* are economics terms not used in the Hoang textbook.)"
 },
 {
   "id": "rule-11",
   "ruleTitle": "The 7-Factor Internal Scale Checklist",
   "category": "Scale",
-  "corePrinciple": "Internal economies fall into seven distinct operational categories: Technical, Financial, Managerial, Specialization, Marketing, Purchasing, and Risk-Bearing.",
-  "actionProtocol": "1. Technical (automation & machinery) | 2. Financial (lower borrowing rates) | 3. Managerial (executive specialization) | 4. Specialization (shopfloor division of labor) | 5. Marketing (spreading global advertising budgets & bulk selling) | 6. Purchasing (bulk-order leverage over suppliers) | 7. Risk-Bearing (conglomerate portfolio diversification).",
-  "examApplicationTip": "In 4-mark and 6-mark essays, never cite generic 'cost savings'; always specify the exact category and explain its precise mechanism (e.g., spreading high fixed depreciation over volume)."
+  "corePrinciple": "**The 7-Factor Internal Scale Checklist:** Internal economies fall into ==seven distinct operational categories== under <u>direct managerial control</u>: *Technical, Financial, Managerial, Specialization, Marketing, Purchasing, and Risk-Bearing*.",
+  "actionProtocol": "1. **Technical** (*automation & machinery*) | 2. **Financial** (*lower borrowing interest*) | 3. **Managerial** (*functional specialist executives*) | 4. **Specialization** (*shopfloor division of labor*) | 5. **Marketing** (*spreading global advertising budgets & bulk selling*) | 6. **Purchasing** (*bulk-order supplier discounts*) | 7. **Risk-Bearing** (*conglomerate portfolio diversification*).",
+  "examApplicationTip": "In 4-mark and 6-mark essays, <u>never cite generic 'cost savings'</u>; ==always specify the exact category== and explain its *precise mechanism* (e.g., *spreading high fixed depreciation over volume*)."
 },
   {
     id: 'rule-A3-01',

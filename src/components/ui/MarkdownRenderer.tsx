@@ -140,10 +140,16 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
       return match;
     });
 
-    // 6. Catch any lingering LaTeX commands in body text
+    // 6. Support extended markdown highlighting ==text== -> <mark>text</mark>
+    result = result.replace(/==([^=\n]+)==/g, '<mark>$1</mark>');
+
+    // 7. Support extended markdown underlining ++text++ -> <u>text</u>
+    result = result.replace(/\+\+([^\+\n]+)\+\+/g, '<u>$1</u>');
+
+    // 8. Catch any lingering LaTeX commands in body text
     result = cleanMathExpression(result);
 
-    // 7. Restore protected code spans and blocks
+    // 9. Restore protected code spans and blocks
     result = result.replace(/__CODE_TOKEN_(\d+)__/g, (_, idx) => codeTokens[Number(idx)]);
 
     return result;
@@ -258,9 +264,28 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
       </a>
     ),
     strong: ({ children }) => (
-      <strong className="font-semibold text-inherit">{children}</strong>
+      <strong className="font-bold text-text-primary">{children}</strong>
     ),
-    em: ({ children }) => <em className="italic">{children}</em>,
+    b: ({ children }) => (
+      <b className="font-bold text-text-primary">{children}</b>
+    ),
+    em: ({ children }) => <em className="italic text-inherit">{children}</em>,
+    i: ({ children }) => <i className="italic text-inherit">{children}</i>,
+    u: ({ children }) => (
+      <u className="underline underline-offset-[3px] decoration-1.5 decoration-blue-600/70 font-medium text-inherit">
+        {children}
+      </u>
+    ),
+    ins: ({ children }) => (
+      <ins className="underline underline-offset-[3px] decoration-1.5 decoration-emerald-600/70 font-medium no-underline-skip text-inherit">
+        {children}
+      </ins>
+    ),
+    mark: ({ children }) => (
+      <mark className="bg-amber-100/95 text-amber-950 px-1 py-0.5 rounded-[3px] font-medium border-b border-amber-300">
+        {children}
+      </mark>
+    ),
     hr: () => <hr className="my-4 border-t border-border" />,
     ...customComponents,
   };

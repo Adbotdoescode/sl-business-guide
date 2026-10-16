@@ -189,95 +189,95 @@ export const STUDY_UNITS: StudyUnit[] =
     "highYieldTerms": [
       {
         "term": "Business",
-        "definition": "A decision-making organization involved in the process of using inputs to produce goods and/or to provide services (textbook p.11), meeting the needs and wants of customers."
+        "definition": "A ==decision-making entity== that combines inputs (factors of production: *land, labor, capital, enterprise*) through a **transformation process** to produce finished goods or provide services that <u>satisfy customer needs and wants</u>."
       },
       {
         "term": "Factors of Production",
-        "definition": "The four fundamental economic resources required for business activity: Land, Labor, Capital, and Enterprise."
+        "definition": "The four fundamental **economic resources** required for business activity: *Land* (==natural resources==), *Labor* (==human physical/mental effort==), *Capital* (==man-made physical assets & finance==), and *Enterprise* (<u>entrepreneurial risk-taking & coordination</u>)."
       },
       {
         "term": "Land",
-        "definition": "All natural physical resources provided by nature, including water, timber, crude oil, and mineral deposits."
+        "definition": "All **natural physical resources** provided by nature (*water, timber, crude oil, and mineral deposits*), which are <u>finite or renewable</u> and yield ==economic rent==."
       },
       {
         "term": "Labor",
-        "definition": "The physical, mental, and technical effort exerted by human workers in the production of goods and services."
+        "definition": "The **physical, mental, and technical effort** exerted by human workers in the <u>production of goods and services</u>, compensated through ==wages and salaries== (*human capital*)."
       },
       {
         "term": "Capital",
-        "definition": "Man-made physical assets (machinery, tools, factories, IT) and financial capital deployed to facilitate production."
+        "definition": "**Man-made physical assets** (*machinery, tools, factories, IT*) and financial capital deployed to <u>facilitate production and generate added value</u> through ==productive investment==."
       },
       {
         "term": "Enterprise",
-        "definition": "The entrepreneurial skill, initiative, and willingness to accept financial risks to combine land, labor, and capital."
+        "definition": "The **entrepreneurial skill, initiative, and willingness** to accept financial risks to combine *land, labor, and capital*, <u>bearing commercial risk</u> in pursuit of ==operational profit and innovation==."
       },
       {
         "term": "Adding Value",
-        "definition": "The practice of producing a good or service that is worth more than the cost of the resources used in the production process (textbook key term, p.20)."
+        "definition": "The practice of producing a good or service that is ==worth more than the cost of resources used== in the production process. **Added value** occurs when there is a <u>positive difference between selling price</u> and the *cost of producing it*."
       },
       {
         "term": "Consumer Goods",
-        "definition": "Physical products sold directly to the general public for personal or household consumption."
+        "definition": "**Physical products** purchased and consumed by *private households* for ==direct personal gratification==, sub-classified into <u>Consumer Durables</u> (*long-lasting items*) and <u>Non-Durables</u> (*fast-consuming items*)."
       },
       {
         "term": "Consumer Durables",
-        "definition": "Long-lasting consumer goods designed for repeated, multi-year usage, such as automobiles and refrigerators."
+        "definition": "**Long-lasting consumer goods** designed for <u>repeated, multi-year household usage</u> (*automobiles, refrigerators, furniture*), requiring ==infrequent capital expenditure==."
       },
       {
         "term": "Consumer Non-Durables",
-        "definition": "Goods that need to be consumed shortly after purchase because they do not last or cannot be reused, such as fresh food, beverages, medicines and newspapers."
+        "definition": "**Perishable or fast-moving goods** that need to be <u>consumed shortly after purchase</u> (*fresh food, beverages, newspapers*), characterized by ==frequent repeat purchases== and *short operational lifespans*."
       },
       {
         "term": "Capital Goods",
-        "definition": "Tangible physical assets purchased by businesses to produce other goods or provide commercial services."
+        "definition": "==Tangible, man-made physical assets==, machinery, commercial vehicles, and factories **purchased by businesses** to <u>produce other goods or provide services</u> rather than for *household consumption*."
       },
       {
         "term": "Customer",
-        "definition": "The individual, household, or organization that transacts financially to purchase a product."
+        "definition": "The **individual, household, or organization** that <u>transacts financially to buy a product</u>, acting as the ==economic buyer== (*who may or may not be the end-user*)."
       },
       {
         "term": "Consumer",
-        "definition": "The individual or end-user who ultimately uses or consumes the good or service."
+        "definition": "The **individual or end-user** who <u>actually consumes or uses the good or service</u> to ==derive personal utility or satisfaction== (*distinct from the financial purchaser*)."
       },
       {
         "term": "Entrepreneur",
-        "definition": "An individual who conceives, organizes, and manages a business venture, bearing personal financial risk to pursue profit or social change."
+        "definition": "An ==innovative individual== who conceives a business idea, invests *personal capital*, **coordinates factors of production**, and <u>bears full commercial risk</u> in pursuit of operational *profit* or *social impact*."
       },
       {
         "term": "Intrapreneur",
-        "definition": "An employee who applies entrepreneurial innovation, initiative, and creativity within an established company without bearing personal financial risk. (Not a term used in the Hoang textbook.)"
+        "definition": "An **innovative employee** who applies <u>entrepreneurial initiative, creativity, and problem-solving</u> within an established company *without bearing personal financial risk*, driving ==internal corporate innovation==."
       },
       {
         "term": "Primary Sector",
-        "definition": "The economic sector focused on the direct extraction or harvesting of natural resources from the earth or sea."
+        "definition": "The **economic sector** focused on the <u>direct cultivation, extraction, or harvesting</u> of ==natural resources from the earth or sea== (*farming, mining, fishing, oil drilling*)."
       },
       {
         "term": "Secondary Sector",
-        "definition": "The economic sector that manufactures, processes, and constructs finished physical goods from raw materials."
+        "definition": "The **economic sector** that <u>manufactures, processes, and constructs</u> ==finished physical products== from *raw materials supplied by primary producers* (*automobile assembly, food processing*)."
       },
       {
         "term": "Tertiary Sector",
-        "definition": "The economic sector that provides services, retail distribution, and personal assistance to consumers and businesses."
+        "definition": "The **economic sector** providing <u>commercial services, retail distribution, and personal assistance</u> to consumers and enterprises, driving ==added value through customer service== (*banking, tourism, transport*)."
       },
       {
         "term": "Quaternary Sector",
-        "definition": "A sub-category of the tertiary sector, where businesses are involved in intellectual and knowledge-based activities that generate and share information, such as research organizations (textbook key term, p.20)."
+        "definition": "A **knowledge-driven subsector** of tertiary activity focused on <u>intellectual, research, and information-based services</u> (*scientific R&D, software engineering, business consultancy*), generating ==high-yield intellectual property==."
       },
       {
         "term": "Chain of Production",
-        "definition": "The sequential stages of economic activity through which raw materials pass across sectors to reach the final end-consumer."
+        "definition": "The ==sequential, interrelated stages of economic activity== through which *raw materials* pass across **economic sectors** (primary extraction → secondary manufacturing → tertiary distribution) to <u>reach the final end-consumer</u>."
       },
       {
         "term": "Cash Flow",
-        "definition": "The timing and volume of cash inflows and cash outflows moving through an organization over a given operating period."
+        "definition": "The **timing and volume** of <u>cash inflows and cash outflows</u> moving through an organization over an operating cycle, determining ==immediate solvency and working capital liquidity== (*not equivalent to profit*)."
       },
       {
         "term": "Economies of Scale",
-        "definition": "The cost advantages experienced by a business when production becomes efficient, resulting in lower average costs per unit as output increases."
+        "definition": "==Lower average costs of production== (*ATC* or unit cost) as a firm operates on a **larger scale**, due to an <u>improvement in its productive efficiency</u> (*spreading fixed costs* as *AFC* falls)."
       },
       {
         "term": "GET CASH",
-        "definition": "A mnemonic summarizing the seven core motivations for starting a business: Growth, Earnings, Transference, Challenge, Autonomy, Security, and Hobbies."
+        "definition": "A **comprehensive revision mnemonic** summarizing the seven core motivations for starting a business: *Growth, Earnings, Transference, Challenge, Autonomy, Security, and Hobbies*, reflecting ==both financial and personal aspirations== for <u>new venture creation</u>."
       }
     ]
   },
@@ -1118,43 +1118,43 @@ export const STUDY_UNITS: StudyUnit[] =
     "highYieldTerms": [
       {
         "term": "Stakeholder",
-        "definition": "Any individual, group, or organization with a direct interest or involvement in the operations, decisions, and performance of a business."
+        "definition": "Any **individual or group** with a ==direct interest or involvement== in a business, who is <u>impacted by organizational decisions</u> or *exerts influence over corporate conduct*."
       },
       {
         "term": "Internal Stakeholders",
-        "definition": "Members of the business organization who operate from within, namely employees, managers, directors, and internal shareholders."
+        "definition": "**Members of the business organization** who <u>operate from within the enterprise</u> (*employees, managers, directors*), motivated by ==wages, career progression, working conditions, and executive bonuses==."
       },
       {
         "term": "External Stakeholders",
-        "definition": "Individuals and groups outside the business entity who have an interest in its activities, including customers, suppliers, financiers, competitors, pressure groups, and government."
+        "definition": "**Individuals and outside organizations** not part of the firm but having a <u>direct interest in its operations or conduct</u> (*customers, suppliers, financiers, pressure groups, government*), seeking ==competitive pricing, prompt payment, and regulatory compliance==."
       },
       {
         "term": "Shareholder (Stockholder)",
-        "definition": "An individual or institution that legally owns equity shares in a limited liability company, entitled to voting rights, dividends, and capital gains."
+        "definition": "The **legal equity owners of an incorporated company** who <u>invest risk capital to purchase company shares</u>, possessing ==AGM voting rights== and entitlement to *dividends and capital gains*."
       },
       {
         "term": "Stakeholder Conflict",
-        "definition": "Differences in the varying needs and priorities of different stakeholder groups, creating friction because a firm cannot meet all objectives simultaneously."
+        "definition": "Differences in the **varying needs and priorities** of different stakeholder groups, meaning it is <u>not possible to satisfy all stakeholder objectives simultaneously</u> (e.g. *higher employee wages* vs ==higher shareholder dividend payouts==)."
       },
       {
         "term": "Stakeholder Mapping",
-        "definition": "A model that assesses the relative interest of stakeholders and their relative influence (or power) on an organization (textbook key term, p.64); often called a power-interest grid."
+        "definition": "A **strategic analytical model** assessing stakeholders by *Power* and *Interest* into four quadrants: **A** (*low power, low interest* -> <u>minimum effort</u>), **B** (*low power, high interest* -> <u>keep informed</u>), **C** (*high power, low interest* -> <u>keep satisfied</u>), and **D** (==high power, high interest -> maximum effort for key stakeholders==)."
       },
       {
         "term": "Remuneration",
-        "definition": "Pay and benefits (the textbook's gloss on p.58), e.g. base salary, overtime pay, bonuses, commissions and other benefits received by employees and executives."
+        "definition": "The **total financial package** paid to <u>employees and directors for their labor and leadership</u> (*wages, salaries, performance bonuses, share options*), representing a ==major operational cost and motivational driver==."
       },
       {
         "term": "Pressure Group",
-        "definition": "An organized group of individuals with a common interest seeking to influence corporate behavior, public opinion, or government legislation regarding specific causes."
+        "definition": "An **organized non-profit association of individuals** who <u>campaign collectively to influence corporate decisions</u> or *government policy* regarding ==specific ethical, environmental, or social causes== (*Greenpeace, trade unions*)."
       },
       {
         "term": "Financiers",
-        "definition": "Financial institutions (such as commercial banks) and private investors (such as business angels) that provide loan or equity capital to an enterprise."
+        "definition": "**Institutional lenders and commercial banks** that <u>provide debt finance or loan capital</u> to a business, prioritizing ==timely interest repayments, loan security, and low default risk== (*creditors*)."
       },
       {
         "term": "Mutual Benefits (Synergy)",
-        "definition": "The idea in modern management thinking that meeting the needs of employees and customers can lead to better customer relations, higher market share and greater long-term profits that please shareholders, although this might only occur in the medium to long term (p.60)."
+        "definition": "A **collaborative stakeholder relationship** where <u>addressing the interests of one group simultaneously benefits another</u> (*win-win dynamic*), creating ==shared corporate value and enhanced long-term profitability==."
       }
     ]
   },
@@ -1939,55 +1939,55 @@ export const STUDY_UNITS: StudyUnit[] =
   "highYieldTerms": [
     {
       "term": "Business Management Toolkit (BMT)",
-      "definition": "The formal suite of situational, planning, and decision-making tools integrated across the IB Business Management syllabus."
+      "definition": "The **formal suite of analytical tools** integrated across the IB syllabus, categorised into <u>situational, planning, and decision-making frameworks</u> to ==guide rational corporate strategy== based on *empirical business data*."
     },
     {
       "term": "Boston Consulting Group (BCG) Matrix",
-      "definition": "A 2x2 portfolio planning framework categorizing products by Market Growth Rate and Relative Market Share into Stars, Cash Cows, Question Marks, and Dogs."
+      "definition": "A **strategic portfolio planning framework** categorizing products across *Market Growth Rate* and *Relative Market Share* into ==Stars, Cash Cows, Question Marks, and Dogs== to <u>optimize corporate cash flow allocation</u>."
     },
     {
       "term": "Cash Cow",
-      "definition": "A highly profitable, well-established product in a mature, low-growth market with high relative market share, generating surplus cash flow."
+      "definition": "A **mature, highly profitable product** with ==high relative market share== in a *low-growth market*, requiring minimal reinvestment and <u>generating substantial surplus cash</u> to fund growth elsewhere."
     },
     {
       "term": "Star",
-      "definition": "A market-leading product with high market share in a rapidly expanding industry, generating high revenue but requiring heavy capital reinvestment."
+      "definition": "A **market-leading product** holding ==high market share in a rapidly growing industry==, generating *substantial sales revenue* but <u>requiring heavy continuous capital reinvestment</u> to defend its position."
     },
     {
       "term": "Question Mark (Problem Child)",
-      "definition": "A product with low market share in a high-growth market, consuming high cash reserves with uncertain prospects of becoming a Star."
+      "definition": "An **uncertain product** holding ==low market share in a high-growth market==, consuming *heavy cash reserves* with <u>unproven prospects of transitioning into a future Star</u>."
     },
     {
       "term": "Dog",
-      "definition": "A product with low market share in a stagnant or declining low-growth industry, generating low or negative cash flow."
+      "definition": "An **unfavourable product** holding ==low market share in a stagnant or declining market==, generating *minimal or negative cash flow* and <u>standing as a prime candidate for divestment</u>."
     },
     {
       "term": "Linear Business Model",
-      "definition": "A traditional economic production model based on the 'take-make-waste' sequence, consuming finite resources and generating waste."
+      "definition": "A **traditional production model** following a <u>linear sequence of extraction, manufacturing, and disposal</u> (*\"take-make-waste\"*), driving ==finite resource depletion and commercial waste==."
     },
     {
       "term": "Circular Business Model (CBM)",
-      "definition": "A restorative business model designed to minimize resource consumption and waste by keeping materials, components, and products in continuous closed loops."
+      "definition": "A **regenerative commercial model** where businesses <u>retain asset ownership</u> and sell *functional utility*, keeping materials in ==closed loops to decouple profit from resource depletion==."
     },
     {
       "term": "Decision Tree",
-      "definition": "A quantitative diagrammatic tool that models decision options, chance events, and financial payoffs to calculate expected monetary values under risk."
+      "definition": "A **quantitative diagrammatic tool** modeling <u>decision branches, chance nodes, and financial payoffs</u> to calculate ==Net Expected Monetary Value (Net EMV)==, *pruning rejected strategic options*."
     },
     {
       "term": "Expected Monetary Value (EMV)",
-      "definition": "The probability-weighted average financial outcome of a chance node, calculated as the sum of each outcome's probability multiplied by its financial payoff."
+      "definition": "The ==probability-weighted average financial outcome== of an uncertain chance node, calculated as the **sum of (Probability × Payoff)**; Net EMV <u>always deducts initial capital expenditure</u>."
     },
-    { "term": "Situational Tool", "definition": "A BMT tool used to assess the internal and external factors affecting a business ('Where are we now?'), such as SWOT, STEEPLE and descriptive statistics." },
-    { "term": "Planning Tool", "definition": "A BMT tool used to prepare and implement specific projects and developments ('Where do we want to get to?'), such as the business plan, Gantt charts and critical path analysis." },
-    { "term": "Decision-Making Tool", "definition": "A BMT tool used to make informed choices by considering quantitative and/or qualitative factors ('How do we get there?'), such as the BCG matrix and Ansoff matrix." },
-    { "term": "Scientific Decision-Making", "definition": "Using BMT tools to make objective, rational and logical decisions, reducing the risk of mistakes that intuition alone can cause." },
-    { "term": "Contribution Analysis (HL)", "definition": "A quantitative decision-making tool for analysing cost and revenue situations, using make or buy analysis, contribution costing and absorption costing." },
-    { "term": "Critical Path Analysis (HL)", "definition": "A planning tool that maps the individual tasks in a project so that realistic deadlines can be set; the critical path is identified and the free and total float calculated." },
-    { "term": "Force Field Analysis (HL)", "definition": "A visual and quantitative tool that examines the driving and restraining forces for and against a change." },
-    { "term": "Gantt Chart (HL)", "definition": "A planning tool that shows tasks, their duration and dependencies, so that a project and its resources can be scheduled." },
-    { "term": "Hofstede's Cultural Dimensions (HL)", "definition": "A situational tool that categorizes countries across six cultural dimensions to understand cultural similarities and differences." },
-    { "term": "Linear Regression (HL)", "definition": "A quantitative decision-making tool that identifies, describes and predicts the relationship between dependent and independent variables." },
-    { "term": "Porter's Generic Strategies (HL)", "definition": "Cost leadership, differentiation and focus strategies used to determine a business's strategic direction." }
+    { "term": "Situational Tool", "definition": "A **diagnostic framework** used to audit <u>internal operational strengths and external macro trends</u> (*\"Where are we now?\"*), such as ==SWOT, STEEPLE, and descriptive statistics==." },
+    { "term": "Planning Tool", "definition": "A **forward-looking roadmap** used to prepare and schedule <u>specific corporate initiatives and projects</u> (*\"Where do we want to get to?\"*), such as ==Business Plans, Gantt charts, and CPA==." },
+    { "term": "Decision-Making Tool", "definition": "A **strategic selection framework** used to evaluate <u>competing business choices and trade-offs</u> (*\"How do we get there?\"*), such as the ==BCG Matrix, Ansoff Matrix, and Decision Trees==." },
+    { "term": "Scientific Decision-Making", "definition": "The **systematic application of analytical tools** to make <u>objective, rational, and evidence-based choices</u>, mitigating the *risks of managerial bias* and ==reducing intuitive errors==." },
+    { "term": "Contribution Analysis (HL)", "definition": "A **quantitative analytical method** calculating <u>unit contribution to cover fixed overheads</u> (*P - AVC*), evaluating ==make-or-buy decisions and special order pricing==." },
+    { "term": "Critical Path Analysis (HL)", "definition": "A **project management planning tool** identifying the <u>longest sequence of dependent activities</u> with ==zero float time==, determining the *shortest possible project duration*." },
+    { "term": "Force Field Analysis (HL)", "definition": "A **change management tool** evaluating the relative strength of <u>driving forces pushing for corporate change</u> versus ==restraining forces resisting organizational transition== (*Kurt Lewin*)." },
+    { "term": "Gantt Chart (HL)", "definition": "A **visual scheduling bar chart** mapping <u>project tasks against chronological timelines and dependencies</u>, enabling ==efficient resource allocation and milestone tracking==." },
+    { "term": "Hofstede's Cultural Dimensions (HL)", "definition": "A **comparative sociological framework** analyzing <u>cross-cultural workplace behaviors</u> across six dimensions (*individualism, power distance*), guiding ==multinational corporate strategy==." },
+    { "term": "Linear Regression (HL)", "definition": "A **quantitative statistical tool** evaluating the <u>mathematical correlation between independent and dependent variables</u>, enabling ==accurate market demand forecasting== (*line of best fit*)." },
+    { "term": "Porter's Generic Strategies (HL)", "definition": "A **strategic competitive framework** outlining how firms build <u>sustainable competitive advantages</u> through ==Cost Leadership, Differentiation, or Focus== in *broad or narrow target markets*." }
   ]
 }
 ,
@@ -2468,97 +2468,97 @@ export const STUDY_UNITS: StudyUnit[] =
   "highYieldTerms": [
     {
       "term": "Economies of Scale",
-      "definition": "Cost-saving benefits that lead to a fall in average cost of production as a business increases its scale of operations."
+      "definition": "==Cost-saving benefits== that lead to a <u>fall in average cost of production</u> (*ATC* or unit cost) as a firm operates on a **larger scale**."
     },
     {
       "term": "Diseconomies of Scale",
-      "definition": "Cost disadvantages and inefficiencies causing average cost of production to rise as a firm expands beyond its optimal output scale."
+      "definition": "The **cost disadvantages of growth** when expanding <u>beyond the optimal level of output</u>, resulting in ==rising average costs of production== (*ATC* increases) due to *lack of control and coordination*."
     },
     {
       "term": "Average Total Cost (ATC)",
-      "definition": "Total cost of production divided by the quantity of output produced (ATC = TC / Q = AFC + AVC); also known as unit cost. The textbook calls it average cost (AC), the cost per unit of output."
+      "definition": "**Total cost of production divided by quantity of output produced** (*ATC* = *TC* / *Q* = *AFC* + *AVC*); also known as <u>unit cost</u>, representing the ==cost per unit of output==."
     },
     {
       "term": "Average Fixed Cost (AFC)",
-      "definition": "Total fixed costs divided by quantity of output (AFC = TFC / Q); continuously falls as output expands, spreading fixed overheads."
+      "definition": "**Total fixed costs divided by quantity of output** (*AFC* = *TFC* / *Q*); continuously falls as output expands, <u>spreading fixed overheads</u> across ==higher production volumes==."
     },
     {
       "term": "Optimal Level of Output",
-      "definition": "The most efficient scale of operation for a business; it occurs at the level of output where the average cost of production is minimized."
+      "definition": "The <u>most efficient scale of operation</u> for a business: the level of output where ==average cost of production is minimized== (*ATC*\*), located at the **lowest point of the U-shaped average cost curve**."
     },
     {
       "term": "Internal Economies of Scale",
-      "definition": "Cost-reducing benefits that arise inside an organization and are under direct managerial control as the firm grows."
+      "definition": "==Cost-reducing benefits== that arise **inside an organization** and remain <u>directly under managerial control</u> as the individual firm grows (*technical, financial, managerial*)."
     },
     {
       "term": "External Economies of Scale",
-      "definition": "Cost-reducing benefits arising outside the individual organization due to favorable location or general industry growth, benefiting all firms in that industry."
+      "definition": "==Cost-reducing benefits== arising **outside the individual organization** due to *favorable location or industry growth*, <u>benefiting all competing firms in that industry</u>."
     },
     {
       "term": "Technical Economies",
-      "definition": "Cost savings achieved through the use of sophisticated, high-capacity machinery and automated mass-production processes, spreading capital costs over huge output."
+      "definition": "**Cost savings** achieved through <u>sophisticated, high-capacity machinery</u> and *automated mass-production*, spreading ==fixed capital investment== over huge output volume."
     },
     {
       "term": "Financial Economies",
-      "definition": "Cost savings achieved by large firms securing lower borrowing interest rates from lenders due to lower perceived credit default risk and strong asset collateral."
+      "definition": "**Borrowing cost advantages** where large firms secure <u>lower interest rates from commercial lenders</u> due to *lower credit default risk* and ==strong asset collateral==."
     },
     {
       "term": "Managerial Economies",
-      "definition": "Cost savings achieved through executive specialization, hiring dedicated functional experts (finance, marketing, HR) to avoid operational inefficiencies and task switching."
+      "definition": "**Executive cost savings** achieved through <u>functional specialization</u>, hiring *dedicated professional managers* (finance, marketing, HR) to ==eliminate operational inefficiencies==."
     },
     {
       "term": "Specialization Economies",
-      "definition": "Productivity gains achieved through division of labor among non-managerial shopfloor workers focusing on specialized tasks."
+      "definition": "**Productivity gains** achieved through <u>division of labor</u> among *non-managerial shopfloor workers* focusing on ==specialized production tasks==."
     },
     {
       "term": "Marketing Economies",
-      "definition": "Cost savings achieved by spreading fixed global advertising budgets across massive sales volumes and conducting large bulk commercial sales transactions."
+      "definition": "**Unit marketing cost savings** achieved by <u>spreading fixed global advertising budgets</u> across *massive sales volumes* and ==conducting large bulk commercial transactions==."
     },
     {
       "term": "Purchasing Economies",
-      "definition": "Cost savings per unit gained when larger organizations purchase vast quantities of stocks (raw materials, components, semi-finished goods and finished goods) and receive bulk discounts."
+      "definition": "**Cost savings per unit** gained when larger organizations <u>purchase vast quantities of raw materials and stocks</u>, securing ==substantial bulk discounts== from *suppliers* (**bulk buying**)."
     },
     {
       "term": "Risk-Bearing Economies",
-      "definition": "Cost savings and stability enjoyed by conglomerates that spread fixed costs and operational risks across a diversified portfolio of unrelated markets and industries."
+      "definition": "**Cost stability advantages** enjoyed by conglomerates that <u>spread operational risks and fixed costs</u> across a *diversified portfolio* of ==unrelated markets and industries==."
     },
     {
       "term": "Internal Diseconomies of Scale",
-      "definition": "Rising average production costs caused by internal problems of mismanagement as a firm grows (lack of control and coordination, poorer working relationships, lower productive efficiency, bureaucracy, complacency)."
+      "definition": "==Rising average production costs== caused by **internal problems of mismanagement** as a firm over-expands (*bureaucracy, worker alienation, communication failure*), <u>pushing unit costs past the optimal output level</u>."
     },
     {
       "term": "External Diseconomies of Scale",
-      "definition": "Rising average production costs caused by factors beyond the firm's control as the industry grows (higher rents, higher pay to attract and retain staff, traffic congestion)."
+      "definition": "==Rising average production costs== caused by **factors beyond the firm's direct control** as the *entire industry expands* (<u>traffic congestion, soaring commercial rents, and local labor shortages</u>)."
     },
     {
       "term": "Internal (Organic) Growth",
-      "definition": "Business expansion achieved organically using the organization's own internal resources and capabilities, typically financed through retained profits, borrowing, or new share issues."
+      "definition": "**Business expansion** achieved <u>using the firm's own internal resources</u> (*retained profits, new share issues*), expanding ==organically at a steady, manageable pace==."
     },
     {
       "term": "External (Inorganic) Growth",
-      "definition": "Business expansion achieved through integration, amalgamation, or collaboration with outside organizations (mergers, acquisitions, joint ventures, strategic alliances, franchising)."
+      "definition": "**Rapid commercial expansion** achieved through <u>integration or amalgamation with outside organizations</u> (*mergers, takeovers, joint ventures*), accelerating ==market share acquisition==."
     },
     {
       "term": "Synergy",
-      "definition": "The benefit of business growth and amalgamation where the whole is greater than the sum of its individual parts (1 + 1 = 3), eliminating duplicated costs and improving efficiency."
+      "definition": "The **commercial benefit of amalgamation** where <u>the combined entity is worth more than the sum of its individual parts</u> (*\"1 + 1 = 3\"*), achieving ==cost savings and eliminated redundancies==."
     },
     {
       "term": "Demerger",
-      "definition": "When a company sells off a part of its business, separating into two or more businesses; it usually happens due to conflicts, inefficiencies and incompatibilities following an earlier merger."
+      "definition": "When a corporation **sells off or separates a business division** into <u>two or more independent companies</u>, usually to resolve ==post-merger friction and operational inefficiencies== (*corporate spin-off*)."
     },
-    { "term": "Acquisition", "definition": "Buying a controlling interest (majority stake) in another company, with the agreement and approval of the target company's Board of Directors." },
-    { "term": "Takeover (Hostile Takeover)", "definition": "A company buys a controlling interest in another firm without the prior agreement or approval of the target company's Board of Directors." },
-    { "term": "Merger", "definition": "Two (or more) firms agree to form a new organization, thereby losing their original identities." },
-    { "term": "Target Company", "definition": "The organization that is purchased by another in an acquisition or takeover deal." },
-    { "term": "Purchaser", "definition": "The acquiring company in an acquisition, or the buyer of another company in a takeover." },
-    { "term": "Franchising", "definition": "An agreement in which a franchisor sells its rights to franchisees, who sell products under its corporate name in return for a fee and regular royalty payments." },
-    { "term": "Joint Venture", "definition": "A growth strategy that combines the contributions and responsibilities of two or more organizations in a shared project by creating a separate legal enterprise." },
-    { "term": "Strategic Alliance", "definition": "Two or more organizations join together to benefit from external growth without setting up a new separate legal entity." },
-    { "term": "Conglomerate", "definition": "A business that provides a diversified range of products and operates in a range of different industries." },
-    { "term": "Horizontal Integration", "definition": "External growth in which a business amalgamates with a firm operating in the same stage of production." },
-    { "term": "Lateral Integration", "definition": "External growth of firms that have similar operations but do not directly compete with each other, such as PepsiCo acquiring Quaker Oats." },
-    { "term": "Forward Vertical Integration", "definition": "Amalgamation with a firm operating at a later stage of the production process, such as a book publisher acquiring book retailers." },
-    { "term": "Backward Vertical Integration", "definition": "Amalgamation with a firm operating in an earlier stage of production, such as a car manufacturer taking over a tyre supplier." }
+    { "term": "Acquisition", "definition": "**Purchasing a controlling interest** (majority equity stake) in another company, completed with the <u>prior agreement and consent of the target company's Board of Directors</u> through ==negotiated terms== (*friendly takeover*)." },
+    { "term": "Takeover (Hostile Takeover)", "definition": "When a purchaser **buys a controlling equity stake** in another company <u>without the agreement or consent of the target company's Board of Directors</u>, often by ==directly appealing to retail shareholders== (*hostile bid*)." },
+    { "term": "Merger", "definition": "When **two or more independent companies** <u>mutually agree to combine into a single new enterprise</u>, forfeiting their *original separate legal identities* to establish a ==unified corporate identity==." },
+    { "term": "Target Company", "definition": "The **commercial enterprise or firm** that is <u>singled out for purchase</u> by an *acquirer* in an ==acquisition or hostile takeover transaction==." },
+    { "term": "Purchaser", "definition": "The **acquiring commercial entity or investor group** that <u>purchases a controlling equity stake</u> in another company to ==execute an acquisition or takeover== (*bidder*)." },
+    { "term": "Franchising", "definition": "A **licensing growth model** where a *franchisor* grants <u>contractual rights to independent franchisees</u> to trade under its ==established brand name and business format== in return for fees and royalties." },
+    { "term": "Joint Venture", "definition": "A **strategic commercial arrangement** where two or more businesses <u>pool capital and resources into a shared project</u> by creating a ==new, separate legal entity== while *retaining their parent corporations* independently." },
+    { "term": "Strategic Alliance", "definition": "A **cooperative partnership** where two or more businesses <u>collaborate to share expertise or distribution networks</u> for mutual gain *without creating a new separate legal entity*, preserving ==independent corporate autonomy==." },
+    { "term": "Conglomerate", "definition": "A **highly diversified business enterprise** that <u>operates across multiple unrelated industries</u>, utilizing *risk-bearing economies* to ==insulate revenues against localized market downturns==." },
+    { "term": "Horizontal Integration", "definition": "**External growth** where a business <u>amalgamates with a direct competitor</u> operating at the *exact same stage of production in the same industry*, maximizing ==market share and eliminating rivalry==." },
+    { "term": "Lateral Integration", "definition": "**External growth** between firms that share <u>similar operations or target demographics</u> but *do not directly compete against each other*, generating ==commercial cross-selling synergies==." },
+    { "term": "Forward Vertical Integration", "definition": "**Amalgamation with a business** operating at a <u>later stage of the production or distribution chain</u> (closer to the consumer), allowing the firm to ==control retail pricing and secure guaranteed distribution== (*customer-facing*)." },
+    { "term": "Backward Vertical Integration", "definition": "**Amalgamation with a supplier firm** operating at an <u>earlier stage of the supply chain</u> (closer to raw materials), allowing the business to ==secure raw material supplies and control input costs== (*source-facing*)." }
   ]
 },
 {
