@@ -52,6 +52,7 @@ export function markdownToHtml(input: string): string {
 export function stripHtml(html: string): string {
   if (!html) return '';
   return html
+    .replace(/\u200B/g, '')
     .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
     .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
     .replace(/<[^>]+>/g, ' ')
@@ -150,13 +151,16 @@ export function RichTextEditor({
     }
   }, [value]);
 
-  // Clean empty content to empty string
+  // Clean empty content to empty string, and strip zero-width spaces
   const cleanHtml = (html: string): string => {
-    const text = stripHtml(html);
-    if (!text && !html.includes('<img')) {
+    let cleaned = html.replace(/\u200B/g, '');
+    cleaned = cleaned.replace(/<mark[^>]*>\s*<\/mark>/gi, '');
+    cleaned = cleaned.replace(/<[b|i|u|strong|em]>\s*<\/[b|i|u|strong|em]>/gi, '');
+    const text = stripHtml(cleaned);
+    if (!text && !cleaned.includes('<img')) {
       return '';
     }
-    return html;
+    return cleaned;
   };
 
   // Handle typing or direct content editing
@@ -174,24 +178,13 @@ export function RichTextEditor({
     if (!editorRef.current) return;
     editorRef.current.focus();
 
-    const selection = window.getSelection();
-    if (!selection || selection.rangeCount === 0 || selection.isCollapsed) {
-      // If cursor is collapsed, insert placeholder formatted text and select it
-      const placeholderMap: Record<string, string> = {
-        bold: 'bold text',
-        italic: 'italic text',
-        underline: 'underlined text',
-      };
-      const text = placeholderMap[command] || 'text';
-      document.execCommand('insertHTML', false, command === 'bold' ? `<b>${text}</b>` : command === 'italic' ? `<i>${text}</i>` : `<u>${text}</u>`);
-    } else {
-      document.execCommand(command, false, undefined);
-    }
+    document.execCommand(command, false, undefined);
 
+    checkActiveFormats();
     handleInput();
   };
 
-  // Toggle highlight format on current selection
+  // Toggle highlight format on current selection or caret
   const toggleHighlight = () => {
     if (!editorRef.current) return;
     editorRef.current.focus();
@@ -201,7 +194,7 @@ export function RichTextEditor({
 
     const range = selection.getRangeAt(0);
 
-    // Check if selection is already inside a <mark>
+    // Check if selection or caret is already inside a <mark>
     let parentMark: HTMLElement | null = null;
     let node: Node | null = selection.anchorNode;
     while (node && node !== editorRef.current) {
@@ -213,27 +206,50 @@ export function RichTextEditor({
     }
 
     if (parentMark) {
-      // Remove highlight: unwrap mark contents
-      const parent = parentMark.parentNode;
-      if (parent) {
-        while (parentMark.firstChild) {
-          parent.insertBefore(parentMark.firstChild, parentMark);
+      if (range.collapsed) {
+        // If caret is in an empty / ZWSP mark, remove it
+        if (!parentMark.textContent || parentMark.textContent === '\u200B') {
+          const parent = parentMark.parentNode;
+          if (parent) parent.removeChild(parentMark);
+        } else {
+          // Caret is inside a populated mark: exit the mark cleanly
+          const zwsp = document.createTextNode('\u200B');
+          if (parentMark.nextSibling) {
+            parentMark.parentNode?.insertBefore(zwsp, parentMark.nextSibling);
+          } else {
+            parentMark.parentNode?.appendChild(zwsp);
+          }
+          const afterRange = document.createRange();
+          afterRange.setStart(zwsp, 1);
+          afterRange.setEnd(zwsp, 1);
+          selection.removeAllRanges();
+          selection.addRange(afterRange);
         }
-        parent.removeChild(parentMark);
+      } else {
+        // Range selected inside mark: unwrap mark contents
+        const parent = parentMark.parentNode;
+        if (parent) {
+          while (parentMark.firstChild) {
+            parent.insertBefore(parentMark.firstChild, parentMark);
+          }
+          parent.removeChild(parentMark);
+        }
       }
     } else if (range.collapsed) {
-      // If no text selected, insert placeholder highlighted text and select it
+      // Caret collapsed: insert empty mark with zero-width space so cursor writes inside it
       const mark = document.createElement('mark');
       mark.className = 'bg-amber-100 text-amber-950 px-1 py-0.5 rounded font-medium border-b border-amber-300';
-      mark.textContent = 'highlighted text';
+      const textNode = document.createTextNode('\u200B');
+      mark.appendChild(textNode);
       range.insertNode(mark);
 
       const newRange = document.createRange();
-      newRange.selectNodeContents(mark);
+      newRange.setStart(textNode, 1);
+      newRange.setEnd(textNode, 1);
       selection.removeAllRanges();
       selection.addRange(newRange);
     } else {
-      // Wrap selected content in <mark>
+      // Range selected: wrap selected content in <mark>
       try {
         const mark = document.createElement('mark');
         mark.className = 'bg-amber-100 text-amber-950 px-1 py-0.5 rounded font-medium border-b border-amber-300';
@@ -250,6 +266,7 @@ export function RichTextEditor({
       }
     }
 
+    checkActiveFormats();
     handleInput();
   };
 
