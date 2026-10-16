@@ -6,7 +6,7 @@ import { useStudyProgress } from '@/context/StudyProgressContext';
 import { PeelRubric } from '@/components/exam/PeelRubric';
 import { ExemplarHighlighter } from '@/components/exam/ExemplarHighlighter';
 import { MarkdownRenderer } from '@/components/ui/MarkdownRenderer';
-import { FormattingToolbar } from '@/components/ui/FormattingToolbar';
+import { RichTextEditor, getWordCount, getCharCount } from '@/components/ui/RichTextEditor';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { 
@@ -29,7 +29,6 @@ export function SplitScreenExam({ question }: SplitScreenExamProps) {
   const [responseMode, setResponseMode] = useState<'write' | 'preview'>('write');
 
   const [localDraft, setLocalDraft] = useState(state.writtenDrafts[question.id] || '');
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const draftRef = useRef(localDraft);
   draftRef.current = localDraft;
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -50,7 +49,7 @@ export function SplitScreenExam({ question }: SplitScreenExamProps) {
     };
   }, [question.id, saveWrittenDraft]);
 
-  const wordCount = localDraft.trim() ? localDraft.trim().split(/\s+/).length : 0;
+  const wordCount = getWordCount(localDraft);
 
   const updateDraftValue = (val: string) => {
     setLocalDraft(val);
@@ -60,10 +59,6 @@ export function SplitScreenExam({ question }: SplitScreenExamProps) {
     timeoutRef.current = setTimeout(() => {
       saveWrittenDraft(question.id, val);
     }, 400);
-  };
-
-  const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    updateDraftValue(e.target.value);
   };
 
   const handleClearDraft = () => {
@@ -180,35 +175,20 @@ export function SplitScreenExam({ question }: SplitScreenExamProps) {
                 </span>
               </div>
 
-              {/* Formatting Toolbar with Bold, Italic, Underline, Highlight buttons */}
-              <FormattingToolbar
-                textareaRef={textareaRef}
+              {/* Rich Text Editor with real-time formatting (Bold, Italic, Underline, Highlight) */}
+              <RichTextEditor
                 value={localDraft}
                 onChange={updateDraftValue}
+                placeholder="Type your exam response here... Select text and use the buttons above to format bold, italic, underline, or highlight. Use the PEEL structure (Point, Explanation, Evidence, Link) to maximize mark criteria."
+                minHeight="min-h-[360px]"
+                label="Format:"
                 isPreview={responseMode === 'preview'}
                 onTogglePreview={() => setResponseMode((prev) => (prev === 'write' ? 'preview' : 'write'))}
-                label="Format:"
               />
-
-              {responseMode === 'preview' ? (
-                <div className="min-h-[360px] p-3.5 bg-surface-subtle/50 rounded-b-lg border border-border text-xs sm:text-sm text-text-secondary leading-relaxed">
-                  <MarkdownRenderer
-                    content={localDraft || '*No response written yet. Switch to Write mode to format.*'}
-                  />
-                </div>
-              ) : (
-                <textarea
-                  ref={textareaRef}
-                  value={localDraft}
-                  onChange={handleTextChange}
-                  placeholder="Type your exam response here... Use the buttons above to format bold, italic, underline, or highlight. Use the PEEL structure (Point, Explanation, Evidence, Link) to maximize mark criteria."
-                  className="w-full flex-1 p-3.5 rounded-b-lg rounded-t-none border border-border text-sm text-text-primary leading-relaxed resize-y focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent min-h-[360px]"
-                />
-              )}
 
               <div className="mt-3 pt-3 border-t border-border/80 flex items-center justify-between text-xs text-text-muted">
                 <span>Tip: Self-audit each sentence using the checklist on the left.</span>
-                <span className="font-mono">{localDraft.length} characters</span>
+                <span className="font-mono">{getCharCount(localDraft)} characters</span>
               </div>
             </Card>
           </div>

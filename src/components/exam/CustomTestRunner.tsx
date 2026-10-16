@@ -18,7 +18,7 @@ import { Button } from '@/components/ui/Button';
 import { Badge, AoBadge } from '@/components/ui/Badge';
 import { Modal } from '@/components/ui/Modal';
 import { MarkdownRenderer } from '@/components/ui/MarkdownRenderer';
-import { FormattingToolbar } from '@/components/ui/FormattingToolbar';
+import { RichTextEditor, getCharCount } from '@/components/ui/RichTextEditor';
 import { formatTime } from '@/lib/utils';
 import { 
   Sparkles, 
@@ -91,7 +91,6 @@ export function CustomTestRunner() {
   const [testItems, setTestItems] = useState<TestItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [responses, setResponses] = useState<Record<number, UserResponse>>({});
-  const customTestTextareaRef = useRef<HTMLTextAreaElement>(null);
   const [isCustomTestPreview, setIsCustomTestPreview] = useState(false);
 
   useEffect(() => {
@@ -1076,13 +1075,12 @@ export function CustomTestRunner() {
                 <label className="text-xs font-semibold text-text-secondary flex items-center justify-between">
                   <span>Draft Your 2-Mark Response:</span>
                   <span className="text-[11px] font-mono text-text-muted">
-                    {(currentResp.writtenAnswer || '').length} characters
+                    {getCharCount(currentResp.writtenAnswer || '')} characters
                   </span>
                 </label>
 
-                {/* Formatting Toolbar with Bold, Italic, Underline, Highlight buttons */}
-                <FormattingToolbar
-                  textareaRef={customTestTextareaRef}
+                {/* Rich Text Editor with real-time formatting (Bold, Italic, Underline, Highlight) */}
+                <RichTextEditor
                   value={currentResp.writtenAnswer || ''}
                   onChange={(val) => {
                     setResponses((prev) => ({
@@ -1093,36 +1091,12 @@ export function CustomTestRunner() {
                       },
                     }));
                   }}
+                  placeholder="State the textbook definition or two distinct characteristics... Select text and use the buttons above to format bold, italic, underline, or highlight."
+                  minHeight="min-h-[90px]"
+                  label="Format:"
                   isPreview={isCustomTestPreview}
                   onTogglePreview={() => setIsCustomTestPreview((prev) => !prev)}
-                  label="Format:"
                 />
-
-                {isCustomTestPreview ? (
-                  <div className="min-h-[80px] p-3 rounded-b-xl border border-border bg-surface-subtle/50 text-sm text-text-primary leading-relaxed">
-                    <MarkdownRenderer
-                      content={currentResp.writtenAnswer || '*No response written yet. Switch to Write mode to format.*'}
-                    />
-                  </div>
-                ) : (
-                  <textarea
-                    ref={customTestTextareaRef}
-                    value={currentResp.writtenAnswer || ''}
-                    onChange={(e) => {
-                      const val = e.target.value;
-                      setResponses((prev) => ({
-                        ...prev,
-                        [currentIndex]: {
-                          ...prev[currentIndex],
-                          writtenAnswer: val,
-                        },
-                      }));
-                    }}
-                    placeholder="State the textbook definition or two distinct characteristics... Use the buttons above to format bold, italic, underline, or highlight."
-                    rows={3}
-                    className="w-full text-sm p-3 rounded-b-xl rounded-t-none border border-border focus:ring-2 focus:ring-blue-500 bg-surface-subtle/50 text-text-primary resize-y min-h-[80px]"
-                  />
-                )}
               </div>
 
               {/* Reveal & Self-Evaluation */}

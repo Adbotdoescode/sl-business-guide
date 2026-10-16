@@ -12,7 +12,7 @@ import { FOUR_MARK_QUESTIONS, SIX_MARK_QUESTIONS } from '@/data/model-answers';
 import { useStudyProgress } from '@/context/StudyProgressContext';
 import { SplitScreenExam } from '@/components/exam/SplitScreenExam';
 import { MarkdownRenderer } from '@/components/ui/MarkdownRenderer';
-import { FormattingToolbar } from '@/components/ui/FormattingToolbar';
+import { RichTextEditor, getCharCount } from '@/components/ui/RichTextEditor';
 import { Button } from '@/components/ui/Button';
 import { Badge, AoBadge, MarkBadge } from '@/components/ui/Badge';
 import { Card } from '@/components/ui/Card';
@@ -77,7 +77,6 @@ export function ExamPractice() {
   // 2-mark local draft state
   const [twoMarkDraft, setTwoMarkDraft] = useState('');
   const [isTwoMarkPreview, setIsTwoMarkPreview] = useState(false);
-  const twoMarkTextareaRef = React.useRef<HTMLTextAreaElement>(null);
   const twoMarkTimeoutRef = React.useRef<NodeJS.Timeout | null>(null);
 
   React.useEffect(() => {
@@ -317,36 +316,20 @@ export function ExamPractice() {
               <label className="text-xs font-semibold text-text-secondary flex items-center justify-between">
                 <span>Your Draft Definition / Response:</span>
                 <span className="text-[11px] font-mono text-text-muted">
-                  {twoMarkDraft.length} characters
+                  {getCharCount(twoMarkDraft)} characters
                 </span>
               </label>
 
-              {/* Formatting Toolbar with Bold, Italic, Underline, Highlight buttons */}
-              <FormattingToolbar
-                textareaRef={twoMarkTextareaRef}
+              {/* Rich Text Editor with real-time formatting (Bold, Italic, Underline, Highlight) */}
+              <RichTextEditor
                 value={twoMarkDraft}
                 onChange={handleTwoMarkDraftChange}
+                placeholder="Draft your concise definition or explanation here... Select text and use the buttons above to format bold, italic, underline, or highlight."
+                minHeight="min-h-[100px]"
+                label="Format:"
                 isPreview={isTwoMarkPreview}
                 onTogglePreview={() => setIsTwoMarkPreview((prev) => !prev)}
-                label="Format:"
               />
-
-              {isTwoMarkPreview ? (
-                <div className="min-h-[90px] p-3.5 bg-surface-subtle/50 rounded-b-lg border border-border text-sm text-text-primary leading-relaxed">
-                  <MarkdownRenderer
-                    content={twoMarkDraft || '*No response drafted yet. Switch to Write mode to format.*'}
-                  />
-                </div>
-              ) : (
-                <textarea
-                  ref={twoMarkTextareaRef}
-                  value={twoMarkDraft}
-                  onChange={(e) => handleTwoMarkDraftChange(e.target.value)}
-                  placeholder="Draft your concise definition or explanation here... Use the buttons above to format bold, italic, underline, or highlight."
-                  rows={3}
-                  className="w-full p-3.5 rounded-b-lg rounded-t-none border border-border text-sm text-text-primary leading-relaxed resize-y focus:outline-none focus:ring-2 focus:ring-blue-500 min-h-[90px]"
-                />
-              )}
             </div>
 
             {/* Reveal Model Answer Toggle */}
