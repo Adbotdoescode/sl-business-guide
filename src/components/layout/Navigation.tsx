@@ -7,32 +7,36 @@ import { cn } from '@/lib/utils';
 import { useStudyProgress } from '@/context/StudyProgressContext';
 import { 
   GraduationCap, 
-  Zap, 
-  Grid, 
-  Scale, 
   PenTool, 
   BookOpen, 
   Clock, 
-  Key, 
   RotateCcw,
   Menu,
   X,
-  HelpCircle,
+  CheckSquare,
+  Zap,
+  Grid,
+  Scale,
   Compass,
-  CheckSquare
+  Key,
+  Layers
 } from 'lucide-react';
 
 const NAV_LINKS = [
   { href: '/', label: 'Overview', icon: GraduationCap },
-  { href: '/practice/custom', label: 'Custom Test', icon: CheckSquare },
-  { href: '/blitz', label: 'MCQ Blitz', icon: Zap },
-  { href: '/toolkit', label: 'BM Toolkit', icon: Compass },
-  { href: '/matrix-master', label: 'Matrix Master', icon: Grid },
-  { href: '/entities', label: 'Entity Showdown', icon: Scale },
-  { href: '/practice', label: 'Exam Practice', icon: PenTool },
-  { href: '/cram', label: '10-Min Cram', icon: Clock },
-  { href: '/mnemonics', label: 'GET CASH', icon: Key },
   { href: '/study', label: 'Study Guides', icon: BookOpen },
+  { href: '/practice', label: 'Practice & Tools', icon: PenTool },
+  { href: '/cram', label: '10-Min Cram', icon: Clock },
+];
+
+const PRACTICE_SUB_LINKS = [
+  { href: '/practice/custom', label: 'Custom Test Builder', icon: CheckSquare },
+  { href: '/blitz', label: 'Rapid MCQ Blitz', icon: Zap },
+  { href: '/practice/written', label: 'Written Exam & Rubrics', icon: PenTool },
+  { href: '/toolkit', label: 'BM Toolkit Interactive', icon: Compass },
+  { href: '/matrix-master', label: 'Matrix Master Sorter', icon: Grid },
+  { href: '/entities', label: 'Entity Showdown Matrix', icon: Scale },
+  { href: '/mnemonics', label: 'GET CASH Vault', icon: Key },
 ];
 
 export function Navigation() {
@@ -61,19 +65,27 @@ export function Navigation() {
             </Link>
           </div>
 
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">
+          {/* Streamlined Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-1">
             {NAV_LINKS.map((link) => {
               const Icon = link.icon;
-              const isActive = link.href === '/practice'
-                ? pathname === '/practice' || pathname === '/practice/written' || pathname === '/practice/mcq'
+              const isActive = link.href === '/'
+                ? pathname === '/'
+                : link.href === '/practice'
+                ? pathname.startsWith('/practice') || 
+                  pathname === '/blitz' || 
+                  pathname === '/toolkit' || 
+                  pathname === '/matrix-master' || 
+                  pathname === '/entities' || 
+                  pathname === '/mnemonics'
                 : pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+
               return (
                 <Link
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors',
+                    'flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors',
                     isActive
                       ? 'bg-blue-50 text-blue-700 font-semibold'
                       : 'text-text-secondary hover:text-text-primary hover:bg-surface-subtle'
@@ -99,7 +111,7 @@ export function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex lg:hidden items-center gap-2">
+          <div className="flex md:hidden items-center gap-2">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-subtle transition"
@@ -117,10 +129,20 @@ export function Navigation() {
 
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-border bg-white px-4 pt-2 pb-4 space-y-1 animate-in slide-in-from-top-2">
+        <div className="md:hidden border-t border-border bg-white px-4 pt-2 pb-4 space-y-1 animate-in slide-in-from-top-2">
           {NAV_LINKS.map((link) => {
             const Icon = link.icon;
-            const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+            const isActive = link.href === '/'
+              ? pathname === '/'
+              : link.href === '/practice'
+              ? pathname.startsWith('/practice') || 
+                pathname === '/blitz' || 
+                pathname === '/toolkit' || 
+                pathname === '/matrix-master' || 
+                pathname === '/entities' || 
+                pathname === '/mnemonics'
+              : pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+
             return (
               <React.Fragment key={link.href}>
                 <Link
@@ -136,20 +158,31 @@ export function Navigation() {
                   <Icon className="w-4 h-4" strokeWidth={1.75} />
                   <span>{link.label}</span>
                 </Link>
+
+                {/* Nested links for Practice & Tools */}
                 {link.href === '/practice' && (
-                  <Link
-                    href="/practice/mcq"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={cn(
-                      'flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-medium transition pl-8',
-                      pathname === '/practice/mcq'
-                        ? 'bg-blue-50 text-blue-700 font-semibold'
-                        : 'text-text-secondary hover:text-text-primary hover:bg-surface-subtle'
-                    )}
-                  >
-                    <HelpCircle className="w-3.5 h-3.5 text-text-muted" />
-                    <span>Untimed MCQ Bank</span>
-                  </Link>
+                  <div className="pl-6 space-y-1 py-1 border-l-2 border-blue-100 ml-4 my-1">
+                    {PRACTICE_SUB_LINKS.map((sub) => {
+                      const SubIcon = sub.icon;
+                      const isSubActive = pathname === sub.href;
+                      return (
+                        <Link
+                          key={sub.href}
+                          href={sub.href}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={cn(
+                            'flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs font-medium transition',
+                            isSubActive
+                              ? 'text-blue-700 font-semibold bg-blue-50'
+                              : 'text-text-secondary hover:text-text-primary hover:bg-stone-50'
+                          )}
+                        >
+                          <SubIcon className="w-3.5 h-3.5 text-text-muted" />
+                          <span>{sub.label}</span>
+                        </Link>
+                      );
+                    })}
+                  </div>
                 )}
               </React.Fragment>
             );
