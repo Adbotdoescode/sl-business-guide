@@ -19,7 +19,8 @@ import {
   Scale,
   Compass,
   Key,
-  Layers
+  Layers,
+  Target
 } from 'lucide-react';
 
 const NAV_LINKS = [
@@ -30,6 +31,7 @@ const NAV_LINKS = [
 ];
 
 const PRACTICE_SUB_LINKS = [
+  { href: '/practice#preparatory-question-bank', label: 'Preparatory Question Bank', icon: Target },
   { href: '/practice/custom', label: 'Custom Test Builder', icon: CheckSquare },
   { href: '/blitz', label: 'Rapid MCQ Blitz', icon: Zap },
   { href: '/practice/written', label: 'Written Exam & Rubrics', icon: PenTool },

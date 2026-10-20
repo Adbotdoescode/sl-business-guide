@@ -27,10 +27,19 @@ import {
   Lightbulb, 
   CheckSquare, 
   Square,
-  Filter
+  Filter,
+  Target
 } from 'lucide-react';
 
-export function ExamPractice() {
+interface ExamPracticeProps {
+  title?: string;
+  subtitle?: string;
+}
+
+export function ExamPractice({
+  title = 'Preparatory Question Bank',
+  subtitle = 'Direct exam question runner for 2-mark definitions, 4-mark applied PEEL paragraphs, and 6-mark two-sided analyses with official criteria.'
+}: ExamPracticeProps = {}) {
   const { state, toggleTwoMarkCompleted, saveWrittenDraft } = useStudyProgress();
 
   // Tier filter: '2' | '4' | '6'
@@ -117,17 +126,22 @@ export function ExamPractice() {
   return (
     <div className="space-y-6">
       {/* Practice Header & Controls */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-4 sm:p-6 rounded-xl border border-border shadow-subtle">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-4 sm:p-6 rounded-xl border border-blue-200/90 shadow-subtle">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
-            <PenTool className="w-5 h-5" strokeWidth={1.75} />
+          <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-subtle">
+            <Target className="w-5 h-5" strokeWidth={2} />
           </div>
           <div>
-            <h1 className="text-xl sm:text-2xl font-bold text-text-primary tracking-tight">
-              Exam Practice & Written Rubrics
-            </h1>
+            <div className="flex items-center gap-2">
+              <h2 className="text-xl sm:text-2xl font-bold text-text-primary tracking-tight">
+                {title}
+              </h2>
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 border border-blue-200 uppercase tracking-wide">
+                Priority Engine
+              </span>
+            </div>
             <p className="text-xs sm:text-sm text-text-secondary mt-0.5">
-              Practice 2-mark definitions, 4-mark applied PEEL paragraphs, and 6-mark two-sided analyses.
+              {subtitle}
             </p>
           </div>
         </div>
