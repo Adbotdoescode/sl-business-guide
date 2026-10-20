@@ -27,6 +27,14 @@ export function getSubunitLabel(subunit: SyllabusSubunit): string {
       return '1.5 Economies of Scale';
     case '1.6-multinational-companies':
       return '1.6 Multinational Companies';
+    case '3.1-intro-to-finance':
+      return '3.1 Introduction to Finance';
+    case '3.2-sources-of-finance':
+      return '3.2 Sources of Finance';
+    case '3.3-costs-and-revenues':
+      return '3.3 Costs and Revenues';
+    case '3.4-final-accounts':
+      return '3.4 Final Accounts & Circular Business Models';
     case 'bmt-swot-analysis':
       return 'BMT: SWOT Analysis';
     case 'bmt-ansoff-matrix':
@@ -59,6 +67,14 @@ export function getSubunitShortBadge(subunit: SyllabusSubunit): string {
       return 'Unit 1.5';
     case '1.6-multinational-companies':
       return 'Unit 1.6';
+    case '3.1-intro-to-finance':
+      return 'Unit 3.1';
+    case '3.2-sources-of-finance':
+      return 'Unit 3.2';
+    case '3.3-costs-and-revenues':
+      return 'Unit 3.3';
+    case '3.4-final-accounts':
+      return 'Unit 3.4';
     case 'bmt-swot-analysis':
       return 'SWOT';
     case 'bmt-ansoff-matrix':

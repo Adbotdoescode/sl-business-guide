@@ -66,6 +66,11 @@ export function GroupTopicSelector({
     onChange(ALL_CONTENT_TOPICS.map((t) => t.id));
   };
 
+  const handleSelectCategory = (cat: 'unit1' | 'unit2' | 'bmt') => {
+    const topics = ALL_CONTENT_TOPICS.filter((t) => t.category === cat).map((t) => t.id);
+    onChange(topics);
+  };
+
   const handleClearAllExceptFirst = () => {
     onChange([ALL_CONTENT_TOPICS[0].id]);
   };
@@ -74,6 +79,7 @@ export function GroupTopicSelector({
   const relevantCount = filterQuestionType === 'mcq' ? counts.mcq : filterQuestionType === 'twoMark' ? counts.twoMark : counts.total;
 
   const unit1Topics = ALL_CONTENT_TOPICS.filter((t) => t.category === 'unit1');
+  const unit2Topics = ALL_CONTENT_TOPICS.filter((t) => t.category === 'unit2');
   const bmtTopics = ALL_CONTENT_TOPICS.filter((t) => t.category === 'bmt');
 
   return (
@@ -136,16 +142,37 @@ export function GroupTopicSelector({
       {/* Expanding Matrix: Topic Checkbox Matrix */}
       {isExpanded && (
         <div className="pt-3 border-t border-border space-y-4 animate-in fade-in duration-150">
-          <div className="flex items-center justify-between text-xs">
+          <div className="flex flex-wrap items-center justify-between text-xs gap-2">
             <span className="font-semibold text-text-secondary">
-              Select any custom combination of topics:
+              Select custom combinations or single sections:
             </span>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                onClick={() => handleSelectCategory('unit1')}
+                className="text-[11px] text-blue-600 hover:underline font-semibold cursor-pointer"
+              >
+                Only Unit 1
+              </button>
+              <span className="text-text-muted">&bull;</span>
+              <button
+                onClick={() => handleSelectCategory('unit2')}
+                className="text-[11px] text-emerald-600 hover:underline font-semibold cursor-pointer"
+              >
+                Only Unit 2 (Finance)
+              </button>
+              <span className="text-text-muted">&bull;</span>
+              <button
+                onClick={() => handleSelectCategory('bmt')}
+                className="text-[11px] text-purple-600 hover:underline font-semibold cursor-pointer"
+              >
+                Only BMT
+              </button>
+              <span className="text-text-muted">&bull;</span>
               <button
                 onClick={handleSelectAll}
                 className="text-[11px] text-blue-600 hover:underline font-medium cursor-pointer"
               >
-                Select All (12)
+                Select All ({ALL_CONTENT_TOPICS.length})
               </button>
               <span className="text-text-muted">&bull;</span>
               <button
@@ -157,12 +184,21 @@ export function GroupTopicSelector({
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Column 1: Unit 1 Topics */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* Section 1: Unit 1 - Business Management */}
             <div className="space-y-2">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-text-muted block px-1">
-                Unit 1 Curriculum (Units 1.1–1.6)
-              </span>
+              <div className="flex items-center justify-between px-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-blue-800">
+                  Unit 1 - Business Management
+                </span>
+                <button
+                  type="button"
+                  onClick={() => handleSelectCategory('unit1')}
+                  className="text-[10px] text-blue-600 hover:underline font-medium"
+                >
+                  Select All
+                </button>
+              </div>
               <div className="space-y-1.5">
                 {unit1Topics.map((topic) => {
                   const isChecked = selectedSubunits.includes(topic.id);
@@ -202,11 +238,73 @@ export function GroupTopicSelector({
               </div>
             </div>
 
-            {/* Column 2: BMT Toolkit Tools */}
+            {/* Section 2: Unit 2 - Finance */}
             <div className="space-y-2">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-text-muted block px-1">
-                Business Management Toolkit (BMT)
-              </span>
+              <div className="flex items-center justify-between px-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-800">
+                  Unit 2 - Finance (Units 3.1–3.4)
+                </span>
+                <button
+                  type="button"
+                  onClick={() => handleSelectCategory('unit2')}
+                  className="text-[10px] text-emerald-600 hover:underline font-medium"
+                >
+                  Select All
+                </button>
+              </div>
+              <div className="space-y-1.5">
+                {unit2Topics.map((topic) => {
+                  const isChecked = selectedSubunits.includes(topic.id);
+                  const topicCounts = getQuestionCountsForSubunits([topic.id]);
+                  const qCount = filterQuestionType === 'mcq' ? topicCounts.mcq : filterQuestionType === 'twoMark' ? topicCounts.twoMark : topicCounts.total;
+
+                  return (
+                    <button
+                      key={topic.id}
+                      type="button"
+                      onClick={() => handleToggleSubunit(topic.id)}
+                      className={`w-full text-left p-2.5 rounded-lg border text-xs transition flex items-center justify-between gap-2.5 cursor-pointer select-none ${
+                        isChecked
+                          ? 'border-emerald-500 bg-emerald-50/50 text-emerald-950 font-medium'
+                          : 'border-border/80 bg-white text-text-secondary hover:border-stone-300 hover:bg-stone-50/50'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        {isChecked ? (
+                          <CheckSquare className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                        ) : (
+                          <Square className="w-4 h-4 text-stone-400 flex-shrink-0" />
+                        )}
+                        <div className="truncate">
+                          <span className="font-mono text-[11px] font-bold text-text-muted mr-1.5">
+                            {topic.code}:
+                          </span>
+                          <span className="truncate">{topic.title}</span>
+                        </div>
+                      </div>
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-surface-subtle text-text-muted flex-shrink-0">
+                        {qCount} Qs
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Section 3: BMT Toolkit Tools */}
+            <div className="space-y-2">
+              <div className="flex items-center justify-between px-1">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-purple-800">
+                  Business Management Toolkit
+                </span>
+                <button
+                  type="button"
+                  onClick={() => handleSelectCategory('bmt')}
+                  className="text-[10px] text-purple-600 hover:underline font-medium"
+                >
+                  Select All
+                </button>
+              </div>
               <div className="space-y-1.5">
                 {bmtTopics.map((topic) => {
                   const isChecked = selectedSubunits.includes(topic.id);
@@ -220,13 +318,13 @@ export function GroupTopicSelector({
                       onClick={() => handleToggleSubunit(topic.id)}
                       className={`w-full text-left p-2.5 rounded-lg border text-xs transition flex items-center justify-between gap-2.5 cursor-pointer select-none ${
                         isChecked
-                          ? 'border-blue-500 bg-blue-50/40 text-blue-950 font-medium'
+                          ? 'border-purple-500 bg-purple-50/40 text-purple-950 font-medium'
                           : 'border-border/80 bg-white text-text-secondary hover:border-stone-300 hover:bg-stone-50/50'
                       }`}
                     >
                       <div className="flex items-center gap-2.5 min-w-0">
                         {isChecked ? (
-                          <CheckSquare className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                          <CheckSquare className="w-4 h-4 text-purple-600 flex-shrink-0" />
                         ) : (
                           <Square className="w-4 h-4 text-stone-400 flex-shrink-0" />
                         )}

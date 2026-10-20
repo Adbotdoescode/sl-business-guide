@@ -55,7 +55,7 @@ export function Navigation() {
                   SL Business Guide
                 </span>
                 <span className="text-[10px] uppercase font-bold text-text-muted tracking-wider block -mt-1">
-                  1.1–1.6 • SWOT • Ansoff • STEEPLE • BMT
+                  Unit 1: Business Mgt &bull; Unit 2: Finance &bull; BMT
                 </span>
               </div>
             </Link>

@@ -908,6 +908,208 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
     definition: 'Government policies that protect domestic businesses from foreign competitors, such as tariffs, quotas, subsidies, embargoes and technological or safety standards.',
     keyExamTokens: ['tariffs', 'quotas', 'subsidies', 'embargoes', 'barriers to trade']
   }
+,
+  {
+    "id": "def-u2-01",
+    "term": "Capital Expenditure (CapEx)",
+    "subunit": "3.1-intro-to-finance",
+    "definition": "Investment spending on ==fixed assets== (non-current assets) such as *machinery, land, buildings, and vehicles* that have a <u>long-term function</u> and are used repeatedly for production.",
+    "keyExamTokens": [
+      "investment spending",
+      "fixed assets",
+      "long-term function",
+      "repeated production use"
+    ]
+  },
+  {
+    "id": "def-u2-02",
+    "term": "Revenue Expenditure (RevEx)",
+    "subunit": "3.1-intro-to-finance",
+    "definition": "Spending on the ==daily running costs== of a business, such as *wages, raw materials, rent, and utility bills*, providing <u>immediate operational value</u> in the current trading period.",
+    "keyExamTokens": [
+      "daily running costs",
+      "wages and salaries",
+      "raw materials",
+      "immediate operational value"
+    ]
+  },
+  {
+    "id": "def-u2-03",
+    "term": "Collateral",
+    "subunit": "3.1-intro-to-finance",
+    "definition": "A ==financial guarantee or fixed asset== pledged by a commercial borrower to <u>secure external loan capital</u>, reducing lending risk for banks.",
+    "keyExamTokens": [
+      "financial guarantee",
+      "pledged asset",
+      "secure loan capital",
+      "lender protection"
+    ]
+  },
+  {
+    "id": "def-u2-04",
+    "term": "Retained Profit",
+    "subunit": "3.2-sources-of-finance",
+    "definition": "The ==net profit surplus remaining== after deducting interest, corporate tax, and dividend payments, which is <u>reinvested into the business</u> as internal equity.",
+    "keyExamTokens": [
+      "after interest, tax, dividends",
+      "reinvested into business",
+      "internal equity",
+      "non-debt finance"
+    ]
+  },
+  {
+    "id": "def-u2-05",
+    "term": "Share Capital",
+    "subunit": "3.2-sources-of-finance",
+    "definition": "==Permanent equity capital== raised by limited liability companies through the <u>sale of shares</u>, carrying zero mandatory interest payments but diluting ownership control.",
+    "keyExamTokens": [
+      "permanent equity",
+      "sale of shares",
+      "no mandatory interest",
+      "dilution of control"
+    ]
+  },
+  {
+    "id": "def-u2-06",
+    "term": "Bank Overdraft",
+    "subunit": "3.2-sources-of-finance",
+    "definition": "A flexible banking arrangement allowing a firm to ==temporarily withdraw more funds than exist in its account== up to an agreed limit, paying daily interest only on drawn funds.",
+    "keyExamTokens": [
+      "negative account balance",
+      "agreed credit limit",
+      "daily interest",
+      "callable on demand"
+    ]
+  },
+  {
+    "id": "def-u2-07",
+    "term": "Trade Credit",
+    "subunit": "3.2-sources-of-finance",
+    "definition": "A commercial agreement allowing a business to ==receive inventory immediately and defer settlement== for an agreed period (e.g. 30\u201390 days), acting as <u>interest-free short-term financing</u>.",
+    "keyExamTokens": [
+      "receive goods immediately",
+      "defer payment",
+      "30-90 days",
+      "interest-free supplier finance"
+    ]
+  },
+  {
+    "id": "def-u2-08",
+    "term": "The Matching Principle",
+    "subunit": "3.2-sources-of-finance",
+    "definition": "The fundamental financial rule that the ==duration of a funding source must match the economic lifespan of the asset==: funding long-term assets with long-term finance, and short-term needs with short-term finance.",
+    "keyExamTokens": [
+      "duration matches lifespan",
+      "long-term for fixed assets",
+      "short-term for working capital",
+      "avoids overtrading"
+    ]
+  },
+  {
+    "id": "def-u2-09",
+    "term": "Fixed Costs (FC)",
+    "subunit": "3.3-costs-and-revenues",
+    "definition": "Operational costs that ==do not vary with changes in the level of output== in the short run, such as *rent, executive salaries, and insurance* (incurred even if output is zero).",
+    "keyExamTokens": [
+      "do not vary with output",
+      "paid even if zero output",
+      "rent and salaries",
+      "horizontal cost line"
+    ]
+  },
+  {
+    "id": "def-u2-10",
+    "term": "Variable Costs (VC)",
+    "subunit": "3.3-costs-and-revenues",
+    "definition": "Costs of production that ==change in direct proportion to the volume of output==, such as *raw materials, piece-rate wages, and direct packaging* (zero when output is zero).",
+    "keyExamTokens": [
+      "changes in proportion to output",
+      "zero at zero output",
+      "raw materials",
+      "piece-rate labor"
+    ]
+  },
+  {
+    "id": "def-u2-11",
+    "term": "Direct Costs",
+    "subunit": "3.3-costs-and-revenues",
+    "definition": "Expenditures that can be ==clearly and uniquely traced== to the production of a *specific product, project, or dedicated cost centre*.",
+    "keyExamTokens": [
+      "clearly traced",
+      "specific product or cost centre",
+      "traceability focus"
+    ]
+  },
+  {
+    "id": "def-u2-12",
+    "term": "Indirect Costs (Overheads)",
+    "subunit": "3.3-costs-and-revenues",
+    "definition": "Operational expenses that ==cannot be economically traced to a specific unit of output==, supporting the *general administration and operating infrastructure* of the enterprise.",
+    "keyExamTokens": [
+      "cannot be traced to single product",
+      "enterprise overheads",
+      "head office rent",
+      "administration"
+    ]
+  },
+  {
+    "id": "def-u2-13",
+    "term": "Cost of Goods Sold (COGS)",
+    "subunit": "3.4-final-accounts",
+    "definition": "The ==direct costs incurred in producing or purchasing the inventory sold== during an accounting period: $\\text{COGS} = \\text{Opening Stock} + \\text{Purchases} - \\text{Closing Stock}$.",
+    "keyExamTokens": [
+      "direct cost of stock sold",
+      "Opening + Purchases - Closing",
+      "Trading Account deduction"
+    ]
+  },
+  {
+    "id": "def-u2-14",
+    "term": "Working Capital",
+    "subunit": "3.4-final-accounts",
+    "definition": "The liquid financial resources available for day-to-day trading: ==Current Assets minus Current Liabilities==, measuring short-term liquidity health.",
+    "keyExamTokens": [
+      "Current Assets - Current Liabilities",
+      "net current assets",
+      "day-to-day liquidity",
+      "prevents insolvency"
+    ]
+  },
+  {
+    "id": "def-u2-15",
+    "term": "Straight-Line Depreciation",
+    "subunit": "3.4-final-accounts",
+    "definition": "A depreciation method spreading the cost of a non-current asset evenly across its useful life: ==$(\\text{Historic Cost} - \\text{Residual Scrap Value}) / \\text{Useful Life in Years}$==.",
+    "keyExamTokens": [
+      "equal annual reduction",
+      "Cost minus Residual Value",
+      "divided by useful life"
+    ]
+  },
+  {
+    "id": "def-u2-16",
+    "term": "Circular Business Model (CBM)",
+    "subunit": "3.4-final-accounts",
+    "definition": "A business model framework designed to ==eliminate waste and keep resources in economic use for as long as possible== through closed biological and technical loops (the 4 Rs: *reduce, reuse, repair, recycle*).",
+    "keyExamTokens": [
+      "eliminate waste",
+      "keep resources in use",
+      "4 Rs",
+      "closed restorative loops"
+    ]
+  },
+  {
+    "id": "def-u2-17",
+    "term": "Product Service System (Servitization)",
+    "subunit": "3.4-final-accounts",
+    "definition": "An OECD circular business model where companies ==sell the utility, access, or performance of a product as a service== rather than transferring physical ownership to the customer.",
+    "keyExamTokens": [
+      "sell utility or service",
+      "pay-for-use or subscription",
+      "firm retains asset ownership",
+      "replaces buy-to-own"
+    ]
+  }
 ];
 
 export const CRAM_DISTINCTIONS: DistinctionItem[] = [
@@ -1247,6 +1449,47 @@ export const CRAM_DISTINCTIONS: DistinctionItem[] = [
     contrastStatement: 'An appreciation raises export prices and reduces price competitiveness, but makes imports cheaper. A depreciation makes exports cheaper abroad, but makes imported raw materials and components more expensive.',
     examTrapWarning: 'Students often reverse the effects. Check the direction of the change before writing the effect on exporters.'
   }
+,
+  {
+    "id": "dist-u2-01",
+    "conceptA": "Capital Expenditure (CapEx)",
+    "conceptB": "Revenue Expenditure (RevEx)",
+    "comparisonCriteria": "Time horizon, financial statement recording, and productive purpose.",
+    "contrastStatement": "CapEx is long-term investment in non-current assets (>1 year) recorded on the Balance Sheet and depreciated annually, whereas RevEx covers short-term daily operating expenses (<1 year) expensed immediately on the Profit and Loss Account.",
+    "examTrapWarning": "Never classify an expense based solely on size. A massive annual electricity or wage bill is still RevEx because it is consumed in the current operating period."
+  },
+  {
+    "id": "dist-u2-02",
+    "conceptA": "Fixed Costs (FC)",
+    "conceptB": "Variable Costs (VC)",
+    "comparisonCriteria": "Behavior in response to output and sales volume changes.",
+    "contrastStatement": "Fixed costs remain completely constant regardless of output volume in the short run (e.g. factory rent), whereas variable costs change in direct proportion to production volume (e.g. raw materials).",
+    "examTrapWarning": "Avoid tautologies like 'fixed costs stay fixed'. Always state that fixed costs do not vary WITH OUTPUT in the short run."
+  },
+  {
+    "id": "dist-u2-03",
+    "conceptA": "Direct Costs",
+    "conceptB": "Indirect Costs (Overheads)",
+    "comparisonCriteria": "Traceability and attribution to a specific product or cost centre.",
+    "contrastStatement": "Direct costs can be clearly and uniquely traced to a specific output (e.g. fabric in a dress), whereas indirect costs support the enterprise broadly and cannot be tied to a single item (e.g. head office heating).",
+    "examTrapWarning": "Do not confuse direct/indirect with variable/fixed. A direct cost can be fixed (e.g. specialized equipment leased solely for one product line)."
+  },
+  {
+    "id": "dist-u2-04",
+    "conceptA": "Gross Profit",
+    "conceptB": "Net / Operating Profit",
+    "comparisonCriteria": "Level of cost deduction from sales revenue in the P&L account.",
+    "contrastStatement": "Gross profit deducts only direct Cost of Goods Sold from sales revenue, whereas operating net profit also deducts indirect operational overhead expenses (rent, salaries, marketing, depreciation).",
+    "examTrapWarning": "A business can have an excellent gross profit margin but still make a net loss if indirect overheads are uncontrolled."
+  },
+  {
+    "id": "dist-u2-05",
+    "conceptA": "Linear Economy",
+    "conceptB": "Circular Economy",
+    "comparisonCriteria": "Resource utilization model and end-of-life product treatment.",
+    "contrastStatement": "A linear economy follows a 'take-make-waste' model that extracts finite virgin resources and discards products in landfills, whereas a circular economy designs restorative closed loops that keep materials circulating through reduce, reuse, repair, and recycle.",
+    "examTrapWarning": "Circular business models are not merely municipal waste recycling; they encompass product servitization, modular repair, sharing platforms, and circular supply chains."
+  }
 ];
 
 export const CRAM_GOLDEN_RULES: GoldenMatrixRule[] = [
@@ -1370,4 +1613,5 @@ export const CRAM_GOLDEN_RULES: GoldenMatrixRule[] = [
     actionProtocol: 'Calculate the average, then state the spread, then interpret both in the context of the business case.',
     examApplicationTip: 'Never quote an average alone when the question asks about consistency, risk or seasonal change. Add a spread measure and comment on what it shows.'
   }
+
 ];

@@ -2,26 +2,31 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { SyllabusSubunit } from '@/types/curriculum';
 import { useStudyProgress } from '@/context/StudyProgressContext';
 import { MCQ_QUESTIONS, TWO_MARK_QUESTIONS } from '@/data/question-bank';
 import { FOUR_MARK_QUESTIONS, SIX_MARK_QUESTIONS } from '@/data/model-answers';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
+import { SyllabusSubunit } from '@/types/curriculum';
+import { Card } from '@/components/ui/Card';
+import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { 
   BarChart3, 
-  Dumbbell, 
-  CheckCircle2, 
   Clock, 
-  ArrowUpRight,
-  TrendingUp,
-  Award
+  ArrowRight, 
+  Flame, 
+  CheckCircle2, 
+  AlertCircle,
+  HelpCircle,
+  Dumbbell,
+  Award,
+  Layers
 } from 'lucide-react';
 
 interface SubunitMasteryData {
   subunit: SyllabusSubunit;
   title: string;
   code: string;
+  section: 'unit1' | 'unit2' | 'bmt';
   mcqMastery: number; // percentage 0-100
   twoMarkMastery: number;
   writtenMastery: number; // 4-mark & 6-mark combined with rubric scores
@@ -32,19 +37,28 @@ interface SubunitMasteryData {
 export function MasteryHeatmap() {
   const { state } = useStudyProgress();
 
-  const subunits: { id: SyllabusSubunit; code: string; title: string }[] = [
-    { id: '1.1-what-is-a-business', code: 'Unit 1.1', title: 'What is a Business?' },
-    { id: '1.2-types-of-business-entities', code: 'Unit 1.2', title: 'Types of Business Entities' },
-    { id: '1.3-business-objectives', code: 'Unit 1.3', title: 'Business Objectives' },
-    { id: '1.4-stakeholders', code: 'Unit 1.4', title: 'Stakeholders' },
-    { id: '1.5-growth-and-evolution', code: 'Unit 1.5', title: 'Growth & Scale' },
-    { id: '1.6-multinational-companies', code: 'Unit 1.6', title: 'Multinational Companies' },
-    { id: 'bmt-swot-analysis', code: 'BMT SWOT', title: 'SWOT Analysis' },
-    { id: 'bmt-ansoff-matrix', code: 'BMT Ansoff', title: 'Ansoff Growth Matrix' },
-    { id: 'bmt-steeple-analysis', code: 'BMT STEEPLE', title: 'STEEPLE Analysis' },
-    { id: 'bmt-toolkit', code: 'BMT Master', title: 'BM Toolkit' },
-    { id: 'bmt-business-plan', code: 'BMT Business Plan', title: 'Business Plan' },
-    { id: 'bmt-descriptive-statistics', code: 'BMT Descriptive Stats', title: 'Descriptive Statistics' },
+  const subunits: { id: SyllabusSubunit; code: string; title: string; section: 'unit1' | 'unit2' | 'bmt' }[] = [
+    // Unit 1 - Business Management
+    { id: '1.1-what-is-a-business', code: 'Unit 1.1', title: 'What is a Business?', section: 'unit1' },
+    { id: '1.2-types-of-business-entities', code: 'Unit 1.2', title: 'Types of Business Entities', section: 'unit1' },
+    { id: '1.3-business-objectives', code: 'Unit 1.3', title: 'Business Objectives', section: 'unit1' },
+    { id: '1.4-stakeholders', code: 'Unit 1.4', title: 'Stakeholders', section: 'unit1' },
+    { id: '1.5-growth-and-evolution', code: 'Unit 1.5', title: 'Growth & Scale', section: 'unit1' },
+    { id: '1.6-multinational-companies', code: 'Unit 1.6', title: 'Multinational Companies', section: 'unit1' },
+
+    // Unit 2 - Finance
+    { id: '3.1-intro-to-finance', code: 'Unit 3.1', title: 'Introduction to Finance', section: 'unit2' },
+    { id: '3.2-sources-of-finance', code: 'Unit 3.2', title: 'Sources of Finance', section: 'unit2' },
+    { id: '3.3-costs-and-revenues', code: 'Unit 3.3', title: 'Costs & Revenues', section: 'unit2' },
+    { id: '3.4-final-accounts', code: 'Unit 3.4', title: 'Final Accounts & CBM', section: 'unit2' },
+
+    // Business Management Toolkit
+    { id: 'bmt-swot-analysis', code: 'BMT SWOT', title: 'SWOT Analysis', section: 'bmt' },
+    { id: 'bmt-ansoff-matrix', code: 'BMT Ansoff', title: 'Ansoff Growth Matrix', section: 'bmt' },
+    { id: 'bmt-steeple-analysis', code: 'BMT STEEPLE', title: 'STEEPLE Analysis', section: 'bmt' },
+    { id: 'bmt-toolkit', code: 'BMT Master', title: 'BM Toolkit', section: 'bmt' },
+    { id: 'bmt-business-plan', code: 'BMT Plan', title: 'Business Plan', section: 'bmt' },
+    { id: 'bmt-descriptive-statistics', code: 'BMT Stats', title: 'Descriptive Statistics', section: 'bmt' },
   ];
 
   // Calculate stats for each subunit
@@ -86,6 +100,7 @@ export function MasteryHeatmap() {
       subunit: sub.id,
       title: sub.title,
       code: sub.code,
+      section: sub.section,
       mcqMastery: mcqPercent,
       twoMarkMastery: twoMarkPercent,
       writtenMastery: writtenPercent,
@@ -109,6 +124,12 @@ export function MasteryHeatmap() {
     return 'bg-stone-100 text-stone-400';
   };
 
+  const sections = [
+    { key: 'unit1' as const, label: 'Unit 1 - Business Management', color: 'text-blue-800 bg-blue-50/70 border-blue-200' },
+    { key: 'unit2' as const, label: 'Unit 2 - Finance', color: 'text-emerald-800 bg-emerald-50/70 border-emerald-200' },
+    { key: 'bmt' as const, label: 'Business Management Toolkit', color: 'text-purple-800 bg-purple-50/70 border-purple-200' }
+  ];
+
   return (
     <Card className="p-6 space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-border">
@@ -121,7 +142,7 @@ export function MasteryHeatmap() {
               Confidence & Mastery Heatmap
             </h2>
             <p className="text-xs text-text-secondary mt-0.5">
-              Live tracking across syllabus units and assessment tiers. Auto-synced in local storage.
+              Live tracking across Unit 1 - Business Management, Unit 2 - Finance, and the Business Management Toolkit.
             </p>
           </div>
         </div>
@@ -144,81 +165,107 @@ export function MasteryHeatmap() {
           <thead>
             <tr className="border-b border-border text-[11px] font-bold text-text-muted uppercase tracking-wider">
               <th className="py-2.5 px-3">Syllabus Topic</th>
-              <th className="py-2.5 px-3 text-center">MCQ (124 Qs)</th>
-              <th className="py-2.5 px-3 text-center">2-Mark AO1 (98 Qs)</th>
-              <th className="py-2.5 px-3 text-center">4/6-Mark PEEL (52 Qs)</th>
+              <th className="py-2.5 px-3 text-center">MCQ ({MCQ_QUESTIONS.length} Qs)</th>
+              <th className="py-2.5 px-3 text-center">2-Mark AO1 ({TWO_MARK_QUESTIONS.length} Qs)</th>
+              <th className="py-2.5 px-3 text-center">4/6-Mark PEEL ({FOUR_MARK_QUESTIONS.length + SIX_MARK_QUESTIONS.length} Qs)</th>
               <th className="py-2.5 px-3 text-center">Leitner Retention</th>
               <th className="py-2.5 px-3 text-right">Overall Unit Score</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-border text-xs">
-            {heatmapData.map((row) => (
-              <tr key={row.subunit} className="hover:bg-stone-50/60 transition">
-                <td className="py-3 px-3">
-                  <div className="font-semibold text-text-primary">{row.code}</div>
-                  <div className="text-[11px] text-text-muted">{row.title}</div>
-                </td>
+            {sections.map((sec) => {
+              const rows = heatmapData.filter((r) => r.section === sec.key);
+              const sectionAverage = Math.round(
+                rows.reduce((acc, curr) => acc + curr.overallMastery, 0) / (rows.length || 1)
+              );
 
-                {/* MCQ Heatmap Cell */}
-                <td className="py-3 px-3 text-center">
-                  <span
-                    className={`inline-block w-16 py-1 rounded font-mono font-bold text-xs ${getHeatmapColor(
-                      row.mcqMastery
-                    )}`}
-                  >
-                    {row.mcqMastery}%
-                  </span>
-                </td>
+              return (
+                <React.Fragment key={sec.key}>
+                  {/* Section Header Row */}
+                  <tr className="bg-stone-50/80 border-t-2 border-stone-200">
+                    <td colSpan={5} className="py-2 px-3">
+                      <span className={`inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-0.5 rounded-md border ${sec.color}`}>
+                        <Layers className="w-3.5 h-3.5" />
+                        <span>{sec.label}</span>
+                      </span>
+                    </td>
+                    <td className="py-2 px-3 text-right">
+                      <span className="text-[11px] font-mono font-bold text-text-muted">
+                        Avg: {sectionAverage}%
+                      </span>
+                    </td>
+                  </tr>
 
-                {/* 2-Mark Heatmap Cell */}
-                <td className="py-3 px-3 text-center">
-                  <span
-                    className={`inline-block w-16 py-1 rounded font-mono font-bold text-xs ${getHeatmapColor(
-                      row.twoMarkMastery
-                    )}`}
-                  >
-                    {row.twoMarkMastery}%
-                  </span>
-                </td>
+                  {rows.map((row) => (
+                    <tr key={row.subunit} className="hover:bg-stone-50/60 transition">
+                      <td className="py-3 px-3">
+                        <div className="font-semibold text-text-primary">{row.code}</div>
+                        <div className="text-[11px] text-text-muted">{row.title}</div>
+                      </td>
 
-                {/* Written PEEL Heatmap Cell */}
-                <td className="py-3 px-3 text-center">
-                  <span
-                    className={`inline-block w-16 py-1 rounded font-mono font-bold text-xs ${getHeatmapColor(
-                      row.writtenMastery
-                    )}`}
-                  >
-                    {row.writtenMastery}%
-                  </span>
-                </td>
+                      {/* MCQ Heatmap Cell */}
+                      <td className="py-3 px-3 text-center">
+                        <span
+                          className={`inline-block w-16 py-1 rounded font-mono font-bold text-xs ${getHeatmapColor(
+                            row.mcqMastery
+                          )}`}
+                        >
+                          {row.mcqMastery}%
+                        </span>
+                      </td>
 
-                {/* Leitner Retention Status Cell */}
-                <td className="py-3 px-3 text-center">
-                  {row.retentionStatus === 'fresh' && (
-                    <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-                      <Clock className="w-2.5 h-2.5" /> Fresh (Active)
-                    </span>
-                  )}
-                  {row.retentionStatus === 'review-due' && (
-                    <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200">
-                      <Clock className="w-2.5 h-2.5" /> Review Due
-                    </span>
-                  )}
-                  {row.retentionStatus === 'untested' && (
-                    <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-stone-500 bg-stone-50 px-2 py-0.5 rounded-full border border-stone-200">
-                      Untested
-                    </span>
-                  )}
-                </td>
+                      {/* 2-Mark Heatmap Cell */}
+                      <td className="py-3 px-3 text-center">
+                        <span
+                          className={`inline-block w-16 py-1 rounded font-mono font-bold text-xs ${getHeatmapColor(
+                            row.twoMarkMastery
+                          )}`}
+                        >
+                          {row.twoMarkMastery}%
+                        </span>
+                      </td>
 
-                {/* Overall Score */}
-                <td className="py-3 px-3 text-right">
-                  <span className="font-bold text-sm font-mono text-text-primary">
-                    {row.overallMastery}%
-                  </span>
-                </td>
-              </tr>
-            ))}
+                      {/* Written PEEL Heatmap Cell */}
+                      <td className="py-3 px-3 text-center">
+                        <span
+                          className={`inline-block w-16 py-1 rounded font-mono font-bold text-xs ${getHeatmapColor(
+                            row.writtenMastery
+                          )}`}
+                        >
+                          {row.writtenMastery}%
+                        </span>
+                      </td>
+
+                      {/* Leitner Retention Status Cell */}
+                      <td className="py-3 px-3 text-center">
+                        {row.retentionStatus === 'fresh' && (
+                          <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                            <Clock className="w-2.5 h-2.5" /> Fresh (Active)
+                          </span>
+                        )}
+                        {row.retentionStatus === 'review-due' && (
+                          <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200">
+                            <Clock className="w-2.5 h-2.5" /> Review Due
+                          </span>
+                        )}
+                        {row.retentionStatus === 'untested' && (
+                          <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-stone-500 bg-stone-50 px-2 py-0.5 rounded-full border border-stone-200">
+                            Untested
+                          </span>
+                        )}
+                      </td>
+
+                      {/* Overall Score */}
+                      <td className="py-3 px-3 text-right">
+                        <span className="font-bold text-sm font-mono text-text-primary">
+                          {row.overallMastery}%
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </React.Fragment>
+              );
+            })}
           </tbody>
         </table>
       </div>

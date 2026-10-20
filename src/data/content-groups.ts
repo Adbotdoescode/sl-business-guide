@@ -7,20 +7,22 @@ export interface ContentTopicMeta {
   code: string;
   title: string;
   shortTitle: string;
-  category: 'unit1' | 'bmt';
+  category: 'unit1' | 'unit2' | 'bmt';
   categoryLabel: string;
   description: string;
 }
 
 export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
-  // Unit 1 Curriculum
+  // ==========================================
+  // Section 1: Unit 1 - Business Management
+  // ==========================================
   {
     id: '1.1-what-is-a-business',
     code: 'Unit 1.1',
     title: 'What is a Business?',
     shortTitle: '1.1 Business Nature',
     category: 'unit1',
-    categoryLabel: 'Unit 1: Introduction to Business Management',
+    categoryLabel: 'Unit 1 - Business Management',
     description: 'Inputs, transformation model, goods vs services, economic sectors, chain of production, startup challenges, and GET CASH motives.',
   },
   {
@@ -29,7 +31,7 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     title: 'Types of Business Entities',
     shortTitle: '1.2 Legal Entities',
     category: 'unit1',
-    categoryLabel: 'Unit 1: Introduction to Business Management',
+    categoryLabel: 'Unit 1 - Business Management',
     description: 'Sole traders, partnerships, privately held Ltd, public PLCs, limited liability, cooperatives, and non-governmental organizations.',
   },
   {
@@ -38,7 +40,7 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     title: 'Business Objectives',
     shortTitle: '1.3 Objectives & CSR',
     category: 'unit1',
-    categoryLabel: 'Unit 1: Introduction to Business Management',
+    categoryLabel: 'Unit 1 - Business Management',
     description: 'Vision vs mission statements, strategic vs tactical aims, ethics, corporate social responsibility (CSR), and changing objectives.',
   },
   {
@@ -47,7 +49,7 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     title: 'Stakeholders',
     shortTitle: '1.4 Stakeholders',
     category: 'unit1',
-    categoryLabel: 'Unit 1: Introduction to Business Management',
+    categoryLabel: 'Unit 1 - Business Management',
     description: 'Internal vs external stakeholders, conflict resolution, mutual benefit synergy, and Mendelow power-interest stakeholder mapping.',
   },
   {
@@ -56,7 +58,7 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     title: 'Growth & Economies of Scale',
     shortTitle: '1.5 Scale & Growth',
     category: 'unit1',
-    categoryLabel: 'Unit 1: Introduction to Business Management',
+    categoryLabel: 'Unit 1 - Business Management',
     description: 'Internal and external economies and diseconomies of scale, optimal output, internal vs external growth, and M&A joint ventures.',
   },
   {
@@ -65,10 +67,53 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     title: 'Multinational Companies (MNCs)',
     shortTitle: '1.6 Global MNCs',
     category: 'unit1',
-    categoryLabel: 'Unit 1: Introduction to Business Management',
+    categoryLabel: 'Unit 1 - Business Management',
     description: 'Host country benefits and drawbacks, globalization drivers, transfer pricing, and cultural and ethical operational challenges.',
   },
-  // Business Management Toolkit (BMT)
+
+  // ==========================================
+  // Section 2: Unit 2 - Finance
+  // ==========================================
+  {
+    id: '3.1-intro-to-finance',
+    code: 'Unit 3.1',
+    title: 'Introduction to Finance',
+    shortTitle: '3.1 Intro to Finance',
+    category: 'unit2',
+    categoryLabel: 'Unit 2 - Finance',
+    description: 'Role of finance, Capital Expenditure (CapEx) vs Revenue Expenditure (RevEx), fixed assets, collateral, and business investment drivers.',
+  },
+  {
+    id: '3.2-sources-of-finance',
+    code: 'Unit 3.2',
+    title: 'Sources of Finance',
+    shortTitle: '3.2 Sources of Finance',
+    category: 'unit2',
+    categoryLabel: 'Unit 2 - Finance',
+    description: 'Internal sources (personal funds, retained profit, asset sales) and external sources (share capital, loan capital, overdrafts, trade credit, crowdfunding, leasing, microfinance, business angels), plus short/medium/long-term finance matching.',
+  },
+  {
+    id: '3.3-costs-and-revenues',
+    code: 'Unit 3.3',
+    title: 'Costs and Revenues',
+    shortTitle: '3.3 Costs & Revenues',
+    category: 'unit2',
+    categoryLabel: 'Unit 2 - Finance',
+    description: 'Fixed, variable, semi-variable, direct, and indirect/overhead costs; total cost calculations (TC = TFC + TVC), average costs (AC = TC/Q), and diverse revenue streams.',
+  },
+  {
+    id: '3.4-final-accounts',
+    code: 'Unit 3.4',
+    title: 'Final Accounts & Circular Business Models',
+    shortTitle: '3.4 Accounts & CBM',
+    category: 'unit2',
+    categoryLabel: 'Unit 2 - Finance',
+    description: 'Profit and loss accounts (income statements), balance sheets (statements of financial position), straight-line depreciation, intangible assets, window dressing, and the 5 OECD Circular Business Models (CBM).',
+  },
+
+  // ==========================================
+  // Section 3: Business Management Toolkit (BMT)
+  // ==========================================
   {
     id: 'bmt-swot-analysis',
     code: 'BMT: SWOT',
@@ -136,10 +181,36 @@ export interface ContentGroupPreset {
 export const PRESET_CONTENT_GROUPS: ContentGroupPreset[] = [
   {
     id: 'all',
-    name: 'Full Syllabus (All 12 Modules)',
-    shortBadge: 'All 12 Topics',
-    description: 'Comprehensive test across all Unit 1 chapters and the complete Business Management Toolkit.',
+    name: 'Full Syllabus (Unit 1, Unit 2 & BMT)',
+    shortBadge: 'All 16 Topics',
+    description: 'Comprehensive test across Unit 1 Business Management, Unit 2 Finance, and the Business Management Toolkit.',
     subunits: ALL_CONTENT_TOPICS.map((t) => t.id),
+  },
+  {
+    id: 'unit2-all',
+    name: 'Unit 2 - Finance (All 4 Modules)',
+    shortBadge: 'Unit 2: Finance',
+    description: 'All 4 chapters of Unit 2 Finance: CapEx/RevEx, sources of finance, costs & revenues, and final accounts with circular business models.',
+    subunits: [
+      '3.1-intro-to-finance',
+      '3.2-sources-of-finance',
+      '3.3-costs-and-revenues',
+      '3.4-final-accounts',
+    ],
+  },
+  {
+    id: 'unit1-all',
+    name: 'Unit 1 - Business Management (1.1–1.6)',
+    shortBadge: 'Unit 1: Business Mgt',
+    description: 'All 6 chapters of Unit 1 Introduction to Business Management.',
+    subunits: [
+      '1.1-what-is-a-business',
+      '1.2-types-of-business-entities',
+      '1.3-business-objectives',
+      '1.4-stakeholders',
+      '1.5-growth-and-evolution',
+      '1.6-multinational-companies',
+    ],
   },
   {
     id: 'unit1-foundations',
@@ -164,31 +235,6 @@ export const PRESET_CONTENT_GROUPS: ContentGroupPreset[] = [
     ],
   },
   {
-    id: 'unit1-all',
-    name: 'Complete Unit 1 (1.1–1.6)',
-    shortBadge: 'All Unit 1',
-    description: 'All 6 chapters of Unit 1 Introduction to Business Management.',
-    subunits: [
-      '1.1-what-is-a-business',
-      '1.2-types-of-business-entities',
-      '1.3-business-objectives',
-      '1.4-stakeholders',
-      '1.5-growth-and-evolution',
-      '1.6-multinational-companies',
-    ],
-  },
-  {
-    id: 'bmt-matrices',
-    name: 'Strategic Matrices (SWOT, Ansoff, STEEPLE)',
-    shortBadge: 'Matrices Only',
-    description: 'The core qualitative decision frameworks: SWOT, Ansoff matrix, and STEEPLE macro-analysis.',
-    subunits: [
-      'bmt-swot-analysis',
-      'bmt-ansoff-matrix',
-      'bmt-steeple-analysis',
-    ],
-  },
-  {
     id: 'bmt-all',
     name: 'Full BM Toolkit (All 6 Tools)',
     shortBadge: 'All BMT Tools',
@@ -200,6 +246,17 @@ export const PRESET_CONTENT_GROUPS: ContentGroupPreset[] = [
       'bmt-toolkit',
       'bmt-business-plan',
       'bmt-descriptive-statistics',
+    ],
+  },
+  {
+    id: 'bmt-matrices',
+    name: 'Strategic Matrices (SWOT, Ansoff, STEEPLE)',
+    shortBadge: 'Matrices Only',
+    description: 'The core qualitative decision frameworks: SWOT, Ansoff matrix, and STEEPLE macro-analysis.',
+    subunits: [
+      'bmt-swot-analysis',
+      'bmt-ansoff-matrix',
+      'bmt-steeple-analysis',
     ],
   },
 ];
