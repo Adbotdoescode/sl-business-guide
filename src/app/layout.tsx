@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { StudyProgressProvider } from '@/context/StudyProgressContext';
 import { Navigation } from '@/components/layout/Navigation';
+import { Telemetry } from '@/components/analytics/Telemetry';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -40,6 +41,7 @@ export default function RootLayout({
               <span>Pure Light Mode &bull; Built with Next.js 15 & React 19</span>
             </div>
           </footer>
+          <Telemetry />
         </StudyProgressProvider>
       </body>
     </html>
