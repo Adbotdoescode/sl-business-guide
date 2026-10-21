@@ -86,6 +86,7 @@ export function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  data-track={`Nav: ${link.label}`}
                   className={cn(
                     'flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors',
                     isActive
@@ -150,6 +151,7 @@ export function Navigation() {
                 <Link
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
+                  data-track={`Nav: ${link.label}`}
                   className={cn(
                     'flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium transition',
                     isActive
@@ -172,6 +174,7 @@ export function Navigation() {
                           key={sub.href}
                           href={sub.href}
                           onClick={() => setMobileMenuOpen(false)}
+                          data-track={`Nav: ${sub.label}`}
                           className={cn(
                             'flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs font-medium transition',
                             isSubActive

@@ -12,6 +12,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const CLICK_LABEL_MAX = 60;
 const MIN_PAGE_TIME_MS = 1000;
+const SESSION_KEY = 'telemetry-session-started';
+const MAX_SESSION_WAIT_TRIES = 50;
 
 function viewportBucket(): 'mobile' | 'tablet' | 'desktop' {
   const width = window.innerWidth;
@@ -20,24 +22,47 @@ function viewportBucket(): 'mobile' | 'tablet' | 'desktop' {
   return 'desktop';
 }
 
+function parseUrl(value: string): URL | null {
+  try {
+    return new URL(value);
+  } catch {
+    return null;
+  }
+}
+
 function useSessionStart() {
   useEffect(() => {
-    try {
-      if (sessionStorage.getItem('telemetry-session-started')) return;
-      sessionStorage.setItem('telemetry-session-started', '1');
-    } catch {
-      // Storage can be blocked; still record the session once per mount.
-    }
+    let timer: number | undefined;
+    let tries = 0;
 
-    const referrer = document.referrer ? new URL(document.referrer).hostname : 'direct';
+    const sendOnce = () => {
+      // Analytics defines window.va when it mounts. Wait for it so the event is not dropped.
+      if (!window.va && tries++ < MAX_SESSION_WAIT_TRIES) {
+        timer = window.setTimeout(sendOnce, 100);
+        return;
+      }
+      if (!window.va) return;
 
-    track('Session Start', {
-      language: navigator.language,
-      viewport: viewportBucket(),
-      color_scheme: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light',
-      referrer_host: referrer,
-      entry_path: window.location.pathname,
-    });
+      try {
+        if (sessionStorage.getItem(SESSION_KEY)) return;
+        sessionStorage.setItem(SESSION_KEY, '1');
+      } catch {
+        // Storage can be blocked; record the session anyway.
+      }
+
+      const referrer = parseUrl(document.referrer)?.hostname ?? 'direct';
+
+      track('Session Start', {
+        language: navigator.language,
+        viewport: viewportBucket(),
+        color_scheme: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light',
+        referrer_host: referrer,
+        entry_path: window.location.pathname,
+      });
+    };
+
+    sendOnce();
+    return () => window.clearTimeout(timer);
   }, []);
 }
 
@@ -48,22 +73,26 @@ function useClickTracking() {
       const el = target?.closest<HTMLElement>('a, button, [role="button"], [data-track]');
       if (!el) return;
 
-      const text = (el.dataset.track || el.getAttribute('aria-label') || el.textContent || '')
+      // Only developer-set labels are sent. Element text is never read, so
+      // student-entered content such as answer choices cannot leak.
+      const label = (el.dataset.track || el.getAttribute('aria-label') || '')
         .replace(/\s+/g, ' ')
         .trim()
         .slice(0, CLICK_LABEL_MAX);
 
       const props: Record<string, string> = {
-        label: text || el.tagName.toLowerCase(),
         element: el.tagName.toLowerCase(),
         path: window.location.pathname,
       };
+      if (label) props.label = label;
 
-      if (el instanceof HTMLAnchorElement && el.href) {
-        const url = new URL(el.href);
-        const isInternal = url.origin === window.location.origin;
-        props.destination = isInternal ? `${url.pathname}${url.hash}` : url.hostname;
-        props.link_type = isInternal ? 'internal' : 'external';
+      if (el instanceof HTMLAnchorElement) {
+        const url = parseUrl(el.href);
+        if (url) {
+          const isInternal = url.origin === window.location.origin;
+          props.destination = isInternal ? `${url.pathname}${url.hash}` : url.hostname;
+          props.link_type = isInternal ? 'internal' : 'external';
+        }
       }
 
       track('Click', props);
@@ -80,12 +109,14 @@ function usePageTimeTracking() {
   useEffect(() => {
     let visibleMs = 0;
     let visibleSince: number | null = document.visibilityState === 'visible' ? performance.now() : null;
-    let maxScrollPercent = 0;
+    // null until the page has been scrollable, so non-scrolling pages are not reported as fully read.
+    let maxScrollPercent: number | null = null;
 
     const updateScroll = () => {
       const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      const percent = scrollable > 0 ? Math.round((window.scrollY / scrollable) * 100) : 100;
-      maxScrollPercent = Math.max(maxScrollPercent, Math.min(percent, 100));
+      if (scrollable <= 0) return;
+      const percent = Math.min(Math.round((window.scrollY / scrollable) * 100), 100);
+      maxScrollPercent = Math.max(maxScrollPercent ?? 0, percent);
     };
 
     const pause = () => {
@@ -105,7 +136,7 @@ function usePageTimeTracking() {
         });
       }
       visibleMs = 0;
-      maxScrollPercent = 0;
+      maxScrollPercent = null;
       updateScroll();
     };
 
