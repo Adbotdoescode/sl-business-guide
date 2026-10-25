@@ -20,7 +20,8 @@ import {
   Compass,
   Key,
   Layers,
-  Target
+  Target,
+  Calculator
 } from 'lucide-react';
 
 const NAV_LINKS = [
@@ -38,6 +39,7 @@ const PRACTICE_SUB_LINKS = [
   { href: '/toolkit', label: 'BM Toolkit Interactive', icon: Compass },
   { href: '/matrix-master', label: 'Matrix Master Sorter', icon: Grid },
   { href: '/entities', label: 'Entity Showdown Matrix', icon: Scale },
+  { href: '/practice/profit-loss', label: 'Profit & Loss Lab', icon: Calculator },
   { href: '/mnemonics', label: 'GET CASH Vault', icon: Key },
 ];
 

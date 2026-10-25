@@ -16,7 +16,8 @@ import {
   Sparkles,
   Zap,
   PenTool,
-  Grid
+  Grid,
+  Calculator
 } from 'lucide-react';
 
 interface StudyUnitPageProps {
@@ -72,6 +73,13 @@ export default async function StudyUnitReaderPage({ params }: StudyUnitPageProps
               Test with MCQ Blitz
             </Button>
           </Link>
+          {unit.id === '3.4-final-accounts' && (
+            <Link href="/practice/profit-loss">
+              <Button variant="outline" size="sm" icon={<Calculator className="w-3.5 h-3.5 text-blue-600" />}>
+                Profit &amp; Loss Lab
+              </Button>
+            </Link>
+          )}
           <Link href="/practice">
             <Button variant="primary" size="sm" icon={<PenTool className="w-3.5 h-3.5" />}>
               Practice Written Questions

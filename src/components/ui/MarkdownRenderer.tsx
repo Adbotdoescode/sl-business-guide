@@ -225,6 +225,30 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
         {children}
       </blockquote>
     ),
+    // Markdown wraps images in a paragraph, so the wrapper must be inline-safe (span, not div).
+    img: ({ src, alt, title }) => (
+      <span className="my-4 block space-y-2">
+        {/* Markdown images have no fixed size, so next/image cannot size them up front. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={src}
+          alt={alt ?? ''}
+          loading="lazy"
+          className="block w-full h-auto rounded-xl border border-border bg-white shadow-subtle"
+        />
+        {title && <span className="block text-xs text-text-muted italic">{title}</span>}
+      </span>
+    ),
+    details: ({ children }) => (
+      <details className="my-3 rounded-xl border border-blue-200 bg-blue-50/50 px-4 py-3 open:bg-white space-y-2">
+        {children}
+      </details>
+    ),
+    summary: ({ children }) => (
+      <summary className="cursor-pointer select-none text-sm font-semibold text-blue-700">
+        {children}
+      </summary>
+    ),
     code: ({ className: codeClassName, children, ...props }) => {
       const match = /language-(\w+)/.exec(codeClassName || '');
       const isCodeBlock = Boolean(match) || String(children).includes('\n');

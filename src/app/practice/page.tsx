@@ -22,7 +22,8 @@ import {
   Layers,
   FileCheck,
   Target,
-  Bookmark
+  Bookmark,
+  Calculator
 } from 'lucide-react';
 
 export default function PracticeHubPage() {
@@ -214,6 +215,34 @@ export default function PracticeHubPage() {
                 <Link href="/matrix-master" className="w-full block">
                   <Button variant="outline" size="sm" className="w-full text-xs border-emerald-300 hover:bg-emerald-50 text-emerald-900" icon={<ArrowRight className="w-3.5 h-3.5" />}>
                     Launch Sorter
+                  </Button>
+                </Link>
+              </div>
+            </Card>
+
+            {/* 2b. Profit & Loss Lab */}
+            <Card hoverEffect className="p-5 flex flex-col justify-between border-blue-200 bg-gradient-to-b from-blue-50/30 to-white">
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-blue-600 text-white flex items-center justify-center shadow-subtle">
+                    <Calculator className="w-5 h-5" />
+                  </div>
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-800 border border-blue-300">
+                    Unit 3.4
+                  </span>
+                </div>
+                <h3 className="text-sm font-bold text-text-primary mb-1">
+                  Profit &amp; Loss Lab
+                </h3>
+                <p className="text-xs text-text-secondary leading-relaxed mb-4">
+                  Build profit and loss accounts line by line from eight businesses, then spot the one line that breaks its formula.
+                </p>
+              </div>
+
+              <div className="pt-3 border-t border-border/80">
+                <Link href="/practice/profit-loss" className="w-full block">
+                  <Button variant="outline" size="sm" className="w-full text-xs border-blue-300 hover:bg-blue-50 text-blue-900" icon={<ArrowRight className="w-3.5 h-3.5" />}>
+                    Open Profit &amp; Loss Lab
                   </Button>
                 </Link>
               </div>
