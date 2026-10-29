@@ -1,4 +1,8 @@
 import { MCQQuestion, TwoMarkQuestion } from '@/types/curriculum';
+import { MCQ_3_1, TWO_MARK_3_1 } from './finance/questions-3-1';
+import { MCQ_3_2, TWO_MARK_3_2 } from './finance/questions-3-2';
+import { MCQ_3_3, TWO_MARK_3_3 } from './finance/questions-3-3';
+import { MCQ_3_4, TWO_MARK_3_4 } from './finance/questions-3-4';
 
 // ============================================================================
 // 1. Multiple Choice Questions (MCQs) - 124 Questions Total
@@ -2421,7 +2425,8 @@ export const MCQ_QUESTIONS: MCQQuestion[] = [
       correctRationale: 'External costs are costs incurred by society rather than by the buyer or seller. The textbook lists air and noise pollution as examples.',
       distractorAnalysis: 'Interest on a bank loan (A), wages (C) and advertising (D) are costs the firm pays itself, so they are internal costs, not external costs.'
     }
-  }
+  },
+  ...MCQ_3_1, ...MCQ_3_2, ...MCQ_3_3, ...MCQ_3_4
 ];
 
 // ============================================================================
@@ -3982,5 +3987,6 @@ export const TWO_MARK_QUESTIONS: TwoMarkQuestion[] = [
       { mark: 1, criterion: 'Identifies raspberry as the modal flavour.' },
       { mark: 1, criterion: 'States its frequency as 28 votes.' }
     ]
-  }
+  },
+  ...TWO_MARK_3_1, ...TWO_MARK_3_2, ...TWO_MARK_3_3, ...TWO_MARK_3_4
 ];

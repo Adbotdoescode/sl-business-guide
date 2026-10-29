@@ -7,7 +7,7 @@ export interface ContentTopicMeta {
   code: string;
   title: string;
   shortTitle: string;
-  category: 'unit1' | 'bmt';
+  category: 'unit1' | 'unit3' | 'bmt';
   categoryLabel: string;
   description: string;
 }
@@ -67,6 +67,43 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     category: 'unit1',
     categoryLabel: 'Unit 1: Introduction to Business Management',
     description: 'Host country benefits and drawbacks, globalization drivers, transfer pricing, and cultural and ethical operational challenges.',
+  },
+  // Unit 3 Curriculum
+  {
+    id: '3.1-introduction-to-finance',
+    code: 'Unit 3.1',
+    title: 'Introduction to Finance',
+    shortTitle: '3.1 Intro to Finance',
+    category: 'unit3',
+    categoryLabel: 'Unit 3: Finance and Accounts',
+    description: 'Capital vs revenue expenditure, fixed assets, collateral, and the role of finance.',
+  },
+  {
+    id: '3.2-sources-of-finance',
+    code: 'Unit 3.2',
+    title: 'Sources of Finance',
+    shortTitle: '3.2 Sources of Finance',
+    category: 'unit3',
+    categoryLabel: 'Unit 3: Finance and Accounts',
+    description: 'Internal vs external sources, share and loan capital, overdrafts, trade credit, crowdfunding, leasing, microfinance, business angels, and SPACED factors.',
+  },
+  {
+    id: '3.3-costs-and-revenues',
+    code: 'Unit 3.3',
+    title: 'Costs and Revenues',
+    shortTitle: '3.3 Costs & Revenues',
+    category: 'unit3',
+    categoryLabel: 'Unit 3: Finance and Accounts',
+    description: 'Fixed, variable, total and average costs, direct vs indirect costs, total and average revenue, and revenue streams.',
+  },
+  {
+    id: '3.4-final-accounts',
+    code: 'Unit 3.4',
+    title: 'Final Accounts',
+    shortTitle: '3.4 Final Accounts',
+    category: 'unit3',
+    categoryLabel: 'Unit 3: Finance and Accounts',
+    description: 'Income statement, statement of financial position, intangible assets, stakeholder uses, ethics of accounting, and HL depreciation.',
   },
   // Business Management Toolkit (BMT)
   {
@@ -136,8 +173,8 @@ export interface ContentGroupPreset {
 export const PRESET_CONTENT_GROUPS: ContentGroupPreset[] = [
   {
     id: 'all',
-    name: 'Full Syllabus (All 12 Modules)',
-    shortBadge: 'All 12 Topics',
+    name: 'Full Syllabus (All 16 Modules)',
+    shortBadge: 'All 16 Topics',
     description: 'Comprehensive test across all Unit 1 chapters and the complete Business Management Toolkit.',
     subunits: ALL_CONTENT_TOPICS.map((t) => t.id),
   },
@@ -175,6 +212,18 @@ export const PRESET_CONTENT_GROUPS: ContentGroupPreset[] = [
       '1.4-stakeholders',
       '1.5-growth-and-evolution',
       '1.6-multinational-companies',
+    ],
+  },
+  {
+    id: 'unit3-all',
+    name: 'Complete Unit 3 Finance (3.1–3.4)',
+    shortBadge: 'All Unit 3',
+    description: 'Introduction to finance, sources of finance, costs and revenues, and final accounts.',
+    subunits: [
+      '3.1-introduction-to-finance',
+      '3.2-sources-of-finance',
+      '3.3-costs-and-revenues',
+      '3.4-final-accounts',
     ],
   },
   {

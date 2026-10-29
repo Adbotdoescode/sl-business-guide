@@ -158,6 +158,10 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
   if (!content) return null;
 
   const defaultComponents: Components = {
+    img: ({ src, alt }) => (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src={typeof src === 'string' ? src : undefined} alt={alt ?? ''} loading="lazy" className="my-4 mx-auto max-w-full h-auto rounded-lg border border-border" />
+    ),
     // Inline mode maps p to span to avoid invalid HTML nesting in buttons/headings
     p: ({ children }) => {
       if (inline) {

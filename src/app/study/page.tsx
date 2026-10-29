@@ -34,7 +34,7 @@ export default function StudyGuidesIndexPage() {
               Syllabus Study Guides & Reference Notes
             </h1>
             <p className="text-xs sm:text-sm text-text-secondary mt-0.5">
-              Comprehensive academic guides covering Units 1.1–1.6, SWOT Analysis, the Ansoff Growth Matrix, and the BMT Business Plan and Descriptive Statistics.
+              Comprehensive academic guides covering Units 1.1–1.6, Unit 3 Finance (3.1–3.4), SWOT Analysis, the Ansoff Growth Matrix, and the BMT Business Plan and Descriptive Statistics.
             </p>
           </div>
         </div>

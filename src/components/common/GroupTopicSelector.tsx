@@ -74,6 +74,7 @@ export function GroupTopicSelector({
   const relevantCount = filterQuestionType === 'mcq' ? counts.mcq : filterQuestionType === 'twoMark' ? counts.twoMark : counts.total;
 
   const unit1Topics = ALL_CONTENT_TOPICS.filter((t) => t.category === 'unit1');
+  const unit3Topics = ALL_CONTENT_TOPICS.filter((t) => t.category === 'unit3');
   const bmtTopics = ALL_CONTENT_TOPICS.filter((t) => t.category === 'bmt');
 
   return (
@@ -165,6 +166,50 @@ export function GroupTopicSelector({
               </span>
               <div className="space-y-1.5">
                 {unit1Topics.map((topic) => {
+                  const isChecked = selectedSubunits.includes(topic.id);
+                  const topicCounts = getQuestionCountsForSubunits([topic.id]);
+                  const qCount = filterQuestionType === 'mcq' ? topicCounts.mcq : filterQuestionType === 'twoMark' ? topicCounts.twoMark : topicCounts.total;
+
+                  return (
+                    <button
+                      key={topic.id}
+                      type="button"
+                      onClick={() => handleToggleSubunit(topic.id)}
+                      className={`w-full text-left p-2.5 rounded-lg border text-xs transition flex items-center justify-between gap-2.5 cursor-pointer select-none ${
+                        isChecked
+                          ? 'border-blue-500 bg-blue-50/40 text-blue-950 font-medium'
+                          : 'border-border/80 bg-white text-text-secondary hover:border-stone-300 hover:bg-stone-50/50'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        {isChecked ? (
+                          <CheckSquare className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                        ) : (
+                          <Square className="w-4 h-4 text-stone-400 flex-shrink-0" />
+                        )}
+                        <div className="truncate">
+                          <span className="font-mono text-[11px] font-bold text-text-muted mr-1.5">
+                            {topic.code}:
+                          </span>
+                          <span className="truncate">{topic.title}</span>
+                        </div>
+                      </div>
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-surface-subtle text-text-muted flex-shrink-0">
+                        {qCount} Qs
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Unit 3 Topics */}
+            <div className="space-y-2">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-text-muted block px-1">
+                Unit 3 Finance (Units 3.1–3.4)
+              </span>
+              <div className="space-y-1.5">
+                {unit3Topics.map((topic) => {
                   const isChecked = selectedSubunits.includes(topic.id);
                   const topicCounts = getQuestionCountsForSubunits([topic.id]);
                   const qCount = filterQuestionType === 'mcq' ? topicCounts.mcq : filterQuestionType === 'twoMark' ? topicCounts.twoMark : topicCounts.total;

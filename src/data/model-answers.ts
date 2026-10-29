@@ -2,6 +2,10 @@ import {
   FourMarkQuestion,
   SixMarkQuestion
 } from '@/types/curriculum';
+import { FOUR_MARK_3_1, SIX_MARK_3_1 } from './finance/questions-3-1';
+import { FOUR_MARK_3_2, SIX_MARK_3_2 } from './finance/questions-3-2';
+import { FOUR_MARK_3_3, SIX_MARK_3_3 } from './finance/questions-3-3';
+import { FOUR_MARK_3_4, SIX_MARK_3_4 } from './finance/questions-3-4';
 
 // ============================================================================
 // 1. FOUR-MARK QUESTIONS (AO2 PEEL)
@@ -1460,7 +1464,8 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
       { id: 'rub-A7-02-c', criterion: 'Explains how the range or quartiles show the spread of sales across seasons.', mark: 1 },
       { id: 'rub-A7-02-d', criterion: 'Recognises the limitation that an average may hide seasonal fluctuations.', mark: 1 }
     ]
-  }
+  },
+  ...FOUR_MARK_3_1, ...FOUR_MARK_3_2, ...FOUR_MARK_3_3, ...FOUR_MARK_3_4
 ];
 
 // ============================================================================
@@ -2735,5 +2740,6 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
       { id: 'rub-A7-6m-03', criterion: 'Explains the usefulness for planning and managing the start-up, with application.', marks: 2 },
       { id: 'rub-A7-6m-04', criterion: 'Evaluates by weighing the usefulness against limitations (forecast accuracy, implementation, risk).', marks: 1 }
     ]
-  }
+  },
+  ...SIX_MARK_3_1, ...SIX_MARK_3_2, ...SIX_MARK_3_3, ...SIX_MARK_3_4
 ];
