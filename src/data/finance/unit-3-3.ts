@@ -20,7 +20,7 @@ export const UNIT_3_3: StudyUnit = {
       id: 'sec-3.3-cost-vs-price',
       title: '1. Cost vs Price, Set-up Costs and Running Costs',
       content: `### Cost is not Price
-In everyday language a person might say a shirt "cost \\$25". In business language the correct terminology is **"the price is \\$25"** (p.237).
+In everyday language a person might say a shirt "cost $25". In business language the correct terminology is **"the price is $25"** (p.237).
 
 | Term | Meaning | Who pays it? |
 | :--- | :--- | :--- |
@@ -36,6 +36,9 @@ Businesses need to pay for both:
 * **Running costs** - the **ongoing** costs of operating the business, such as wages and salaries, insurance premiums and the costs of purchasing stocks (inventories).
 
 #### Table 16.1 - Examples of costs for a clothes retailer (p.238)
+
+![Table 16.1 - Set-up vs running costs for a clothes retailer](/finance/unit-3-3-setup-vs-running-costs.png)
+*Source: Hoang (2022), Table 16.1, p.238. Reproduced as text below.*
 
 | Set-up costs | Running costs |
 | :--- | :--- |
@@ -65,7 +68,11 @@ Businesses need to pay for both:
 **Fixed costs** are the costs of production that a business has to pay **regardless of how much it produces or sells**. They are independent of the level of output or sales and **have to be paid even if there is no output**.
 
 * **Textbook examples:** rent on leased premises, interest payments on bank loans, advertising expenditure, market research, management salaries, office stationery, security and professional accountancy fees.
-* **Diagram (Figure 16.1):** total fixed costs (TFC) are drawn as a **horizontal line** - the textbook example shows TFC of \\$5,000 at every level of output.
+* **Diagram (Figure 16.1):** total fixed costs (TFC) are drawn as a **horizontal line** - the textbook example shows TFC of $5,000 at every level of output.
+
+![Figure 16.1 - Fixed costs: TFC flat at $5,000 regardless of output](/finance/unit-3-3-fixed-costs-graph.png)
+*Source: Hoang (2022), Figure 16.1, p.238.*
+
 * **Fixed costs can change**, but this happens *independently* of output. E.g. a landowner raises rents due to higher property prices, or directors are paid higher salaries due to rising costs of living.
 
 ### (ii) Variable Costs
@@ -75,6 +82,9 @@ Businesses need to pay for both:
 * In theory, if there is **no production, variable costs are zero**.
 * **Diagram (Figure 16.2):** total variable costs (TVC) are an **upward-sloping line starting from the origin**.
 
+![Figure 16.2 - Variable costs rise in proportion to output, starting at 0](/finance/unit-3-3-variable-costs-graph.png)
+*Source: Hoang (2022), Figure 16.2, p.239.*
+
 ---
 
 ### Total Costs and Average Costs
@@ -83,6 +93,10 @@ $$AC = TC / Q$$
 
 * **Total costs (TC)** are the sum of all variable costs and all fixed costs of production.
 * **Diagram (Figure 16.3):** the TC line **starts at the value of fixed costs** (not at zero), because fixed costs must be paid even with no output. The **vertical gap between the TC and TVC lines is equal to TFC** at every level of output.
+
+![Figure 16.3 - Total costs: TC = TFC + TVC](/finance/unit-3-3-total-costs-graph.png)
+*Source: Hoang (2022), Figure 16.3, p.239.*
+
 * **Average cost (AC)** is the cost per unit of output, where Q is quantity (output level).
 
 | Feature | Fixed costs | Variable costs |
@@ -148,12 +162,14 @@ A **direct cost** is specifically related to an **individual project or the outp
       id: 'sec-3.3-worked-costs',
       title: '4. Worked Example: Completing a Cost Table (Kompothekra Glass Technologies)',
       content: `### Question 16.2 (p.241)
-Anna Kompothekra owns a factory producing fine glass ornaments in Agia Paraskevi, Greece. Given TFC = \\$20,000, complete the table.
+Anna Kompothekra owns a factory producing fine glass ornaments in Agia Paraskevi, Greece. Given TFC = $20,000, complete the table.
 
-**Method:** TFC is the same at every output. TC = TFC + TVC, so TVC = TC - TFC. AC = TC / Q, so TC = AC x Q. (The completed figures below are calculated from the textbook data.)
+**Method:** TFC is the same at every output. TC = TFC + TVC, so TVC = TC - TFC. AC = TC / Q, so TC = AC × Q. (The completed figures below are calculated from the textbook data.)
 
-| Output (units) | TFC (\\$) | TVC (\\$) | TC (\\$) | AC (\\$) |
-| :--- | :--- | :--- | :--- | :--- |
+*All cost figures in $.*
+
+| Output (units) | TFC | TVC | TC | AC |
+| ---: | ---: | ---: | ---: | ---: |
 | 0 | 20,000 | **0** | **20,000** | - |
 | 100 | **20,000** | 5,000 | **25,000** | **250.0** |
 | 200 | **20,000** | 10,000 | **30,000** | **150.0** |
@@ -163,23 +179,23 @@ Anna Kompothekra owns a factory producing fine glass ornaments in Agia Paraskevi
 | 600 | **20,000** | **38,200** | **58,200** | 97.0 |
 
 **Workings (examples):**
-* Output 100: TC = \\$20,000 + \\$5,000 = \\$25,000; AC = \\$25,000 / 100 = \\$250
-* Output 300: TVC = \\$34,500 - \\$20,000 = \\$14,500; AC = \\$34,500 / 300 = \\$115
-* Output 500: TC = \\$90 x 500 = \\$45,000; TVC = \\$45,000 - \\$20,000 = \\$25,000
-* Output 600: TC = \\$97 x 600 = \\$58,200; TVC = \\$58,200 - \\$20,000 = \\$38,200
+* Output 100: TC = $20,000 + $5,000 = $25,000; AC = $25,000 / 100 = $250
+* Output 300: TVC = $34,500 - $20,000 = $14,500; AC = $34,500 / 300 = $115
+* Output 500: TC = $90 × 500 = $45,000; TVC = $45,000 - $20,000 = $25,000
+* Output 600: TC = $97 × 600 = $58,200; TVC = $58,200 - $20,000 = $38,200
 
 ### Shapes of the curves (part c)
-* **TFC** - horizontal at \\$20,000, because fixed costs do not change with output.
+* **TFC** - horizontal at $20,000, because fixed costs do not change with output.
 * **TVC** - starts at zero and rises as output rises, because variable costs change with output.
-* **TC** - starts at \\$20,000 (the TFC) and rises in parallel with TVC; the gap between TC and TVC is always \\$20,000.
-* **AC** falls from \\$250 to a low of \\$90 at 500 units as fixed costs are spread over more units, then rises to \\$97 at 600 units.`,
+* **TC** - starts at $20,000 (the TFC) and rises in parallel with TVC; the gap between TC and TVC is always $20,000.
+* **AC** falls from $250 to a low of $90 at 500 units as fixed costs are spread over more units, then rises to $97 at 600 units.`,
       keyTakeaways: [
-        'Rearrange the formulas: TVC = TC - TFC and TC = AC x Q.',
+        'Rearrange the formulas: TVC = TC - TFC and TC = AC × Q.',
         'TFC is identical at every level of output, including zero.',
         'At zero output, TVC = 0 and TC = TFC; AC cannot be calculated.'
       ],
       examTips: [
-        'Show your workings in calculation questions and include the units (\\$) in your answer.'
+        'Show your workings in calculation questions and include the units ($) in your answer.'
       ]
     },
     {
@@ -202,30 +218,30 @@ Since P = TR / Q, then **AR = P**.
 ---
 
 ### Case Study 16.1 - Church's (p.242)
-Church's is an English producer of high-end luxury footwear, founded in 1873 by Thomas Church and his three sons, with main operations in Northampton, UK. It can produce up to 5,000 pairs of shoes per week, with around 70% exported, and has retail outlets in New York, Milan, Paris, Rome, Madrid, Hong Kong, Singapore and Shanghai. Since 1999 the privately held company has been owned by Prada, in a deal worth \\$170 million.
+Church's is an English producer of high-end luxury footwear, founded in 1873 by Thomas Church and his three sons, with main operations in Northampton, UK. It can produce up to 5,000 pairs of shoes per week, with around 70% exported, and has retail outlets in New York, Milan, Paris, Rome, Madrid, Hong Kong, Singapore and Shanghai. Since 1999 the privately held company has been owned by Prada, in a deal worth $170 million.
 
-* **Worked example:** if Church's charges \\$300 on average per pair and sells 3,000 pairs in a week, TR = \\$300 x 3,000 = **\\$900,000** for that week.
+* **Worked example:** if Church's charges $300 on average per pair and sells 3,000 pairs in a week, TR = $300 × 3,000 = **$900,000** for that week.
 
 ### Question 16.3 - Big Bao (p.242)
-Big Bao sells lunchtime meals in Bristol, UK. In 2021 it sold 31,790 units, a 10% increase in sales volume on 2020, when the average price was \\$6.50.
+Big Bao sells lunchtime meals in Bristol, UK. In 2021 it sold 31,790 units, a 10% increase in sales volume on 2020, when the average price was $6.50.
 * **Sales volume** = the quantity (number of units) sold.
 * 2020 volume = 31,790 / 1.10 = **28,900 units**
-* 2020 sales revenue = 28,900 x \\$6.50 = **\\$187,850**
+* 2020 sales revenue = 28,900 × $6.50 = **$187,850**
 
 ### Question 16.4 - Goff's Organic Fresh Fruits (p.243)
-Ian Goff runs a fresh fruit and vegetables business in a small town in California, USA. Each morning he drives his delivery van to an out-of-town **wholesale market** (illustrative definition - not defined in Chapter 16: a market where traders buy goods in bulk from wholesalers to resell) to buy produce. He pays \\$1,200 monthly rent, a loan on his one-year-old vehicle, and other running costs such as power and lighting. In peak seasons he employs two people.
-* **Indirect costs** (other than the loan; suggested answers drawn from the case): rent (\\$1,200 a month), power and lighting, wages of the two seasonal helpers, vehicle running costs.
-* **Tomatoes:** buys 50 kg at \\$0.80/kg and sells at \\$1.20/kg. Cost = \\$40; Revenue = \\$60; **Profit = \\$20**.
-* **Apples:** bought 100 kg; sold 80 kg at \\$2 = \\$160 and the remaining 20 kg at \\$1.50 = \\$30. **TR = \\$190**.`,
+Ian Goff runs a fresh fruit and vegetables business in a small town in California, USA. Each morning he drives his delivery van to an out-of-town **wholesale market** to buy produce *(A wholesale market is not defined in Chapter 16; it is a market where traders buy goods in bulk to resell.)*. He pays $1,200 monthly rent, a loan on his one-year-old vehicle, and other running costs such as power and lighting. In peak seasons he employs two people.
+* **Indirect costs** (other than the loan; suggested answers drawn from the case): rent ($1,200 a month), power and lighting, wages of the two seasonal helpers, vehicle running costs.
+* **Tomatoes:** buys 50 kg at $0.80/kg and sells at $1.20/kg. Cost = $40; Revenue = $60; **Profit = $20**.
+* **Apples:** bought 100 kg; sold 80 kg at $2 = $160 and the remaining 20 kg at $1.50 = $30. **TR = $190**.`,
       keyTakeaways: [
-        'TR = P x Q; AR = TR / Q = P.',
+        'TR = P × Q; AR = TR / Q = P.',
         'Profit is the positive difference between total revenue and total costs.',
         'The revenue formulae are not provided in the exam.',
         'When the price changes for part of the stock, calculate revenue for each batch and add them.'
       ],
       examTips: [
         'Read percentage-change questions carefully: if this year is a 10% increase on last year, divide by 1.10 (do not subtract 10% of this year).',
-        "Revenue is not profit - Goff's tomatoes earn \\$60 revenue but only \\$20 profit."
+        "Revenue is not profit - Goff's tomatoes earn $60 revenue but only $20 profit."
       ]
     },
     {
@@ -243,13 +259,13 @@ A **revenue stream** refers to the money coming into a business from its **vario
 | Revenue stream | Meaning | Textbook examples |
 | :--- | :--- | :--- |
 | **Advertising revenue** | Selling advertising space to other firms. | Over 80% of Twitter's revenue comes from text and display ads. Google and Facebook offer **cost per click** (advertisers pay only when customers click the advert) and **cost per thousand impressions** (pay based on the number of times adverts are displayed). |
-| **Transaction fees** | Charges added to a transaction or service option. | Ryanair charges customers paying by American Express €7 (\\$9.5) plus 2% commission. AirAsia and easyJet charge for checked baggage, pre-assigned seats, excess baggage and onboard retailing. Low-cost airlines earn around 20% of revenue from such streams (Wall Street Journal). |
+| **Transaction fees** | Charges added to a transaction or service option. | Ryanair charges customers paying by American Express €7 ($9.5) plus 2% commission. AirAsia and easyJet charge for checked baggage, pre-assigned seats, excess baggage and onboard retailing. Low-cost airlines earn around 20% of revenue from such streams (Wall Street Journal). |
 | **Franchise costs and royalties** | Franchisees pay a fee for the right to use the franchisor's brand name, logos and trademarks, plus a royalty based on sales revenue. Holders of patents and copyrights receive royalties for use of their inventions and creations. | McDonald's, Burger King and KFC; the IB earns royalties on textbooks by publishers it endorses. |
-| **Sponsorship revenue** | A form of below-the-line promotion: the sponsor financially supports an organization in return for prominent display of its brand and exclusive advertising rights. | Arsenal FC's €132m (\\$178.4m) 15-year deal with Emirates (2006), extended by \\$242m in 2012 and \\$200m in 2018 - 'Fly Emirates'/'Fly Better' shirts until 2024 and the Emirates Stadium name until 2028. |
+| **Sponsorship revenue** | A form of below-the-line promotion: the sponsor financially supports an organization in return for prominent display of its brand and exclusive advertising rights. | Arsenal FC's €132m ($178.4m) 15-year deal with Emirates (2006), extended by $242m in 2012 and $200m in 2018 - 'Fly Emirates'/'Fly Better' shirts until 2024 and the Emirates Stadium name until 2028. |
 | **Subscription fees** | Charges for using or accessing a good or service, based on a formal agreement. | Fitness clubs' yearly membership; credit card annual fees; telephone companies' monthly service fees; Netflix and Spotify; Manchester United's subscription TV channel (since 1998). |
 | **Dividends** | Payments from owning shares in other companies; a share of the net profits distributed to shareholders at the end of the tax year. | Volkswagen holds shares in Porsche, Suzuki and Scania. |
 | **Merchandise** | Selling goods in addition to admission charges. | Cinemas, concerts, theatres and theme parks selling popcorn, beverages, souvenirs and memorabilia; Facebook's gift card service used at Burger King, Outback Steakhouse, Staples and Target. |
-| **Interest earnings** | Interest on positive cash balances deposited at a commercial bank - important for cash-rich firms. | 2021 cash balances (Macrotrends): Pfizer \\$12.2bn, Apple \\$63bn, Microsoft \\$130bn, Google \\$137bn. \\$1bn at just 1% a year yields \\$27,397 per day. |
+| **Interest earnings** | Interest on positive cash balances deposited at a commercial bank - important for cash-rich firms. | 2021 cash balances (Macrotrends): Pfizer $12.2bn, Apple $63bn, Microsoft $130bn, Google $137bn. $1bn at just 1% a year yields $27,397 per day. |
 | **Donations** | Financial gifts from individuals or organizations; usually no direct benefit to the donor (except the feel-good factor), though some have conditions such as acknowledgement of donors' names. | Charities and non-profits such as schools, hospitals and universities. Not a common revenue source for most private sector businesses. |
 | **Subventions** | Subsidies from the government to certain businesses to help reduce their costs of production. | Usually given to organizations that benefit society, such as private schools and hospitals; often used to help fund research and development. |
 
@@ -274,10 +290,10 @@ A **revenue stream** refers to the money coming into a business from its **vario
 | Juventus | Jeep | 159 |
 
 ### Question 16.5 - Manchester United Football Club (p.244)
-* In 2013 MUFC became the world's first sports club valued at over \\$3 billion.
+* In 2013 MUFC became the world's first sports club valued at over $3 billion.
 * Match-day revenues are **less than 30%** of its total revenue (Forbes); other streams include broadcasting rights, sponsorship deals and global merchandise sales.
-* 2015: 10-year shirt deal with Adidas worth around \\$108m a year. 2021: five-year shirt deal worth around \\$340m with German tech firm TeamViewer. Other sponsors: Commercial Bank of Qatar, Emirates NBD Bank and Pepsi.
-* 2006: MUFC **rejected** a four-year deal worth over \\$100m from Mansion, an online gambling company, and instead signed a four-year deal with American International Group (AIG) worth \\$90.5m.`,
+* 2015: 10-year shirt deal with Adidas worth around $108m a year. 2021: five-year shirt deal worth around $340m with German tech firm TeamViewer. Other sponsors: Commercial Bank of Qatar, Emirates NBD Bank and Pepsi.
+* 2006: MUFC **rejected** a four-year deal worth over $100m from Mansion, an online gambling company, and instead signed a four-year deal with American International Group (AIG) worth $90.5m.`,
       keyTakeaways: [
         'Revenue streams are all the sources of money coming into a business, not only sales of goods and services.',
         'Key non-sales streams: advertising, transaction fees, franchise fees and royalties, sponsorship, subscriptions, dividends, merchandise, interest, donations and subventions.',
@@ -338,7 +354,7 @@ Managers also use **cost and profit centres**, **budgets** and **variance analys
     { term: 'Total costs (TC)', definition: 'The sum of all variable costs and all fixed costs of production: TC = TFC + TVC.' },
     { term: 'Average cost (AC)', definition: 'The cost per unit of output, calculated as AC = TC / Q, where TC is total cost and Q is quantity (output level).' },
     { term: 'Revenue', definition: 'The money that a business earns from the sale of goods and services, calculated by multiplying the unit price of each product by the quantity sold.' },
-    { term: 'Total revenue (TR)', definition: 'The money coming into a business, usually from the sale of goods and/or services, calculated as price x quantity sold (TR = P x Q).' },
+    { term: 'Total revenue (TR)', definition: 'The money coming into a business, usually from the sale of goods and/or services, calculated as price × quantity sold (TR = P × Q).' },
     { term: 'Average revenue (AR)', definition: 'The value of sales received from customers per unit of a good or service sold: AR = TR / Q = P.' },
     { term: 'Profit', definition: "Exists if there is a positive difference between a firm's total revenues and its total costs." },
     { term: 'Revenue stream', definition: 'The money coming into a business from its various business activities, such as sponsorship deals, merchandise and receipt of royalty payments.' },

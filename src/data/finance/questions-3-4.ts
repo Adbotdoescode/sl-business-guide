@@ -84,13 +84,13 @@ export const MCQ_3_4: MCQQuestion[] = [
       },
       {
         "key": "D",
-        "text": "$23,800"
+        "text": "$16,200"
       }
     ],
     "correctAnswer": "C",
     "explanation": {
       "correctRationale": "COGS = Opening stock + Purchases − Closing stock = $5,000 + $25,000 − $3,800 = $26,200.",
-      "distractorAnalysis": "$33,800 adds closing stock; $30,000 ignores closing stock; $23,800 subtracts the opening stock instead of adding it."
+      "distractorAnalysis": "$33,800 adds closing stock; $30,000 ignores closing stock; $16,200 subtracts the opening stock instead of adding it ($25,000 − $5,000 − $3,800)."
     }
   },
   {
@@ -120,7 +120,7 @@ export const MCQ_3_4: MCQQuestion[] = [
     "correctAnswer": "B",
     "explanation": {
       "correctRationale": "Sales revenue = 3,000 × $35 = $105,000. COGS = $15,000 + $50,000 − $20,000 = $45,000. Gross profit = $105,000 − $45,000 = $60,000.",
-      "distractorAnalysis": "$105,000 is sales revenue; $40,000 wrongly deducts $65,000 (opening stock + purchases) as COGS; $65,000 is not a valid result of the formulas."
+      "distractorAnalysis": "$105,000 is sales revenue; $40,000 wrongly deducts $65,000 (opening stock + purchases) as COGS; $65,000 is opening stock plus purchases, i.e. the stock available for sale before closing stock is deducted."
     }
   },
   {
@@ -240,7 +240,7 @@ export const MCQ_3_4: MCQQuestion[] = [
     "correctAnswer": "A",
     "explanation": {
       "correctRationale": "Profit before tax = $65,000 − $10,000 = $55,000. Tax = 10% × $55,000 = $5,500. Profit after interest and tax = $49,500.",
-      "distractorAnalysis": "$58,500 applies tax before deducting interest and ignores interest; $55,000 ignores tax; $48,500 is an arithmetic error."
+      "distractorAnalysis": "$58,500 ignores interest and applies 10% tax to $65,000; $55,000 ignores tax; $48,500 deducts interest after taxing $65,000 ($58,500 − $10,000)."
     }
   },
   {

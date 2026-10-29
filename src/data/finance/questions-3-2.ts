@@ -333,7 +333,7 @@ export const TWO_MARK_3_2: TwoMarkQuestion[] = [
   },
   {
     id: 'q2m-3.2-10', subunit: S, questionNumber: '3.2.10', question: 'Outline why Kellett School might have decided to sell debentures.', marks: 2, commandTerm: 'Outline', assessmentObjective: 'AO1',
-    modelAnswer: 'Kellett School needed a large amount of long-term finance for capital expenditure: its move to a new HK$200m campus. Debentures (up to HK$10m each) raise this finance without the school losing any control, because debenture holders have no ownership or voting rights.',
+    modelAnswer: 'Kellett School needed a large amount of long-term finance for capital expenditure: its move to a new HK$200m campus. Debentures (up to the value of HK$10m) raise this finance without the school losing any control, because debenture holders have no ownership or voting rights.',
     markBreakdown: [
       { mark: 1, criterion: 'Need for long-term finance for the new HK$200m campus (capital expenditure)' },
       { mark: 1, criterion: 'Benefit of debentures, e.g. no loss of control / common in Hong Kong international schools' }
@@ -397,7 +397,7 @@ export const FOUR_MARK_3_2: FourMarkQuestion[] = [
       point1: {
         title: 'Higher gearing and debt commitments',
         point: 'Debentures are long-term loans, so issuing them increases the school\'s gearing ratio.',
-        evidence: 'Kellett issued record-breaking debentures of up to HK$10m (US$1.29m) each, refundable when students leave.',
+        evidence: 'Kellett issued record-breaking debentures of up to HK$10m (US$1.29m), refundable when students leave.',
         explanation: 'More borrowing as a percentage of capital employed makes the school more vulnerable, especially if interest rates rise, and it must repay the debenture when each student leaves.',
         link: 'This creates a large future liability that the school must plan its cash for.'
       },

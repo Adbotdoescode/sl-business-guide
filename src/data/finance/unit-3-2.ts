@@ -219,7 +219,7 @@ The syllabus also asks you to judge the **appropriateness of short- or long-term
 
 ### Sale-and-leaseback
 A business **sells a fixed asset** (to raise finance) and **immediately leases it back**. Ownership is transferred, but the asset **does not physically leave** the business.
-* *Case, Wizz Air (Question 15.3):* in late 2013 the Hungarian low-cost airline signed a sale-and-leaseback deal with China's **COB Leasing Co.** for **six Airbus A320 aircraft**, raising **$549 million** to fund new routes to Barcelona, Bologna, Dortmund and Rome from 2014. In 2020 (COVID-19) it carried 16.6 million passengers, only 42% of the previous year's 40 million.
+* *Case, Wizz Air (Question 15.3):* in late 2013 the Hungarian low-cost airline signed a sale-and-leaseback deal with China's **COB Leasing Co.** for **six Airbus A320 aircraft**, raising **$549 million** to fund new routes to Barcelona, Bologna, Dortmund and Rome from 2014. In 2020 (COVID-19) it carried 16.6 million passengers, only 42% of the previous year's 40 million. Established in 2003, Wizz Air flies to 150 destinations in 44 countries.
 
 ### Hire purchase (HP)
 * The buyer pays the creditor in **instalments** (e.g. over 12 or 24 months); a **deposit** (down payment) is often needed.
@@ -307,6 +307,9 @@ A business **sells a fixed asset** (to raise finance) and **immediately leases i
 | Share capital | | | ✓ | ✓ | |
 | Trade credit | ✓ | ✓ | ✓ | ✓ | ✓ |
 
+![Table 15.2 - Summary of business ownership and sources of finance](/finance/unit-3-2-sources-by-ownership-type.png)
+*Source: Hoang (2022), Table 15.2, p.233.*
+
 **Patterns to remember:**
 * **Share capital** and (in this table) **sale of assets** apply only to **limited companies**.
 * **Personal funds** apply to **sole traders and partnerships**.
@@ -351,6 +354,9 @@ A business **sells a fixed asset** (to raise finance) and **immediately leases i
 | Overdrafts | ✓ | |
 | Share capital | | ✓ |
 | Trade credit | ✓ | ✓ |
+
+![Table 15.3 - Summary of sources of finance by time frame](/finance/unit-3-2-sources-by-time-frame.png)
+*Source: Hoang (2022), Table 15.3, p.234.*
 
 ### SPACED: factors in choosing a source of finance
 Business failure is often blamed on a lack of strategic financial planning and control (p.234).

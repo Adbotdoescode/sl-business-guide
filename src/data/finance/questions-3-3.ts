@@ -169,7 +169,7 @@ export const MCQ_3_3: MCQQuestion[] = [
     ],
     correctAnswer: 'C',
     explanation: {
-      correctRationale: 'TR = P x Q = $300 x 3,000 = $900,000.',
+      correctRationale: 'TR = P × Q = $300 × 3,000 = $900,000.',
       distractorAnalysis: 'A and B are arithmetic errors. D uses the maximum capacity of 5,000 pairs rather than the quantity sold.'
     }
   },
@@ -184,7 +184,7 @@ export const MCQ_3_3: MCQQuestion[] = [
     ],
     correctAnswer: 'B',
     explanation: {
-      correctRationale: 'AR = TR / Q, and since TR = P x Q, AR = P.',
+      correctRationale: 'AR = TR / Q, and since TR = P × Q, AR = P.',
       distractorAnalysis: 'A is profit. C is average cost. D is total revenue.'
     }
   },
@@ -199,8 +199,8 @@ export const MCQ_3_3: MCQQuestion[] = [
     ],
     correctAnswer: 'B',
     explanation: {
-      correctRationale: '2020 volume = 31,790 / 1.10 = 28,900 meals. Revenue = 28,900 x $6.50 = $187,850.',
-      distractorAnalysis: 'A wrongly subtracts 10% of 31,790 (28,611 x $6.50). C is the 2021 volume x $6.50. D adds a further 10%.'
+      correctRationale: '2020 volume = 31,790 / 1.10 = 28,900 meals. Revenue = 28,900 × $6.50 = $187,850.',
+      distractorAnalysis: 'A wrongly subtracts 10% of 31,790 (28,611 × $6.50). C is the 2021 volume × $6.50. D adds a further 10%.'
     }
   },
   {
@@ -214,7 +214,7 @@ export const MCQ_3_3: MCQQuestion[] = [
     ],
     correctAnswer: 'B',
     explanation: {
-      correctRationale: 'Revenue = 50 x $1.20 = $60; cost = 50 x $0.80 = $40; profit = $60 - $40 = $20.',
+      correctRationale: 'Revenue = 50 × $1.20 = $60; cost = 50 × $0.80 = $40; profit = $60 - $40 = $20.',
       distractorAnalysis: 'A is profit per kg. C is the cost. D is the revenue.'
     }
   },
@@ -358,7 +358,7 @@ export const TWO_MARK_3_3: TwoMarkQuestion[] = [
     id: 'q2m-3.3-08', subunit: S, questionNumber: 'Question 16.3b',
     question: "Big Bao sold 31,790 meals in 2021, a 10% increase on 2020, when the average price was $6.50. Calculate Big Bao's sales revenue in 2020.",
     marks: 2, commandTerm: 'Apply', assessmentObjective: 'AO1',
-    modelAnswer: '2020 sales volume = 31,790 / 1.10 = 28,900 meals. 2020 sales revenue = 28,900 x $6.50 = $187,850.',
+    modelAnswer: '2020 sales volume = 31,790 / 1.10 = 28,900 meals. 2020 sales revenue = 28,900 × $6.50 = $187,850.',
     markBreakdown: [
       { mark: 1, criterion: 'Correct 2020 volume of 28,900 units' },
       { mark: 1, criterion: 'Correct answer of $187,850' }
@@ -369,7 +369,7 @@ export const TWO_MARK_3_3: TwoMarkQuestion[] = [
     id: 'q2m-3.3-09', subunit: S, questionNumber: 'Question 16.4d',
     question: 'Ian Goff bought 100 kg of apples and sold 80 kg at $2 per kg. He sold the remaining stock at $1.50 per kg. Calculate the total revenue from the sale of apples.',
     marks: 2, commandTerm: 'Apply', assessmentObjective: 'AO1',
-    modelAnswer: '80 kg x $2 = $160; 20 kg x $1.50 = $30. Total revenue = $160 + $30 = $190.',
+    modelAnswer: '80 kg × $2 = $160; 20 kg × $1.50 = $30. Total revenue = $160 + $30 = $190.',
     markBreakdown: [
       { mark: 1, criterion: 'Correct revenue from each batch ($160 and $30)' },
       { mark: 1, criterion: 'Correct total of $190' }
@@ -389,9 +389,9 @@ export const TWO_MARK_3_3: TwoMarkQuestion[] = [
     id: 'q2m-3.3-11', subunit: S, questionNumber: '3.3.11',
     question: 'State the formulae for total revenue and average revenue.',
     marks: 2, commandTerm: 'State', assessmentObjective: 'AO1',
-    modelAnswer: 'Total revenue = Price x Quantity sold (TR = P x Q). Average revenue = Total revenue / Quantity sold (AR = TR / Q), which equals price.',
+    modelAnswer: 'Total revenue = Price × Quantity sold (TR = P × Q). Average revenue = Total revenue / Quantity sold (AR = TR / Q), which equals price.',
     markBreakdown: [
-      { mark: 1, criterion: 'TR = P x Q' },
+      { mark: 1, criterion: 'TR = P × Q' },
       { mark: 1, criterion: 'AR = TR / Q (= P)' }
     ],
     examinerTips: 'These formulae are not given in the exam.'
