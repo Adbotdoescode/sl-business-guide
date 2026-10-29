@@ -90,7 +90,7 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     shortTitle: '3.2 Sources of Finance',
     category: 'unit2',
     categoryLabel: 'Unit 2 - Finance',
-    description: 'Internal sources (personal funds, retained profit, asset sales) and external sources (share capital, loan capital, overdrafts, trade credit, crowdfunding, leasing, microfinance, business angels), plus short/medium/long-term finance matching.',
+    description: 'Internal sources (personal funds, retained profit, asset sales) and external sources (share capital, loan capital, overdrafts, trade credit, crowdfunding, leasing, microfinance, business angels), plus short- vs long-term finance and SPACED factors.',
   },
   {
     id: '3.3-costs-and-revenues',
@@ -99,16 +99,16 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     shortTitle: '3.3 Costs & Revenues',
     category: 'unit2',
     categoryLabel: 'Unit 2 - Finance',
-    description: 'Fixed, variable, semi-variable, direct, and indirect/overhead costs; total cost calculations (TC = TFC + TVC), average costs (AC = TC/Q), and diverse revenue streams.',
+    description: 'Fixed, variable, total and average costs (TC = TFC + TVC, AC = TC/Q), direct vs indirect costs, revenue, and revenue streams.',
   },
   {
     id: '3.4-final-accounts',
     code: 'Unit 3.4',
-    title: 'Final Accounts & Circular Business Models',
-    shortTitle: '3.4 Accounts & CBM',
+    title: 'Final Accounts',
+    shortTitle: '3.4 Final Accounts',
     category: 'unit2',
     categoryLabel: 'Unit 2 - Finance',
-    description: 'Profit and loss accounts (income statements), balance sheets (statements of financial position), straight-line depreciation, intangible assets, window dressing, and the 5 OECD Circular Business Models (CBM).',
+    description: 'Income statements, statements of financial position, intangible assets, stakeholder uses, ethics of accounting, and HL depreciation (straight-line and units of production).',
   },
 
   // ==========================================
@@ -190,7 +190,7 @@ export const PRESET_CONTENT_GROUPS: ContentGroupPreset[] = [
     id: 'unit2-all',
     name: 'Unit 2 - Finance (All 4 Modules)',
     shortBadge: 'Unit 2: Finance',
-    description: 'All 4 chapters of Unit 2 Finance: CapEx/RevEx, sources of finance, costs & revenues, and final accounts with circular business models.',
+    description: 'All 4 chapters of Unit 2 Finance: CapEx/RevEx, sources of finance, costs & revenues, and final accounts.',
     subunits: [
       '3.1-intro-to-finance',
       '3.2-sources-of-finance',

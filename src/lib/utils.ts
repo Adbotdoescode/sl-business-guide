@@ -34,7 +34,7 @@ export function getSubunitLabel(subunit: SyllabusSubunit): string {
     case '3.3-costs-and-revenues':
       return '3.3 Costs and Revenues';
     case '3.4-final-accounts':
-      return '3.4 Final Accounts & Circular Business Models';
+      return '3.4 Final Accounts';
     case 'bmt-swot-analysis':
       return 'BMT: SWOT Analysis';
     case 'bmt-ansoff-matrix':

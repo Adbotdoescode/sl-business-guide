@@ -230,7 +230,7 @@ export function ExamPractice({
                 <option value="3.1-intro-to-finance">3.1 Introduction to Finance</option>
                 <option value="3.2-sources-of-finance">3.2 Sources of Finance</option>
                 <option value="3.3-costs-and-revenues">3.3 Costs and Revenues</option>
-                <option value="3.4-final-accounts">3.4 Final Accounts & Circular Business Models</option>
+                <option value="3.4-final-accounts">3.4 Final Accounts</option>
               </optgroup>
               <optgroup label="Business Management Toolkit (BMT)">
                 <option value="bmt-swot-analysis">BMT: SWOT Analysis</option>

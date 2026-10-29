@@ -50,7 +50,7 @@ export function MasteryHeatmap() {
     { id: '3.1-intro-to-finance', code: 'Unit 3.1', title: 'Introduction to Finance', section: 'unit2' },
     { id: '3.2-sources-of-finance', code: 'Unit 3.2', title: 'Sources of Finance', section: 'unit2' },
     { id: '3.3-costs-and-revenues', code: 'Unit 3.3', title: 'Costs & Revenues', section: 'unit2' },
-    { id: '3.4-final-accounts', code: 'Unit 3.4', title: 'Final Accounts & CBM', section: 'unit2' },
+    { id: '3.4-final-accounts', code: 'Unit 3.4', title: 'Final Accounts', section: 'unit2' },
 
     // Business Management Toolkit
     { id: 'bmt-swot-analysis', code: 'BMT SWOT', title: 'SWOT Analysis', section: 'bmt' },
