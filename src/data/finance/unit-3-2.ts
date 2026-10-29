@@ -97,7 +97,7 @@ The syllabus also asks you to judge the **appropriateness of short- or long-term
 | The main source of finance for limited liability companies | Involves many **legalities and administrative procedures**, with their associated **costs** |
 
 ### Case evidence
-* **Agricultural Bank of China (ABC), Question 15.1:** in August 2010, ABC's IPO in Shanghai and Hong Kong raised **$22.1 billion**, despite weak market sentiment and fears that shares were overvalued. It has over 320 million customers across 24,000 branches. It was the world's largest flotation at the time, beating the **$21.9 billion** record set by the IPO of **ICBC** (China's largest bank) in October 2006.
+* **Agricultural Bank of China (ABC):** in August 2010, ABC's IPO in Shanghai and Hong Kong raised **$22.1 billion**, the world's largest flotation at the time.
 
 > [!TIP]
 > **Exam tip (p.227):** When shareholders sell their shares, the company does **not** receive any of this money. These shares are traded on the **secondary market** of the stock exchange; no new shares have been issued by the company.
@@ -133,13 +133,7 @@ The syllabus also asks you to judge the **appropriateness of short- or long-term
 | Holders have **no ownership or voting rights**, so the business **loses no control** | Make the firm **more vulnerable if interest rates increase** |
 | Used by a wide range of organizations, e.g. Arsenal FC's Emirates Stadium, private schools in Hong Kong | Interest must be paid even when the business makes a loss |
 
-### Case evidence: Kellett School, Hong Kong (Question 15.2)
-* In 2013 the school introduced record-breaking debentures of up to HK$10m (US$1.29m), **refundable when students leave**. Parents with more than one child got a small discount.
-* School fees ranged from HK$123,500 to HK$168,800 per year (US$15,930 to US$21,775).
-* Timed with the move to a new **HK$200m (US$25.8m) campus** (auditorium, swimming pool, Astroturf, library, modern classrooms).
-* Critics argued the enormous cost of education could put off highly skilled expats from moving to Hong Kong, reducing its competitiveness.
-* Rival school **Harrow International** offers **non-interest-bearing** debentures of up to HK$3m (US$387,000).
-* Capital expenditure and land construction costs mean debentures are **common in international schools** in Hong Kong.`,
+* *Example:* debentures are common in Hong Kong international schools: Kellett School issued debentures of up to HK$10m (US$1.29m), refundable when students leave, to help fund a new campus.`,
       keyTakeaways: [
         'Loan capital (debt capital) is medium- to long-term interest-bearing finance repaid in instalments over a set period.',
         'Mortgages are secured on property, which can be repossessed if the borrower defaults.',
@@ -219,7 +213,7 @@ The syllabus also asks you to judge the **appropriateness of short- or long-term
 
 ### Sale-and-leaseback
 A business **sells a fixed asset** (to raise finance) and **immediately leases it back**. Ownership is transferred, but the asset **does not physically leave** the business.
-* *Case, Wizz Air (Question 15.3):* in late 2013 the Hungarian low-cost airline signed a sale-and-leaseback deal with China's **COB Leasing Co.** for **six Airbus A320 aircraft**, raising **$549 million** to fund new routes to Barcelona, Bologna, Dortmund and Rome from 2014. In 2020 (COVID-19) it carried 16.6 million passengers, only 42% of the previous year's 40 million. Established in 2003, Wizz Air flies to 150 destinations in 44 countries.
+* *Example:* in 2013 low-cost airline **Wizz Air** sold and leased back **six Airbus A320 aircraft**, raising **$549 million** to fund new routes.
 
 ### Hire purchase (HP)
 * The buyer pays the creditor in **instalments** (e.g. over 12 or 24 months); a **deposit** (down payment) is often needed.
@@ -239,7 +233,7 @@ A business **sells a fixed asset** (to raise finance) and **immediately leases i
         'Hire purchase involves instalments plus interest, and the buyer owns the asset after the last payment, unlike leasing.'
       ],
       examTips: [
-        'The textbook review question "How does sale and leaseback differ from hire purchase?" turns on ownership: sale-and-leaseback gives up ownership to raise cash; HP leads to ownership.'
+        'Distinguish by ownership: sale-and-leaseback gives up ownership of an asset to raise cash, whereas hire purchase leads to ownership after the final instalment.'
       ]
     },
     {
@@ -274,8 +268,7 @@ A business **sells a fixed asset** (to raise finance) and **immediately leases i
 4. **Track record:** past earning history, the record of repaying previous lenders on time, and the entrepreneurs' past achievements.
 
 ### Case evidence
-* *Case study 15.2, UK:* about 18,000 business angels invest about £1.5 billion ($2.1bn) a year in the UK (UKBAA). The typical angel invests about £40,000 ($65,500), is driven by helping others succeed, and invests for up to eight years. Only about 5% are female.
-* *Question 15.4, Tawfeer Market:* an Egyptian online grocery business founded in 2020 in Alexandria, which raised **$500,000 from business angels** in early 2022. Egypt's grocery retail market exceeds $50 billion and online grocery retail is expected to grow exponentially, so more competitors are expected to enter. "Tawfeer" means "savings" in Arabic.`,
+* *Case study 15.2, UK:* about 18,000 business angels invest about £1.5 billion ($2.1bn) a year in the UK (UKBAA). The typical angel invests about £40,000 ($65,500), is driven by helping others succeed, and invests for up to eight years. Only about 5% are female.`,
       keyTakeaways: [
         'Microfinance serves small entrepreneurs, especially women and people on low incomes, to help eradicate poverty (e.g. BRAC).',
         'Microfinance advantages: accessibility, job creation, social wellbeing. Disadvantages: immorality (for-profit), limited finance, limited eligibility.',

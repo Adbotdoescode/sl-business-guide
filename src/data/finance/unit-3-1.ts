@@ -7,7 +7,7 @@ export const UNIT_3_1: StudyUnit = {
   subtitle: 'The Role of Finance: Capital Expenditure vs Revenue Expenditure',
   estimatedReadTime: '7 min read',
   description:
-    'Understand the role of finance for businesses (SL/HL, AO2): capital expenditure on fixed (non-current) assets and its reasons and challenges, revenue expenditure on day-to-day running costs, the textbook\'s Table 14.1 classification, collateral, the London Olympic Games case study (Question 14.1), and how both types of expenditure support change and sustainability (Chapter 14, pp. 221-224).',
+    'Understand the role of finance for businesses (SL/HL, AO2): capital expenditure on fixed (non-current) assets and its reasons and challenges, revenue expenditure on day-to-day running costs, the textbook\'s Table 14.1 classification, collateral, and how both types of expenditure support change and sustainability (Chapter 14, pp. 221-224).',
   sections: [
     {
       id: 'sec-3.1-role-of-finance',
@@ -77,21 +77,8 @@ export const UNIT_3_1: StudyUnit = {
       ]
     },
     {
-      id: 'sec-3.1-case-olympics',
-      title: '6. Case Study: The London Olympic Games (Question 14.1)',
-      content:
-        "London made history by becoming the **first city to host the modern Olympic Games three times** (1908, 1948 and 2012).\n\n* The commercial benefits were welcomed by the **UK construction industry**, with **around half a million new jobs** added to the industry in preparation for the event - the most-watched global sporting event.\n* **Transport for London** (the local government body responsible for most of London's transport networks) funded numerous improvements in preparation for 2012, including **expansion of railway networks** and the introduction of **Britain's first 'bullet' (high-speed rail) trains**.\n\n### Textbook Questions\n* (a) With reference to the case study, **distinguish** between revenue expenditure and capital expenditure. **[4 marks]**\n* (b) **Examine** the benefits of the Olympic Games being held in London to various stakeholder groups. **[6 marks]**\n\n### Applying the Concepts\n* **Capital expenditure:** railway network expansion and the new high-speed 'bullet' trains are fixed assets with a long-term function, used repeatedly for years after 2012.\n* **Revenue expenditure:** the wages and salaries of the half a million new construction workers, plus raw materials used in construction, are day-to-day running costs.",
-      keyTakeaways: [
-        'Railway expansion and bullet trains = capital expenditure (long-term fixed assets).',
-        'Wages of the ~500,000 new construction jobs and raw materials = revenue expenditure.'
-      ],
-      examTips: [
-        'For "with reference to the case study" questions, quote specific case details (e.g. "Britain\'s first bullet trains", "half a million new jobs") in each point.'
-      ]
-    },
-    {
       id: 'sec-3.1-sources-and-concepts',
-      title: '7. Access to Finance, Key Concepts and Sustainability',
+      title: '6. Access to Finance, Key Concepts and Sustainability',
       content:
         "### Access to Finance Differs by Business\n* Different businesses have different access to an array of **sources of finance** (Chapter 15).\n* The main source of finance for **sole traders** is typically their **personal savings**.\n* **Larger, more established businesses** can seek other sources for capital expenditure, such as **selling shares on a stock exchange**.\n\n### Key Concept: Change\n* Capital expenditure is important for **implementing change**. E.g. the growing number of people **working from home** (Chapter 7) means businesses have had to invest in **computer hardware and software** for remote employees - mobile devices such as **laptops and smartphones**, and subscriptions to **cloud-based software platforms**.\n\n### Key Concept: Sustainability\n* Businesses must **invest in their future** to remain **relevant and competitive**.\n* Businesses can **collapse** because of a **lack of sufficient capital expenditure** to adapt to changes in the external environment, such as **changing consumer trends** and **competitors moving in a different strategic direction** (Box 14.1).\n* **Revenue expenditure**, such as **attractive and competitive remuneration packages**, helps to **motivate the workforce** (Chapter 10) and improve **productivity** and **employee loyalty**.\n* Hence, **both revenue and capital expenditure are vital for the sustainability** of business organizations.\n\n### Toolkit, TOK and Key Concept Prompts\n* **BM Toolkit:** How might knowledge of the external environment (STEEPLE, Chapter 46) help managers make better informed decisions about revenue and capital expenditure?\n* **TOK:** How can managers know what to invest in?\n* **Key concept:** Discuss whether capital expenditure enhances or limits creativity in business organizations.",
       keyTakeaways: [
@@ -100,16 +87,8 @@ export const UNIT_3_1: StudyUnit = {
         'Insufficient capital expenditure can cause business collapse; revenue expenditure such as competitive pay motivates staff - both are vital for sustainability.'
       ],
       examTips: [
-        'In 6-mark answers, balance both types: capital expenditure secures long-term competitiveness, while revenue expenditure (e.g. remuneration) sustains motivation and productivity now.'
-      ]
-    },
-    {
-      id: 'sec-3.1-review',
-      title: '8. Review Questions (p. 224)',
-      content:
-        "1. What is capital expenditure?\n2. What are some typical examples of capital expenditure?\n3. What is revenue expenditure?\n4. What are some typical examples of revenue expenditure?\n5. How does capital expenditure differ from revenue expenditure?\n\n**Model answer to Q5:** Capital expenditure is spending on fixed assets (e.g. machinery, land, buildings) that have a long-term function and are used repeatedly, usually funded by long-term finance, whereas revenue expenditure is spending on the day-to-day running of the business (e.g. wages, rent, utility bills) that generates value today rather than in the future.",
-      keyTakeaways: [
-        'Be able to define both terms, give examples of each, and distinguish between them.'
+        'Balance both types in extended answers: capital expenditure secures long-term competitiveness, while revenue expenditure (e.g. remuneration) sustains motivation and productivity now.',
+        'Quick check: can you define capital and revenue expenditure, give two examples of each, and explain how they differ?'
       ]
     }
   ],

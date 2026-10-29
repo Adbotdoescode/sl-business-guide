@@ -159,48 +159,8 @@ A **direct cost** is specifically related to an **individual project or the outp
       ]
     },
     {
-      id: 'sec-3.3-worked-costs',
-      title: '4. Worked Example: Completing a Cost Table (Kompothekra Glass Technologies)',
-      content: `### Question 16.2 (p.241)
-Anna Kompothekra owns a factory producing fine glass ornaments in Agia Paraskevi, Greece. Given TFC = $20,000, complete the table.
-
-**Method:** TFC is the same at every output. TC = TFC + TVC, so TVC = TC - TFC. AC = TC / Q, so TC = AC × Q. (The completed figures below are calculated from the textbook data.)
-
-*All cost figures in $.*
-
-| Output (units) | TFC | TVC | TC | AC |
-| ---: | ---: | ---: | ---: | ---: |
-| 0 | 20,000 | **0** | **20,000** | - |
-| 100 | **20,000** | 5,000 | **25,000** | **250.0** |
-| 200 | **20,000** | 10,000 | **30,000** | **150.0** |
-| 300 | **20,000** | **14,500** | 34,500 | **115.0** |
-| 400 | **20,000** | **18,000** | 38,000 | **95.0** |
-| 500 | **20,000** | **25,000** | **45,000** | 90.0 |
-| 600 | **20,000** | **38,200** | **58,200** | 97.0 |
-
-**Workings (examples):**
-* Output 100: TC = $20,000 + $5,000 = $25,000; AC = $25,000 / 100 = $250
-* Output 300: TVC = $34,500 - $20,000 = $14,500; AC = $34,500 / 300 = $115
-* Output 500: TC = $90 × 500 = $45,000; TVC = $45,000 - $20,000 = $25,000
-* Output 600: TC = $97 × 600 = $58,200; TVC = $58,200 - $20,000 = $38,200
-
-### Shapes of the curves (part c)
-* **TFC** - horizontal at $20,000, because fixed costs do not change with output.
-* **TVC** - starts at zero and rises as output rises, because variable costs change with output.
-* **TC** - starts at $20,000 (the TFC) and rises in parallel with TVC; the gap between TC and TVC is always $20,000.
-* **AC** falls from $250 to a low of $90 at 500 units as fixed costs are spread over more units, then rises to $97 at 600 units.`,
-      keyTakeaways: [
-        'Rearrange the formulas: TVC = TC - TFC and TC = AC × Q.',
-        'TFC is identical at every level of output, including zero.',
-        'At zero output, TVC = 0 and TC = TFC; AC cannot be calculated.'
-      ],
-      examTips: [
-        'Show your workings in calculation questions and include the units ($) in your answer.'
-      ]
-    },
-    {
       id: 'sec-3.3-revenue',
-      title: '5. Revenue, Average Revenue and Profit',
+      title: '4. Revenue, Average Revenue and Profit',
       content: `### What is Revenue?
 **Revenue** (also called **sales revenue** or **total revenue**) refers to the money coming into a business, usually from the sale of goods and/or services. It is calculated by multiplying the price of a product by the quantity sold.
 
@@ -217,36 +177,19 @@ Since P = TR / Q, then **AR = P**.
 
 ---
 
-### Case Study 16.1 - Church's (p.242)
-Church's is an English producer of high-end luxury footwear, founded in 1873 by Thomas Church and his three sons, with main operations in Northampton, UK. It can produce up to 5,000 pairs of shoes per week, with around 70% exported, and has retail outlets in New York, Milan, Paris, Rome, Madrid, Hong Kong, Singapore and Shanghai. Since 1999 the privately held company has been owned by Prada, in a deal worth $170 million.
-
-* **Worked example:** if Church's charges $300 on average per pair and sells 3,000 pairs in a week, TR = $300 × 3,000 = **$900,000** for that week.
-
-### Question 16.3 - Big Bao (p.242)
-Big Bao sells lunchtime meals in Bristol, UK. In 2021 it sold 31,790 units, a 10% increase in sales volume on 2020, when the average price was $6.50.
-* **Sales volume** = the quantity (number of units) sold.
-* 2020 volume = 31,790 / 1.10 = **28,900 units**
-* 2020 sales revenue = 28,900 × $6.50 = **$187,850**
-
-### Question 16.4 - Goff's Organic Fresh Fruits (p.243)
-Ian Goff runs a fresh fruit and vegetables business in a small town in California, USA. Each morning he drives his delivery van to an out-of-town **wholesale market** to buy produce *(A wholesale market is not defined in Chapter 16; it is a market where traders buy goods in bulk to resell.)*. He pays $1,200 monthly rent, a loan on his one-year-old vehicle, and other running costs such as power and lighting. In peak seasons he employs two people.
-* **Indirect costs** (other than the loan; suggested answers drawn from the case): rent ($1,200 a month), power and lighting, wages of the two seasonal helpers, vehicle running costs.
-* **Tomatoes:** buys 50 kg at $0.80/kg and sells at $1.20/kg. Cost = $40; Revenue = $60; **Profit = $20**.
-* **Apples:** bought 100 kg; sold 80 kg at $2 = $160 and the remaining 20 kg at $1.50 = $30. **TR = $190**.`,
+**Example:** if luxury shoemaker **Church's** charges $300 on average per pair and sells 3,000 pairs in a week, TR = $300 × 3,000 = **$900,000** for that week.`,
       keyTakeaways: [
         'TR = P × Q; AR = TR / Q = P.',
         'Profit is the positive difference between total revenue and total costs.',
-        'The revenue formulae are not provided in the exam.',
-        'When the price changes for part of the stock, calculate revenue for each batch and add them.'
+        'The revenue formulae are not provided in the exam.'
       ],
       examTips: [
-        'Read percentage-change questions carefully: if this year is a 10% increase on last year, divide by 1.10 (do not subtract 10% of this year).',
-        "Revenue is not profit - Goff's tomatoes earn $60 revenue but only $20 profit."
+        'Revenue is not profit: profit is what remains after total costs are deducted from total revenue.'
       ]
     },
     {
       id: 'sec-3.3-revenue-streams',
-      title: '6. Revenue Streams',
+      title: '5. Revenue Streams',
       content: `### What are Revenue Streams?
 A **revenue stream** refers to the money coming into a business from its **various business activities**, such as sponsorship deals, merchandise and receipt of royalty payments. Revenue does not only come from the sale of goods and services.
 
@@ -287,13 +230,7 @@ A **revenue stream** refers to the money coming into a business from its **vario
 | Liverpool FC | Standard Chartered | 221 |
 | Paris Saint-Germain | Accor | 171 |
 | Chelsea FC | Three | 166 |
-| Juventus | Jeep | 159 |
-
-### Question 16.5 - Manchester United Football Club (p.244)
-* In 2013 MUFC became the world's first sports club valued at over $3 billion.
-* Match-day revenues are **less than 30%** of its total revenue (Forbes); other streams include broadcasting rights, sponsorship deals and global merchandise sales.
-* 2015: 10-year shirt deal with Adidas worth around $108m a year. 2021: five-year shirt deal worth around $340m with German tech firm TeamViewer. Other sponsors: Commercial Bank of Qatar, Emirates NBD Bank and Pepsi.
-* 2006: MUFC **rejected** a four-year deal worth over $100m from Mansion, an online gambling company, and instead signed a four-year deal with American International Group (AIG) worth $90.5m.`,
+| Juventus | Jeep | 159 |`,
       keyTakeaways: [
         'Revenue streams are all the sources of money coming into a business, not only sales of goods and services.',
         'Key non-sales streams: advertising, transaction fees, franchise fees and royalties, sponsorship, subscriptions, dividends, merchandise, interest, donations and subventions.',
@@ -307,7 +244,7 @@ A **revenue stream** refers to the money coming into a business from its **vario
     },
     {
       id: 'sec-3.3-key-concepts',
-      title: '7. Costs, Revenues and the Key Concepts (Change, Creativity, Ethics)',
+      title: '6. Costs, Revenues and the Key Concepts (Change, Creativity, Ethics)',
       content: `### Cost Control
 * Being aware of costs allows managers to **control their finances**, especially during times of **change and uncertainty**.
 * Cost control is crucial if a business is to **maintain and/or improve profitability**. Large businesses benefit from measuring the financial performance of each division.
