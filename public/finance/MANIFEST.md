@@ -14,3 +14,4 @@
 | /finance/unit-3-4-income-statement-worked-example.png | 3.4 | 254 | Worked example - Florists-R-Us P&L with interest and 10% tax | 3.4 Income statement worked example |
 | /finance/unit-3-4-balance-sheet-format.png | 3.4 | 260 | Table 17.3 - IB format of the statement of financial position (net assets = equity) | 3.4 Statement of financial position |
 | /finance/unit-3-4-straight-line-depreciation.png | 3.4 (HL) | 267 | Table 17.4 + Figure 17.7 - Straight-line depreciation of $25,000 asset at $5,000 p.a. | 3.4 Depreciation (straight line) |
+| /finance/unit-3-4-cbm-4rs.png | 3.4 (BMT) | 664 | Figure 51.2 - Typical circular business models (CBM) focus on the 4 Rs | 3.4 Circular business models |

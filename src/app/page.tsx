@@ -135,12 +135,12 @@ const SYLLABUS_MODULES: ModuleItem[] = [
   {
     id: '3.4-final-accounts',
     code: 'Unit 3.4',
-    title: 'Final Accounts',
+    title: 'Final Accounts & Circular Business Models',
     section: 'unit2',
     sectionLabel: 'Unit 2 - Finance',
-    summary: 'Income statements, statements of financial position, intangible assets, stakeholder uses, ethics of accounting, and HL depreciation (straight-line and units of production).',
-    mcqs: 18,
-    shortAnswer: 12,
+    summary: 'Income statements, statements of financial position, intangible assets, stakeholder uses, ethics of accounting, HL depreciation (straight-line and units of production), and circular business models (CBMs).',
+    mcqs: 26,
+    shortAnswer: 17,
   },
 
   // ==========================================

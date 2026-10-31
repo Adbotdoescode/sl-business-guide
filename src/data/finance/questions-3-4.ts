@@ -1,6 +1,6 @@
 import { MCQQuestion, TwoMarkQuestion, FourMarkQuestion, SixMarkQuestion } from '@/types/curriculum';
 
-// Unit 3.4 Final Accounts questions. Based on Paul Hoang, Business Management (5th ed.), Chapter 17.
+// Unit 3.4 Final Accounts questions. Based on Paul Hoang, Business Management (5th ed.), Chapter 17; Circular business models from Chapter 51 (BMT 8).
 
 export const MCQ_3_4: MCQQuestion[] = [
   {
@@ -542,6 +542,246 @@ export const MCQ_3_4: MCQQuestion[] = [
       "correctRationale": "Obsolescence occurs when newer and better products reduce demand for, and the value of, existing assets.",
       "distractorAnalysis": "Appreciation is a rise in value; wear and tear comes from repeated use; window dressing is creative accounting."
     }
+  },
+  {
+    "id": "mcq-3.4-19",
+    "subunit": "3.4-final-accounts",
+    "topicTag": "Linear Business Model (CBM)",
+    "questionNumber": 19,
+    "question": "Which statement best describes the traditional (linear) business model?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Reduce, reuse, repair and recycle"
+      },
+      {
+        "key": "B",
+        "text": "Produce, sell, use and throw away"
+      },
+      {
+        "key": "C",
+        "text": "Lease, rent, return and remanufacture"
+      },
+      {
+        "key": "D",
+        "text": "Share, swap, subscribe and stream"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correctRationale": "The linear model focuses on producing, selling, using and throwing away products with little consideration of environmental impacts.",
+      "distractorAnalysis": "A is the 4 Rs of circular business models; C and D describe features of product service system and sharing models."
+    }
+  },
+  {
+    "id": "mcq-3.4-20",
+    "subunit": "3.4-final-accounts",
+    "topicTag": "Circular Supply Models",
+    "questionNumber": 20,
+    "question": "Veolia burns poultry litter and scrap wood to generate electricity. This is best described as a:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharing model"
+      },
+      {
+        "key": "B",
+        "text": "Product service system model"
+      },
+      {
+        "key": "C",
+        "text": "Circular supply model"
+      },
+      {
+        "key": "D",
+        "text": "Product life extension model"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correctRationale": "Circular supply models replace finite natural resources with renewable, recyclable or recovered inputs, using waste as a resource input.",
+      "distractorAnalysis": "Sharing and product service models concern how customers access products; product life extension makes existing products last longer."
+    }
+  },
+  {
+    "id": "mcq-3.4-21",
+    "subunit": "3.4-final-accounts",
+    "topicTag": "Resource Recovery Models",
+    "questionNumber": 21,
+    "question": "Turning the waste or by-products of one industry into raw materials for another industry is known as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Industrial symbiosis"
+      },
+      {
+        "key": "B",
+        "text": "Servitization"
+      },
+      {
+        "key": "C",
+        "text": "Cradle-to-cradle design"
+      },
+      {
+        "key": "D",
+        "text": "Window dressing"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correctRationale": "Industrial symbiosis is one of the resource recovery examples given by the textbook.",
+      "distractorAnalysis": "Servitization is the product service system model; C2C re-processes end-of-life waste into new resources; window dressing is creative accounting."
+    }
+  },
+  {
+    "id": "mcq-3.4-22",
+    "subunit": "3.4-final-accounts",
+    "topicTag": "Product Life Extension Models",
+    "questionNumber": 22,
+    "question": "Caterpillar remanufactures used engine parts to like-new condition, and Apple launched 'Self Service Repair'. Both are examples of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Resource recovery models"
+      },
+      {
+        "key": "B",
+        "text": "Product life extension models"
+      },
+      {
+        "key": "C",
+        "text": "Sharing models"
+      },
+      {
+        "key": "D",
+        "text": "Circular supply models"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": {
+      "correctRationale": "Product life extension models extend the lifespan of products through durability, repair and remanufacturing.",
+      "distractorAnalysis": "These firms keep existing products in use rather than recovering raw materials from waste, sharing products, or switching to renewable inputs."
+    }
+  },
+  {
+    "id": "mcq-3.4-23",
+    "subunit": "3.4-final-accounts",
+    "topicTag": "Sharing Models",
+    "questionNumber": 23,
+    "question": "Which business is the textbook's example of a sharing model that owns no real estate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Michelin"
+      },
+      {
+        "key": "B",
+        "text": "Veolia"
+      },
+      {
+        "key": "C",
+        "text": "Airbnb"
+      },
+      {
+        "key": "D",
+        "text": "Caterpillar"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correctRationale": "Airbnb uses existing properties being shared rather than new hotels being built.",
+      "distractorAnalysis": "Michelin is a product service system example, Veolia circular supply, and Caterpillar product life extension."
+    }
+  },
+  {
+    "id": "mcq-3.4-24",
+    "subunit": "3.4-final-accounts",
+    "topicTag": "Product Service System Models",
+    "questionNumber": 24,
+    "question": "Michelin's business customers pay for the miles driven rather than buying tyres. This is an example of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "A product service system model (servitization)"
+      },
+      {
+        "key": "B",
+        "text": "A linear business model"
+      },
+      {
+        "key": "C",
+        "text": "Industrial symbiosis"
+      },
+      {
+        "key": "D",
+        "text": "A circular supply model"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": {
+      "correctRationale": "The firm sells the function of the product on a pay-for-use basis and keeps ownership, which is servitization.",
+      "distractorAnalysis": "A linear model sells the product to be thrown away; industrial symbiosis and circular supply concern resource inputs."
+    }
+  },
+  {
+    "id": "mcq-3.4-25",
+    "subunit": "3.4-final-accounts",
+    "topicTag": "Limitations of CBMs",
+    "questionNumber": 25,
+    "question": "Which of the following is a limitation of adopting circular business models according to the textbook?",
+    "options": [
+      {
+        "key": "A",
+        "text": "They attract socially responsible investors"
+      },
+      {
+        "key": "B",
+        "text": "They reduce the risk of bad publicity"
+      },
+      {
+        "key": "C",
+        "text": "They can be highly expensive in the short term"
+      },
+      {
+        "key": "D",
+        "text": "They create new revenue streams"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": {
+      "correctRationale": "Switching to a CBM can be very expensive in the short term, and the linear model is often significantly cheaper.",
+      "distractorAnalysis": "A, B and D are advantages of CBMs listed by the textbook."
+    }
+  },
+  {
+    "id": "mcq-3.4-26",
+    "subunit": "3.4-final-accounts",
+    "topicTag": "Resource Recovery Models",
+    "questionNumber": 26,
+    "question": "According to the OECD, supplying raw materials through recycling rather than from non-renewable natural resources can reduce greenhouse gas emissions by as much as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "10%"
+      },
+      {
+        "key": "B",
+        "text": "50%"
+      },
+      {
+        "key": "C",
+        "text": "80%"
+      },
+      {
+        "key": "D",
+        "text": "90%"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": {
+      "correctRationale": "The textbook cites the OECD figure of up to 90% for resource recovery through recycling.",
+      "distractorAnalysis": "80% is the OECD figure for resources and waste saved by remanufacturing under product life extension models."
+    }
   }
 ];
 
@@ -797,6 +1037,111 @@ export const TWO_MARK_3_4: TwoMarkQuestion[] = [
       }
     ],
     "examinerTips": "Show workings: the per-unit rate can earn a mark even if the final answer is wrong."
+  },
+  {
+    "id": "q2m-3.4-13",
+    "subunit": "3.4-final-accounts",
+    "questionNumber": "3.4.13",
+    "question": "Define the term circular business model.",
+    "marks": 2,
+    "commandTerm": "Define",
+    "assessmentObjective": "AO1",
+    "modelAnswer": "Circular business models are decision-making tools that emphasize the environmental impacts and sustainability of all business activities (unlike traditional models focused on costs, revenues and profits), enabling businesses to reduce, reuse, repair and recycle waste so materials stay in the economy for as long as possible.",
+    "markBreakdown": [
+      {
+        "mark": 1,
+        "criterion": "Decision-making tool focused on environmental impacts / sustainability"
+      },
+      {
+        "mark": 1,
+        "criterion": "Reduce, reuse, repair and recycle so resources stay in use (contrast with linear model)"
+      }
+    ],
+    "examinerTips": "This is Question 51.1(a) in the textbook. Contrasting with the linear model helps secure the second mark."
+  },
+  {
+    "id": "q2m-3.4-14",
+    "subunit": "3.4-final-accounts",
+    "questionNumber": "3.4.14",
+    "question": "Define the term disposable society.",
+    "marks": 2,
+    "commandTerm": "Define",
+    "assessmentObjective": "AO1",
+    "modelAnswer": "A disposable society results from traditional (linear) business models: consumers replace or upgrade products such as smartphones and clothing because they are bored of them, not because they actually need to, so goods are discarded well before the end of their expected life.",
+    "markBreakdown": [
+      {
+        "mark": 1,
+        "criterion": "Consumers replace or upgrade products before they need to"
+      },
+      {
+        "mark": 1,
+        "criterion": "Result of traditional / linear business models"
+      }
+    ],
+    "examinerTips": "Fast fashion (Case Study 51.1) is a good illustration."
+  },
+  {
+    "id": "q2m-3.4-15",
+    "subunit": "3.4-final-accounts",
+    "questionNumber": "3.4.15",
+    "question": "Define the term product service system model (servitization).",
+    "marks": 2,
+    "commandTerm": "Define",
+    "assessmentObjective": "AO1",
+    "modelAnswer": "A circular business model in which a business provides the function or service of a product rather than the physical good (pay-for-use rather than buy-to-own), keeping ownership, e.g. Spotify instead of CDs.",
+    "markBreakdown": [
+      {
+        "mark": 1,
+        "criterion": "Business provides the service/function rather than the physical product"
+      },
+      {
+        "mark": 1,
+        "criterion": "Customers pay for use (lease/rent) while the firm keeps ownership"
+      }
+    ],
+    "examinerTips": "Do not confuse with sharing models, where customers share existing products."
+  },
+  {
+    "id": "q2m-3.4-16",
+    "subunit": "3.4-final-accounts",
+    "questionNumber": "3.4.16",
+    "question": "Outline two examples of resource recovery models.",
+    "marks": 2,
+    "commandTerm": "Outline",
+    "assessmentObjective": "AO1",
+    "modelAnswer": "Closed-loop recycling: waste is collected, recycled and reproduced to make something new. Industrial symbiosis: the waste or by-products of one industry become raw materials for another industry. (Cradle-to-cradle design is also accepted.)",
+    "markBreakdown": [
+      {
+        "mark": 1,
+        "criterion": "First valid example, outlined"
+      },
+      {
+        "mark": 1,
+        "criterion": "Second valid example, outlined"
+      }
+    ],
+    "examinerTips": "Use the textbook terms: C2C, closed-loop recycling, industrial symbiosis."
+  },
+  {
+    "id": "q2m-3.4-17",
+    "subunit": "3.4-final-accounts",
+    "questionNumber": "3.4.17",
+    "question": "Define the term sharing model.",
+    "marks": 2,
+    "commandTerm": "Define",
+    "assessmentObjective": "AO1",
+    "modelAnswer": "A circular business model that offers services where customers share products, which would otherwise have low ownership or usage rates, rather than owning them, e.g. Airbnb or ZipCar.",
+    "markBreakdown": [
+      {
+        "mark": 1,
+        "criterion": "Customers share products rather than owning them"
+      },
+      {
+        "mark": 1,
+        "criterion": "Makes use of under-used products / low usage rate"
+      }
+    ],
+    "examinerTips": "An example such as Airbnb or Uber supports the definition."
   }
 ];
 
@@ -1094,6 +1439,153 @@ export const FOUR_MARK_3_4: FourMarkQuestion[] = [
         "mark": 1
       }
     ]
+  },
+  {
+    "id": "q4m-3.4-07",
+    "subunit": "3.4-final-accounts",
+    "questionNumber": "Question 3.4.7",
+    "question": "Explain two reasons why a business such as McDonald's might choose to move away from a traditional business model to a circular business model.",
+    "caseStimulus": "McDonald's, the world's largest restaurant chain, phased out CFC foam packaging in 1991 and plastic straws in 2018. In December 2021 it opened its first net-zero carbon restaurant in the UK (Market Drayton), built from natural and recycled materials and powered by wind turbines and solar panels.",
+    "contextTitle": "McDonald's: Moving to a Circular Business Model",
+    "marks": 4,
+    "commandTerm": "Explain",
+    "assessmentObjective": "AO2",
+    "peelModelAnswer": {
+      "point1": {
+        "title": "Corporate image and avoiding bad publicity",
+        "point": "CBMs let a business act in a socially responsible way.",
+        "evidence": "As the world's largest restaurant chain, McDonald's is highly visible; phasing out CFCs and plastic straws and opening a net-zero restaurant shows environmental responsibility.",
+        "explanation": "This improves its corporate image and relationships with customers, investors and pressure groups and avoids negative media coverage.",
+        "link": "Better image may protect sales and attract socially responsible investors."
+      },
+      "point2": {
+        "title": "Long-term costs and resource security",
+        "point": "CBMs reduce dependence on finite, non-renewable resources.",
+        "evidence": "The Market Drayton restaurant runs on wind and solar power and uses recycled materials.",
+        "explanation": "As finite resources dwindle they become more expensive; green technologies can cut production costs in the long term and protect against supply shortages.",
+        "link": "This supports sustainable growth and competitive advantage."
+      }
+    },
+    "rubricChecklist": [
+      {
+        "id": "q4m-3.4-07-c1",
+        "criterion": "First reason identified",
+        "mark": 1
+      },
+      {
+        "id": "q4m-3.4-07-c2",
+        "criterion": "First reason explained with application to McDonald's",
+        "mark": 1
+      },
+      {
+        "id": "q4m-3.4-07-c3",
+        "criterion": "Second reason identified",
+        "mark": 1
+      },
+      {
+        "id": "q4m-3.4-07-c4",
+        "criterion": "Second reason explained with application to McDonald's",
+        "mark": 1
+      }
+    ]
+  },
+  {
+    "id": "q4m-3.4-08",
+    "subunit": "3.4-final-accounts",
+    "questionNumber": "Question 3.4.8",
+    "question": "Distinguish between traditional (linear) and circular business models.",
+    "caseStimulus": "Second Chance Bangkok is a social enterprise in Klong Toey, Bangkok, with 16 employees. It uses a circular business model with the mantra \"Recycle, Reuse, Renew\" and focuses on upcycling, selling recycled and upcycled purses, headbands and ties from a small shop.",
+    "contextTitle": "Second Chance Bangkok: Linear vs Circular",
+    "marks": 4,
+    "commandTerm": "Distinguish",
+    "assessmentObjective": "AO2",
+    "peelModelAnswer": {
+      "point1": {
+        "title": "Traditional (linear) model",
+        "point": "Linear models focus on producing, selling, using and throwing away products.",
+        "evidence": "Their main concern is the financial costs of resources, so they choose cheaper inputs (e.g. plastics over glass) to maximise profit.",
+        "explanation": "There is little or no consideration of environmental impacts or of what happens to products after consumption, which creates a disposable society.",
+        "link": "Waste leaves the economy."
+      },
+      "point2": {
+        "title": "Circular model",
+        "point": "CBMs focus on environmental impacts and sustainability, applying reduce, reuse, repair and recycle.",
+        "evidence": "Second Chance Bangkok's 'Recycle, Reuse, Renew' mantra and its upcycled purses, headbands and ties turn unwanted products into new ones.",
+        "explanation": "Resources are cycled back into production so materials stay in the economy for as long as possible.",
+        "link": "So the key difference is profit-focused disposal versus sustainable reuse of resources."
+      }
+    },
+    "rubricChecklist": [
+      {
+        "id": "q4m-3.4-08-c1",
+        "criterion": "Accurate description of the linear model",
+        "mark": 1
+      },
+      {
+        "id": "q4m-3.4-08-c2",
+        "criterion": "Accurate description of the circular model",
+        "mark": 1
+      },
+      {
+        "id": "q4m-3.4-08-c3",
+        "criterion": "Clear point of difference (focus/what happens to waste)",
+        "mark": 1
+      },
+      {
+        "id": "q4m-3.4-08-c4",
+        "criterion": "Application or example",
+        "mark": 1
+      }
+    ]
+  },
+  {
+    "id": "q4m-3.4-09",
+    "subunit": "3.4-final-accounts",
+    "questionNumber": "Question 3.4.9",
+    "question": "Explain two benefits for Second Chance Bangkok of using a circular business model.",
+    "caseStimulus": "Second Chance Bangkok is a social enterprise in Klong Toey, Bangkok, with 16 employees. It uses a circular business model with the mantra \"Recycle, Reuse, Renew\" and focuses on upcycling, selling recycled and upcycled purses, headbands and ties from a small shop. It emphasises \"people before profits\", relies on social media marketing for exposure, and faces cash flow problems in off-peak seasons when tourist numbers drop.",
+    "contextTitle": "Second Chance Bangkok: Benefits of a CBM",
+    "marks": 4,
+    "commandTerm": "Explain",
+    "assessmentObjective": "AO2",
+    "peelModelAnswer": {
+      "point1": {
+        "title": "Low-cost inputs and new revenue streams",
+        "point": "CBMs turn waste into valuable resources and generate new revenue streams.",
+        "evidence": "Second Chance Bangkok upcycles existing, unwanted products into items it sells in its shop.",
+        "explanation": "Using unwanted materials as inputs can keep costs low and creates products to sell.",
+        "link": "This helps a small social enterprise survive, especially given its cash flow problems in off-peak seasons."
+      },
+      "point2": {
+        "title": "Image and stakeholder relationships",
+        "point": "CBMs show social responsibility and improve corporate image.",
+        "evidence": "Its 'people before profits' approach and 'Recycle, Reuse, Renew' mantra suit social media marketing.",
+        "explanation": "A green image can attract customers (such as tourists), donors and loyal staff and strengthen relations with the local community.",
+        "link": "This can increase sales revenue and support its social aims."
+      }
+    },
+    "rubricChecklist": [
+      {
+        "id": "q4m-3.4-09-c1",
+        "criterion": "First benefit identified",
+        "mark": 1
+      },
+      {
+        "id": "q4m-3.4-09-c2",
+        "criterion": "First benefit explained in context",
+        "mark": 1
+      },
+      {
+        "id": "q4m-3.4-09-c3",
+        "criterion": "Second benefit identified",
+        "mark": 1
+      },
+      {
+        "id": "q4m-3.4-09-c4",
+        "criterion": "Second benefit explained in context",
+        "mark": 1
+      }
+    ]
   }
 ];
 
@@ -1346,6 +1838,90 @@ export const SIX_MARK_3_4: SixMarkQuestion[] = [
       {
         "id": "q6m-3.4-03-c6",
         "criterion": "Reasoned judgement on appropriateness",
+        "marks": 1
+      }
+    ]
+  },
+  {
+    "id": "q6m-3.4-04",
+    "subunit": "3.4-final-accounts",
+    "questionNumber": "Question 3.4.4",
+    "question": "Discuss whether adopting a circular business model is an opportunity or a threat for a soft drinks company that currently uses plastic bottles.",
+    "caseStimulus": "A large soft drinks company sells its drinks in plastic bottles because plastic is cheaper than glass. It benefits from large-scale production. Environmental pressure groups criticise it for plastic waste, and some investors want it to adopt a circular business model.",
+    "contextTitle": "Soft Drinks: CBM Opportunity or Threat?",
+    "marks": 6,
+    "commandTerm": "Discuss",
+    "assessmentObjective": "AO2/AO3",
+    "levelBreakdown": [
+      {
+        "range": "1-2",
+        "descriptor": "Limited knowledge of CBMs; one-sided with little application."
+      },
+      {
+        "range": "3-4",
+        "descriptor": "Explains benefits and/or limitations of CBMs with some application, but limited balance or judgement."
+      },
+      {
+        "range": "5-6",
+        "descriptor": "Balanced discussion of opportunities and threats, well applied to the soft drinks company, with a substantiated conclusion."
+      }
+    ],
+    "perspective1": {
+      "title": "Opportunity",
+      "points": [
+        {
+          "subPoint": "Image and stakeholders",
+          "elaboration": "A CBM such as resource recovery (closed-loop recycling of bottles) would reduce criticism from pressure groups, avoid bad publicity and attract investors who want to support socially responsible businesses."
+        },
+        {
+          "subPoint": "Long-term costs and competitive advantage",
+          "elaboration": "Recycled materials reduce dependence on finite resources whose prices rise as they dwindle; recycling can cut greenhouse gas emissions by up to 90% and give an advantage over rivals that do not adopt circularity."
+        }
+      ]
+    },
+    "perspective2": {
+      "title": "Threat",
+      "points": [
+        {
+          "subPoint": "Short-term costs",
+          "elaboration": "Switching is highly expensive in the short term; the linear model is significantly cheaper, which is why Coca-Cola uses plastic rather than glass, so prices may need to rise for customers who may not want to pay more."
+        },
+        {
+          "subPoint": "Economies of scale and government",
+          "elaboration": "The firm may lose some economies of scale, and without government action on under-priced resources and subsidies a lone firm may be at a cost disadvantage."
+        }
+      ]
+    },
+    "synthesisAndEvaluation": "In the short term the CBM is a threat to costs and profit margins, but in the long term it is likely to be an opportunity, as resource costs rise and stakeholder pressure grows. The outcome depends on customers' willingness to pay, the firm's finances and government support. A phased move, starting with resource recovery of its own bottles, could balance both.",
+    "rubricChecklist": [
+      {
+        "id": "q6m-3.4-04-c1",
+        "criterion": "Knowledge of CBMs and the linear model",
+        "marks": 1
+      },
+      {
+        "id": "q6m-3.4-04-c2",
+        "criterion": "Opportunities explained",
+        "marks": 1
+      },
+      {
+        "id": "q6m-3.4-04-c3",
+        "criterion": "Threats/limitations explained",
+        "marks": 1
+      },
+      {
+        "id": "q6m-3.4-04-c4",
+        "criterion": "Application to the soft drinks company",
+        "marks": 1
+      },
+      {
+        "id": "q6m-3.4-04-c5",
+        "criterion": "Balanced analysis",
+        "marks": 1
+      },
+      {
+        "id": "q6m-3.4-04-c6",
+        "criterion": "Substantiated judgement",
         "marks": 1
       }
     ]

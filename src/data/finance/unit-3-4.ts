@@ -1,13 +1,13 @@
 import { StudyUnit } from '@/types/curriculum';
 
-// Unit 3.4 Final Accounts. Source: Paul Hoang, Business Management (5th ed., IBID 2022), Chapter 17, pp. 249-272.
+// Unit 3.4 Final Accounts. Source: Paul Hoang, Business Management (5th ed., IBID 2022), Chapter 17, pp. 249-272; Circular business models: Chapter 51 (BMT 8), pp. 663-672.
 export const UNIT_3_4: StudyUnit = {
   "id": "3.4-final-accounts",
-  "title": "Final Accounts",
+  "title": "Final Accounts & Circular Business Models",
   "unitCode": "Unit 3.4",
-  "subtitle": "Stakeholder Uses, the Profit and Loss Account, the Balance Sheet, Intangible Assets and Depreciation (HL)",
+  "subtitle": "Stakeholder Uses, the Profit and Loss Account, the Balance Sheet, Intangible Assets, Depreciation (HL) and Circular Business Models",
   "estimatedReadTime": "30 min read",
-  "description": "Master the purpose of final accounts for different stakeholders, constructing the profit and loss account (trading, P&L and appropriation sections) and the balance sheet (assets, liabilities, equity) in IB format, the five types of intangible assets, limitations of final accounts and window dressing, the principles and ethics of accounting, and (HL only) straight line and units of production depreciation and their appropriateness.",
+  "description": "Master the purpose of final accounts for different stakeholders, constructing the profit and loss account (trading, P&L and appropriation sections) and the balance sheet (assets, liabilities, equity) in IB format, the five types of intangible assets, limitations of final accounts and window dressing, the principles and ethics of accounting, and (HL only) straight line and units of production depreciation and their appropriateness, plus the five circular business models (circular supply, resource recovery, product life extension, sharing and product service system) and their evaluation.",
   "sections": [
     {
       "id": "sec-3.4-purpose",
@@ -187,6 +187,51 @@ export const UNIT_3_4: StudyUnit = {
       ],
       "examTips": [
         "Use the Enron case as evidence of the consequences of dishonest accounting, and Vodafone (2006) as an example of legal but questionable creative accounting."
+      ]
+    },
+    {
+      "id": "sec-3.4-cbm-intro",
+      "title": "14. Circular Business Models: Linear vs Circular",
+      "content": "**Circular business models (CBMs)** are part of the **Business Management Toolkit (BMT)**. They are a type of **decision-making tool** (Hoang, Chapter 51, pp. 663-672). Many businesses are moving away from traditional models built on **single-use resources and products** that are then thrown away as waste. CBMs instead let **materials and products be reused and stay in the economy for as long as possible**.\n\n### The Traditional (Linear) Business Model\nThe **traditional (or linear) business model** is about **producing, selling, using and throwing away** products, with little or no thought for the **environmental impacts** of business activities or for what happens to products (and their packaging) after they are consumed (Figure 51.1). Linear models care only about the **financial costs** of resources. For example, beverage companies keep using **plastics because they are cheaper than glass**, which earns more profit for shareholders and owners.\n\nLinear models have created a **disposable society**, where consumers **replace or upgrade products** (smartphones, laptops, cars, clothing) because they have **lost interest in them**, not because they need to. Goods are replaced well **before the end of their expected life cycle**. Society is now more aware of carbon emissions, the unsustainable use of fossil fuels, climate change and global warming.\n\n### Circular Business Models\n**Circular business models (CBMs)** are decision-making tools that focus on the **environmental impacts** of business activities and on **sustainability** across all of a firm's operations. Traditional models focus on **costs, revenues and profits**. CBMs instead help businesses **reduce, reuse, repair and recycle** waste (the **4 Rs**, Figure 51.2) as part of the move to a **resource-efficient, sustainable circular economy** (e.g. widespread adoption of **renewable energy**).\n\n![Figure 51.2 - Typical circular business models (CBM) focus on the 4 Rs: reduce, reuse, repair and recycle](/finance/unit-3-4-cbm-4rs.png)\n*Source: Hoang (2022), Figure 51.2, p.664.*\n\nThe **OECD** defines CBMs as frameworks that \"*represent fundamentally different ways of producing and consuming goods and services. They have the potential to drive the transition towards a more resource efficient and circular economy and in doing so, significantly reduce the environmental pressure resulting from economic activity.*\"\n\nIn every CBM, materials and resources are **continually cycled back into the production process** (Figure 51.3). This gives **greater efficiency, less waste** and **lower energy and resource consumption**. It also protects the economy against **resource depletion, supply shortages and rising raw material costs**. They are called *circular* because they aim to **turn all waste into useful, valuable resources** that can be used again sustainably.\n\n| | Traditional (linear) model | Circular business model |\n|---|---|---|\n| **Focus** | Costs, revenues and profits | Environmental impacts and sustainability |\n| **Flow of resources** | Produce, sell, use, throw away | Reduce, reuse, repair, recycle (resources cycled back into production) |\n| **Waste** | Discarded (e.g. to landfill) | Turned into valuable resources |\n| **Typical cost** | Often significantly cheaper | Can be highly expensive, especially in the short term |\n\n### Case Study 51.1: Fast Fashion\nFast fashion offers fashionable clothes at affordable prices but creates **huge textile waste** because trends change so quickly. A CBM approach could include: making clothes **long-lasting and durable**; **renting and leasing** clothes instead of selling them; setting up ways to **sell or donate second-hand clothes**; and **recycling and reusing textile materials**.\n\n### Advantages of Using CBMs (p. 664)\n* Offering **new commercial opportunities**.\n* Contributing to **sustainable business growth**.\n* Generating **new revenue streams**.\n* Transforming relationships with **customers, suppliers, local communities and governments**.\n* Attracting **investors** who want to back socially responsible businesses.\n* **Protecting the natural environment** and ecosystems.\n* **Avoiding bad publicity** (negative media coverage or criticism).\n* **Safeguarding** the economy against resource depletion, supply shortages and rising raw material costs.\n* Gaining a **competitive advantage** over rivals that do not adopt circularity.\n\n**Common mistake (p. 665):** CBMs are **not just** about cutting landfill waste and recycling paper and plastics. These are part of a circular economy, but CBMs cover a **much broader** range of activities: the **five CBMs** that the IB syllabus takes from the OECD.",
+      "keyTakeaways": [
+        "Linear model = produce, sell, use, throw away; it focuses on costs, revenues and profits and has created a disposable society.",
+        "CBMs are decision-making tools (BMT) focused on environmental impacts and sustainability; they apply the 4 Rs: reduce, reuse, repair and recycle.",
+        "In CBMs, resources are continually cycled back into production, which means greater efficiency, less waste and protection against resource depletion and rising raw material costs.",
+        "The five syllabus CBMs (from the OECD): circular supply, resource recovery, product life extension, sharing, and product service system models."
+      ],
+      "examTips": [
+        "When asked to distinguish linear and circular models, contrast their focus (profit vs environmental impact) and what happens to resources at the end of use (thrown away vs cycled back into production).",
+        "Do not reduce CBMs to 'recycling rubbish'. The textbook flags this as a common mistake."
+      ]
+    },
+    {
+      "id": "sec-3.4-cbm-five",
+      "title": "15. The Five Circular Business Models",
+      "content": "### 1. Circular Supply Models\n**Circular supply models** are CBMs that focus on **replacing finite natural resources with renewable, recyclable and biodegradable resources** in a sustainable way, in production and in every other area of business activity. Businesses find new, more efficient ways to use **waste as resource inputs**. This reduces reliance on **finite, non-renewable extracted resources** such as fossil fuels, using **bio-based, renewable and/or recovered materials** sustainably but still profitably.\n* Science-based firms turn **agricultural residue** (bales, husks, leaves, stalks) into **renewable fuel** (Figure 51.4).\n* **Veolia** (French MNC) burns **poultry litter and scrap wood** to make **electricity**. It uses a circular supply model across water management, waste management and energy services.\n* As the earth's resources dwindle they become **more expensive**, so in the long run circular supply can be **more profitable** and help businesses **remain viable**.\n\n### 2. Resource Recovery Models\n**Resource recovery models** aim to **re-use ('recover') resource outputs** by **re-processing waste materials** (glass, plastics, metals) into new, usable resources. They rely on **technological innovations and facilities** that recover and reuse outputs, **eliminating material waste**. Examples:\n* **Cradle-to-cradle (C2C) design and manufacturing**: waste materials at the **end of the product life cycle** are re-processed into new resources.\n* **Closed-loop recycling**: processes to **collect, recycle and reproduce** waste to make something new (Figure 51.5).\n* **Industrial symbiosis**: turning the **waste or by-products of one industry into raw materials for another**.\n\nAccording to the OECD, supplying raw materials through recycling instead of from non-renewable natural resources can cut **greenhouse gas emissions by as much as 90%**.\n\n| Advantages of resource recovery models (p. 666) |\n|---|\n| **Preserves** the planet's finite natural resources |\n| **Minimizes the risk of damage** to the environment, including wildlife, oceans and ecosystems |\n| **Saves landfill space** for waste that cannot be recycled |\n| **Reduces pollution** on land, in water and in the air |\n\n### 3. Product Life Extension Models\n**Product life extension models** **extend the life cycle (lifespan) of products** so that fewer finite resources are needed to produce replacements. They keep or improve **durability**, e.g. designing laptops and smartphones that are **easier to repair and upgrade**, or that **customers can repair themselves**.\n* **Caterpillar** (world's largest construction-equipment manufacturer) **remanufactures** engine parts to like-new condition. Customers get the same quality, warranty, performance and reliability **at a fraction of the price** of new.\n* **Apple's 'Self Service Repair'** (end of 2021) lets customers repair iPhones and Macs with genuine Apple parts and tools.\n* Other examples: **refurbished smartphones**, **remanufactured cars** and consumer electrical products.\n\nThe OECD says remanufacturing can cut **natural resource extraction and waste by up to 80%** compared with making entirely new products.\n\n| Advantages of product life extension models (p. 667) |\n|---|\n| Lets firms **compete with new products** from low-cost, low-quality rivals |\n| Less extraction, processing and transport of resources gives **energy savings** |\n| **Durability (longevity)** becomes a **competitive differentiator**: a **USP** and **competitive advantage** |\n| Differentiation allows **premium prices**, so CBMs can **raise profit margins** |\n\n### 4. Sharing Models\n**Sharing models** offer services in which customers **share products rather than owning them**. They depend on sharing products that would otherwise have a **low ownership and/or usage rate**.\n* **Airbnb**, the largest short-term rental accommodation provider, **owns no real estate**. It uses existing properties, so new hotels do not need to be built.\n* **Uber**, the largest taxi service provider, **owns no vehicles**. Drivers use their own cars.\n* **Car-sharing** (e.g. **ZipCar**): members pay a **monthly fee plus reservation charges** without the hassles of owning a car.\n* **Toy/book subscription swaps**: cleaned, re-used, age-appropriate items are exchanged each month, which reduces clutter and saves parents money.\n\n| Benefits of sharing models (p. 667) |\n|---|\n| **Under-used products are used more fully** (many car owners drive only 1-2 hours a day) |\n| **Less demand for new products** and raw materials, which conserves finite resources |\n| Reduces **environmental burdens** such as excess garbage and packaging waste |\n| Creates a more **sustainable**, greener and cleaner world |\n\nAdvances in **Internet and mobile technologies**, together with **customer referral and online review systems**, have made sharing possible for far more products than before.\n\n### 5. Product Service System Models (Servitization)\n**Product service system models** (also called **servitization**) are built on the idea that businesses offer **the function of a product rather than the physical product**. Customers want the **benefit of using** a product, not ownership, so they **lease or rent** it. The business keeps **legal ownership** and keeps the product in use for longer. It is a **pay-for-use** arrangement rather than **buy-to-own**.\n* **Music streaming** (iTunes, Spotify) instead of owning CDs and vinyl records.\n* **Multimedia streaming** (Netflix, Disney+, Amazon Prime) instead of buying DVDs and DVD players.\n* **Cloud storage** (iCloud, Google Drive, Dropbox) means less need for physical storage hardware.\n* **Michelin** sells **tyres as a service** to business customers, who **pay for the miles driven**. Customers do not own the tyres and are not responsible for maintenance. This gives Michelin an incentive to design **longer-lasting**, repairable and recyclable tyres.\n* **Air conditioning manufacturers lease equipment**, which saves businesses installation, repair and replacement costs. The provider takes the equipment back for reuse, repair, recycling or environmentally friendly disposal.\n\nThese models encourage **environmentally friendly product design** and **more efficient product use**, and a more sparing use of non-renewable resources. *Case Study 51.2:* online platforms (Skype, Teams, Meet, Zoom) allow teleconferenced meetings, online job interviews and **working from home**, which cuts travel and the **carbon footprint**.",
+      "keyTakeaways": [
+        "Circular supply: replace finite resources with renewable, recyclable and biodegradable inputs (Veolia turns poultry litter and scrap wood into electricity).",
+        "Resource recovery: re-process waste outputs into new resources through C2C design, closed-loop recycling and industrial symbiosis; recycling can cut greenhouse gas emissions by up to 90%.",
+        "Product life extension: make products last longer through durability, repair, refurbishment and remanufacture (Caterpillar, Apple Self Service Repair); can cut resource extraction and waste by up to 80%.",
+        "Sharing: customers share under-used products instead of owning them (Airbnb, Uber, ZipCar).",
+        "Product service system (servitization): sell the function or service, not the product; pay-for-use while the firm keeps ownership (Spotify, Netflix, Michelin tyres per mile)."
+      ],
+      "examTips": [
+        "Learn one textbook example for each of the five CBMs and the one-line definition that sets it apart from the others.",
+        "Exam tip (p. 669): businesses do not always fit neatly into one category. Bike-sharing schemes have features of both sharing and product service system models, so fully justify your reasoning."
+      ]
+    },
+    {
+      "id": "sec-3.4-cbm-evaluation",
+      "title": "16. Evaluation of Circular Business Models",
+      "content": "### Benefits vs Limitations (pp. 668-669)\n\n| Benefits | Limitations / drawbacks |\n|---|---|\n| **Environmental protection**: smaller environmental footprint of production and consumption; aligns the firm with societies that demand cleaner technologies | **Highly expensive to switch**, especially in the **short term**; the linear model is often **significantly cheaper** (why **Coca-Cola**, the world's largest plastic polluter, uses plastic rather than glass bottles) |\n| Firms can **thrive without depending on extracting new, finite resources** (e.g. circular supply and resource recovery) | Higher costs mean the firm must attract customers **willing to pay more** for greener products |\n| Using fewer non-renewable resources and more **green technologies** (e.g. solar panels, wind turbines) can **cut production costs in the long term** | Firms may have to **give up some economies of scale** and reduce the specialization and sophistication of products; consumers may **not accept lower quality or performance** in the short run |\n| **Socially responsible** behaviour improves **corporate image** and relationships with employees, customers, investors, pressure groups and the local community | **Government intervention is needed**: natural resources are often **mispriced (under-priced)** because extractive industries receive **subsidies**; **trade policies** restrict cross-border flows of goods and services |\n| **CSR and CBMs go hand in hand**, helping to **attract and retain skilled, loyal employees** | Without enough government support, **unemployment may rise** in some industries, especially **manufacturing** |\n\n**Green technologies** are environmentally friendly innovations that consider the long-term impact on the environment, such as **renewable energy sources** (solar panels and wind turbines).\n\n**Overall judgement:** despite these limitations, CBMs can give organizations **competitive advantages** and help them operate in a **socially responsible and sustainable** way that benefits individuals, organizations and societies.\n\n*One-line illustrations from the textbook:* **McDonald's** phased out CFC foam packaging (1991) and plastic straws (2018), and opened the UK's first **net-zero carbon** restaurant (Market Drayton, December 2021), built from natural and recycled materials and powered by wind and solar. **Second Chance Bangkok** is a social enterprise with the mantra \"**Recycle, Reuse, Renew**\" and a focus on **upcycling** (the creative reuse of existing, unwanted products).",
+      "keyTakeaways": [
+        "Benefits: environmental protection, less dependence on finite resources, lower long-term costs, better corporate image and stakeholder relations, CSR that attracts and retains staff.",
+        "Limitations: high short-term switching costs (linear models are cheaper), possible loss of economies of scale and product quality, need for government action (mispriced resources, subsidies, trade policies), possible unemployment in manufacturing.",
+        "Conclusion: CBMs can still give competitive advantage and support sustainable, socially responsible operations."
+      ],
+      "examTips": [
+        "In 'discuss' questions, balance long-term benefits (cost savings, image, competitive advantage) against short-term costs and the need for government support, then reach a judgement suited to the business in the case.",
+        "Link CBMs to other units: CSR and ethics, economies of scale, USP and premium pricing, and the key concepts of sustainability, change, ethics and creativity."
       ]
     }
   ],
@@ -430,6 +475,66 @@ export const UNIT_3_4: StudyUnit = {
     {
       "term": "Ethical behaviour (accounting)",
       "definition": "Doing what society perceives to be the right thing; accountants should be open, transparent and honest in recording and reporting transactions."
+    },
+    {
+      "term": "Circular business models (CBMs)",
+      "definition": "Decision-making tools that emphasize the environmental consequences and sustainability matters of all business activities, in contrast to traditional models focused on costs, revenues and profits; they enable businesses to reduce, reuse, repair and recycle waste."
+    },
+    {
+      "term": "Traditional (linear) business model",
+      "definition": "A business model focused on producing, selling, using and throwing away products, with little if any consideration of the environmental impacts of business activities."
+    },
+    {
+      "term": "Disposable society",
+      "definition": "The result of traditional business models, where consumers replace or upgrade products because they are bored of them rather than because they actually need to."
+    },
+    {
+      "term": "Circular economy",
+      "definition": "A resource-efficient and sustainable economy in which materials and products are reused and remain in use for as long as possible."
+    },
+    {
+      "term": "4 Rs",
+      "definition": "Reduce, reuse, repair and recycle: the typical focus of circular business models (Figure 51.2)."
+    },
+    {
+      "term": "Circular supply models",
+      "definition": "CBMs that focus on replacing finite natural resources with renewable, recyclable and biodegradable resources in a sustainable way."
+    },
+    {
+      "term": "Resource recovery models",
+      "definition": "CBMs that emphasise technological innovations and facilities to retrieve and reuse resource outputs by re-processing waste materials, thereby eliminating material waste."
+    },
+    {
+      "term": "Cradle-to-cradle (C2C)",
+      "definition": "Design and manufacturing in which waste materials at the end of the product life cycle are re-processed into new resources."
+    },
+    {
+      "term": "Closed-loop recycling",
+      "definition": "Processes to collect, recycle and reproduce waste to make something new."
+    },
+    {
+      "term": "Industrial symbiosis",
+      "definition": "Turning the waste products or by-products of one industry into raw materials for another industry."
+    },
+    {
+      "term": "Product life extension models",
+      "definition": "CBMs based on extending the lifespan of products (through durability, repair, refurbishment and remanufacturing) to reduce the finite resources needed to replace them."
+    },
+    {
+      "term": "Sharing models",
+      "definition": "CBMs that offer services where customers share products, which would otherwise have low ownership or usage rates, rather than owning them."
+    },
+    {
+      "term": "Product service system models (servitization)",
+      "definition": "CBMs in which businesses provide the function or service of a product rather than the physical good (pay-for-use rather than buy-to-own), limiting waste and the need for more resources."
+    },
+    {
+      "term": "Green technologies",
+      "definition": "Environmentally friendly innovations that consider the long-term impact on the environment, such as renewable energy from solar panels and wind turbines."
+    },
+    {
+      "term": "Upcycling",
+      "definition": "The creative reuse of existing and unwanted products."
     }
   ]
 };

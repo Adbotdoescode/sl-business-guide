@@ -104,11 +104,11 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
   {
     id: '3.4-final-accounts',
     code: 'Unit 3.4',
-    title: 'Final Accounts',
-    shortTitle: '3.4 Final Accounts',
+    title: 'Final Accounts & Circular Business Models',
+    shortTitle: '3.4 Accounts & CBM',
     category: 'unit2',
     categoryLabel: 'Unit 2 - Finance',
-    description: 'Income statements, statements of financial position, intangible assets, stakeholder uses, ethics of accounting, and HL depreciation (straight-line and units of production).',
+    description: 'Income statements, statements of financial position, intangible assets, stakeholder uses, ethics of accounting, HL depreciation (straight-line and units of production), and circular business models (CBMs).',
   },
 
   // ==========================================
