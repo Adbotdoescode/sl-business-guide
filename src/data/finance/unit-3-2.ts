@@ -30,7 +30,6 @@ export const UNIT_3_2: StudyUnit = {
 
 The syllabus also asks you to judge the **appropriateness of short- or long-term sources of finance for a given situation** (AO3), covered in Sections 5 and 6.
 
-> [!NOTE]
 > **SL/HL:** The whole of Unit 3.2 is common SL and HL content. There is no HL-only material in this unit.`,
       keyTakeaways: [
         'Sources of finance = where or how a business obtains its funds.',
@@ -99,10 +98,8 @@ The syllabus also asks you to judge the **appropriateness of short- or long-term
 ### Case evidence
 * **Agricultural Bank of China (ABC):** in August 2010, ABC's IPO in Shanghai and Hong Kong raised **$22.1 billion**, the world's largest flotation at the time.
 
-> [!TIP]
 > **Exam tip (p.227):** When shareholders sell their shares, the company does **not** receive any of this money. These shares are traded on the **secondary market** of the stock exchange; no new shares have been issued by the company.
 
-> [!WARNING]
 > **Common mistake (p.227):** Students often write that a fall in a company's share price reduces its profits because the firm has less money. It is more likely the **other way round**: poor company performance causes a fall in its value, so its share price then declines.`,
       keyTakeaways: [
         'Share capital = money from selling shares in a limited liability company; it can raise huge sums (Petrobras $70bn, ABC $22.1bn).',
