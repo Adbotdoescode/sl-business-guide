@@ -1,4 +1,4 @@
-import * as T2 from './term2-content';
+import * as ADDED from './added-chapters';
 import {
   FourMarkQuestion,
   SixMarkQuestion
@@ -1466,7 +1466,7 @@ export const FOUR_MARK_QUESTIONS: FourMarkQuestion[] = [
       { id: 'rub-A7-02-d', criterion: 'Recognises the limitation that an average may hide seasonal fluctuations.', mark: 1 }
     ]
   },
-  ...FOUR_MARK_3_1, ...FOUR_MARK_3_2, ...FOUR_MARK_3_3, ...FOUR_MARK_3_4, ...T2.TERM2_FOUR_MARK
+  ...FOUR_MARK_3_1, ...FOUR_MARK_3_2, ...FOUR_MARK_3_3, ...FOUR_MARK_3_4, ...ADDED.ADDED_FOUR_MARK
 ];
 
 // ============================================================================
@@ -2742,5 +2742,5 @@ export const SIX_MARK_QUESTIONS: SixMarkQuestion[] = [
       { id: 'rub-A7-6m-04', criterion: 'Evaluates by weighing the usefulness against limitations (forecast accuracy, implementation, risk).', marks: 1 }
     ]
   },
-  ...SIX_MARK_3_1, ...SIX_MARK_3_2, ...SIX_MARK_3_3, ...SIX_MARK_3_4, ...T2.TERM2_SIX_MARK
+  ...SIX_MARK_3_1, ...SIX_MARK_3_2, ...SIX_MARK_3_3, ...SIX_MARK_3_4, ...ADDED.ADDED_SIX_MARK
 ];
