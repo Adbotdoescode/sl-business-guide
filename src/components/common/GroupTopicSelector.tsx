@@ -242,7 +242,7 @@ export function GroupTopicSelector({
             <div className="space-y-2">
               <div className="flex items-center justify-between px-1">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-800">
-                  Unit 2 - Finance (Units 3.1–3.4)
+                  Unit 2 - Finance (Units 3.1–3.8)
                 </span>
                 <button
                   type="button"

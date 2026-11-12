@@ -35,6 +35,14 @@ export function getSubunitLabel(subunit: SyllabusSubunit): string {
       return '3.3 Costs and Revenues';
     case '3.4-final-accounts':
       return '3.4 Accounts & CBM';
+    case '3.5-profitability-and-liquidity-ratios':
+      return '3.5 Ratio Analysis';
+    case '3.7-cash-flow':
+      return '3.7 Cash Flow';
+    case '3.8-investment-appraisal':
+      return '3.8 Investment Appraisal';
+    case 'bmt-bcg-matrix':
+      return 'BMT: BCG Matrix';
     case 'bmt-swot-analysis':
       return 'BMT: SWOT Analysis';
     case 'bmt-ansoff-matrix':
@@ -75,6 +83,14 @@ export function getSubunitShortBadge(subunit: SyllabusSubunit): string {
       return 'Unit 3.3';
     case '3.4-final-accounts':
       return 'Unit 3.4';
+    case '3.5-profitability-and-liquidity-ratios':
+      return 'Unit 3.5';
+    case '3.7-cash-flow':
+      return 'Unit 3.7';
+    case '3.8-investment-appraisal':
+      return 'Unit 3.8';
+    case 'bmt-bcg-matrix':
+      return 'BCG';
     case 'bmt-swot-analysis':
       return 'SWOT';
     case 'bmt-ansoff-matrix':

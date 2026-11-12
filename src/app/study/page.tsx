@@ -108,7 +108,7 @@ export default function StudyGuidesIndexPage() {
           }`}
         >
           <DollarSign className="w-3.5 h-3.5 text-emerald-600" />
-          <span>Unit 2 - Finance (4)</span>
+          <span>Unit 2 - Finance (7)</span>
         </button>
 
         <button

@@ -61,9 +61,10 @@ export function ExamPractice({
     'group:unit1-foundations': ['1.1-what-is-a-business', '1.2-types-of-business-entities', '1.3-business-objectives'],
     'group:unit1-scale': ['1.4-stakeholders', '1.5-growth-and-evolution', '1.6-multinational-companies'],
     'group:unit1-all': ['1.1-what-is-a-business', '1.2-types-of-business-entities', '1.3-business-objectives', '1.4-stakeholders', '1.5-growth-and-evolution', '1.6-multinational-companies'],
-    'group:unit2-all': ['3.1-intro-to-finance', '3.2-sources-of-finance', '3.3-costs-and-revenues', '3.4-final-accounts'],
-    'group:bmt-matrices': ['bmt-swot-analysis', 'bmt-ansoff-matrix', 'bmt-steeple-analysis'],
-    'group:bmt-all': ['bmt-swot-analysis', 'bmt-ansoff-matrix', 'bmt-steeple-analysis', 'bmt-toolkit', 'bmt-business-plan', 'bmt-descriptive-statistics'],
+    'group:unit2-all': ['3.1-intro-to-finance', '3.2-sources-of-finance', '3.3-costs-and-revenues', '3.4-final-accounts', '3.5-profitability-and-liquidity-ratios', '3.7-cash-flow', '3.8-investment-appraisal'],
+    'group:term2-finance-test': ['3.5-profitability-and-liquidity-ratios', '3.7-cash-flow', '3.8-investment-appraisal', 'bmt-bcg-matrix'],
+    'group:bmt-matrices': ['bmt-swot-analysis', 'bmt-ansoff-matrix', 'bmt-steeple-analysis', 'bmt-bcg-matrix'],
+    'group:bmt-all': ['bmt-swot-analysis', 'bmt-ansoff-matrix', 'bmt-steeple-analysis', 'bmt-bcg-matrix', 'bmt-toolkit', 'bmt-business-plan', 'bmt-descriptive-statistics'],
   };
 
   // Filtered by subunit and command term
@@ -212,11 +213,12 @@ export function ExamPractice({
               <optgroup label="Preset Content Groups">
                 <option value="all">All Units ({questions.length})</option>
                 <option value="group:unit1-all">Group: Unit 1 Business Management (1.1–1.6)</option>
-                <option value="group:unit2-all">Group: Unit 2 Finance (3.1–3.4)</option>
+                <option value="group:unit2-all">Group: Unit 2 Finance (3.1–3.8)</option>
+                <option value="group:term2-finance-test">Group: Term 2 Finance Test (3.5, 3.7, 3.8, BCG)</option>
                 <option value="group:unit1-foundations">Group: Unit 1 Foundations (1.1–1.3)</option>
                 <option value="group:unit1-scale">Group: Scale & Global (1.4–1.6)</option>
-                <option value="group:bmt-matrices">Group: Strategic Matrices (SWOT, Ansoff, STEEPLE)</option>
-                <option value="group:bmt-all">Group: Full BM Toolkit (All 6 Tools)</option>
+                <option value="group:bmt-matrices">Group: Strategic Matrices (SWOT, Ansoff, STEEPLE, BCG)</option>
+                <option value="group:bmt-all">Group: Full BM Toolkit (All 7 Tools)</option>
               </optgroup>
               <optgroup label="Unit 1 - Business Management">
                 <option value="1.1-what-is-a-business">1.1 What is a Business?</option>
@@ -231,11 +233,15 @@ export function ExamPractice({
                 <option value="3.2-sources-of-finance">3.2 Sources of Finance</option>
                 <option value="3.3-costs-and-revenues">3.3 Costs and Revenues</option>
                 <option value="3.4-final-accounts">3.4 Accounts &amp; CBM</option>
+                <option value="3.5-profitability-and-liquidity-ratios">3.5 Ratio Analysis</option>
+                <option value="3.7-cash-flow">3.7 Cash Flow</option>
+                <option value="3.8-investment-appraisal">3.8 Investment Appraisal</option>
               </optgroup>
               <optgroup label="Business Management Toolkit (BMT)">
                 <option value="bmt-swot-analysis">BMT: SWOT Analysis</option>
                 <option value="bmt-ansoff-matrix">BMT: Ansoff Matrix</option>
                 <option value="bmt-steeple-analysis">BMT: STEEPLE Analysis</option>
+                <option value="bmt-bcg-matrix">BMT: BCG Matrix</option>
                 <option value="bmt-toolkit">BMT: Toolkit Master</option>
                 <option value="bmt-business-plan">BMT: Business Plan</option>
                 <option value="bmt-descriptive-statistics">BMT: Descriptive Statistics</option>

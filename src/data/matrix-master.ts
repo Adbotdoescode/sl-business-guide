@@ -508,7 +508,7 @@ export const BCG_CARDS: BCGCard[] = [
     "marketGrowth": "high",
     "marketShare": "high",
     "quadrant": "stars",
-    "recommendedStrategy": "build",
+    "recommendedStrategy": "harvest",
     "rationale": "Dominant global revenue share in a fiercely competitive, growing high-end premium smartphone market.",
     "cashFlowDynamics": "Generates massive cash inflows, but absorbs high ongoing capital for R&D, camera innovation, and marketing."
   },
@@ -519,7 +519,7 @@ export const BCG_CARDS: BCGCard[] = [
     "marketGrowth": "high",
     "marketShare": "high",
     "quadrant": "stars",
-    "recommendedStrategy": "build",
+    "recommendedStrategy": "harvest",
     "rationale": "Top-selling electric vehicle globally in an automotive sector undergoing rapid transition toward electrification.",
     "cashFlowDynamics": "Generates strong operating revenues; requires continuous reinvestment into gigafactory expansion and autonomous driving AI."
   },
@@ -530,7 +530,7 @@ export const BCG_CARDS: BCGCard[] = [
     "marketGrowth": "low",
     "marketShare": "high",
     "quadrant": "cash-cows",
-    "recommendedStrategy": "harvest",
+    "recommendedStrategy": "hold",
     "rationale": "Market leader in mature, low-growth carbonated soft drinks market with entrenched global distribution.",
     "cashFlowDynamics": "Generates enormous surplus cash flow with minimal need for capital factory reinvestment; funds portfolio diversification."
   },
@@ -541,7 +541,7 @@ export const BCG_CARDS: BCGCard[] = [
     "marketGrowth": "low",
     "marketShare": "high",
     "quadrant": "cash-cows",
-    "recommendedStrategy": "harvest",
+    "recommendedStrategy": "hold",
     "rationale": "Controls over 70% of desktop operating systems in a mature, slow-growing personal computer hardware market.",
     "cashFlowDynamics": "High-margin licensing cash cow funding cloud infrastructure (Azure) and artificial intelligence (OpenAI partnerships)."
   },
@@ -596,7 +596,7 @@ export const BCG_CARDS: BCGCard[] = [
     "marketGrowth": "high",
     "marketShare": "high",
     "quadrant": "stars",
-    "recommendedStrategy": "build",
+    "recommendedStrategy": "harvest",
     "rationale": "Leading console hardware in a booming global video gaming and interactive entertainment industry.",
     "cashFlowDynamics": "Generates substantial software royalties and subscription cash; requires continuous silicon hardware subsidies."
   },

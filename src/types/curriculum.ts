@@ -10,9 +10,13 @@ export type SyllabusSubunit =
   | '3.2-sources-of-finance'
   | '3.3-costs-and-revenues'
   | '3.4-final-accounts'
+  | '3.5-profitability-and-liquidity-ratios'
+  | '3.7-cash-flow'
+  | '3.8-investment-appraisal'
   | 'bmt-swot-analysis'
   | 'bmt-ansoff-matrix'
   | 'bmt-steeple-analysis'
+  | 'bmt-bcg-matrix'
   | 'bmt-toolkit'
   | 'bmt-business-plan'
   | 'bmt-descriptive-statistics';
@@ -31,6 +35,8 @@ export type CommandTerm =
   | 'Examine'
   | 'Evaluate'
   | 'Discuss'
+  | 'Construct'
+  | 'Calculate'
   | 'What is'
   | 'What is meant by'
   | 'Apply';
@@ -397,7 +403,7 @@ export interface DistinctionItem {
 export interface GoldenMatrixRule {
   id: string;
   ruleTitle: string;
-  category: 'SWOT' | 'Ansoff' | 'STEEPLE' | 'BCG' | 'BMT' | 'Stakeholders' | 'Scale';
+  category: 'SWOT' | 'Ansoff' | 'STEEPLE' | 'BCG' | 'BMT' | 'Stakeholders' | 'Scale' | 'Finance';
   corePrinciple: string;
   actionProtocol: string;
   examApplicationTip: string;

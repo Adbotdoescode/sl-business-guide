@@ -1,4 +1,5 @@
 import { DefinitionItem, DistinctionItem, GoldenMatrixRule } from '@/types/curriculum';
+import * as T2 from './term2-content';
 
 export const CRAM_DEFINITIONS: DefinitionItem[] = [
   {
@@ -907,7 +908,8 @@ export const CRAM_DEFINITIONS: DefinitionItem[] = [
     subunit: 'bmt-steeple-analysis',
     definition: 'Government policies that protect domestic businesses from foreign competitors, such as tariffs, quotas, subsidies, embargoes and technological or safety standards.',
     keyExamTokens: ['tariffs', 'quotas', 'subsidies', 'embargoes', 'barriers to trade']
-  }
+  },
+  ...T2.TERM2_CRAM_DEFINITIONS
 ];
 
 export const CRAM_DISTINCTIONS: DistinctionItem[] = [
@@ -1246,7 +1248,8 @@ export const CRAM_DISTINCTIONS: DistinctionItem[] = [
     comparisonCriteria: 'Effect on export prices and on imported input costs',
     contrastStatement: 'An appreciation raises export prices and reduces price competitiveness, but makes imports cheaper. A depreciation makes exports cheaper abroad, but makes imported raw materials and components more expensive.',
     examTrapWarning: 'Students often reverse the effects. Check the direction of the change before writing the effect on exporters.'
-  }
+  },
+  ...T2.TERM2_CRAM_DISTINCTIONS
 ];
 
 export const CRAM_GOLDEN_RULES: GoldenMatrixRule[] = [
@@ -1302,9 +1305,9 @@ export const CRAM_GOLDEN_RULES: GoldenMatrixRule[] = [
   "id": "rule-07",
   "ruleTitle": "BCG Rule: Cash Cow Reinvestment Cycle",
   "category": "BCG",
-  "corePrinciple": "**BCG Reinvestment Cycle:** A healthy multi-product enterprise must <u>systematically circulate liquidity</u> across *product lifecycles*.",
-  "actionProtocol": "**Harvest Cash Cows** -> ==Reinvest surplus profits== to 'Build' *Question Marks into Stars* -> <u>Transition mature Stars into future Cash Cows</u> -> **Divest unviable Dogs**.",
-  "examApplicationTip": "In portfolio evaluation essays, <u>criticize firms that have zero Cash Cows</u> (==severe liquidity strain==) or zero Question Marks/Stars (*future commercial obsolescence*)."
+  "corePrinciple": "**BCG Reinvestment Cycle:** A healthy multi-product business circulates cash across its portfolio: cash cows are the main generators of cash and question marks the main users (p.637).",
+  "actionProtocol": "**Hold Cash Cows** (minimal investment) -> use their surplus cash to **Build** *Question Marks into Stars* -> **Harvest Stars** into future Cash Cows -> **Divest** unviable Dogs (Figure 47.3, p.637).",
+  "examApplicationTip": "In portfolio evaluation essays, criticise firms that have no Cash Cows (*liquidity strain*) or no Question Marks/Stars (*weak future*)."
 },
 {
   "id": "rule-08",
@@ -1369,5 +1372,6 @@ export const CRAM_GOLDEN_RULES: GoldenMatrixRule[] = [
     corePrinciple: 'An average (mean, median or mode) describes the centre of the data. A measure of spread (range, interquartile range or standard deviation) shows how reliable that centre is.',
     actionProtocol: 'Calculate the average, then state the spread, then interpret both in the context of the business case.',
     examApplicationTip: 'Never quote an average alone when the question asks about consistency, risk or seasonal change. Add a spread measure and comment on what it shows.'
-  }
+  },
+  ...T2.TERM2_CRAM_GOLDEN_RULES
 ];

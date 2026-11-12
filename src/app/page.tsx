@@ -142,6 +142,36 @@ const SYLLABUS_MODULES: ModuleItem[] = [
     mcqs: 26,
     shortAnswer: 17,
   },
+  {
+    id: '3.5-profitability-and-liquidity-ratios',
+    code: 'Unit 3.5',
+    title: 'Profitability and Liquidity Ratio Analysis',
+    section: 'unit2',
+    sectionLabel: 'Unit 2 - Finance',
+    summary: 'Ratio analysis, profitability ratios (gross profit margin, profit margin, ROCE), liquidity ratios (current ratio, acid test ratio), and strategies to improve them.',
+    mcqs: 7,
+    shortAnswer: 9,
+  },
+  {
+    id: '3.7-cash-flow',
+    code: 'Unit 3.7',
+    title: 'Cash Flow',
+    section: 'unit2',
+    sectionLabel: 'Unit 2 - Finance',
+    summary: 'Profit vs cash flow, the working capital cycle, constructing cash flow forecasts, causes of cash flow problems, and strategies to deal with them.',
+    mcqs: 7,
+    shortAnswer: 9,
+  },
+  {
+    id: '3.8-investment-appraisal',
+    code: 'Unit 3.8',
+    title: 'Investment Appraisal',
+    section: 'unit2',
+    sectionLabel: 'Unit 2 - Finance',
+    summary: 'Payback period, average rate of return (ARR), net present value (NPV, HL only), and the qualitative factors and limitations of investment appraisal.',
+    mcqs: 7,
+    shortAnswer: 9,
+  },
 
   // ==========================================
   // Section 3: Business Management Toolkit (BMT)
@@ -175,6 +205,16 @@ const SYLLABUS_MODULES: ModuleItem[] = [
     summary: 'External macro-environmental audit across Social, Technological, Economic, Environmental, Political, Legal, and Ethical dimensions.',
     mcqs: 13,
     shortAnswer: 8,
+  },
+  {
+    id: 'bmt-bcg-matrix',
+    code: 'BMT: BCG',
+    title: 'BCG Matrix',
+    section: 'bmt',
+    sectionLabel: 'Business Management Toolkit',
+    summary: 'Product portfolio analysis by market growth and relative market share: stars, cash cows, question marks and dogs, and the build, hold, harvest and divest strategies.',
+    mcqs: 7,
+    shortAnswer: 9,
   },
   {
     id: 'bmt-toolkit',
@@ -309,7 +349,7 @@ export default function DashboardPage() {
             }`}
           >
             <DollarSign className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Unit 2 - Finance (4)</span>
+            <span>Unit 2 - Finance (7)</span>
           </button>
 
           <button

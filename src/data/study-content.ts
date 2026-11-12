@@ -1,4 +1,5 @@
 import { StudyUnit, SyllabusSubunit } from '@/types/curriculum';
+import * as T2 from './term2-content';
 import { UNIT_3_1 } from './finance/unit-3-1';
 import { UNIT_3_2 } from './finance/unit-3-2';
 import { UNIT_3_3 } from './finance/unit-3-3';
@@ -2713,7 +2714,7 @@ const BASE_STUDY_UNITS: StudyUnit[] = [
 }
 ];
 
-export const STUDY_UNITS: StudyUnit[] = [...BASE_STUDY_UNITS, UNIT_3_1, UNIT_3_2, UNIT_3_3, UNIT_3_4];
+export const STUDY_UNITS: StudyUnit[] = [...BASE_STUDY_UNITS, UNIT_3_1, UNIT_3_2, UNIT_3_3, UNIT_3_4, ...T2.TERM2_FINANCE_UNITS, ...T2.TERM2_BMT_UNITS];
 
 export function getStudyUnitById(id: SyllabusSubunit | string): StudyUnit | undefined {
   return STUDY_UNITS.find(unit => unit.id === id || (id === '1.5-economies-of-scale' && unit.id === '1.5-growth-and-evolution') || (id === '1.5-growth-and-evolution' && unit.id === '1.5-economies-of-scale'));

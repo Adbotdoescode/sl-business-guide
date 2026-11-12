@@ -110,6 +110,33 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     categoryLabel: 'Unit 2 - Finance',
     description: 'Income statements, statements of financial position, intangible assets, stakeholder uses, ethics of accounting, HL depreciation (straight-line and units of production), and circular business models (CBMs).',
   },
+  {
+    id: '3.5-profitability-and-liquidity-ratios',
+    code: 'Unit 3.5',
+    title: 'Profitability and Liquidity Ratio Analysis',
+    shortTitle: '3.5 Ratio Analysis',
+    category: 'unit2',
+    categoryLabel: 'Unit 2 - Finance',
+    description: 'Ratio analysis, profitability ratios (gross profit margin, profit margin, ROCE), liquidity ratios (current ratio, acid test ratio), and strategies to improve them.',
+  },
+  {
+    id: '3.7-cash-flow',
+    code: 'Unit 3.7',
+    title: 'Cash Flow',
+    shortTitle: '3.7 Cash Flow',
+    category: 'unit2',
+    categoryLabel: 'Unit 2 - Finance',
+    description: 'Profit vs cash flow, the working capital cycle, constructing cash flow forecasts, causes of cash flow problems, and strategies to deal with them.',
+  },
+  {
+    id: '3.8-investment-appraisal',
+    code: 'Unit 3.8',
+    title: 'Investment Appraisal',
+    shortTitle: '3.8 Investment Appraisal',
+    category: 'unit2',
+    categoryLabel: 'Unit 2 - Finance',
+    description: 'Payback period, average rate of return (ARR), net present value (NPV, HL only), and the qualitative factors and limitations of investment appraisal.',
+  },
 
   // ==========================================
   // Section 3: Business Management Toolkit (BMT)
@@ -140,6 +167,15 @@ export const ALL_CONTENT_TOPICS: ContentTopicMeta[] = [
     category: 'bmt',
     categoryLabel: 'Business Management Toolkit',
     description: 'Macro-environmental assessment: Social, Technological, Economic, Environmental, Political, Legal, and Ethical external forces.',
+  },
+  {
+    id: 'bmt-bcg-matrix',
+    code: 'BMT: BCG',
+    title: 'Boston Consulting Group (BCG) Matrix',
+    shortTitle: 'BCG Matrix',
+    category: 'bmt',
+    categoryLabel: 'Business Management Toolkit',
+    description: 'Product portfolio analysis by market growth and relative market share: stars, cash cows, question marks and dogs, and the build, hold, harvest and divest strategies.',
   },
   {
     id: 'bmt-toolkit',
@@ -182,20 +218,35 @@ export const PRESET_CONTENT_GROUPS: ContentGroupPreset[] = [
   {
     id: 'all',
     name: 'Full Syllabus (Unit 1, Unit 2 & BMT)',
-    shortBadge: 'All 16 Topics',
+    shortBadge: 'All 20 Topics',
     description: 'Comprehensive test across Unit 1 Business Management, Unit 2 Finance, and the Business Management Toolkit.',
     subunits: ALL_CONTENT_TOPICS.map((t) => t.id),
   },
   {
     id: 'unit2-all',
-    name: 'Unit 2 - Finance (All 4 Modules)',
+    name: 'Unit 2 - Finance (All 7 Modules)',
     shortBadge: 'Unit 2: Finance',
-    description: 'All 4 chapters of Unit 2 Finance: CapEx/RevEx, sources of finance, costs & revenues, and final accounts.',
+    description: 'All 7 chapters of Unit 2 Finance: CapEx/RevEx, sources of finance, costs & revenues, final accounts, ratio analysis, cash flow, and investment appraisal.',
     subunits: [
       '3.1-intro-to-finance',
       '3.2-sources-of-finance',
       '3.3-costs-and-revenues',
       '3.4-final-accounts',
+      '3.5-profitability-and-liquidity-ratios',
+      '3.7-cash-flow',
+      '3.8-investment-appraisal',
+    ],
+  },
+  {
+    id: 'term2-finance-test',
+    name: 'Term 2 Finance Test (3.5, 3.7, 3.8, BCG)',
+    shortBadge: 'Term 2 Test',
+    description: 'Exactly the content on the Term 2 Finance Test: ratio analysis, cash flow, investment appraisal, and the BCG matrix.',
+    subunits: [
+      '3.5-profitability-and-liquidity-ratios',
+      '3.7-cash-flow',
+      '3.8-investment-appraisal',
+      'bmt-bcg-matrix',
     ],
   },
   {
@@ -236,13 +287,14 @@ export const PRESET_CONTENT_GROUPS: ContentGroupPreset[] = [
   },
   {
     id: 'bmt-all',
-    name: 'Full BM Toolkit (All 6 Tools)',
+    name: 'Full BM Toolkit (All 7 Tools)',
     shortBadge: 'All BMT Tools',
     description: 'All 6 toolkit tools: SWOT, Ansoff, STEEPLE, BMT Core, Business Plans, and Descriptive Statistics.',
     subunits: [
       'bmt-swot-analysis',
       'bmt-ansoff-matrix',
       'bmt-steeple-analysis',
+      'bmt-bcg-matrix',
       'bmt-toolkit',
       'bmt-business-plan',
       'bmt-descriptive-statistics',
@@ -250,13 +302,14 @@ export const PRESET_CONTENT_GROUPS: ContentGroupPreset[] = [
   },
   {
     id: 'bmt-matrices',
-    name: 'Strategic Matrices (SWOT, Ansoff, STEEPLE)',
+    name: 'Strategic Matrices (SWOT, Ansoff, STEEPLE, BCG)',
     shortBadge: 'Matrices Only',
     description: 'The core qualitative decision frameworks: SWOT, Ansoff matrix, and STEEPLE macro-analysis.',
     subunits: [
       'bmt-swot-analysis',
       'bmt-ansoff-matrix',
       'bmt-steeple-analysis',
+      'bmt-bcg-matrix',
     ],
   },
 ];

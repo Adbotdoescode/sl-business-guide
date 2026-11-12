@@ -15,3 +15,11 @@
 | /finance/unit-3-4-balance-sheet-format.png | 3.4 | 260 | Table 17.3 - IB format of the statement of financial position (net assets = equity) | 3.4 Statement of financial position |
 | /finance/unit-3-4-straight-line-depreciation.png | 3.4 (HL) | 267 | Table 17.4 + Figure 17.7 - Straight-line depreciation of $25,000 asset at $5,000 p.a. | 3.4 Depreciation (straight line) |
 | /finance/unit-3-4-cbm-4rs.png | 3.4 (BMT) | 664 | Figure 51.2 - Typical circular business models (CBM) focus on the 4 Rs | 3.4 Circular business models |
+| /finance/unit-3-5-ratio-summary-table.png | 3.5 | 282 | Table 18.2 - Ratio analysis summary table (GPM, profit margin, current ratio, acid test, ROCE formulas) | 3.5 JKL Ltd. worked example (top) |
+| /finance/unit-3-7-ib-forecast-format.png | 3.7 | 304 | Exam tip - Cash flow forecast in the IB-prescribed format (opening balance, inflows, outflows, net cash flow, closing balance) | 3.7 Constructing cash flow forecasts (IB layout) |
+| /finance/unit-3-7-rachel-proffitt-forecast.png | 3.7 | 302 | Table 20.1 - Simplified cash flow forecast for Rachel Proffitt Trading Co. | 3.7 Constructing cash flow forecasts (worked example) |
+| /finance/unit-3-8-payback-pros-cons.png | 3.8 | 318 | Table 21.1 - The advantages and disadvantages of the payback period | 3.8 Advantages and disadvantages of the payback period |
+| /finance/unit-3-8-discount-factors.png | 3.8 | 321 | Table 21.2 - Discount factors at different rates of interest (1-10%, years 1-10) | 3.8 NPV and discounting (HL) |
+| /finance/bmt-bcg-matrix.png | BMT 4 | 635 | Figure 47.1 - The BCG matrix (stars, question marks, cash cows, dogs) | BMT BCG section 2, the four quadrants |
+| /finance/bmt-bcg-strategy-grid.png | BMT 4 | 637 | Figure 47.3 - The BCG matrix and product strategy (harvest, build, hold, divest) | BMT BCG section 3, strategies |
+| /finance/bmt-bcg-plc-portfolio.png | BMT 4 (Ch 27) | 397 | Figure 27.3 - The relationship between the product life cycle and a firm's product portfolio | BMT BCG section 4, PLC link |

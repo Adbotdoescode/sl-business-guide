@@ -96,7 +96,7 @@ const BMT_TOOLS: BMTToolSummary[] = [
     whenToUse: 'Use when deciding how to allocate capital between cash-generating mature brands and cash-consuming growth products.',
     keyOutputs: ['Stars, Cash Cows, Question Marks, Dogs', 'Build, Harvest, Hold, Divest Strategic Actions'],
     drillLink: '/matrix-master',
-    studyLink: '/study/bmt-toolkit',
+    studyLink: '/study/bmt-bcg-matrix',
   },
   {
     id: 'business-plan',

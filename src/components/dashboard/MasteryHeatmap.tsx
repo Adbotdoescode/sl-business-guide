@@ -51,11 +51,15 @@ export function MasteryHeatmap() {
     { id: '3.2-sources-of-finance', code: 'Unit 3.2', title: 'Sources of Finance', section: 'unit2' },
     { id: '3.3-costs-and-revenues', code: 'Unit 3.3', title: 'Costs & Revenues', section: 'unit2' },
     { id: '3.4-final-accounts', code: 'Unit 3.4', title: 'Final Accounts & Circular Business Models', section: 'unit2' },
+    { id: '3.5-profitability-and-liquidity-ratios', code: 'Unit 3.5', title: 'Profitability & Liquidity Ratios', section: 'unit2' },
+    { id: '3.7-cash-flow', code: 'Unit 3.7', title: 'Cash Flow', section: 'unit2' },
+    { id: '3.8-investment-appraisal', code: 'Unit 3.8', title: 'Investment Appraisal', section: 'unit2' },
 
     // Business Management Toolkit
     { id: 'bmt-swot-analysis', code: 'BMT SWOT', title: 'SWOT Analysis', section: 'bmt' },
     { id: 'bmt-ansoff-matrix', code: 'BMT Ansoff', title: 'Ansoff Growth Matrix', section: 'bmt' },
     { id: 'bmt-steeple-analysis', code: 'BMT STEEPLE', title: 'STEEPLE Analysis', section: 'bmt' },
+    { id: 'bmt-bcg-matrix', code: 'BMT BCG', title: 'BCG Matrix', section: 'bmt' },
     { id: 'bmt-toolkit', code: 'BMT Master', title: 'BM Toolkit', section: 'bmt' },
     { id: 'bmt-business-plan', code: 'BMT Plan', title: 'Business Plan', section: 'bmt' },
     { id: 'bmt-descriptive-statistics', code: 'BMT Stats', title: 'Descriptive Statistics', section: 'bmt' },
